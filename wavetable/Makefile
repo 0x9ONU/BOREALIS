@@ -1,5 +1,5 @@
 # Project Name
-TARGET = osc_table
+TARGET = wavetable
 
 # Sources
 CPP_SOURCES = main.cpp
