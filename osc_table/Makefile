@@ -1,8 +1,8 @@
 # Project Name
-TARGET = oscillator
+TARGET = osc_table
 
 # Sources
-CPP_SOURCES = oscillator.cpp
+CPP_SOURCES = main.cpp
 
 # Library Locations
 LIBDAISY_DIR ?= ../../../libDaisy
