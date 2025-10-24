@@ -15,15 +15,13 @@ static void AudioCallback(AudioHandle::InterleavingInputBuffer  in,
     for(size_t i = 0; i < size; i += 2)
     {
         sig = osc.Process();
-
-        // left out
+        // left and right out
         out[i] = sig;
-
-        // right out
         out[i + 1] = sig;
     }
 }
 
+// Simple program to generate a sine wave output
 int main(void)
 {
     // initialize seed hardware and oscillator daisysp module
@@ -39,10 +37,8 @@ int main(void)
     osc.SetFreq(440);
     osc.SetAmp(0.5);
 
-
     // start callback
     hw.StartAudio(AudioCallback);
-
 
     while(1) {}
 }

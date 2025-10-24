@@ -1,5 +1,14 @@
 {
     "version": "2.0.0",
+    "_info": [
+        "DO NOT TOUCH ANYTHING BELOW THE 'INPUTS' SECTION",
+        "TO CREATE A NEW PROJECT FOLDER",
+        "Add the folder name to the 'options' list in the 'inputs' variable.",
+        "When running 'task COMMAND' you will be prompted for the specific folder to run the command on.",
+        "For example, if I want to run 'task build' on oscillator, ",
+        "I will type 'task build' and select 'oscillator' from the dropdown.",
+        "This is similar for most other commands like build, build_and_program, program, etc."
+    ],
     "inputs": [
         {
             "id": "folderName",
@@ -7,7 +16,7 @@
             "description": "Select folder/project to build",
             "options": [
                 "oscbank",
-                "oscillator"
+                "osc_table"
             ]
         }
     ],
@@ -30,7 +39,7 @@
       "type": "shell",
       "command": "make clean; make; make program",
       "options": {
-        "cwd": "${workspaceFolder}/oscbank"
+        "cwd": "${workspaceFolder}/${input:folderName}"
       },
       "problemMatcher": ["$gcc"]
     },
@@ -39,7 +48,7 @@
       "type": "shell",
       "command": "make clean; make; make program-dfu",
       "options": {
-        "cwd": "${workspaceFolder}/oscbank"
+        "cwd": "${workspaceFolder}/${input:folderName}"
       },
       "problemMatcher": ["$gcc"]
     },
@@ -52,7 +61,7 @@
         "build_daisysp"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/oscbank"
+        "cwd": "${workspaceFolder}/${input:folderName}"
       },
       "problemMatcher": ["$gcc"]
     },
@@ -65,7 +74,7 @@
         "build_daisysp"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/oscbank"
+        "cwd": "${workspaceFolder}/${input:folderName}"
       },
       "problemMatcher": ["$gcc"]
     },
@@ -74,7 +83,7 @@
       "type": "shell",
       "command": "make program",
       "options": {
-        "cwd": "${workspaceFolder}/oscbank"
+        "cwd": "${workspaceFolder}/${input:folderName}"
       }
     },
     {
@@ -82,7 +91,7 @@
       "type": "shell",
       "command": "make program-dfu",
       "options": {
-        "cwd": "${workspaceFolder}/oscbank"
+        "cwd": "${workspaceFolder}/${input:folderName}"
       }
     },
     {
