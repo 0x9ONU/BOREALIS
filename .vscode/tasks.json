@@ -1,0 +1,116 @@
+{
+    "version": "2.0.0",
+    "_info": [
+        "DO NOT TOUCH ANYTHING BELOW THE 'INPUTS' SECTION",
+        "TO CREATE A NEW PROJECT FOLDER",
+        "Add the folder name to the 'options' list in the 'inputs' variable.",
+        "When running 'task COMMAND' you will be prompted for the specific folder to run the command on.",
+        "For example, if I want to run 'task build' on oscillator, ",
+        "I will type 'task build' and select 'oscillator' from the dropdown.",
+        "This is similar for most other commands like build, build_and_program, program, etc."
+    ],
+    "inputs": [
+        {
+            "id": "folderName",
+            "type": "pickString",
+            "description": "Select folder/project to build",
+            "options": [
+                "oscbank",
+                "wavetable"
+            ]
+        }
+    ],
+    "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "make clean; make",
+      "options": {
+        "cwd": "${workspaceFolder}/${input:folderName}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "build_and_program",
+      "type": "shell",
+      "command": "make clean; make; make program",
+      "options": {
+        "cwd": "${workspaceFolder}/${input:folderName}"
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build_and_program_dfu",
+      "type": "shell",
+      "command": "make clean; make; make program-dfu",
+      "options": {
+        "cwd": "${workspaceFolder}/${input:folderName}"
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build_all",
+      "type": "shell",
+      "command": "make clean; make",
+      "dependsOn": [
+        "build_libdaisy",
+        "build_daisysp"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/${input:folderName}"
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build_all_debug",
+      "type": "shell",
+      "command": "make clean; DEBUG=1 make",
+      "dependsOn": [
+        "build_libdaisy",
+        "build_daisysp"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/${input:folderName}"
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "program",
+      "type": "shell",
+      "command": "make program",
+      "options": {
+        "cwd": "${workspaceFolder}/${input:folderName}"
+      }
+    },
+    {
+      "label": "program-dfu",
+      "type": "shell",
+      "command": "make program-dfu",
+      "options": {
+        "cwd": "${workspaceFolder}/${input:folderName}"
+      }
+    },
+    {
+      "label": "build_libdaisy",
+      "type": "shell",
+      "command": "make",
+      "options": {
+        "cwd": "${workspaceFolder}/DaisyExamples/libDaisy"
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build_daisysp",
+      "type": "shell",
+      "command": "make",
+      "options": {
+        "cwd": "${workspaceFolder}/DaisyExamples/DaisySP"
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
