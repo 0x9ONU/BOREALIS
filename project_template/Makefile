@@ -5,8 +5,8 @@ TARGET = project_template # REPLACE THIS WITH THE FOLDER'S NAME
 CPP_SOURCES = main.cpp # add any other created source files here like libraries or classes or functions or whatever
 
 # Library Locations, probably dont delete these but do add more if needed
-LIBDAISY_DIR ?= ../../../libDaisy
-DAISYSP_DIR ?= ../../../DaisySP
+LIBDAISY_DIR = ../DaisyExamples/libDaisy
+DAISYSP_DIR = ../DaisyExamples/DaisySP
 
 # Core location and generic Makefile, also wouldn't recommend deleting this either
 SYSTEM_FILES_DIR = $(LIBDAISY_DIR)/core
