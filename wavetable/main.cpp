@@ -1,48 +1,55 @@
 #include "daisysp.h"
 #include "daisy_seed.h"
+#include "wavetable.h"
+#include <array>
 
 using namespace daisysp;
 using namespace daisy;
 
 static DaisySeed  hw;
-static Oscillator osc;
+Wavetable wt;
 
-static void AudioCallback(AudioHandle::InterleavingInputBuffer  in,
-                          AudioHandle::InterleavingOutputBuffer out,
-                          size_t                                size)
+void AudioCallback(AudioHandle::InputBuffer  in,
+                   AudioHandle::OutputBuffer out,
+                   size_t                    size)
 {
-    float sig;
-    for(size_t i = 0; i < size; i += 2)
+    for(size_t i = 0; i < size; i++)
     {
-        sig = osc.Process();
-
-        // left out
-        out[i] = sig;
-
-        // right out
-        out[i + 1] = sig;
+        out[0][i] = out[1][i] = wt.Process(440, 0, 0);
     }
 }
 
 int main(void)
 {
-    // initialize seed hardware and oscillator daisysp module
-    float sample_rate;
+    // create the wavetable here
+    int num_waves = 4;
+    std::array<std::array<float, 2048>, 8>& waves;
+
+    // begin initialization
     hw.Configure();
     hw.Init();
     hw.SetAudioBlockSize(4);
-    sample_rate = hw.AudioSampleRate();
-    osc.Init(sample_rate);
+    float sample_rate = hw.AudioSampleRate();
+    wt.Init(sample_rate, waves, num_waves);
 
-    // Set parameters for oscillator
-    osc.SetWaveform(osc.WAVE_SIN);
-    osc.SetFreq(440);
-    osc.SetAmp(0.5);
+    float amp[7] = {.15f, 0.15f, 0.0f, 0.33f, 0.0f, 0.15f, 0.15f};
+    for(int i = 0; i < 3; i++)
+    {
+        osc[i].Init(sample_rate);
+        osc[i].SetFreq(freqs[i] * .5f);
+        osc[i].SetAmplitudes(amp);
+    }
 
+    tick.Init(5.f, sample_rate);
 
-    // start callback
+    // set adenv parameters
+    env.Init(sample_rate);
+    env.SetTime(ADENV_SEG_ATTACK, 0.01);
+    env.SetTime(ADENV_SEG_DECAY, 0.35);
+    env.SetMin(0.f);
+    env.SetMax(.3f);
+    env.SetCurve(0.f); // linear
+
     hw.StartAudio(AudioCallback);
-
-
     while(1) {}
 }
