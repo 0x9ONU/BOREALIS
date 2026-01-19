@@ -18,7 +18,7 @@ void AudioCallback(AudioHandle::InputBuffer  in,
                    size_t                    size)
 {
     wt.SetIndex(0, state % 3)
-    wt.SetFrequency(0, (state % 3)*220)
+    wt.SetFrequency(0, (state % 4)*220)
     for(size_t i = 0; i < size; i++)
     {
         out[0][i] = out[1][i] = wt.Process(0); // 440Hz, wave 0, oscillator 0
