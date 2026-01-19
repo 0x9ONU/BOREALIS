@@ -26,27 +26,27 @@ void Wavetable::Init(float samp_freq, const std::array<std::array<float, 2048>, 
 }
 
 // Processes the selected oscillator by 1 sample at a target frequency and target wavetable index
-float Wavetable::Process(float target_f, float index, uint8_t osc){
+float Wavetable::Process(uint8_t osc){
     float out;                                      // for the output sample
-    float dt = target_f * 2048 / this->fs;          // time difference between samples
+    float dt = frequencies[osc] * 2048.0 / fs;      // time difference between samples
 
-    // finds indecies and weights 
-    uint8_t wave1 = floor(index);                   // closest wave to the left
+    // finds indicies and weights 
+    uint8_t wave1 = (int)indicies[osc];           // closest wave to the left
     uint8_t wave2 = wave1 + 1;                      // closest wave to the right
     if (wave2 >= num_waves){ wave2 = 0; }           // wrap to beginning
-    float weight = daisysp::fastmod1f(index);       // weight between the two waves
+    float weight = daisysp::fastmod1f(indicies[osc]);       // weight between the two waves
     
     // for interpolating between samples in a wave
-    float phase = this->phases[osc];                // Which oscillator are we using 
-    uint16_t i = floor(phase);                      // closest sample to left
+    float phase = phases[osc];                      // Which oscillator are we using 
+    uint16_t i = (int)phase;                      // closest sample to left
     uint16_t i_next = i + 1;                        // closest sample to the right
     float i_weight = daisysp::fastmod1f(phase);     // distance from the left sample
-    if(i_next >= 2048){ i_next -= 2048;}             // wrap if needed
+    if(i_next >= 2048){ i_next -= 2048;}            // wrap if needed
 
-    float fl1 = this->waves[wave1][i];    
-    float ce1 = this->waves[wave1][i_next];
-    float fl2 = this->waves[wave2][i];        
-    float ce2 = this->waves[wave2][i_next];
+    float fl1 = waves[wave1][i];    
+    float ce1 = waves[wave1][i_next];
+    float fl2 = waves[wave2][i];        
+    float ce2 = waves[wave2][i_next];
 
     float fl = (1-weight) * fl1 + weight * fl2;
     float ce = (1-weight) * ce1 + weight * ce2;
@@ -55,7 +55,15 @@ float Wavetable::Process(float target_f, float index, uint8_t osc){
 
     phase += dt;
     if(phase >= 2048.0f){ phase -= 2048.0f; }
-    this->phases[osc] = phase;
+    phases[osc] = phase;
 
     return out;
+}
+
+void SetFreq(int osc, float freq){
+    frequencies[osc] = freq;
+}
+
+void SetIndex(int osc, float index){
+    indicies[osc] = index;
 }
