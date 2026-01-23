@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   34              		@ link register save eliminated.
   35              	.LBB101:
   36              	.LBI101:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 2
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 2
 
 
   37              		.file 2 "../DaisyExamples/libDaisy/src/sys/system.h"
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   54:../DaisyExamples/libDaisy/src/sys/system.h **** 
   55:../DaisyExamples/libDaisy/src/sys/system.h ****         SysClkFreq cpu_freq;
   56:../DaisyExamples/libDaisy/src/sys/system.h ****         bool       use_dcache;
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 3
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 3
 
 
   57:../DaisyExamples/libDaisy/src/sys/system.h ****         bool       use_icache;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
    8:../DaisyExamples/libDaisy/src/hid/usb.h **** /** @addtogroup human_interface
    9:../DaisyExamples/libDaisy/src/hid/usb.h ****     @{
   10:../DaisyExamples/libDaisy/src/hid/usb.h **** */
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 4
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 4
 
 
   11:../DaisyExamples/libDaisy/src/hid/usb.h **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   17:../DaisyExamples/libDaisy/src/per/adc.h **** /* While there may not be many configuration options here,
   18:../DaisyExamples/libDaisy/src/per/adc.h **** using a struct like this allows us to add more configuration
   19:../DaisyExamples/libDaisy/src/per/adc.h **** later without breaking existing functionality.
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 5
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 5
 
 
   20:../DaisyExamples/libDaisy/src/per/adc.h **** */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   74:../DaisyExamples/libDaisy/src/per/adc.h ****     void InitMux(dsy_gpio_pin    adc_pin,
   75:../DaisyExamples/libDaisy/src/per/adc.h ****                  size_t          mux_channels,
   76:../DaisyExamples/libDaisy/src/per/adc.h ****                  dsy_gpio_pin    mux_0,
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 6
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 6
 
 
   77:../DaisyExamples/libDaisy/src/per/adc.h ****                  dsy_gpio_pin    mux_1 = {DSY_GPIOX, 0},
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   15:../DaisyExamples/libDaisy/src/hid/audio.h ****  *           you will have to take the following steps:
   16:../DaisyExamples/libDaisy/src/hid/audio.h ****  *             1. Create and Initialize an SaiHandle or two depending on your requirements
   17:../DaisyExamples/libDaisy/src/hid/audio.h ****  *             2. Initialize the Audio Handle with the desired settings and the Initialized SaiHand
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 7
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 7
 
 
   18:../DaisyExamples/libDaisy/src/hid/audio.h ****  *             3. If the connected codec requires special configuration or initialization, do so
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   72:../DaisyExamples/libDaisy/src/hid/audio.h ****      */
   73:../DaisyExamples/libDaisy/src/hid/audio.h ****     typedef void (*AudioCallback)(InputBuffer  in,
   74:../DaisyExamples/libDaisy/src/hid/audio.h ****                                   OutputBuffer out,
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 8
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 8
 
 
   75:../DaisyExamples/libDaisy/src/hid/audio.h ****                                   size_t       size);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   12:../DaisyExamples/DaisySP/Source/Control/adenv.h **** #include <stdint.h>
   13:../DaisyExamples/DaisySP/Source/Control/adenv.h **** #ifdef __cplusplus
   14:../DaisyExamples/DaisySP/Source/Control/adenv.h **** 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 9
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 9
 
 
   15:../DaisyExamples/DaisySP/Source/Control/adenv.h **** namespace daisysp
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
    3:../DaisyExamples/DaisySP/Source/Utility/metro.h **** 
    4:../DaisyExamples/DaisySP/Source/Utility/metro.h **** Use of this source code is governed by an MIT-style
    5:../DaisyExamples/DaisySP/Source/Utility/metro.h **** license that can be found in the LICENSE file or at
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 10
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 10
 
 
    6:../DaisyExamples/DaisySP/Source/Utility/metro.h **** https://opensource.org/licenses/MIT.
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  134              		.cfi_endproc
  135              	.LFE5245:
  137 0002 00BF     		.section	.text._Z13AudioCallbackPKPKfPPfj,"ax",%progbits
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 11
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 11
 
 
  138              		.align	1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  180              	.L10:
  181              	.LBB114:
  182              	.LBB106:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 12
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 12
 
 
   20:oscbank.cpp   ****     {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  209 0024 FFF7FEFF 		bl	_ZN7daisysp5AdEnv7ProcessEv
  210              	.LVL8:
  211 0028 F0EE408A 		vmov.f32	s17, s0
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 13
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 13
 
 
  212              	.LVL9:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  253              	.LBE106:
   19:oscbank.cpp   ****     {
  254              		.loc 8 19 5 discriminator 2 view .LVU49
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 14
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 14
 
 
  255 0058 0135     		adds	r5, r5, #1
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  305              		.global	main
  306              		.syntax unified
  307              		.thumb
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 15
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 15
 
 
  308              		.thumb_func
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   43:oscbank.cpp   ****     float sample_rate = hw.AudioSampleRate();
  349              		.loc 8 43 5 is_stmt 1 view .LVU67
   43:oscbank.cpp   ****     float sample_rate = hw.AudioSampleRate();
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 16
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 16
 
 
  350              		.loc 8 43 25 is_stmt 0 view .LVU68
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   47:oscbank.cpp   ****     {
  396              		.loc 8 47 22 discriminator 2 view .LVU85
  397 0064 6434     		adds	r4, r4, #100
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 17
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 17
 
 
  398              		.loc 8 51 29 discriminator 2 view .LVU86
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   69:../DaisyExamples/DaisySP/Source/Control/adenv.h ****     */
   70:../DaisyExamples/DaisySP/Source/Control/adenv.h ****     inline void SetCurve(float scalar) { curve_scalar_ = scalar; }
   71:../DaisyExamples/DaisySP/Source/Control/adenv.h ****     /** Sets the minimum value of the envelope output.
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 18
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 18
 
 
   72:../DaisyExamples/DaisySP/Source/Control/adenv.h ****         Input range: -FLTmax_, to FLTmax_
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  474              		.loc 6 74 37 is_stmt 0 view .LVU110
  475              	.LBE124:
  476              	.LBE132:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 19
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 19
 
 
   61:oscbank.cpp   ****     env.SetMax(.3f);
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  520              		.loc 8 65 5 discriminator 1 view .LVU126
  521              		.loc 8 65 5 discriminator 1 view .LVU127
  522              		.loc 8 65 5 discriminator 1 view .LVU128
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 20
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 20
 
 
  523 00a2 FEE7     		b	.L27
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   12:../DaisyExamples/libDaisy/src/per/qspi.h **** #define DSY_QSPI_DATA       \
   13:../DaisyExamples/libDaisy/src/per/qspi.h ****     __attribute__((section( \
   14:../DaisyExamples/libDaisy/src/per/qspi.h ****         ".qspiflash_data"))) /**< used for reading memory in memory_mapped mode. */
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 21
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 21
 
 
   15:../DaisyExamples/libDaisy/src/per/qspi.h **** #define DSY_QSPI_BSS        \
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   69:../DaisyExamples/libDaisy/src/per/qspi.h ****         Memory Mapped mode: QSPI configured so that the QSPI can be
   70:../DaisyExamples/libDaisy/src/per/qspi.h ****         read from starting address 0x90000000. Writing is not
   71:../DaisyExamples/libDaisy/src/per/qspi.h ****         possible in this mode. \n 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 22
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 22
 
 
   72:../DaisyExamples/libDaisy/src/per/qspi.h ****         Indirect Polling mode: Device driver enabled. 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  126:../DaisyExamples/libDaisy/src/per/qspi.h ****         Writes data in buffer to to the QSPI. Starting at address to address+size 
  127:../DaisyExamples/libDaisy/src/per/qspi.h ****         \param address Address to write to
  128:../DaisyExamples/libDaisy/src/per/qspi.h ****         \param size Buffer size
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 23
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 23
 
 
  129:../DaisyExamples/libDaisy/src/per/qspi.h ****         \param buffer Buffer to write
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  582              	.LBB169:
  583              	.LBB170:
  584              		.loc 9 166 34 view .LVU134
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 24
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 24
 
 
  585 0002 0D48     		ldr	r0, .L34
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
    7:../DaisyExamples/libDaisy/src/per/dac.h **** namespace daisy
    8:../DaisyExamples/libDaisy/src/per/dac.h **** {
    9:../DaisyExamples/libDaisy/src/per/dac.h **** /** @brief DAC handle for Built-in DAC Peripheral 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 25
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 25
 
 
   10:../DaisyExamples/libDaisy/src/per/dac.h ****  *  @ingroup per_analog
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   64:../DaisyExamples/libDaisy/src/per/dac.h ****     {
   65:../DaisyExamples/libDaisy/src/per/dac.h ****         ENABLED,
   66:../DaisyExamples/libDaisy/src/per/dac.h ****         DISABLED,
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 26
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 26
 
 
   67:../DaisyExamples/libDaisy/src/per/dac.h ****     };
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   10:../DaisyExamples/libDaisy/src/per/sai.h ****  * Support for I2S Audio Protocol with different bit-depth, samplerate options
   11:../DaisyExamples/libDaisy/src/per/sai.h ****  * Allows for master or slave, as well as freedom of selecting direction, 
   12:../DaisyExamples/libDaisy/src/per/sai.h ****  * and other behavior for each peripheral, and block.
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 27
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 27
 
 
   13:../DaisyExamples/libDaisy/src/per/sai.h ****  * 
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
   67:../DaisyExamples/libDaisy/src/per/sai.h ****         {
   68:../DaisyExamples/libDaisy/src/per/sai.h ****             SAI_16BIT,
   69:../DaisyExamples/libDaisy/src/per/sai.h ****             SAI_24BIT,
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 28
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 28
 
 
   70:../DaisyExamples/libDaisy/src/per/sai.h ****             SAI_32BIT,
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  664              	.LVL39:
    8:oscbank.cpp   **** AdEnv          env;
  665              		.loc 8 8 21 is_stmt 1 view .LVU154
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 29
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 29
 
 
    8:oscbank.cpp   **** AdEnv          env;
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  712 004c 00000000 		.word	.LANCHOR1
  713 0050 00000000 		.word	_ZN7daisysp5MetroD1Ev
  714 0054 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 30
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 30
 
 
  715              	.LBE194:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  766 0000 00000000 		.space	16
  766      00000000 
  766      00000000 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 31
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 31
 
 
  766      00000000 
@@ -1855,43 +1855,43 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 1
  819              		.file 53 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
  820              		.file 54 "<built-in>"
  821              		.file 55 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s 			page 32
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s 			page 32
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 oscbank.cpp
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:17     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:67     .text._ZN7daisysp5AdEnvD2Ev:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:75     .text._ZN7daisysp5AdEnvD2Ev:00000000 _ZN7daisysp5AdEnvD2Ev
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:75     .text._ZN7daisysp5AdEnvD2Ev:00000000 _ZN7daisysp5AdEnvD1Ev
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:92     .text._ZN7daisysp5MetroD2Ev:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:100    .text._ZN7daisysp5MetroD2Ev:00000000 _ZN7daisysp5MetroD2Ev
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:100    .text._ZN7daisysp5MetroD2Ev:00000000 _ZN7daisysp5MetroD1Ev
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:117    .text.__tcf_0:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:124    .text.__tcf_0:00000000 __tcf_0
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:138    .text._Z13AudioCallbackPKPKfPPfj:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:146    .text._Z13AudioCallbackPKPKfPPfj:00000000 _Z13AudioCallbackPKPKfPPfj
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:294    .text._Z13AudioCallbackPKPKfPPfj:00000070 $d
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:303    .text.startup.main:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:311    .text.startup.main:00000000 main
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:527    .text.startup.main:000000a4 $d
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:541    .text.startup._GLOBAL__sub_I_hw:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:548    .text.startup._GLOBAL__sub_I_hw:00000000 _GLOBAL__sub_I_hw
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:707    .text.startup._GLOBAL__sub_I_hw:00000038 $d
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:721    .init_array:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:772    .data.freqs:00000000 freqs
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:765    .bss.tick:00000000 tick
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:744    .bss.env:00000000 env
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:758    .bss.osc:00000000 osc
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:751    .bss.hw:00000000 hw
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:729    .rodata:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:740    .bss.env:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:747    .bss.hw:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:754    .bss.osc:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:761    .bss.tick:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccLIBMHS.s:768    .data.freqs:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:17     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:67     .text._ZN7daisysp5AdEnvD2Ev:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:75     .text._ZN7daisysp5AdEnvD2Ev:00000000 _ZN7daisysp5AdEnvD2Ev
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:75     .text._ZN7daisysp5AdEnvD2Ev:00000000 _ZN7daisysp5AdEnvD1Ev
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:92     .text._ZN7daisysp5MetroD2Ev:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:100    .text._ZN7daisysp5MetroD2Ev:00000000 _ZN7daisysp5MetroD2Ev
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:100    .text._ZN7daisysp5MetroD2Ev:00000000 _ZN7daisysp5MetroD1Ev
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:117    .text.__tcf_0:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:124    .text.__tcf_0:00000000 __tcf_0
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:138    .text._Z13AudioCallbackPKPKfPPfj:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:146    .text._Z13AudioCallbackPKPKfPPfj:00000000 _Z13AudioCallbackPKPKfPPfj
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:294    .text._Z13AudioCallbackPKPKfPPfj:00000070 $d
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:303    .text.startup.main:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:311    .text.startup.main:00000000 main
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:527    .text.startup.main:000000a4 $d
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:541    .text.startup._GLOBAL__sub_I_hw:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:548    .text.startup._GLOBAL__sub_I_hw:00000000 _GLOBAL__sub_I_hw
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:707    .text.startup._GLOBAL__sub_I_hw:00000038 $d
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:721    .init_array:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:772    .data.freqs:00000000 freqs
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:765    .bss.tick:00000000 tick
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:744    .bss.env:00000000 env
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:758    .bss.osc:00000000 osc
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:751    .bss.hw:00000000 hw
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:729    .rodata:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:740    .bss.env:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:747    .bss.hw:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:754    .bss.osc:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:761    .bss.tick:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccEZmWrK.s:768    .data.freqs:00000000 $d
                            .group:00000000 _ZN5daisy9DaisySeedD5Ev
                            .group:00000000 _ZN7daisysp5AdEnvD5Ev
                            .group:00000000 _ZN7daisysp5MetroD5Ev
