@@ -2,7 +2,7 @@
 TARGET = wavetable
 
 # Sources
-CPP_SOURCES = main.cpp
+CPP_SOURCES = main.cpp wavetable.cpp
 
 # Library Locations
 LIBDAISY_DIR = ../DaisyExamples/libDaisy

@@ -1,5 +1,8 @@
-#include "dsp.h"
+
+#include "daisysp.h"
 #include "wavetable.h"
+#include "daisy_seed.h"
+
 
 // Defailt constructor
 Wavetable::Wavetable() 
@@ -11,10 +14,10 @@ Wavetable::Wavetable()
 
 // Constructor 
 Wavetable::Wavetable(float samp_freq, const std::array<std::array<float, 2048>, 8>& wavesin, int num_waves):
+    fs(samp_freq),
     waves(wavesin),
-    phases{0.0f},
     num_waves(num_waves),
-    fs(samp_freq)
+    phases{0.0f}
 {}
 
 // Initialize function
@@ -60,10 +63,10 @@ float Wavetable::Process(uint8_t osc){
     return out;
 }
 
-void SetFreq(int osc, float freq){
+void Wavetable::SetFreq(int osc, float freq){
     frequencies[osc] = freq;
 }
 
-void SetIndex(int osc, float index){
+void Wavetable::SetIndex(int osc, float index){
     indicies[osc] = index;
 }
