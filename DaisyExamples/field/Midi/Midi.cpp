@@ -5,7 +5,7 @@
 using namespace daisy;
 using namespace daisysp;
 
-DaisyField hw;
+DaisySeed hw;
 
 class Voice
 {
@@ -16,7 +16,7 @@ class Voice
     {
         active_ = false;
         osc_.Init(samplerate);
-        osc_.SetAmp(0.75f);
+        osc_.SetAmp(1.f);
         osc_.SetWaveform(Oscillator::WAVE_POLYBLEP_SAW);
         env_.Init(samplerate);
         env_.SetSustainLevel(0.5f);
