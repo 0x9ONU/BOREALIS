@@ -16,7 +16,8 @@
             "description": "Select folder/project to build",
             "options": [
                 "oscbank",
-                "wavetable"
+                "wavetable",
+                "screen_test"
             ]
         }
     ],
