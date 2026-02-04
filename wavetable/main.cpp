@@ -13,17 +13,16 @@ constexpr float PI = 3.14159265358979323846f;
 //Intalizations
 static DaisySeed hw;
 Wavetable wt;
-volatile int state = 0;
-float storagevar[10];
 MidiUartHandler midi;
 
 /** FIFO to hold messages as we're ready to print them */
 FIFO<MidiEvent, 128> event_log;
 
-void GetMidiTypeAsString(MidiEvent& msg, char* str)
-{
-    switch(msg.type)
-    {
+std::array<float, 8> oscillators_out;
+float mix;
+
+void GetMidiTypeAsString(MidiEvent& msg, char* str){
+    switch(msg.type){
         case NoteOff: strcpy(str, "NoteOff"); break;
         case NoteOn: strcpy(str, "NoteOn"); break;
         case PolyphonicKeyPressure: strcpy(str, "PolyKeyPres."); break;
@@ -38,21 +37,23 @@ void GetMidiTypeAsString(MidiEvent& msg, char* str)
     }
 }
 
-
 void AudioCallback(AudioHandle::InputBuffer  in,
                    AudioHandle::OutputBuffer out,
                    size_t                    size)
 {
-    //wt.SetFreq(0, 3*220);
-
-    for(size_t i = 0; i < size; i++)
-    {
-        out[0][i] = out[1][i] = wt.Process(0); // 440Hz, wave 0, oscillator 0
-    }
+    for(size_t i = 0; i < size; i++){   // Process each sample
+        mix = 0;                  // variable for sum of all signals
+        oscillators_out = wt.Process();
+        
+        for(int j = 0; j < 8; j++){     // Process each oscillator
+            mix = mix + (oscillators_out[j] * 0.125);
+        }
+        
+        out[0][i] = out[1][i] = mix;
+    }    
 }
 
-int main(void)
-{
+int main(void){
     // Begin Initialization
     hw.Configure();
     hw.Init();
@@ -68,7 +69,6 @@ int main(void)
         float phase = (float)i / 2048.0f;   // 
         
         waves[0][i] = sinf(2.0f * PI * phase);
-        hw.PrintLine("My Float: " FLT_FMT(6), FLT_VAR(6, waves[0][i]));
 
         float tri;
         if (phase < 0.25f)
@@ -77,15 +77,16 @@ int main(void)
             tri = 2.0f - 4.0f * phase;
         else
             tri = -4.0f + 4.0f * phase;
-
         waves[1][i] = tri;
 
         waves[2][i] = (phase < 0.5f) ? 1.0f : -1.0f;
     }
 
+    // Initialize the WT
     wt.Init(sample_rate, waves, num_waves);
-    wt.SetIndex(0, 2);
-    wt.SetFreq(0, 660);
+    for(int i = 0; i < 4; i++){
+        wt.SetIndex(i, 1);
+    }
     hw.PrintLine("Wavetable initialized");
 
     // Initalize Midi and Start receiving
@@ -96,59 +97,47 @@ int main(void)
     midi.StartReceive();
 
     //Temp
-    
     uint32_t now      = System::GetNow();
     uint32_t log_time = System::GetNow();
-
-    //Configure and initialize button
-    Switch button1;
-    //Set button to pin 28, to be updated at a 1kHz  samplerate
-    button1.Init(D21, 1000);
-    hw.PrintLine("Button initialized");
 
     hw.StartAudio(AudioCallback);
     hw.PrintLine("Audio Callback Started, begin main loop");
 
+    wt.AddNote(69); // testing
+
+
     // Main Loop
     while(1) {
-        // Read Inputs, doesnt function right now, was using to update a variable to change frequency and wave shape
         System::Delay(1);
-
         now = System::GetNow();
 
-        /** Process MIDI in the background */
+        // Look for new MIDI events
         midi.Listen();
+
         /** Loop through any MIDI Events */
-        while(midi.HasEvents())
-        {
-            hw.PrintLine("I got an event!");
+        while(midi.HasEvents()){
             MidiEvent msg = midi.PopEvent();
 
-            /** Handle messages as they come in 
-             *  See DaisyExamples for some examples of this
-             */
-            switch(msg.type)
-            {
+            // Handle messages as they come in 
+            switch(msg.type){
                 case NoteOn:
-                    // Do something on Note On events
-                    {
-                        uint8_t bytes[3] = {0x90, 0x00, 0x00};
-                        bytes[1] = msg.data[0];
-                        bytes[2] = msg.data[1];
-                        midi.SendMessage(bytes, 3);
-                        //Set frequency of wavetable oscillator
-                        wt.SetFreq(0, 440.0f * powf(2.0f, (msg.data[0] - 57) / 12.0f));
-                    }
+                {
+                    // add a note to the wavetable, automatically assigned to an oscillator
+                    char outstr[128];
+                    sprintf(outstr, "Add note:%d\n", msg.data[0]);
+                    hw.PrintLine(outstr);
+                    wt.AddNote(msg.data[0]);
                     break;
+                }
                 case NoteOff:
-                    {
-                      uint8_t bytes[3] = {0x90, 0x00, 0x00};
-                        bytes[1] = msg.data[0];
-                        bytes[2] = msg.data[1];
-                        midi.SendMessage(bytes, 3);
-                        
-                        wt.SetFreq(0, 0);
-                    }
+                {
+                    // remove the note
+                    char outstr[128];
+                    sprintf(outstr, "Remove note:%d\n", msg.data[0]);
+                    hw.PrintLine(outstr);
+                    wt.RemoveNote(msg.data[0]);   
+                    break;
+                }  
                 default: break;
             }
 
@@ -157,11 +146,9 @@ int main(void)
         }
 
         /** Now separately, every 5ms we'll print the top message in our queue if there is one */
-        if(now - log_time > 5)
-        {
+        if(now - log_time > 5){
             log_time = now;
-            if(!event_log.IsEmpty())
-            {
+            if(!event_log.IsEmpty()){
                 auto msg = event_log.PopFront();
                 char outstr[128];
                 char type_str[16];
