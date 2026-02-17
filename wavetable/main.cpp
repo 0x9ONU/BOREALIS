@@ -84,8 +84,8 @@ int main(void){
 
     // Initialize the WT
     wt.Init(sample_rate, waves, num_waves);
-    for(int i = 0; i < 4; i++){
-        wt.SetIndex(i, 1);
+    for(int i = 0; i < 8; i++){
+        wt.SetIndex(i, 1.5);
     }
     hw.PrintLine("Wavetable initialized");
 

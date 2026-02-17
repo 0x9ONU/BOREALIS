@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   34              		@ link register save eliminated.
   35              	.LBB258:
   36              	.LBI258:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 2
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 2
 
 
   37              		.file 2 "../DaisyExamples/libDaisy/src/sys/system.h"
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   54:../DaisyExamples/libDaisy/src/sys/system.h **** 
   55:../DaisyExamples/libDaisy/src/sys/system.h ****         SysClkFreq cpu_freq;
   56:../DaisyExamples/libDaisy/src/sys/system.h ****         bool       use_dcache;
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 3
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 3
 
 
   57:../DaisyExamples/libDaisy/src/sys/system.h ****         bool       use_icache;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
    8:../DaisyExamples/libDaisy/src/hid/usb.h **** /** @addtogroup human_interface
    9:../DaisyExamples/libDaisy/src/hid/usb.h ****     @{
   10:../DaisyExamples/libDaisy/src/hid/usb.h **** */
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 4
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 4
 
 
   11:../DaisyExamples/libDaisy/src/hid/usb.h **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   17:../DaisyExamples/libDaisy/src/per/adc.h **** /* While there may not be many configuration options here,
   18:../DaisyExamples/libDaisy/src/per/adc.h **** using a struct like this allows us to add more configuration
   19:../DaisyExamples/libDaisy/src/per/adc.h **** later without breaking existing functionality.
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 5
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 5
 
 
   20:../DaisyExamples/libDaisy/src/per/adc.h **** */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   74:../DaisyExamples/libDaisy/src/per/adc.h ****     void InitMux(dsy_gpio_pin    adc_pin,
   75:../DaisyExamples/libDaisy/src/per/adc.h ****                  size_t          mux_channels,
   76:../DaisyExamples/libDaisy/src/per/adc.h ****                  dsy_gpio_pin    mux_0,
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 6
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 6
 
 
   77:../DaisyExamples/libDaisy/src/per/adc.h ****                  dsy_gpio_pin    mux_1 = {DSY_GPIOX, 0},
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   15:../DaisyExamples/libDaisy/src/hid/audio.h ****  *           you will have to take the following steps:
   16:../DaisyExamples/libDaisy/src/hid/audio.h ****  *             1. Create and Initialize an SaiHandle or two depending on your requirements
   17:../DaisyExamples/libDaisy/src/hid/audio.h ****  *             2. Initialize the Audio Handle with the desired settings and the Initialized SaiHand
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 7
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 7
 
 
   18:../DaisyExamples/libDaisy/src/hid/audio.h ****  *             3. If the connected codec requires special configuration or initialization, do so
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   72:../DaisyExamples/libDaisy/src/hid/audio.h ****      */
   73:../DaisyExamples/libDaisy/src/hid/audio.h ****     typedef void (*AudioCallback)(InputBuffer  in,
   74:../DaisyExamples/libDaisy/src/hid/audio.h ****                                   OutputBuffer out,
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 8
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 8
 
 
   75:../DaisyExamples/libDaisy/src/hid/audio.h ****                                   size_t       size);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   12:wavetable.h   ****     261.63, 277.18, 293.66, 311.13, 329.63, 349.23, 369.99, 392.00, 415.30, 440.00, 466.16, 493.88,
   13:wavetable.h   ****     523.25, 554.37, 587.33, 622.25, 659.26, 698.46, 739.99, 783.99, 830.61, 880.00, 932.33, 987.77,
   14:wavetable.h   ****     1046.50, 1108.73, 1174.66, 1244.51, 1318.51, 1396.91, 1479.98, 1567.98, 1661.22, 1760.00, 1864.
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 9
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 9
 
 
   15:wavetable.h   ****     2093.00, 2217.46, 2349.32, 2489.02, 2637.02, 2793.83, 2959.96, 3135.96, 3322.44, 3520.00, 3729.
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   18:../DaisyExamples/libDaisy/src/util/FIFO.h **** 
   19:../DaisyExamples/libDaisy/src/util/FIFO.h ****     FIFOBase(T* buffer, size_t bufferSize, std::initializer_list<T> valuesToAdd)
   20:../DaisyExamples/libDaisy/src/util/FIFO.h ****     : buffer_(buffer), bufferSize_(bufferSize), bufferIn_(0), bufferOut_(0)
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 10
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 10
 
 
   21:../DaisyExamples/libDaisy/src/util/FIFO.h ****     {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   75:../DaisyExamples/libDaisy/src/util/FIFO.h **** 
   76:../DaisyExamples/libDaisy/src/util/FIFO.h ****     /** returns a reference to the last element */
   77:../DaisyExamples/libDaisy/src/util/FIFO.h ****     T& Back()
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 11
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 11
 
 
   78:../DaisyExamples/libDaisy/src/util/FIFO.h ****     {
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  132:../DaisyExamples/libDaisy/src/util/FIFO.h **** 
  133:../DaisyExamples/libDaisy/src/util/FIFO.h ****     /** Returns true if the buffer contains an element equal to the provided value */
  134:../DaisyExamples/libDaisy/src/util/FIFO.h ****     bool Contains(const T& element)
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 12
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 12
 
 
  135:../DaisyExamples/libDaisy/src/util/FIFO.h ****     {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  189:../DaisyExamples/libDaisy/src/util/FIFO.h ****             return true;
  190:../DaisyExamples/libDaisy/src/util/FIFO.h ****         }
  191:../DaisyExamples/libDaisy/src/util/FIFO.h ****         // copy last element
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 13
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 13
 
 
  192:../DaisyExamples/libDaisy/src/util/FIFO.h ****         PushBack(Back());
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  246:../DaisyExamples/libDaisy/src/util/FIFO.h ****                 Remove(idx);
  247:../DaisyExamples/libDaisy/src/util/FIFO.h ****                 // was that the last element?
  248:../DaisyExamples/libDaisy/src/util/FIFO.h ****                 if(idx == int(GetNumElements()) - 1)
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 14
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 14
 
 
  249:../DaisyExamples/libDaisy/src/util/FIFO.h ****                     idx--;
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  108              		@ link register save eliminated.
  109              	.LBB262:
  110              	.LBI262:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 15
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 15
 
 
   42:../DaisyExamples/libDaisy/src/util/FIFO.h **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   32:../DaisyExamples/libDaisy/src/hid/midi.h ****     ~MidiUartTransport() {}
   33:../DaisyExamples/libDaisy/src/hid/midi.h **** 
   34:../DaisyExamples/libDaisy/src/hid/midi.h ****     /** @brief Configuration structure for UART MIDI */
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 16
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 16
 
 
   35:../DaisyExamples/libDaisy/src/hid/midi.h ****     struct Config
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   89:../DaisyExamples/libDaisy/src/hid/midi.h ****     inline void StartRx(MidiRxParseCallback parse_callback, void* context)
   90:../DaisyExamples/libDaisy/src/hid/midi.h ****     {
   91:../DaisyExamples/libDaisy/src/hid/midi.h ****         parse_context_  = context;
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 17
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 17
 
 
   92:../DaisyExamples/libDaisy/src/hid/midi.h ****         parse_callback_ = parse_callback;
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  146:../DaisyExamples/libDaisy/src/hid/midi.h ****     The MidiEvents fill a FIFO queue that the user can pop messages from.
  147:../DaisyExamples/libDaisy/src/hid/midi.h ****     @author shensley
  148:../DaisyExamples/libDaisy/src/hid/midi.h ****     @date March 2020
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 18
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 18
 
 
  149:../DaisyExamples/libDaisy/src/hid/midi.h ****     @ingroup midi
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  157              		.loc 8 32 5 is_stmt 0 view .LVU23
  158              	.LBE266:
  159              		.loc 8 156 21 view .LVU24
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 19
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 19
 
 
  160 0000 7047     		bx	lr
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   38:main.cpp      **** }
   39:main.cpp      **** 
   40:main.cpp      **** void AudioCallback(AudioHandle::InputBuffer  in,
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 20
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 20
 
 
   41:main.cpp      ****                    AudioHandle::OutputBuffer out,
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  225 0024 97ED007A 		vldr.32	s14, [r7]
  226 0028 BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
  227 002c 0FC4     		stmia	r4!, {r0, r1, r2, r3}
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 21
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 21
 
 
  228 002e 9CE80F00 		ldm	ip, {r0, r1, r2, r3}
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  271 006c B145     		cmp	r9, r6
  272              	.LBB271:
  273              		.loc 10 52 19 discriminator 2 view .LVU54
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 22
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 22
 
 
  274 006e 83ED007A 		vstr.32	s14, [r3]
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  130:../DaisyExamples/libDaisy/src/hid/midi.h ****             = reinterpret_cast<MidiUartTransport*>(context);
  325              		.loc 8 130 9 view .LVU60
  132:../DaisyExamples/libDaisy/src/hid/midi.h ****         {
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 23
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 23
 
 
  326              		.loc 8 132 9 view .LVU61
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  163:../DaisyExamples/libDaisy/src/hid/midi.h ****     /** Initializes the MidiHandler
  164:../DaisyExamples/libDaisy/src/hid/midi.h ****      *  \param config Configuration structure used to define specifics to the MIDI Handler.
  165:../DaisyExamples/libDaisy/src/hid/midi.h ****      */
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 24
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 24
 
 
  166:../DaisyExamples/libDaisy/src/hid/midi.h ****     void Init(Config config)
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  220:../DaisyExamples/libDaisy/src/hid/midi.h ****     {
  221:../DaisyExamples/libDaisy/src/hid/midi.h ****         MidiEvent event;
  222:../DaisyExamples/libDaisy/src/hid/midi.h ****         if(parser_.Parse(byte, &event))
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 25
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 25
 
 
  223:../DaisyExamples/libDaisy/src/hid/midi.h ****         {
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  403              		.loc 8 237 29 view .LVU78
  404 0014 A642     		cmp	r6, r4
  405 0016 2AD0     		beq	.L36
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 26
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 26
 
 
  406              	.LVL19:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  450 0030 D5E93203 		ldrd	r0, r3, [r5, #200]
  451              	.LVL23:
  174:../DaisyExamples/libDaisy/src/util/FIFO.h ****             numElements += bufferSize_;
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 27
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 27
 
 
  452              		.loc 7 174 9 view .LVU89
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   55:../DaisyExamples/libDaisy/src/util/FIFO.h ****             return true;
  496              		.loc 7 55 27 view .LVU100
  497              	.LBE290:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 28
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 28
 
 
  498              	.LBE289:
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  542      616E6765 
  542      00
  543 0031 000000   		.align	2
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 29
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 29
 
 
  544              	.LC5:
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  583              		.cfi_def_cfa_offset 4
  584              		.cfi_offset 4, -4
  585 0006 092A     		cmp	r2, #9
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 30
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 30
 
 
  586 0008 42D8     		bhi	.L38
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   26:main.cpp      ****         case NoteOn: strcpy(str, "NoteOn"); break;
  631              		.loc 10 26 29 view .LVU118
  632 002e 1860     		str	r0, [r3]	@ unaligned
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 31
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 31
 
 
  633 0030 5960     		str	r1, [r3, #4]	@ unaligned
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  674 0056 7047     		bx	lr
  675              	.LVL39:
  676              	.L46:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 32
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 32
 
 
  677              		.cfi_restore_state
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  717              	.L43:
  718              		.cfi_restore_state
   32:main.cpp      ****         case SystemCommon: strcpy(str, "Sys. Common"); break;
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 33
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 33
 
 
  719              		.loc 10 32 9 is_stmt 1 view .LVU146
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  757              	.L56:
  758 009a 00BF     		.align	2
  759              	.L55:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 34
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 34
 
 
  760 009c 6C000000 		.word	.LC9
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  792      00
  793 00ad 000000   		.align	2
  794              	.LC17:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 35
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 35
 
 
  795 00b0 52656D6F 		.ascii	"Remove note:%d\012\000"
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  834              		.loc 10 58 17 view .LVU166
  835 000c BE48     		ldr	r0, .L100
  836 000e 42F25016 		movw	r6, #8528
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 36
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 36
 
 
  837 0012 44F25015 		movw	r5, #16720
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   32:../DaisyExamples/libDaisy/src/daisy_seed.h ****     as well as the built-in LED and Testpoint.
   33:../DaisyExamples/libDaisy/src/daisy_seed.h **** 
   34:../DaisyExamples/libDaisy/src/daisy_seed.h ****     ADCs, DACs, and other special peripherals (such as I2C, SPI, etc.)
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 37
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 37
 
 
   35:../DaisyExamples/libDaisy/src/daisy_seed.h ****     can be initialized using their specific initializers within libdaisy
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   89:../DaisyExamples/libDaisy/src/daisy_seed.h **** 
   90:../DaisyExamples/libDaisy/src/daisy_seed.h ****     /** Sets the number of samples processed per channel by the audio callback.
   91:../DaisyExamples/libDaisy/src/daisy_seed.h ****      */
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 38
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 38
 
 
   92:../DaisyExamples/libDaisy/src/daisy_seed.h ****     void SetAudioBlockSize(size_t blocksize);
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   62:main.cpp      ****     
  875              		.loc 10 62 5 is_stmt 1 view .LVU179
   62:main.cpp      ****     
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 39
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 39
 
 
  876              		.loc 10 62 43 is_stmt 0 view .LVU180
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   69:main.cpp      ****         float phase = (float)i / 2048.0f;   // 
   70:main.cpp      ****         
   71:main.cpp      ****         waves[0][i] = sinf(2.0f * PI * phase);
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 40
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 40
 
 
   72:main.cpp      **** 
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  958              	.LBE414:
   68:main.cpp      ****         float phase = (float)i / 2048.0f;   // 
  959              		.loc 10 68 5 is_stmt 1 view .LVU208
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 41
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 41
 
 
  960              	.LVL56:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  997 00c2 C7D4     		bmi	.L95
   77:main.cpp      ****         else
  998              		.loc 10 77 13 is_stmt 1 view .LVU226
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 42
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 42
 
 
   79:main.cpp      ****         waves[1][i] = tri;
@@ -2513,16 +2513,16 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1033 00f0 54A9     		add	r1, sp, #336
  1034 00f2 8A48     		ldr	r0, .L100+20
  1035              	.LBB426:
-  87:main.cpp      ****     for(int i = 0; i < 4; i++){
+  87:main.cpp      ****     for(int i = 0; i < 8; i++){
  1036              		.loc 10 87 13 view .LVU240
  1037 00f4 0024     		movs	r4, #0
  1038              	.LVL64:
  1039              		.loc 10 87 13 view .LVU241
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 43
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 43
 
 
  1040              	.LBE426:
-  86:main.cpp      ****     for(int i = 0; i < 4; i++){
+  86:main.cpp      ****     for(int i = 0; i < 8; i++){
  1041              		.loc 10 86 12 view .LVU242
  1042 00f6 FFF7FEFF 		bl	_ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi
  1043              	.LVL65:
@@ -2530,24 +2530,24 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1045              	.LBB427:
  1046              		.loc 10 87 22 view .LVU244
  1047              	.L66:
-  88:main.cpp      ****         wt.SetIndex(i, 1);
+  88:main.cpp      ****         wt.SetIndex(i, 1.5);
  1048              		.loc 10 88 9 discriminator 2 view .LVU245
  1049              		.loc 10 88 20 is_stmt 0 discriminator 2 view .LVU246
  1050 00fa 2146     		mov	r1, r4
-  87:main.cpp      ****     for(int i = 0; i < 4; i++){
+  87:main.cpp      ****     for(int i = 0; i < 8; i++){
  1051              		.loc 10 87 5 discriminator 2 view .LVU247
  1052 00fc 0134     		adds	r4, r4, #1
  1053              	.LVL66:
  1054              		.loc 10 88 20 discriminator 2 view .LVU248
- 1055 00fe B7EE000A 		vmov.f32	s0, #1.0e+0
+ 1055 00fe B7EE080A 		vmov.f32	s0, #1.5e+0
  1056 0102 8648     		ldr	r0, .L100+20
  1057 0104 FFF7FEFF 		bl	_ZN9Wavetable8SetIndexEif
  1058              	.LVL67:
-  87:main.cpp      ****     for(int i = 0; i < 4; i++){
+  87:main.cpp      ****     for(int i = 0; i < 8; i++){
  1059              		.loc 10 87 5 is_stmt 1 discriminator 2 view .LVU249
-  87:main.cpp      ****     for(int i = 0; i < 4; i++){
+  87:main.cpp      ****     for(int i = 0; i < 8; i++){
  1060              		.loc 10 87 22 discriminator 2 view .LVU250
- 1061 0108 042C     		cmp	r4, #4
+ 1061 0108 082C     		cmp	r4, #8
  1062 010a F6D1     		bne	.L66
  1063              	.LBE427:
   89:main.cpp      ****     }
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1080              		.loc 10 93 5 is_stmt 1 view .LVU256
  1081              	.LBB430:
  1082              	.LBI430:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 44
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 44
 
 
  126:../DaisyExamples/libDaisy/src/daisy_seed.h ****     {
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   11:../DaisyExamples/libDaisy/src/per/uart.h **** 
   12:../DaisyExamples/libDaisy/src/per/uart.h **** namespace daisy
   13:../DaisyExamples/libDaisy/src/per/uart.h **** {
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 45
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 45
 
 
   14:../DaisyExamples/libDaisy/src/per/uart.h **** /** @addtogroup serial
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   68:../DaisyExamples/libDaisy/src/per/uart.h ****         };
   69:../DaisyExamples/libDaisy/src/per/uart.h **** 
   70:../DaisyExamples/libDaisy/src/per/uart.h ****         struct
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 46
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 46
 
 
   71:../DaisyExamples/libDaisy/src/per/uart.h ****         {
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   74:../DaisyExamples/libDaisy/src/hid/midi.h ****         uart_config.pin_config.rx = config.rx;
  1157              		.loc 8 74 35 view .LVU274
  1158 014c 3190     		str	r0, [sp, #196]
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 47
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 47
 
 
  1159 014e 1046     		mov	r0, r2
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1195 0158 E388     		ldrh	r3, [r4, #6]
   79:../DaisyExamples/libDaisy/src/hid/midi.h **** 
  1196              		.loc 8 79 24 view .LVU295
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 48
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 48
 
 
  1197 015a C6E90502 		strd	r0, r2, [r6, #20]
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   43:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****  * and its documentation for any purpose is hereby granted without fee,
   44:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****  * provided that the above copyright notice appear in all copies and
   45:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****  * that both that copyright notice and this permission notice appear
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 49
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 49
 
 
   46:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****  * in supporting documentation.  Silicon Graphics makes no
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  100:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	      return *__first1 < *__first2 ? -1 : 1;
  101:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	  return 0;
  102:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	}
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 50
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 50
 
 
  103:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       else
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  157:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       __glibcxx_function_requires(_Mutable_ForwardIteratorConcept<
  158:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 				  _ForwardIterator2>)
  159:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 51
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 51
 
 
  160:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #if __cplusplus < 201103L
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  214:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     }
  215:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  216:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   /**
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 52
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 52
 
 
  217:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  @brief This does what you think it does.
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  271:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *
  272:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  This will work on temporary expressions, since they are only evaluated
  273:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  once, unlike a preprocessor macro.
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 53
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 53
 
 
  274:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   */
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  328:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     _GLIBCXX20_CONSTEXPR
  329:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     inline _Iterator
  330:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __niter_wrap(const _Iterator&, _Iterator __res)
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 54
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 54
 
 
  331:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     { return __res; }
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  385:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	}
  386:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     };
  387:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 55
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 55
 
 
  388:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #if __cplusplus >= 201103L
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  442:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<bool _IsMove, typename _CharT>
  443:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value,
  444:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	     ostreambuf_iterator<_CharT, char_traits<_CharT> > >::__type
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 56
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 56
 
 
  445:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __copy_move_a2(_CharT*, _CharT*,
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  499:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       _GLIBCXX_STD_C::_Deque_iterator<_Tp, _Tp&, _Tp*> >::__type
  500:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __copy_move_a1(_II, _II, _GLIBCXX_STD_C::_Deque_iterator<_Tp, _Tp&, _Tp*>);
  501:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 57
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 57
 
 
  502:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<bool _IsMove, typename _II, typename _OI>
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  556:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   */
  557:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<typename _II, typename _OI>
  558:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     _GLIBCXX20_CONSTEXPR
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 58
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 58
 
 
  559:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     inline _OI
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  613:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       template<typename _BI1, typename _BI2>
  614:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	_GLIBCXX20_CONSTEXPR
  615:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	static _BI2
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 59
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 59
 
 
  616:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	__copy_move_b(_BI1 __first, _BI1 __last, _BI2 __result)
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  670:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	}
  671:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     };
  672:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #endif
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 60
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 60
 
 
  673:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  727:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<bool _IsMove,
  728:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	   typename _ITp, typename _IRef, typename _IPtr, typename _OTp>
  729:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     _GLIBCXX_STD_C::_Deque_iterator<_OTp, _OTp&, _OTp*>
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 61
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 61
 
 
  730:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __copy_move_backward_a1(
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  784:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  The function has the same effect as copy, but starts at the end of the
  785:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  range and works its way to the start, returning the start of the result.
  786:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  This inline function will boil down to a call to @c memmove whenever
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 62
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 62
 
 
  787:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  possible.  Failing that, if random access iterators are passed, then the
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  841:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       __glibcxx_requires_can_decrement_range(__first, __last, __result);
  842:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  843:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       return std::__copy_move_backward_a<true>(std::__miter_base(__first),
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 63
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 63
 
 
  844:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 					       std::__miter_base(__last),
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  898:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     inline void
  899:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __fill_a1(::__gnu_cxx::__normal_iterator<_Ite, _Cont> __first,
  900:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	      ::__gnu_cxx::__normal_iterator<_Ite, _Cont> __last,
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 64
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 64
 
 
  901:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	      const _Tp& __value)
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1219              	.LVL79:
  1220              	.L69:
  873:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     }
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 65
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 65
 
 
  1221              		.loc 12 873 11 view .LVU304
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1267 017c 6C48     		ldr	r0, .L100+40
  1268 017e FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
  1269              	.LVL83:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 66
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 66
 
 
  128:../DaisyExamples/libDaisy/src/daisy_seed.h ****     }
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1309              	.LBE464:
  1310              	.LBE463:
   98:main.cpp      **** 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 67
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 67
 
 
   99:main.cpp      ****     //Temp
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  110:main.cpp      ****     while(1) {
  1350              		.loc 10 110 5 is_stmt 1 view .LVU347
  1351              	.LBB469:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 68
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 68
 
 
  111:main.cpp      ****         System::Delay(1);
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1393              	.LVL97:
  1394              	.L83:
  186:../DaisyExamples/libDaisy/src/hid/midi.h ****         {
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 69
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 69
 
 
  1395              		.loc 8 186 9 view .LVU361
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1436 01e4 A342     		cmp	r3, r4
  1437 01e6 00F0B380 		beq	.L98
  1438              	.LBB494:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 70
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 70
 
 
  107:../DaisyExamples/libDaisy/src/util/FIFO.h ****             bufferOut_++;
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1479              	.LVL105:
  111:../DaisyExamples/libDaisy/src/util/FIFO.h ****         }
  1480              		.loc 7 111 20 view .LVU389
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 71
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 71
 
 
  1481              	.LBE494:
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  129:main.cpp      ****                     wt.AddNote(msg.data[0]);
  1522              		.loc 10 129 21 is_stmt 1 view .LVU401
  1523              		.loc 10 129 31 is_stmt 0 view .LVU402
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 72
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 72
 
 
  1524 0248 5146     		mov	r1, r10
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1555 0258 48BF     		it	mi
  1556 025a 5B18     		addmi	r3, r3, r1
  1557              	.LVL112:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 73
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 73
 
 
  175:../DaisyExamples/libDaisy/src/util/FIFO.h ****         return size_t(numElements);
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  171:../DaisyExamples/libDaisy/src/util/FIFO.h ****     {
  1600              		.loc 7 171 12 view .LVU425
  1601              	.LBB488:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 74
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 74
 
 
  173:../DaisyExamples/libDaisy/src/util/FIFO.h ****         if(numElements < 0)
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1643              	.LBB526:
  152:main.cpp      ****                 auto msg = event_log.PopFront();
  1644              		.loc 10 152 17 is_stmt 1 view .LVU439
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 75
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 75
 
 
  1645              	.LVL120:
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1688 02d8 2046     		mov	r0, r4
  1689 02da FFF7FEFF 		bl	memcpy
  1690              	.LVL122:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 76
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 76
 
 
  111:../DaisyExamples/libDaisy/src/util/FIFO.h ****         }
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1728              	.LBE531:
  1729              	.LBE533:
  1730 0304 5CE7     		b	.L68
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 77
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 77
 
 
  1731              	.L101:
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1780              	.LBB497:
  104:../DaisyExamples/libDaisy/src/util/FIFO.h ****         else
  1781              		.loc 7 104 22 is_stmt 0 view .LVU468
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 78
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 78
 
 
  1782 035a 0022     		movs	r2, #0
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1823 036e 0E48     		ldr	r0, .L102+4
  1824 0370 0027     		movs	r7, #0
  1825 0372 FFF7FEFF 		bl	_ZN9Wavetable10RemoveNoteEh
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 79
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 79
 
 
  1826              	.LVL133:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1866              		.loc 8 93 39 is_stmt 0 view .LVU495
  1867 0388 FFF7FEFF 		bl	dsy_dma_clear_cache_for_buffer
  1868              	.LVL137:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 80
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 80
 
 
   95:../DaisyExamples/libDaisy/src/hid/midi.h ****             rx_buffer, rx_buffer_size, MidiUartTransport::rxCallback, this);
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1915 03b4 10000000 		.word	midi+16
  1916 03b8 00000000 		.word	_ZN5daisy17MidiUartTransport10rxCallbackEPhjPvNS_11UartHandler6ResultE
  1917              	.LBE508:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 81
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 81
 
 
  1918              	.LBE519:
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   20:../DaisyExamples/libDaisy/src/per/qspi.h **** {
   21:../DaisyExamples/libDaisy/src/per/qspi.h **** /** @addtogroup serial
   22:../DaisyExamples/libDaisy/src/per/qspi.h **** @{
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 82
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 82
 
 
   23:../DaisyExamples/libDaisy/src/per/qspi.h **** */
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   77:../DaisyExamples/libDaisy/src/per/qspi.h ****             INDIRECT_POLLING, /**< & */
   78:../DaisyExamples/libDaisy/src/per/qspi.h ****             MODE_LAST,
   79:../DaisyExamples/libDaisy/src/per/qspi.h ****         };
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 83
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 83
 
 
   80:../DaisyExamples/libDaisy/src/per/qspi.h **** 
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  134:../DaisyExamples/libDaisy/src/per/qspi.h ****     /** 
  135:../DaisyExamples/libDaisy/src/per/qspi.h ****         Erases the area specified on the chip.
  136:../DaisyExamples/libDaisy/src/per/qspi.h ****         Erasures will happen by 4K, 32K or 64K increments.
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 84
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 84
 
 
  137:../DaisyExamples/libDaisy/src/per/qspi.h ****         Smallest erase possible is 4kB at a time. (on IS25LP*)
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  1974              	.LBE592:
  1975              	.LBE596:
  1976              	.LBE610:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 85
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 85
 
 
  1977              	.LBE612:
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   10:../DaisyExamples/libDaisy/src/per/dac.h ****  *  @ingroup per_analog
   11:../DaisyExamples/libDaisy/src/per/dac.h ****  ** 
   12:../DaisyExamples/libDaisy/src/per/dac.h ****  ** For now only Normal Mode is supported,
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 86
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 86
 
 
   13:../DaisyExamples/libDaisy/src/per/dac.h ****  ** Sample and hold mode provides reduced power consumption, but requires a bit more setup.
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   67:../DaisyExamples/libDaisy/src/per/dac.h ****     };
   68:../DaisyExamples/libDaisy/src/per/dac.h **** 
   69:../DaisyExamples/libDaisy/src/per/dac.h ****     /** Configuration structure for initializing the DAC structure. */
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 87
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 87
 
 
   70:../DaisyExamples/libDaisy/src/per/dac.h ****     struct Config
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   13:../DaisyExamples/libDaisy/src/per/sai.h ****  * 
   14:../DaisyExamples/libDaisy/src/per/sai.h ****  * DMA Transfer commands must use buffers located within non-cached memory or use cache maintenance
   15:../DaisyExamples/libDaisy/src/per/sai.h ****  * To declare an unitialized global element in the DMA memory section:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 88
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 88
 
 
   16:../DaisyExamples/libDaisy/src/per/sai.h ****  *    int32_t DSY_DMA_BUFFER_SECTOR my_buffer[96];
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   70:../DaisyExamples/libDaisy/src/per/sai.h ****             SAI_32BIT,
   71:../DaisyExamples/libDaisy/src/per/sai.h ****         };
   72:../DaisyExamples/libDaisy/src/per/sai.h **** 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 89
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 89
 
 
   73:../DaisyExamples/libDaisy/src/per/sai.h ****         /** Specifies whether a particular block is the master or the slave 
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  2054 0018 2046     		mov	r0, r4
  2055 001a FFF7FEFF 		bl	_ZN9WavetableC1Ev
  2056              	.LVL148:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 90
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 90
 
 
  2057 001e 2046     		mov	r0, r4
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  2093              		.loc 11 94 5 view .LVU537
  2094              		.loc 11 94 5 is_stmt 0 view .LVU538
  2095              	.LBE622:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 91
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 91
 
 
  2096              	.LBE621:
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  301:../DaisyExamples/libDaisy/src/util/FIFO.h ****     /** Creates an empty FIFO */
  302:../DaisyExamples/libDaisy/src/util/FIFO.h ****     FIFO() : FIFOBase<T>(buffer_, capacity + 1) {}
  2141              		.loc 7 302 5 is_stmt 1 view .LVU546
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 92
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 92
 
 
  2142              	.LBB643:
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
   16:main.cpp      **** 
  2191              		.loc 10 16 17 view .LVU553
  2192 0058 0F49     		ldr	r1, .L106+28
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 93
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 93
 
 
  2193 005a FFF7FEFF 		bl	__aeabi_atexit
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  2241              		.cfi_def_cfa_offset 0
  2242              	.LBB668:
  2243              	.LBB666:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 94
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 94
 
 
   19:main.cpp      **** 
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  2292              		.section	.bss.mix,"aw",%nobits
  2293              		.align	2
  2294              		.set	.LANCHOR0,. + 0
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 95
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 95
 
 
  2297              	mix:
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  2347              		.file 49 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
  2348              		.file 50 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
  2349              		.file 51 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 96
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 96
 
 
  2350              		.file 52 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
@@ -5715,58 +5715,58 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 1
  2361              		.file 63 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
  2362              		.file 64 "../DaisyExamples/libDaisy/src/sys/dma.h"
  2363              		.file 65 "<built-in>"
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 97
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 97
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.cpp
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:17     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:67     .text._ZN9WavetableD2Ev:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:75     .text._ZN9WavetableD2Ev:00000000 _ZN9WavetableD2Ev
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:75     .text._ZN9WavetableD2Ev:00000000 _ZN9WavetableD1Ev
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:92     .text._ZN5daisy4FIFOINS_9MidiEventELj128EED2Ev:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:100    .text._ZN5daisy4FIFOINS_9MidiEventELj128EED2Ev:00000000 _ZN5daisy4FIFOINS_9MidiEventELj128EED2Ev
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:100    .text._ZN5daisy4FIFOINS_9MidiEventELj128EED2Ev:00000000 _ZN5daisy4FIFOINS_9MidiEventELj128EED1Ev
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:122    .text._ZN5daisy11MidiHandlerINS_17MidiUartTransportEED2Ev:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:130    .text._ZN5daisy11MidiHandlerINS_17MidiUartTransportEED2Ev:00000000 _ZN5daisy11MidiHandlerINS_17MidiUartTransportEED2Ev
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:130    .text._ZN5daisy11MidiHandlerINS_17MidiUartTransportEED2Ev:00000000 _ZN5daisy11MidiHandlerINS_17MidiUartTransportEED1Ev
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:167    .text._Z13AudioCallbackPKPKfPPfj:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:175    .text._Z13AudioCallbackPKPKfPPfj:00000000 _Z13AudioCallbackPKPKfPPfj
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:301    .text._Z13AudioCallbackPKPKfPPfj:0000007c $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2310   .bss.wt:00000000 wt
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:309    .text._ZN5daisy17MidiUartTransport10rxCallbackEPhjPvNS_11UartHandler6ResultE:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:317    .text._ZN5daisy17MidiUartTransport10rxCallbackEPhjPvNS_11UartHandler6ResultE:00000000 _ZN5daisy17MidiUartTransport10rxCallbackEPhjPvNS_11UartHandler6ResultE
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:356    .text._ZN5daisy11MidiHandlerINS_17MidiUartTransportEE13ParseCallbackEPhjPv:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:364    .text._ZN5daisy11MidiHandlerINS_17MidiUartTransportEE13ParseCallbackEPhjPv:00000000 _ZN5daisy11MidiHandlerINS_17MidiUartTransportEE13ParseCallbackEPhjPv
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:528    .rodata._Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc.str1.4:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:562    .text._Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:570    .text._Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc:00000000 _Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:590    .text._Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc:0000000e $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:600    .text._Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc:00000018 $t
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:760    .text._Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc:0000009c $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:775    .rodata.main.str1.4:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:801    .text.startup.main:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:809    .text.startup.main:00000000 main
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:1734   .text.startup.main:00000308 $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2290   .bss.midi:00000000 midi
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2284   .bss.event_log:00000000 event_log
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:1766   .text.startup.main:00000350 $t
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:1911   .text.startup.main:000003a4 $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:1925   .text.startup._GLOBAL__sub_I_wt:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:1932   .text.startup._GLOBAL__sub_I_wt:00000000 _GLOBAL__sub_I_wt
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2250   .text.startup._GLOBAL__sub_I_wt:0000007c $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2266   .init_array:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2297   .bss.mix:00000000 mix
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2304   .bss.oscillators_out:00000000 oscillators_out
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2274   .bss._ZL2hw:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2278   .bss._ZL2hw:00000000 _ZL2hw
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2281   .bss.event_log:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2287   .bss.midi:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2293   .bss.mix:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2300   .bss.oscillators_out:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2307   .bss.wt:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:17     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:26     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:67     .text._ZN9WavetableD2Ev:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:75     .text._ZN9WavetableD2Ev:00000000 _ZN9WavetableD2Ev
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:75     .text._ZN9WavetableD2Ev:00000000 _ZN9WavetableD1Ev
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:92     .text._ZN5daisy4FIFOINS_9MidiEventELj128EED2Ev:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:100    .text._ZN5daisy4FIFOINS_9MidiEventELj128EED2Ev:00000000 _ZN5daisy4FIFOINS_9MidiEventELj128EED2Ev
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:100    .text._ZN5daisy4FIFOINS_9MidiEventELj128EED2Ev:00000000 _ZN5daisy4FIFOINS_9MidiEventELj128EED1Ev
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:122    .text._ZN5daisy11MidiHandlerINS_17MidiUartTransportEED2Ev:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:130    .text._ZN5daisy11MidiHandlerINS_17MidiUartTransportEED2Ev:00000000 _ZN5daisy11MidiHandlerINS_17MidiUartTransportEED2Ev
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:130    .text._ZN5daisy11MidiHandlerINS_17MidiUartTransportEED2Ev:00000000 _ZN5daisy11MidiHandlerINS_17MidiUartTransportEED1Ev
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:167    .text._Z13AudioCallbackPKPKfPPfj:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:175    .text._Z13AudioCallbackPKPKfPPfj:00000000 _Z13AudioCallbackPKPKfPPfj
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:301    .text._Z13AudioCallbackPKPKfPPfj:0000007c $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2310   .bss.wt:00000000 wt
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:309    .text._ZN5daisy17MidiUartTransport10rxCallbackEPhjPvNS_11UartHandler6ResultE:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:317    .text._ZN5daisy17MidiUartTransport10rxCallbackEPhjPvNS_11UartHandler6ResultE:00000000 _ZN5daisy17MidiUartTransport10rxCallbackEPhjPvNS_11UartHandler6ResultE
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:356    .text._ZN5daisy11MidiHandlerINS_17MidiUartTransportEE13ParseCallbackEPhjPv:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:364    .text._ZN5daisy11MidiHandlerINS_17MidiUartTransportEE13ParseCallbackEPhjPv:00000000 _ZN5daisy11MidiHandlerINS_17MidiUartTransportEE13ParseCallbackEPhjPv
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:528    .rodata._Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc.str1.4:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:562    .text._Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:570    .text._Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc:00000000 _Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:590    .text._Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc:0000000e $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:600    .text._Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc:00000018 $t
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:760    .text._Z19GetMidiTypeAsStringRN5daisy9MidiEventEPc:0000009c $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:775    .rodata.main.str1.4:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:801    .text.startup.main:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:809    .text.startup.main:00000000 main
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:1734   .text.startup.main:00000308 $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2290   .bss.midi:00000000 midi
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2284   .bss.event_log:00000000 event_log
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:1766   .text.startup.main:00000350 $t
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:1911   .text.startup.main:000003a4 $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:1925   .text.startup._GLOBAL__sub_I_wt:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:1932   .text.startup._GLOBAL__sub_I_wt:00000000 _GLOBAL__sub_I_wt
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2250   .text.startup._GLOBAL__sub_I_wt:0000007c $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2266   .init_array:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2297   .bss.mix:00000000 mix
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2304   .bss.oscillators_out:00000000 oscillators_out
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2274   .bss._ZL2hw:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2278   .bss._ZL2hw:00000000 _ZL2hw
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2281   .bss.event_log:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2287   .bss.midi:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2293   .bss.mix:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2300   .bss.oscillators_out:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s:2307   .bss.wt:00000000 $d
                            .group:00000000 _ZN5daisy9DaisySeedD5Ev
                            .group:00000000 _ZN9WavetableD5Ev
                            .group:00000000 _ZN5daisy4FIFOINS_9MidiEventELj128EED5Ev
@@ -5775,7 +5775,7 @@ C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s:2307   .bss.wt:00000000 $d
 UNDEFINED SYMBOLS
 _ZN9Wavetable7ProcessEv
 _ZN5daisy10MidiParser5ParseEhPNS_9MidiEventE
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccKQwWof.s 			page 98
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccgNMcZd.s 			page 98
 
 
 memcpy
