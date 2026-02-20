@@ -39,6 +39,9 @@ int main(void)
     MidiUsbHandler::Config midi_cfg;
     midi_cfg.transport_config.periph = MidiUsbTransport::Config::INTERNAL;
     midi.Init(midi_cfg);
+    hardware.Configure();
+    hardware.Init();
+    hardware.SetAudioBlockSize(4);
 
     /** Initialize our test tone */
     osc.Init(hw.AudioSampleRate());

@@ -1,8 +1,8 @@
 # Project Name
-TARGET = MIDI_UART_Input
+TARGET = USB_MIDI
 
 # Sources
-CPP_SOURCES = MIDI_UART_Input.cpp
+CPP_SOURCES = USB_MIDI.cpp
 
 # Library Locations
 LIBDAISY_DIR = ../../libDaisy/

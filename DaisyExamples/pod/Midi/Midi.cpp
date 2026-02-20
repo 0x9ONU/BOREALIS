@@ -6,7 +6,7 @@
 using namespace daisy;
 using namespace daisysp;
 
-DaisyPod   hw;
+DaisyPod  hw;
 Oscillator osc;
 Svf        filt;
 

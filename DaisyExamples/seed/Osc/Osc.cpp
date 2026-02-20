@@ -23,7 +23,8 @@ void AudioCallback(AudioHandle::InterleavingInputBuffer  in,
     button1.Debounce();
 
     //If you push the button,...
-    if(button1.RisingEdge())
+    
+    if(button1.Pressed())
     {
         env.Trigger(); //Trigger the envelope!
     }
@@ -60,7 +61,7 @@ int main(void)
 
     //How many samples we'll output per second
     float samplerate = hardware.AudioSampleRate();
-
+   
     //Create an ADC configuration
     AdcChannelConfig adcConfig;
     //Add pin 21 as an analog input in this config. We'll use this to read the knob

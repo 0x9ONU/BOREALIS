@@ -2,7 +2,7 @@
 
 // Use the daisy namespace to prevent having to type
 // daisy:: before all libdaisy functions
-using namespace daisy;
+using namespace seed;
 
 // Declare a DaisySeed object called hardware
 DaisySeed hardware;
@@ -29,6 +29,6 @@ int main(void)
         led_state = !led_state;
 
         // Wait 500ms
-        System::Delay(500);
+        System::Delay(1000);
     }
 }
