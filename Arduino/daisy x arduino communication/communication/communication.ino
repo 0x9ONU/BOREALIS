@@ -5,11 +5,11 @@
 // Your specific constructor (Pins 7, 8, 9, 11, 13)
 U8G2_SSD1363_256X128_1_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 7, /* dc=*/ 9, /* reset=*/ 8);
 
-char daisyData[16] = "0"; 
+char daisyData[256] = "0"; 
 
 void setup() {
-  Serial1.begin(57600); // CHANGE: Serial1 is used for Pins 0 and 1
-  Serial.begin(57600);  // Optional: For debugging on your PC
+  Serial1.begin(115200); // CHANGE: Serial1 is used for Pins 0 and 1
+  Serial.begin(115200);  // Optional: For debugging on your PC
   
   u8g2.begin();
   

@@ -17,7 +17,9 @@
             "options": [
                 "oscbank",
                 "wavetable",
-                "screen_test"
+                "screen_test",
+                "pot_screen_test",
+                "packet_test"
             ]
         }
     ],

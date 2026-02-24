@@ -57,7 +57,7 @@ int main(void) {
 
     // 1. UART Config (Pins 14 & 15)
     UartHandler::Config uart_conf;
-    uart_conf.baudrate      = 57600;
+    uart_conf.baudrate      = 115200;
     uart_conf.periph        = UartHandler::Config::Peripheral::USART_1;
     uart_conf.stopbits      = UartHandler::Config::StopBits::BITS_1;
     uart_conf.parity        = UartHandler::Config::Parity::NONE;
