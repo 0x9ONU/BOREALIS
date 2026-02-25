@@ -1,1 +1,1 @@
-Generates sine wave output
+implements a wavetable. On startup, it plays a static note. 
