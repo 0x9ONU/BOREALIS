@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -30,39 +30,37 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
   28              	.LFB4727:
   29              		.file 1 "wavetable.cpp"
    1:wavetable.cpp **** 
-   2:wavetable.cpp **** #include "daisysp.h"
-   3:wavetable.cpp **** #include "wavetable.h"
-   4:wavetable.cpp **** #include "daisy_seed.h"
-   5:wavetable.cpp **** 
-   6:wavetable.cpp **** 
-   7:wavetable.cpp **** // Defailt constructor
-   8:wavetable.cpp **** Wavetable::Wavetable() 
-  30              		.loc 1 8 1 view -0
+   2:wavetable.cpp **** #include "wavetable.h"
+   3:wavetable.cpp **** 
+   4:wavetable.cpp **** 
+   5:wavetable.cpp **** // Defailt constructor
+   6:wavetable.cpp **** Wavetable::Wavetable() 
+  30              		.loc 1 6 1 view -0
   31              		.cfi_startproc
   32              		@ args = 0, pretend = 0, frame = 0
   33              		@ frame_needed = 0, uses_anonymous_args = 0
   34              	.LBB218:
-   9:wavetable.cpp **** {
-  10:wavetable.cpp ****     this->phases.fill(0.0f);
-  35              		.loc 1 10 5 view .LVU1
+   7:wavetable.cpp **** {
+   8:wavetable.cpp ****     this->phases.fill(0.0f);
+  35              		.loc 1 8 5 view .LVU1
   36              	.LBE218:
-   8:wavetable.cpp **** {
-  37              		.loc 1 8 1 is_stmt 0 view .LVU2
+   6:wavetable.cpp **** {
+  37              		.loc 1 6 1 is_stmt 0 view .LVU2
   38 0000 10B5     		push	{r4, lr}
   39              		.cfi_def_cfa_offset 8
   40              		.cfi_offset 4, -8
   41              		.cfi_offset 14, -4
-   8:wavetable.cpp **** {
-  42              		.loc 1 8 1 view .LVU3
+   6:wavetable.cpp **** {
+  42              		.loc 1 6 1 view .LVU3
   43 0002 0446     		mov	r4, r0
   44              	.LBB236:
   45              	.LBB219:
   46              	.LBB220:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 2
-
-
   47              	.LBB221:
   48              	.LBB222:
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 2
+
+
   49              	.LBB223:
   50              	.LBB224:
   51              	.LBB225:
@@ -118,11 +116,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
   49:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****  */
   50:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
   51:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** /** @file bits/stl_algobase.h
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 3
-
-
   52:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****  *  This is an internal header file, included by other library headers.
   53:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****  *  Do not attempt to use it directly. @headername{algorithm}
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 3
+
+
   54:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****  */
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
   56:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #ifndef _STL_ALGOBASE_H
@@ -178,11 +176,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  106:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     }
  107:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  108:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #if __cplusplus < 201103L
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 4
-
-
  109:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // See http://gcc.gnu.org/ml/libstdc++/2004-08/msg00167.html: in a
  110:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // nutshell, we are partially implementing the resolution of DR 187,
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 4
+
+
  111:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // when it's safe, i.e., the value_types are equal.
  112:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<bool _BoolType>
  113:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     struct __iter_swap
@@ -238,11 +236,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  163:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       typedef typename iterator_traits<_ForwardIterator2>::value_type
  164:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	_ValueType2;
  165:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 5
-
-
  166:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       __glibcxx_function_requires(_ConvertibleConcept<_ValueType1,
  167:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 				  _ValueType2>)
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 5
+
+
  168:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       __glibcxx_function_requires(_ConvertibleConcept<_ValueType2,
  169:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 				  _ValueType1>)
  170:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
@@ -298,11 +296,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  220:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  @param  __b  Another thing of arbitrary type.
  221:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  @return   The lesser of the parameters.
  222:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 6
-
-
  223:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  This is the simple classic generic implementation.  It will work on
  224:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  temporary expressions, since they are only evaluated once, unlike a
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 6
+
+
  225:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  preprocessor macro.
  226:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   */
  227:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<typename _Tp>
@@ -358,11 +356,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  277:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     inline const _Tp&
  278:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
  279:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     {
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 7
-
-
  280:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       //return __comp(__b, __a) ? __b : __a;
  281:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       if (__comp(__b, __a))
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 7
+
+
  282:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	return __b;
  283:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       return __a;
  284:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     }
@@ -418,11 +416,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  334:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // calls to copy with memmove whenever possible.  (Memmove, not memcpy,
  335:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // because the input and output ranges are permitted to overlap.)
  336:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // (2) If we're using random access iterators, then write the loop as
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 8
-
-
  337:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // a for loop with an explicit count.
  338:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 8
+
+
  339:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<bool _IsMove, bool _IsSimple, typename _Category>
  340:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     struct __copy_move
  341:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     {
@@ -478,11 +476,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  391:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     {
  392:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       template<typename _II, typename _OI>
  393:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	_GLIBCXX20_CONSTEXPR
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 9
-
-
  394:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	static _OI
  395:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	__copy_m(_II __first, _II __last, _OI __result)
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 9
+
+
  396:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	{
  397:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	  typedef typename iterator_traits<_II>::difference_type _Distance;
  398:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	  for(_Distance __n = __last - __first; __n > 0; --__n)
@@ -538,11 +536,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  448:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<bool _IsMove, typename _CharT>
  449:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value,
  450:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	     ostreambuf_iterator<_CharT, char_traits<_CharT> > >::__type
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 10
-
-
  451:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __copy_move_a2(const _CharT*, const _CharT*,
  452:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 		   ostreambuf_iterator<_CharT, char_traits<_CharT> >);
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 10
+
+
  453:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  454:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<bool _IsMove, typename _CharT>
  455:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value,
@@ -598,11 +596,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  505:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __copy_move_a1(_II __first, _II __last, _OI __result)
  506:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     { return std::__copy_move_a2<_IsMove>(__first, __last, __result); }
  507:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 11
-
-
  508:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<bool _IsMove, typename _II, typename _OI>
  509:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     _GLIBCXX20_CONSTEXPR
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 11
+
+
  510:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     inline _OI
  511:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __copy_move_a(_II __first, _II __last, _OI __result)
  512:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     {
@@ -658,11 +656,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  562:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       // concept requirements
  563:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       __glibcxx_function_requires(_InputIteratorConcept<_II>)
  564:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       __glibcxx_function_requires(_OutputIteratorConcept<_OI,
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 12
-
-
  565:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	    typename iterator_traits<_II>::value_type>)
  566:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       __glibcxx_requires_can_increment_range(__first, __last, __result);
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 12
+
+
  567:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  568:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       return std::__copy_move_a<__is_move_iterator<_II>::__value>
  569:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	     (std::__miter_base(__first), std::__miter_base(__last), __result);
@@ -718,11 +716,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  619:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	    *--__result = *--__last;
  620:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	  return __result;
  621:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	}
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 13
-
-
  622:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     };
  623:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 13
+
+
  624:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #if __cplusplus >= 201103L
  625:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<typename _Category>
  626:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     struct __copy_move_backward<true, false, _Category>
@@ -778,11 +776,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  676:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     {
  677:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       template<typename _Tp>
  678:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	_GLIBCXX20_CONSTEXPR
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 14
-
-
  679:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	static _Tp*
  680:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	__copy_move_b(const _Tp* __first, const _Tp* __last, _Tp* __result)
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 14
+
+
  681:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	{
  682:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #if __cplusplus >= 201103L
  683:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	  using __assignable = conditional<_IsMove,
@@ -838,11 +836,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  733:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 			_GLIBCXX_STD_C::_Deque_iterator<_OTp, _OTp&, _OTp*>);
  734:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  735:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<bool _IsMove, typename _II, typename _Tp>
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 15
-
-
  736:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     typename __gnu_cxx::__enable_if<
  737:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       __is_random_access_iter<_II>::__value,
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 15
+
+
  738:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       _GLIBCXX_STD_C::_Deque_iterator<_Tp, _Tp&, _Tp*> >::__type
  739:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __copy_move_backward_a1(_II, _II,
  740:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 			    _GLIBCXX_STD_C::_Deque_iterator<_Tp, _Tp&, _Tp*>);
@@ -898,11 +896,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  790:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *
  791:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  Result may not be in the range (first,last].  Use copy instead.  Note
  792:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  that the start of the output range may overlap [first,last).
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 16
-
-
  793:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   */
  794:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<typename _BI1, typename _BI2>
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 16
+
+
  795:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     _GLIBCXX20_CONSTEXPR
  796:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     inline _BI2
  797:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     copy_backward(_BI1 __first, _BI1 __last, _BI2 __result)
@@ -958,11 +956,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  847:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  848:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #define _GLIBCXX_MOVE_BACKWARD3(_Tp, _Up, _Vp) std::move_backward(_Tp, _Up, _Vp)
  849:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #else
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 17
-
-
  850:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #define _GLIBCXX_MOVE_BACKWARD3(_Tp, _Up, _Vp) std::copy_backward(_Tp, _Up, _Vp)
  851:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #endif
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 17
+
+
  852:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  853:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<typename _ForwardIterator, typename _Tp>
  854:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     _GLIBCXX20_CONSTEXPR
@@ -986,11 +984,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  872:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       for (; __first != __last; ++__first)
  873:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	*__first = __tmp;
   53              		.loc 2 873 11 view .LVU4
-  54 0004 0648     		ldr	r0, .L4
+  54 0004 42F22800 		movw	r0, #8232
   55              	.LVL1:
   56              		.loc 2 873 11 view .LVU5
-  57 0006 2022     		movs	r2, #32
-  58 0008 0021     		movs	r1, #0
+  57 0008 2022     		movs	r2, #32
+  58 000a 0021     		movs	r1, #0
   59              	.LVL2:
   60              		.loc 2 873 11 view .LVU6
   61              	.LBE225:
@@ -1018,11 +1016,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
   15:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
   16:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** // Under Section 7 of GPL version 3, you are granted additional
   17:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** // permissions described in the GCC Runtime Library Exception, version
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 18
-
-
   18:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** // 3.1, as published by the Free Software Foundation.
   19:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 18
+
+
   20:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** // You should have received a copy of the GNU General Public License and
   21:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** // a copy of the GCC Runtime Library Exception along with this program;
   22:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
@@ -1078,11 +1076,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
   72:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****      { return *static_cast<_Tp*>(nullptr); }
   73:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
   74:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****      static constexpr _Tp*
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 19
-
-
   75:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****      _S_ptr(const _Type&) noexcept
   76:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****      { return nullptr; }
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 19
+
+
   77:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****    };
   78:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
   79:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****   /**
@@ -1138,11 +1136,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  126:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       begin() noexcept
   72              		.loc 3 126 7 view .LVU8
   73              	.LBB232:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 20
-
-
   74              	.LBI232:
  127:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return iterator(data()); }
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 20
+
+
  128:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
  129:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       _GLIBCXX17_CONSTEXPR const_iterator
  130:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       begin() const noexcept
@@ -1198,11 +1196,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  180:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       _GLIBCXX_NODISCARD constexpr bool
  181:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       empty() const noexcept { return size() == 0; }
  182:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 21
-
-
  183:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       // Element access.
  184:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       _GLIBCXX17_CONSTEXPR reference
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 21
+
+
  185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       operator[](size_type __n) noexcept
  186:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
  187:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
@@ -1258,11 +1256,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
   77              	.LBE232:
   78              	.LBE231:
   79              	.LBB233:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 22
-
-
   80              	.LBI220:
  874:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     }
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 22
+
+
  875:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  876:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // Specialization: for char types we can use memset.
  877:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<typename _Tp>
@@ -1318,11 +1316,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  927:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  @param  __value  A reference-to-const of arbitrary type.
  928:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  @return   Nothing.
  929:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 23
-
-
  930:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  This function fills a range with copies of the same value.  For char
  931:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  types filling contiguous areas of memory, this becomes an inline call
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 23
+
+
  932:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  to @c memset or @c wmemset.
  933:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   */
  934:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<typename _ForwardIterator, typename _Tp>
@@ -1378,11 +1376,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  984:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #endif
  985:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  986:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   inline _GLIBCXX_CONSTEXPR long long
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 24
-
-
  987:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   __size_to_integer(float __n) { return __n; }
  988:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   inline _GLIBCXX_CONSTEXPR long long
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 24
+
+
  989:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   __size_to_integer(double __n) { return __n; }
  990:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   inline _GLIBCXX_CONSTEXPR long long
  991:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   __size_to_integer(long double __n) { return __n; }
@@ -1438,11 +1436,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
 1041:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     inline _OutputIterator
 1042:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __fill_n_a(_OutputIterator __first, _Size __n, const _Tp& __value,
 1043:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	       std::input_iterator_tag)
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 25
-
-
 1044:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     {
 1045:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #if __cplusplus >= 201103L
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 25
+
+
 1046:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       static_assert(is_integral<_Size>{}, "fill_n must pass integral size");
 1047:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #endif
 1048:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       return __fill_n_a1(__first, __n, __value);
@@ -1498,11 +1496,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
   88              	.LBB235:
   89              	.LBB234:
   90              	.LBB230:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 26
-
-
   91              	.LBI221:
 1054:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	       std::random_access_iterator_tag)
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 26
+
+
   92              		.loc 2 1054 5 view .LVU14
   93              	.LBB229:
   94              	.LBI222:
@@ -1521,11 +1519,11 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  103              		.loc 2 872 22 view .LVU18
  873:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     }
  104              		.loc 2 873 11 is_stmt 0 view .LVU19
- 105 000a 2044     		add	r0, r0, r4
+ 105 000c 2044     		add	r0, r0, r4
  106              	.LVL3:
  873:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     }
  107              		.loc 2 873 11 view .LVU20
- 108 000c FFF7FEFF 		bl	memset
+ 108 000e FFF7FEFF 		bl	memset
  109              	.LVL4:
  873:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     }
  110              		.loc 2 873 11 view .LVU21
@@ -1536,422 +1534,404 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  115              	.LBE230:
  116              	.LBE234:
  117              	.LBE235:
-  11:wavetable.cpp ****     this->num_waves = 0;
- 118              		.loc 1 11 5 is_stmt 1 view .LVU22
- 119              		.loc 1 11 21 is_stmt 0 view .LVU23
- 120 0010 04F58032 		add	r2, r4, #65536
- 121 0014 0021     		movs	r1, #0
-  12:wavetable.cpp ****     this->fs = 44100.0f; // or a sensible default
- 122              		.loc 1 12 14 view .LVU24
- 123 0016 034B     		ldr	r3, .L4+4
+   9:wavetable.cpp ****     this->num_waves = 0;
+ 118              		.loc 1 9 5 is_stmt 1 view .LVU22
+ 119              		.loc 1 9 21 is_stmt 0 view .LVU23
+ 120 0012 04F50052 		add	r2, r4, #8192
+ 121 0016 0021     		movs	r1, #0
+  10:wavetable.cpp ****     this->fs = 44100.0f; // or a sensible default
+ 122              		.loc 1 10 14 view .LVU24
+ 123 0018 024B     		ldr	r3, .L4
  124              	.LBE237:
-  13:wavetable.cpp **** }
- 125              		.loc 1 13 1 view .LVU25
- 126 0018 2046     		mov	r0, r4
+  11:wavetable.cpp **** }
+ 125              		.loc 1 11 1 view .LVU25
+ 126 001a 2046     		mov	r0, r4
  127              	.LBB238:
-  11:wavetable.cpp ****     this->num_waves = 0;
- 128              		.loc 1 11 21 view .LVU26
- 129 001a 5160     		str	r1, [r2, #4]
-  12:wavetable.cpp ****     this->fs = 44100.0f; // or a sensible default
- 130              		.loc 1 12 5 is_stmt 1 view .LVU27
-  12:wavetable.cpp ****     this->fs = 44100.0f; // or a sensible default
- 131              		.loc 1 12 14 is_stmt 0 view .LVU28
- 132 001c 2360     		str	r3, [r4]	@ float
+   9:wavetable.cpp ****     this->num_waves = 0;
+ 128              		.loc 1 9 21 view .LVU26
+ 129 001c 5160     		str	r1, [r2, #4]
+  10:wavetable.cpp ****     this->fs = 44100.0f; // or a sensible default
+ 130              		.loc 1 10 5 is_stmt 1 view .LVU27
+  10:wavetable.cpp ****     this->fs = 44100.0f; // or a sensible default
+ 131              		.loc 1 10 14 is_stmt 0 view .LVU28
+ 132 001e 2360     		str	r3, [r4]	@ float
  133              	.LBE238:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 27
+ 134              		.loc 1 11 1 view .LVU29
+ 135 0020 10BD     		pop	{r4, pc}
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 27
 
 
- 134              		.loc 1 13 1 view .LVU29
- 135 001e 10BD     		pop	{r4, pc}
  136              	.LVL5:
  137              	.L5:
- 138              		.loc 1 13 1 view .LVU30
- 139              		.align	2
+ 138              		.loc 1 11 1 view .LVU30
+ 139 0022 00BF     		.align	2
  140              	.L4:
- 141 0020 28000100 		.word	65576
- 142 0024 00442C47 		.word	1194083328
- 143              		.cfi_endproc
- 144              	.LFE4727:
- 146              		.global	_ZN9WavetableC1Ev
- 147              		.thumb_set _ZN9WavetableC1Ev,_ZN9WavetableC2Ev
- 148              		.section	.text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi,"ax",%progbits
- 149              		.align	1
- 150              		.p2align 2,,3
- 151              		.global	_ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi
- 152              		.syntax unified
- 153              		.thumb
- 154              		.thumb_func
- 155              		.fpu fpv5-d16
- 157              	_ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi:
- 158              	.LVL6:
- 159              	.LFB4730:
-  14:wavetable.cpp **** 
-  15:wavetable.cpp **** // Constructor 
-  16:wavetable.cpp **** Wavetable::Wavetable(float samp_freq, const std::array<std::array<float, 2048>, 8>& wavesin, int nu
- 160              		.loc 1 16 1 is_stmt 1 view -0
- 161              		.cfi_startproc
- 162              		@ args = 0, pretend = 0, frame = 0
- 163              		@ frame_needed = 0, uses_anonymous_args = 0
- 164              		.loc 1 16 1 is_stmt 0 view .LVU32
- 165 0000 38B5     		push	{r3, r4, r5, lr}
- 166              		.cfi_def_cfa_offset 16
- 167              		.cfi_offset 3, -16
- 168              		.cfi_offset 4, -12
- 169              		.cfi_offset 5, -8
- 170              		.cfi_offset 14, -4
- 171              		.loc 1 16 1 view .LVU33
- 172 0002 0446     		mov	r4, r0
- 173 0004 1546     		mov	r5, r2
- 174              	.LBB239:
-  17:wavetable.cpp ****     fs(samp_freq),
-  18:wavetable.cpp ****     waves(wavesin),
-  19:wavetable.cpp ****     num_waves(num_waves),
-  20:wavetable.cpp ****     phases{0.0f}
- 175              		.loc 1 20 16 view .LVU34
- 176 0006 A0EC010A 		vstmia.32	r0!, {s0}
- 177              	.LVL7:
- 178              		.loc 1 20 16 view .LVU35
- 179 000a 4FF48032 		mov	r2, #65536
- 180              	.LVL8:
- 181              		.loc 1 20 16 view .LVU36
- 182 000e FFF7FEFF 		bl	memcpy
- 183              	.LVL9:
- 184              		.loc 1 20 16 view .LVU37
- 185 0012 04F58030 		add	r0, r4, #65536
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 28
+ 141 0024 00442C47 		.word	1194083328
+ 142              		.cfi_endproc
+ 143              	.LFE4727:
+ 145              		.global	_ZN9WavetableC1Ev
+ 146              		.thumb_set _ZN9WavetableC1Ev,_ZN9WavetableC2Ev
+ 147              		.section	.text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj256EELj8EEi,"ax",%progbits
+ 148              		.align	1
+ 149              		.p2align 2,,3
+ 150              		.global	_ZN9WavetableC2EfRKSt5arrayIS0_IfLj256EELj8EEi
+ 151              		.syntax unified
+ 152              		.thumb
+ 153              		.thumb_func
+ 154              		.fpu fpv5-d16
+ 156              	_ZN9WavetableC2EfRKSt5arrayIS0_IfLj256EELj8EEi:
+ 157              	.LVL6:
+ 158              	.LFB4730:
+  12:wavetable.cpp **** 
+  13:wavetable.cpp **** // Constructor 
+  14:wavetable.cpp **** Wavetable::Wavetable(float samp_freq, const std::array<std::array<float, samples_per_wave>, 8>& wav
+ 159              		.loc 1 14 1 is_stmt 1 view -0
+ 160              		.cfi_startproc
+ 161              		@ args = 0, pretend = 0, frame = 0
+ 162              		@ frame_needed = 0, uses_anonymous_args = 0
+ 163              		.loc 1 14 1 is_stmt 0 view .LVU32
+ 164 0000 38B5     		push	{r3, r4, r5, lr}
+ 165              		.cfi_def_cfa_offset 16
+ 166              		.cfi_offset 3, -16
+ 167              		.cfi_offset 4, -12
+ 168              		.cfi_offset 5, -8
+ 169              		.cfi_offset 14, -4
+ 170              		.loc 1 14 1 view .LVU33
+ 171 0002 0446     		mov	r4, r0
+ 172 0004 1546     		mov	r5, r2
+ 173              	.LBB239:
+  15:wavetable.cpp ****     fs(samp_freq),
+  16:wavetable.cpp ****     waves(wavesin),
+  17:wavetable.cpp ****     num_waves(num_waves),
+  18:wavetable.cpp ****     phases{0.0f}
+ 174              		.loc 1 18 16 view .LVU34
+ 175 0006 A0EC010A 		vstmia.32	r0!, {s0}
+ 176              	.LVL7:
+ 177              		.loc 1 18 16 view .LVU35
+ 178 000a 4FF40052 		mov	r2, #8192
+ 179              	.LVL8:
+ 180              		.loc 1 18 16 view .LVU36
+ 181 000e FFF7FEFF 		bl	memcpy
+ 182              	.LVL9:
+ 183              		.loc 1 18 16 view .LVU37
+ 184 0012 04F50050 		add	r0, r4, #8192
+ 185 0016 2022     		movs	r2, #32
+ 186 0018 0021     		movs	r1, #0
+ 187 001a 4560     		str	r5, [r0, #4]
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 28
 
 
- 186 0016 2022     		movs	r2, #32
- 187 0018 0021     		movs	r1, #0
- 188 001a 4560     		str	r5, [r0, #4]
- 189 001c 2830     		adds	r0, r0, #40
- 190 001e FFF7FEFF 		bl	memset
- 191              	.LVL10:
- 192              	.LBE239:
-  21:wavetable.cpp **** {}
- 193              		.loc 1 21 2 view .LVU38
- 194 0022 2046     		mov	r0, r4
- 195 0024 38BD     		pop	{r3, r4, r5, pc}
- 196              		.loc 1 21 2 view .LVU39
- 197              		.cfi_endproc
- 198              	.LFE4730:
- 200              		.global	_ZN9WavetableC1EfRKSt5arrayIS0_IfLj2048EELj8EEi
- 201              		.thumb_set _ZN9WavetableC1EfRKSt5arrayIS0_IfLj2048EELj8EEi,_ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048
- 202 0026 00BF     		.section	.text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi,"ax",%progbits
- 203              		.align	1
- 204              		.p2align 2,,3
- 205              		.global	_ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi
- 206              		.syntax unified
- 207              		.thumb
- 208              		.thumb_func
- 209              		.fpu fpv5-d16
- 211              	_ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi:
- 212              	.LVL11:
- 213              	.LFB4732:
-  22:wavetable.cpp **** 
-  23:wavetable.cpp **** // Initialize function
-  24:wavetable.cpp **** void Wavetable::Init(float samp_freq, const std::array<std::array<float, 2048>, 8>& wavesin, int nu
- 214              		.loc 1 24 108 is_stmt 1 view -0
- 215              		.cfi_startproc
- 216              		@ args = 0, pretend = 0, frame = 0
- 217              		@ frame_needed = 0, uses_anonymous_args = 0
-  25:wavetable.cpp ****     this->waves = wavesin;      // copy all 8 × 2048 samples
- 218              		.loc 1 25 5 view .LVU41
-  24:wavetable.cpp ****     this->waves = wavesin;      // copy all 8 × 2048 samples
- 219              		.loc 1 24 108 is_stmt 0 view .LVU42
- 220 0000 38B5     		push	{r3, r4, r5, lr}
- 221              		.cfi_def_cfa_offset 16
- 222              		.cfi_offset 3, -16
- 223              		.cfi_offset 4, -12
- 224              		.cfi_offset 5, -8
- 225              		.cfi_offset 14, -4
- 226 0002 0446     		mov	r4, r0
- 227 0004 1546     		mov	r5, r2
- 228              		.loc 1 25 17 view .LVU43
- 229 0006 0430     		adds	r0, r0, #4
- 230              	.LVL12:
- 231              		.loc 1 25 17 view .LVU44
- 232 0008 4FF48032 		mov	r2, #65536
- 233              	.LVL13:
-  24:wavetable.cpp ****     this->waves = wavesin;      // copy all 8 × 2048 samples
- 234              		.loc 1 24 108 view .LVU45
- 235 000c 2DED028B 		vpush.64	{d8}
- 236              		.cfi_def_cfa_offset 24
- 237              		.cfi_offset 80, -24
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 29
+ 188 001c 2830     		adds	r0, r0, #40
+ 189 001e FFF7FEFF 		bl	memset
+ 190              	.LVL10:
+ 191              	.LBE239:
+  19:wavetable.cpp **** {}
+ 192              		.loc 1 19 2 view .LVU38
+ 193 0022 2046     		mov	r0, r4
+ 194 0024 38BD     		pop	{r3, r4, r5, pc}
+ 195              		.loc 1 19 2 view .LVU39
+ 196              		.cfi_endproc
+ 197              	.LFE4730:
+ 199              		.global	_ZN9WavetableC1EfRKSt5arrayIS0_IfLj256EELj8EEi
+ 200              		.thumb_set _ZN9WavetableC1EfRKSt5arrayIS0_IfLj256EELj8EEi,_ZN9WavetableC2EfRKSt5arrayIS0_IfLj256EE
+ 201 0026 00BF     		.section	.text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj256EELj8EEi,"ax",%progbits
+ 202              		.align	1
+ 203              		.p2align 2,,3
+ 204              		.global	_ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj256EELj8EEi
+ 205              		.syntax unified
+ 206              		.thumb
+ 207              		.thumb_func
+ 208              		.fpu fpv5-d16
+ 210              	_ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj256EELj8EEi:
+ 211              	.LVL11:
+ 212              	.LFB4732:
+  20:wavetable.cpp **** 
+  21:wavetable.cpp **** // Initialize function
+  22:wavetable.cpp **** void Wavetable::Init(float samp_freq, const std::array<std::array<float, samples_per_wave>, 8>& wav
+ 213              		.loc 1 22 120 is_stmt 1 view -0
+ 214              		.cfi_startproc
+ 215              		@ args = 0, pretend = 0, frame = 0
+ 216              		@ frame_needed = 0, uses_anonymous_args = 0
+  23:wavetable.cpp ****     this->waves = wavesin;      // copy all 8 × samples_per_wave samples
+ 217              		.loc 1 23 5 view .LVU41
+  22:wavetable.cpp ****     this->waves = wavesin;      // copy all 8 × samples_per_wave samples
+ 218              		.loc 1 22 120 is_stmt 0 view .LVU42
+ 219 0000 38B5     		push	{r3, r4, r5, lr}
+ 220              		.cfi_def_cfa_offset 16
+ 221              		.cfi_offset 3, -16
+ 222              		.cfi_offset 4, -12
+ 223              		.cfi_offset 5, -8
+ 224              		.cfi_offset 14, -4
+ 225 0002 0446     		mov	r4, r0
+ 226 0004 1546     		mov	r5, r2
+ 227              		.loc 1 23 17 view .LVU43
+ 228 0006 0430     		adds	r0, r0, #4
+ 229              	.LVL12:
+ 230              		.loc 1 23 17 view .LVU44
+ 231 0008 4FF40052 		mov	r2, #8192
+ 232              	.LVL13:
+  22:wavetable.cpp ****     this->waves = wavesin;      // copy all 8 × samples_per_wave samples
+ 233              		.loc 1 22 120 view .LVU45
+ 234 000c 2DED028B 		vpush.64	{d8}
+ 235              		.cfi_def_cfa_offset 24
+ 236              		.cfi_offset 80, -24
+ 237              		.cfi_offset 81, -20
+  22:wavetable.cpp ****     this->waves = wavesin;      // copy all 8 × samples_per_wave samples
+ 238              		.loc 1 22 120 view .LVU46
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 29
 
 
- 238              		.cfi_offset 81, -20
-  24:wavetable.cpp ****     this->waves = wavesin;      // copy all 8 × 2048 samples
- 239              		.loc 1 24 108 view .LVU46
- 240 0010 B0EE408A 		vmov.f32	s16, s0
- 241              		.loc 1 25 17 view .LVU47
- 242 0014 FFF7FEFF 		bl	memcpy
- 243              	.LVL14:
-  26:wavetable.cpp ****     this->phases.fill(0.0f);    // zero all phases
- 244              		.loc 1 26 5 is_stmt 1 view .LVU48
- 245              	.LBB255:
- 246              	.LBI255:
+ 239 0010 B0EE408A 		vmov.f32	s16, s0
+ 240              		.loc 1 23 17 view .LVU47
+ 241 0014 FFF7FEFF 		bl	memcpy
+ 242              	.LVL14:
+  24:wavetable.cpp ****     this->phases.fill(0.0f);    // zero all phases
+ 243              		.loc 1 24 5 is_stmt 1 view .LVU48
+ 244              	.LBB255:
+ 245              	.LBI255:
  116:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { std::fill_n(begin(), size(), __u); }
- 247              		.loc 3 116 7 view .LVU49
- 248              	.LBB256:
- 249              	.LBI256:
+ 246              		.loc 3 116 7 view .LVU49
+ 247              	.LBB256:
+ 248              	.LBI256:
  126:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return iterator(data()); }
- 250              		.loc 3 126 7 view .LVU50
- 251              	.LBB257:
- 252              	.LBI257:
- 253              		.loc 3 234 7 view .LVU51
- 254              		.loc 3 234 7 is_stmt 0 view .LVU52
- 255              	.LBE257:
- 256              	.LBE256:
- 257              	.LBB258:
- 258              	.LBI258:
- 259              		.loc 2 1089 5 is_stmt 1 view .LVU53
- 260              		.loc 2 1089 5 is_stmt 0 view .LVU54
- 261              	.LBE258:
- 262              	.LBE255:
+ 249              		.loc 3 126 7 view .LVU50
+ 250              	.LBB257:
+ 251              	.LBI257:
+ 252              		.loc 3 234 7 view .LVU51
+ 253              		.loc 3 234 7 is_stmt 0 view .LVU52
+ 254              	.LBE257:
+ 255              	.LBE256:
+ 256              	.LBB258:
+ 257              	.LBI258:
+ 258              		.loc 2 1089 5 is_stmt 1 view .LVU53
+ 259              		.loc 2 1089 5 is_stmt 0 view .LVU54
+ 260              	.LBE258:
+ 261              	.LBE255:
  951:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   inline _GLIBCXX_CONSTEXPR long
- 263              		.loc 2 951 37 is_stmt 1 view .LVU55
- 264              	.LBB265:
- 265              	.LBB264:
- 266              	.LBB259:
- 267              	.LBI259:
+ 262              		.loc 2 951 37 is_stmt 1 view .LVU55
+ 263              	.LBB265:
+ 264              	.LBB264:
+ 265              	.LBB259:
+ 266              	.LBI259:
 1054:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	       std::random_access_iterator_tag)
- 268              		.loc 2 1054 5 view .LVU56
- 269              	.LBB260:
- 270              	.LBI260:
+ 267              		.loc 2 1054 5 view .LVU56
+ 268              	.LBB260:
+ 269              	.LBI260:
 1054:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	       std::random_access_iterator_tag)
- 271              		.loc 2 1054 5 view .LVU57
- 272              	.LBB261:
- 273              	.LBI261:
+ 270              		.loc 2 1054 5 view .LVU57
+ 271              	.LBB261:
+ 272              	.LBI261:
  913:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     { std::__fill_a1(__first, __last, __value); }
- 274              		.loc 2 913 5 view .LVU58
- 275              	.LBB262:
- 276              	.LBI262:
+ 273              		.loc 2 913 5 view .LVU58
+ 274              	.LBB262:
+ 275              	.LBI262:
  868:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	      const _Tp& __value)
- 277              		.loc 2 868 5 view .LVU59
- 278              	.LBB263:
+ 276              		.loc 2 868 5 view .LVU59
+ 277              	.LBB263:
  872:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	*__first = __tmp;
- 279              		.loc 2 872 22 view .LVU60
+ 278              		.loc 2 872 22 view .LVU60
  873:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     }
- 280              		.loc 2 873 11 is_stmt 0 view .LVU61
- 281 0018 0948     		ldr	r0, .L10
- 282 001a 2022     		movs	r2, #32
- 283 001c 0021     		movs	r1, #0
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 30
-
-
- 284 001e 2044     		add	r0, r0, r4
- 285              	.LVL15:
+ 279              		.loc 2 873 11 is_stmt 0 view .LVU61
+ 280 0018 42F22800 		movw	r0, #8232
+ 281 001c 2022     		movs	r2, #32
+ 282 001e 0021     		movs	r1, #0
+ 283 0020 2044     		add	r0, r0, r4
+ 284              	.LVL15:
  873:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     }
- 286              		.loc 2 873 11 view .LVU62
- 287 0020 FFF7FEFF 		bl	memset
- 288              	.LVL16:
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 30
+
+
+ 285              		.loc 2 873 11 view .LVU62
+ 286 0022 FFF7FEFF 		bl	memset
+ 287              	.LVL16:
  873:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     }
- 289              		.loc 2 873 11 view .LVU63
- 290              	.LBE263:
- 291              	.LBE262:
- 292              	.LBE261:
- 293              	.LBE260:
- 294              	.LBE259:
- 295              	.LBE264:
- 296              	.LBE265:
-  27:wavetable.cpp ****     this->num_waves = num_waves;
- 297              		.loc 1 27 5 is_stmt 1 view .LVU64
- 298              	.LBB266:
-  28:wavetable.cpp ****     this->fs = samp_freq;
-  29:wavetable.cpp ****     for(int i = 0; i < 8; i++){
-  30:wavetable.cpp ****         notes[i] = 255;
- 299              		.loc 1 30 18 is_stmt 0 view .LVU65
- 300 0024 074A     		ldr	r2, .L10+4
- 301              	.LBE266:
-  27:wavetable.cpp ****     this->num_waves = num_waves;
- 302              		.loc 1 27 21 view .LVU66
- 303 0026 04F58031 		add	r1, r4, #65536
- 304              	.LBB267:
- 305              		.loc 1 30 18 view .LVU67
- 306 002a 4FF0FF33 		mov	r3, #-1
- 307              	.LBE267:
-  27:wavetable.cpp ****     this->num_waves = num_waves;
- 308              		.loc 1 27 21 view .LVU68
- 309 002e 4D60     		str	r5, [r1, #4]
-  28:wavetable.cpp ****     this->fs = samp_freq;
- 310              		.loc 1 28 5 is_stmt 1 view .LVU69
- 311              	.LBB268:
- 312              		.loc 1 30 18 is_stmt 0 view .LVU70
- 313 0030 A118     		adds	r1, r4, r2
- 314              	.LBE268:
-  28:wavetable.cpp ****     this->fs = samp_freq;
- 315              		.loc 1 28 14 view .LVU71
- 316 0032 84ED008A 		vstr.32	s16, [r4]
-  29:wavetable.cpp ****         notes[i] = 255;
- 317              		.loc 1 29 5 is_stmt 1 view .LVU72
- 318              	.LVL17:
- 319              	.LBB269:
-  29:wavetable.cpp ****         notes[i] = 255;
- 320              		.loc 1 29 22 view .LVU73
- 321              		.loc 1 30 18 is_stmt 0 view .LVU74
- 322 0036 A350     		str	r3, [r4, r2]	@ unaligned
- 323 0038 4B60     		str	r3, [r1, #4]	@ unaligned
- 324              	.LVL18:
- 325              		.loc 1 30 18 view .LVU75
- 326              	.LBE269:
-  31:wavetable.cpp ****     }
-  32:wavetable.cpp **** }
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 31
+ 288              		.loc 2 873 11 view .LVU63
+ 289              	.LBE263:
+ 290              	.LBE262:
+ 291              	.LBE261:
+ 292              	.LBE260:
+ 293              	.LBE259:
+ 294              	.LBE264:
+ 295              	.LBE265:
+  25:wavetable.cpp ****     this->num_waves = num_waves;
+ 296              		.loc 1 25 5 is_stmt 1 view .LVU64
+ 297              	.LBB266:
+  26:wavetable.cpp ****     this->fs = samp_freq;
+  27:wavetable.cpp ****     for(int i = 0; i < 8; i++){
+  28:wavetable.cpp ****         notes[i] = 255;
+ 298              		.loc 1 28 18 is_stmt 0 view .LVU65
+ 299 0026 42F26802 		movw	r2, #8296
+ 300              	.LBE266:
+  25:wavetable.cpp ****     this->num_waves = num_waves;
+ 301              		.loc 1 25 21 view .LVU66
+ 302 002a 04F50051 		add	r1, r4, #8192
+ 303              	.LBB267:
+ 304              		.loc 1 28 18 view .LVU67
+ 305 002e 4FF0FF33 		mov	r3, #-1
+ 306              	.LBE267:
+  25:wavetable.cpp ****     this->num_waves = num_waves;
+ 307              		.loc 1 25 21 view .LVU68
+ 308 0032 4D60     		str	r5, [r1, #4]
+  26:wavetable.cpp ****     this->fs = samp_freq;
+ 309              		.loc 1 26 5 is_stmt 1 view .LVU69
+ 310              	.LBB268:
+ 311              		.loc 1 28 18 is_stmt 0 view .LVU70
+ 312 0034 A118     		adds	r1, r4, r2
+ 313              	.LBE268:
+  26:wavetable.cpp ****     this->fs = samp_freq;
+ 314              		.loc 1 26 14 view .LVU71
+ 315 0036 84ED008A 		vstr.32	s16, [r4]
+  27:wavetable.cpp ****         notes[i] = 255;
+ 316              		.loc 1 27 5 is_stmt 1 view .LVU72
+ 317              	.LVL17:
+ 318              	.LBB269:
+  27:wavetable.cpp ****         notes[i] = 255;
+ 319              		.loc 1 27 22 view .LVU73
+ 320              		.loc 1 28 18 is_stmt 0 view .LVU74
+ 321 003a A350     		str	r3, [r4, r2]	@ unaligned
+ 322 003c 4B60     		str	r3, [r1, #4]	@ unaligned
+ 323              	.LVL18:
+ 324              		.loc 1 28 18 view .LVU75
+ 325              	.LBE269:
+  29:wavetable.cpp ****     }
+  30:wavetable.cpp **** }
+ 326              		.loc 1 30 1 view .LVU76
+ 327 003e BDEC028B 		vldm	sp!, {d8}
+ 328              		.cfi_restore 80
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 31
 
 
- 327              		.loc 1 32 1 view .LVU76
- 328 003a BDEC028B 		vldm	sp!, {d8}
- 329              		.cfi_restore 80
- 330              		.cfi_restore 81
- 331              		.cfi_def_cfa_offset 16
- 332              	.LVL19:
- 333              		.loc 1 32 1 view .LVU77
- 334 003e 38BD     		pop	{r3, r4, r5, pc}
- 335              	.LVL20:
- 336              	.L11:
- 337              		.loc 1 32 1 view .LVU78
- 338              		.align	2
- 339              	.L10:
- 340 0040 28000100 		.word	65576
- 341 0044 68000100 		.word	65640
- 342              		.cfi_endproc
- 343              	.LFE4732:
- 345              		.section	.text._ZN9Wavetable7ProcessEv,"ax",%progbits
- 346              		.align	1
- 347              		.p2align 2,,3
- 348              		.global	_ZN9Wavetable7ProcessEv
- 349              		.syntax unified
- 350              		.thumb
- 351              		.thumb_func
- 352              		.fpu fpv5-d16
- 354              	_ZN9Wavetable7ProcessEv:
- 355              	.LVL21:
- 356              	.LFB4733:
-  33:wavetable.cpp **** 
-  34:wavetable.cpp **** // Processes the selected oscillator by 1 sample at a target frequency and target wavetable index
-  35:wavetable.cpp **** std::array<float, 8> Wavetable::Process(){
- 357              		.loc 1 35 42 is_stmt 1 view -0
- 358              		.cfi_startproc
- 359              		@ args = 0, pretend = 0, frame = 0
- 360              		@ frame_needed = 0, uses_anonymous_args = 0
- 361              	.LBB270:
- 362              	.LBB271:
-  36:wavetable.cpp ****     std::array<float, 8> out;                              
-  37:wavetable.cpp ****     // calculate every oscillator's next sample
-  38:wavetable.cpp ****     for(int osc = 0; osc < 8; osc++){
-  39:wavetable.cpp ****         float dt = frequencies[osc] * 2048.0 / fs;          // time difference between samples
- 363              		.loc 1 39 48 is_stmt 0 view .LVU80
- 364 0000 91ED005A 		vldr.32	s10, [r1]
-  40:wavetable.cpp **** 
-  41:wavetable.cpp ****         // finds indicies and weights 
-  42:wavetable.cpp ****         uint8_t wave1 = (int)indicies[osc];                 // closest wave to the left
-  43:wavetable.cpp ****         uint8_t wave2 = wave1 + 1;                          // closest wave to the right
-  44:wavetable.cpp ****         if (wave2 >= num_waves){ wave2 = 0; }               // wrap to beginning
- 365              		.loc 1 44 22 view .LVU81
- 366 0004 01F58033 		add	r3, r1, #65536
- 367 0008 01F1040C 		add	ip, r1, #4
-  39:wavetable.cpp **** 
- 368              		.loc 1 39 48 view .LVU82
- 369 000c B7EEC55A 		vcvt.f64.f32	d5, s10
- 370              	.LBE271:
- 371              	.LBE270:
-  35:wavetable.cpp ****     std::array<float, 8> out;                              
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 32
+ 329              		.cfi_restore 81
+ 330              		.cfi_def_cfa_offset 16
+ 331              	.LVL19:
+ 332              		.loc 1 30 1 view .LVU77
+ 333 0042 38BD     		pop	{r3, r4, r5, pc}
+ 334              		.loc 1 30 1 view .LVU78
+ 335              		.cfi_endproc
+ 336              	.LFE4732:
+ 338              		.section	.text._ZN9Wavetable7ProcessEv,"ax",%progbits
+ 339              		.align	1
+ 340              		.p2align 2,,3
+ 341              		.global	_ZN9Wavetable7ProcessEv
+ 342              		.syntax unified
+ 343              		.thumb
+ 344              		.thumb_func
+ 345              		.fpu fpv5-d16
+ 347              	_ZN9Wavetable7ProcessEv:
+ 348              	.LVL20:
+ 349              	.LFB4733:
+  31:wavetable.cpp **** 
+  32:wavetable.cpp **** // Processes the selected oscillator by 1 sample at a target frequency and target wavetable index
+  33:wavetable.cpp **** std::array<float, 8> Wavetable::Process(){
+ 350              		.loc 1 33 42 is_stmt 1 view -0
+ 351              		.cfi_startproc
+ 352              		@ args = 0, pretend = 0, frame = 0
+ 353              		@ frame_needed = 0, uses_anonymous_args = 0
+ 354              		.loc 1 33 42 is_stmt 0 view .LVU80
+ 355 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
+ 356              		.cfi_def_cfa_offset 28
+ 357              		.cfi_offset 4, -28
+ 358              		.cfi_offset 5, -24
+ 359              		.cfi_offset 6, -20
+ 360              		.cfi_offset 7, -16
+ 361              		.cfi_offset 8, -12
+ 362              		.cfi_offset 9, -8
+ 363              		.cfi_offset 14, -4
+ 364 0004 42F2080C 		movw	ip, #8200
+ 365 0008 42F22805 		movw	r5, #8232
+  34:wavetable.cpp ****     std::array<float, 8> out;                              
+ 366              		.loc 1 34 5 is_stmt 1 view .LVU81
+  35:wavetable.cpp ****     // calculate every oscillator's next sample
+  36:wavetable.cpp ****     for(int osc = 0; osc < 8; osc++){
+ 367              		.loc 1 36 5 view .LVU82
+ 368              	.LVL21:
+ 369              	.LBB270:
+ 370              		.loc 1 36 26 view .LVU83
+ 371              	.LBB271:
+  37:wavetable.cpp ****         float dt = frequencies[osc] * (float)samples_per_wave / fs;          // time difference bet
+  38:wavetable.cpp **** 
+  39:wavetable.cpp ****         // finds indicies and weights 
+  40:wavetable.cpp ****         uint8_t wave1 = (int)indicies[osc];                 // closest wave to the left
+  41:wavetable.cpp ****         uint8_t wave2 = wave1 + 1;                          // closest wave to the right
+  42:wavetable.cpp ****         if (wave2 >= num_waves){ wave2 = 0; }               // wrap to beginning
+ 372              		.loc 1 42 22 is_stmt 0 view .LVU84
+ 373 000c 01F50053 		add	r3, r1, #8192
+  37:wavetable.cpp ****         float dt = frequencies[osc] * (float)samples_per_wave / fs;          // time difference bet
+ 374              		.loc 1 37 65 view .LVU85
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 32
 
 
- 372              		.loc 1 35 42 view .LVU83
- 373 0010 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
- 374              		.cfi_def_cfa_offset 28
- 375              		.cfi_offset 4, -28
- 376              		.cfi_offset 5, -24
- 377              		.cfi_offset 6, -20
- 378              		.cfi_offset 7, -16
- 379              		.cfi_offset 8, -12
- 380              		.cfi_offset 9, -8
- 381              		.cfi_offset 14, -4
- 382 0014 3C4C     		ldr	r4, .L22+8
- 383 0016 8646     		mov	lr, r0
- 384 0018 3C4D     		ldr	r5, .L22+12
-  36:wavetable.cpp ****     // calculate every oscillator's next sample
- 385              		.loc 1 36 5 is_stmt 1 view .LVU84
-  38:wavetable.cpp ****         float dt = frequencies[osc] * 2048.0 / fs;          // time difference between samples
- 386              		.loc 1 38 5 view .LVU85
- 387              	.LVL22:
- 388              	.LBB306:
-  38:wavetable.cpp ****         float dt = frequencies[osc] * 2048.0 / fs;          // time difference between samples
- 389              		.loc 1 38 26 view .LVU86
- 390 001a 0C44     		add	r4, r4, r1
- 391              	.LBB304:
- 392              		.loc 1 44 22 is_stmt 0 view .LVU87
- 393 001c 5E68     		ldr	r6, [r3, #4]
- 394 001e 0D44     		add	r5, r5, r1
- 395              	.LVL23:
- 396              	.L17:
-  39:wavetable.cpp **** 
- 397              		.loc 1 39 9 is_stmt 1 view .LVU88
-  39:wavetable.cpp **** 
- 398              		.loc 1 39 37 is_stmt 0 view .LVU89
- 399 0020 B4EC014A 		vldmia.32	r4!, {s8}
- 400 0024 0023     		movs	r3, #0
-  45:wavetable.cpp ****         float weight = daisysp::fastmod1f(indicies[osc]);   // weight between the two waves
-  46:wavetable.cpp ****         
-  47:wavetable.cpp ****         // for interpolating between samples in a wave
-  48:wavetable.cpp ****         float phase = phases[osc];                          // Which oscillator are we using 
-  49:wavetable.cpp ****         uint16_t i = (int)phase;                            // closest sample to left
-  50:wavetable.cpp ****         uint16_t i_next = i + 1;                            // closest sample to the right
-  51:wavetable.cpp ****         float i_weight = daisysp::fastmod1f(phase);         // distance from the left sample
-  52:wavetable.cpp ****         if(i_next >= 2048){ i_next -= 2048;}                // wrap if needed
-  53:wavetable.cpp **** 
-  54:wavetable.cpp ****         float fl1 = waves[wave1][i];    
-  55:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
-  56:wavetable.cpp ****         float fl2 = waves[wave2][i];        
-  57:wavetable.cpp ****         float ce2 = waves[wave2][i_next];
-  58:wavetable.cpp **** 
-  59:wavetable.cpp ****         float fl = (1-weight) * fl1 + weight * fl2;
-  60:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
+ 375 0010 D1ED002A 		vldr.32	s5, [r1]
+ 376 0014 8C44     		add	ip, ip, r1
+ 377 0016 0D44     		add	r5, r5, r1
+ 378              		.loc 1 42 22 view .LVU86
+ 379 0018 5E68     		ldr	r6, [r3, #4]
+ 380 001a 01F1040E 		add	lr, r1, #4
+ 381 001e 0446     		mov	r4, r0
+ 382              	.LVL22:
+ 383              	.L15:
+  37:wavetable.cpp ****         float dt = frequencies[osc] * (float)samples_per_wave / fs;          // time difference bet
+ 384              		.loc 1 37 9 is_stmt 1 view .LVU87
+  37:wavetable.cpp ****         float dt = frequencies[osc] * (float)samples_per_wave / fs;          // time difference bet
+ 385              		.loc 1 37 37 is_stmt 0 view .LVU88
+ 386 0020 FCEC017A 		vldmia.32	ip!, {s15}
+ 387 0024 0023     		movs	r3, #0
+ 388 0026 DFED346A 		vldr.32	s13, .L20
+  43:wavetable.cpp ****         float weight = daisysp::fastmod1f(indicies[osc]);   // weight between the two waves
+  44:wavetable.cpp ****         
+  45:wavetable.cpp ****         // for interpolating between samples in a wave
+  46:wavetable.cpp ****         float phase = phases[osc];                          // Which oscillator are we using 
+  47:wavetable.cpp ****         uint16_t i = (int)phase;                            // closest sample to left
+  48:wavetable.cpp ****         uint16_t i_next = i + 1;                            // closest sample to the right
+  49:wavetable.cpp ****         float i_weight = daisysp::fastmod1f(phase);         // distance from the left sample
+  50:wavetable.cpp ****         if(i_next >= samples_per_wave){ i_next -= samples_per_wave;}                // wrap if need
+  51:wavetable.cpp **** 
+  52:wavetable.cpp ****         float fl1 = waves[wave1][i];    
+  53:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
+  54:wavetable.cpp ****         float fl2 = waves[wave2][i];        
+  55:wavetable.cpp ****         float ce2 = waves[wave2][i_next];
+  56:wavetable.cpp **** 
+  57:wavetable.cpp ****         float fl = (1-weight) * fl1 + weight * fl2;
+ 389              		.loc 1 57 22 view .LVU89
+ 390 002a B7EE005A 		vmov.f32	s10, #1.0e+0
+  40:wavetable.cpp ****         uint8_t wave2 = wave1 + 1;                          // closest wave to the right
+ 391              		.loc 1 40 25 view .LVU90
+ 392 002e 9CED0F7A 		vldr.32	s14, [ip, #60]
+  37:wavetable.cpp ****         float dt = frequencies[osc] * (float)samples_per_wave / fs;          // time difference bet
+ 393              		.loc 1 37 37 view .LVU91
+ 394 0032 67EEA67A 		vmul.f32	s15, s15, s13
+  58:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
+  59:wavetable.cpp **** 
+  60:wavetable.cpp ****         out[osc] = (1 - i_weight) * fl + i_weight * ce;
   61:wavetable.cpp **** 
-  62:wavetable.cpp ****         out[osc] = (1 - i_weight) * fl + i_weight * ce;
-  63:wavetable.cpp **** 
-  64:wavetable.cpp ****         phase += dt;
-  65:wavetable.cpp ****         if(phase >= 2048.0f){ phase -= 2048.0f; }
- 401              		.loc 1 65 9 view .LVU90
- 402 0026 DFED3A3A 		vldr.32	s7, .L22+16
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 33
+  62:wavetable.cpp ****         phase += dt;
+  63:wavetable.cpp ****         if(phase >= (float)samples_per_wave){ phase -= (float)samples_per_wave; }
+ 395              		.loc 1 63 9 view .LVU92
+ 396 0036 DFED304A 		vldr.32	s9, .L20
+  40:wavetable.cpp ****         uint8_t wave2 = wave1 + 1;                          // closest wave to the right
+ 397              		.loc 1 40 25 view .LVU93
+ 398 003a FDEEC76A 		vcvt.s32.f32	s13, s14
+ 399 003e 16EE902A 		vmov	r2, s13	@ int
+  37:wavetable.cpp **** 
+ 400              		.loc 1 37 65 view .LVU94
+ 401 0042 C7EEA26A 		vdiv.f32	s13, s15, s5
+ 402              	.LVL23:
+  40:wavetable.cpp ****         uint8_t wave2 = wave1 + 1;                          // closest wave to the right
+ 403              		.loc 1 40 9 is_stmt 1 view .LVU95
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 33
 
 
-  39:wavetable.cpp **** 
- 403              		.loc 1 39 37 view .LVU91
- 404 002a B7EEC44A 		vcvt.f64.f32	d4, s8
-  42:wavetable.cpp ****         uint8_t wave2 = wave1 + 1;                          // closest wave to the right
- 405              		.loc 1 42 25 view .LVU92
- 406 002e 94ED0F7A 		vldr.32	s14, [r4, #60]
-  39:wavetable.cpp **** 
- 407              		.loc 1 39 37 view .LVU93
- 408 0032 9FED336B 		vldr.64	d6, .L22
-  42:wavetable.cpp ****         uint8_t wave2 = wave1 + 1;                          // closest wave to the right
- 409              		.loc 1 42 25 view .LVU94
- 410 0036 FDEEC77A 		vcvt.s32.f32	s15, s14
-  39:wavetable.cpp **** 
- 411              		.loc 1 39 37 view .LVU95
- 412 003a 24EE064B 		vmul.f64	d4, d4, d6
-  42:wavetable.cpp ****         uint8_t wave2 = wave1 + 1;                          // closest wave to the right
- 413              		.loc 1 42 25 view .LVU96
- 414 003e 17EE902A 		vmov	r2, s15	@ int
-  48:wavetable.cpp ****         uint16_t i = (int)phase;                            // closest sample to left
- 415              		.loc 1 48 33 view .LVU97
- 416 0042 D4ED077A 		vldr.32	s15, [r4, #28]
-  43:wavetable.cpp ****         if (wave2 >= num_waves){ wave2 = 0; }               // wrap to beginning
- 417              		.loc 1 43 17 view .LVU98
- 418 0046 511C     		adds	r1, r2, #1
- 419 0048 C9B2     		uxtb	r1, r1
-  39:wavetable.cpp **** 
- 420              		.loc 1 39 46 view .LVU99
- 421 004a 84EE056B 		vdiv.f64	d6, d4, d5
- 422              	.LBB272:
- 423              	.LBB273:
- 424              		.file 4 "../DaisyExamples/DaisySP/Source/Utility/dsp.h"
+  41:wavetable.cpp ****         if (wave2 >= num_waves){ wave2 = 0; }               // wrap to beginning
+ 404              		.loc 1 41 9 view .LVU96
+  46:wavetable.cpp ****         uint16_t i = (int)phase;                            // closest sample to left
+ 405              		.loc 1 46 33 is_stmt 0 view .LVU97
+ 406 0046 DCED077A 		vldr.32	s15, [ip, #28]
+  41:wavetable.cpp ****         if (wave2 >= num_waves){ wave2 = 0; }               // wrap to beginning
+ 407              		.loc 1 41 17 view .LVU98
+ 408 004a 511C     		adds	r1, r2, #1
+ 409              	.LBB272:
+ 410              	.LBB273:
+ 411              		.file 4 "../DaisyExamples/DaisySP/Source/Utility/dsp.h"
    1:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** /*
    2:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** Copyright (c) 2020 Electrosmith, Corp, Emilie Gillet
    3:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** 
@@ -1978,9 +1958,6 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
   24:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** #define DSY_MIN(in, mn) (in < mn ? in : mn)
   25:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** #define DSY_MAX(in, mx) (in > mx ? in : mx)
   26:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** #define DSY_CLAMP(in, mn, mx) (DSY_MIN(DSY_MAX(in, mn), mx))
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 34
-
-
   27:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** #define DSY_COUNTOF(_arr) (sizeof(_arr) / sizeof(_arr[0]))
   28:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** 
   29:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** namespace daisysp
@@ -2001,6 +1978,9 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
   44:../DaisyExamples/DaisySP/Source/Utility/dsp.h ****     asm("vmaxnm.f32 %[d], %[n], %[m]" : [d] "=t"(r) : [n] "t"(a), [m] "t"(b) :);
   45:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** #else
   46:../DaisyExamples/DaisySP/Source/Utility/dsp.h ****     r = (a > b) ? a : b;
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 34
+
+
   47:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** #endif // __arm__
   48:../DaisyExamples/DaisySP/Source/Utility/dsp.h ****     return r;
   49:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** }
@@ -2038,9 +2018,6 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
   81:../DaisyExamples/DaisySP/Source/Utility/dsp.h ****     *lp = l;
   82:../DaisyExamples/DaisySP/Source/Utility/dsp.h ****     return f;
   83:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** }
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 35
-
-
   84:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** 
   85:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** inline float fastroot(float f, int n)
   86:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** {
@@ -2060,1309 +2037,1273 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 1
  100:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** inline float fastmod1f(float x)
  101:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** {
  102:../DaisyExamples/DaisySP/Source/Utility/dsp.h ****     return x - static_cast<int>(x);
- 425              		.loc 4 102 14 view .LVU100
- 426 004e 04EE902A 		vmov	s9, r2	@ int
- 427              	.LBE273:
- 428              	.LBE272:
-  44:wavetable.cpp ****         float weight = daisysp::fastmod1f(indicies[osc]);   // weight between the two waves
- 429              		.loc 1 44 9 view .LVU101
- 430 0052 B142     		cmp	r1, r6
- 431 0054 B8BF     		it	lt
- 432 0056 4B03     		lsllt	r3, r1, #13
-  54:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
- 433              		.loc 1 54 32 view .LVU102
- 434 0058 D1B2     		uxtb	r1, r2
- 435              	.LBB277:
- 436              	.LBB274:
- 437              		.loc 4 102 14 view .LVU103
- 438 005a F8EEE44A 		vcvt.f32.s32	s9, s9
- 439              	.LBE274:
- 440              	.LBE277:
- 441              	.LBB278:
- 442              	.LBB279:
- 443              	.LBB280:
-  56:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
- 444              		.loc 3 56 41 view .LVU104
- 445 005e 6344     		add	r3, r3, ip
- 446              	.LBE280:
- 447              	.LBE279:
- 448              	.LBE278:
-  59:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
- 449              		.loc 1 59 22 view .LVU105
- 450 0060 B7EE004A 		vmov.f32	s8, #1.0e+0
- 451              	.LBB282:
- 452              	.LBB283:
- 453              	.LBB284:
-  56:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
- 454              		.loc 3 56 41 view .LVU106
- 455 0064 0CEB4131 		add	r1, ip, r1, lsl #13
- 456              	.LBE284:
- 457              	.LBE283:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 36
+ 412              		.loc 4 102 14 view .LVU99
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 35
 
 
- 458              	.LBE282:
- 459              	.LBB286:
- 460              	.LBB275:
- 461              		.loc 4 102 34 view .LVU107
- 462 0068 37EE647A 		vsub.f32	s14, s14, s9
- 463              	.LBE275:
- 464              	.LBE286:
-  59:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
- 465              		.loc 1 59 22 view .LVU108
- 466 006c 74EE474A 		vsub.f32	s9, s8, s14
-  39:wavetable.cpp **** 
- 467              		.loc 1 39 48 view .LVU109
- 468 0070 B7EEC66B 		vcvt.f32.f64	s12, d6
- 469              	.LVL24:
-  42:wavetable.cpp ****         uint8_t wave2 = wave1 + 1;                          // closest wave to the right
- 470              		.loc 1 42 9 is_stmt 1 view .LVU110
-  43:wavetable.cpp ****         if (wave2 >= num_waves){ wave2 = 0; }               // wrap to beginning
- 471              		.loc 1 43 9 view .LVU111
-  44:wavetable.cpp ****         float weight = daisysp::fastmod1f(indicies[osc]);   // weight between the two waves
- 472              		.loc 1 44 9 view .LVU112
-  45:wavetable.cpp ****         
- 473              		.loc 1 45 9 view .LVU113
- 474              	.LBB287:
- 475              	.LBI272:
+ 413 004c 05EE902A 		vmov	s11, r2	@ int
+ 414              	.LBE273:
+ 415              	.LBE272:
+  41:wavetable.cpp ****         if (wave2 >= num_waves){ wave2 = 0; }               // wrap to beginning
+ 416              		.loc 1 41 17 view .LVU100
+ 417 0050 C9B2     		uxtb	r1, r1
+ 418              	.LVL24:
+  42:wavetable.cpp ****         float weight = daisysp::fastmod1f(indicies[osc]);   // weight between the two waves
+ 419              		.loc 1 42 9 is_stmt 1 view .LVU101
+  47:wavetable.cpp ****         uint16_t i_next = i + 1;                            // closest sample to the right
+ 420              		.loc 1 47 22 is_stmt 0 view .LVU102
+ 421 0052 BDEEE76A 		vcvt.s32.f32	s12, s15
+  42:wavetable.cpp ****         float weight = daisysp::fastmod1f(indicies[osc]);   // weight between the two waves
+ 422              		.loc 1 42 9 view .LVU103
+ 423 0056 B142     		cmp	r1, r6
+ 424              	.LBB277:
+ 425              	.LBB274:
+ 426              		.loc 4 102 14 view .LVU104
+ 427 0058 F8EEE55A 		vcvt.f32.s32	s11, s11
+ 428 005c B8BF     		it	lt
+ 429 005e 8B02     		lsllt	r3, r1, #10
+ 430              	.LVL25:
+ 431              		.loc 4 102 14 view .LVU105
+ 432              	.LBE274:
+ 433              	.LBE277:
+  43:wavetable.cpp ****         
+ 434              		.loc 1 43 9 is_stmt 1 view .LVU106
+ 435              	.LBB278:
+ 436              	.LBI272:
  100:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** {
- 476              		.loc 4 100 14 view .LVU114
- 477              	.LBB276:
- 478              		.loc 4 102 5 view .LVU115
- 479              	.LBE276:
- 480              	.LBE287:
-  52:wavetable.cpp **** 
- 481              		.loc 1 52 29 view .LVU116
- 482              		.loc 1 65 31 view .LVU117
-  48:wavetable.cpp ****         uint16_t i = (int)phase;                            // closest sample to left
- 483              		.loc 1 48 9 view .LVU118
-  49:wavetable.cpp ****         uint16_t i_next = i + 1;                            // closest sample to the right
- 484              		.loc 1 49 9 view .LVU119
-  49:wavetable.cpp ****         uint16_t i_next = i + 1;                            // closest sample to the right
- 485              		.loc 1 49 22 is_stmt 0 view .LVU120
- 486 0074 FDEEE76A 		vcvt.s32.f32	s13, s15
-  64:wavetable.cpp ****         if(phase >= 2048.0f){ phase -= 2048.0f; }
- 487              		.loc 1 64 15 view .LVU121
- 488 0078 36EE276A 		vadd.f32	s12, s12, s15
- 489              	.LVL25:
-  49:wavetable.cpp ****         uint16_t i_next = i + 1;                            // closest sample to the right
- 490              		.loc 1 49 18 view .LVU122
- 491 007c 16EE907A 		vmov	r7, s13	@ int
-  54:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
- 492              		.loc 1 54 35 view .LVU123
- 493 0080 16EE902A 		vmov	r2, s13	@ int
- 494              	.LVL26:
- 495              	.LBB288:
- 496              	.LBB289:
- 497              		.loc 4 102 14 view .LVU124
- 498 0084 F8EEE66A 		vcvt.f32.s32	s13, s13
- 499              	.LBE289:
- 500              	.LBE288:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 37
+ 437              		.loc 4 100 14 view .LVU107
+ 438              	.LBB275:
+ 439              		.loc 4 102 5 view .LVU108
+ 440              	.LBE275:
+ 441              	.LBE278:
+  50:wavetable.cpp **** 
+ 442              		.loc 1 50 41 view .LVU109
+ 443              		.loc 1 63 47 view .LVU110
+  47:wavetable.cpp ****         uint16_t i_next = i + 1;                            // closest sample to the right
+ 444              		.loc 1 47 18 is_stmt 0 view .LVU111
+ 445 0060 16EE107A 		vmov	r7, s12	@ int
+  52:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
+ 446              		.loc 1 52 32 view .LVU112
+ 447 0064 D1B2     		uxtb	r1, r2
+  52:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
+ 448              		.loc 1 52 35 view .LVU113
+ 449 0066 16EE102A 		vmov	r2, s12	@ int
+ 450              	.LVL26:
+  47:wavetable.cpp ****         uint16_t i_next = i + 1;                            // closest sample to the right
+ 451              		.loc 1 47 18 view .LVU114
+ 452 006a 1FFA87F8 		uxth	r8, r7
+ 453              	.LBB279:
+ 454              	.LBB280:
+ 455              	.LBB281:
+  56:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
+ 456              		.loc 3 56 41 view .LVU115
+ 457 006e 7344     		add	r3, r3, lr
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 36
 
 
-  54:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
- 501              		.loc 1 54 35 view .LVU125
- 502 0088 92B2     		uxth	r2, r2
- 503              		.loc 1 65 9 view .LVU126
- 504 008a B4EEE36A 		vcmpe.f32	s12, s7
-  49:wavetable.cpp ****         uint16_t i_next = i + 1;                            // closest sample to the right
- 505              		.loc 1 49 18 view .LVU127
- 506 008e 1FFA87F8 		uxth	r8, r7
- 507              	.LVL27:
-  50:wavetable.cpp ****         float i_weight = daisysp::fastmod1f(phase);         // distance from the left sample
- 508              		.loc 1 50 9 is_stmt 1 view .LVU128
-  56:wavetable.cpp ****         float ce2 = waves[wave2][i_next];
- 509              		.loc 1 56 35 is_stmt 0 view .LVU129
- 510 0092 03EB8209 		add	r9, r3, r2, lsl #2
- 511              	.LBB292:
- 512              	.LBB290:
- 513              		.loc 4 102 34 view .LVU130
- 514 0096 77EEE67A 		vsub.f32	s15, s15, s13
- 515              	.LVL28:
- 516              		.loc 4 102 34 view .LVU131
- 517              	.LBE290:
- 518              	.LBE292:
-  54:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
- 519              		.loc 1 54 35 view .LVU132
- 520 009a 01EB8207 		add	r7, r1, r2, lsl #2
-  50:wavetable.cpp ****         float i_weight = daisysp::fastmod1f(phase);         // distance from the left sample
- 521              		.loc 1 50 18 view .LVU133
- 522 009e 08F10102 		add	r2, r8, #1
-  52:wavetable.cpp **** 
- 523              		.loc 1 52 36 view .LVU134
- 524 00a2 A8F2FF78 		subw	r8, r8, #2047
- 525              	.LVL29:
-  59:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
- 526              		.loc 1 59 46 view .LVU135
- 527 00a6 D9ED006A 		vldr.32	s13, [r9]
-  50:wavetable.cpp ****         float i_weight = daisysp::fastmod1f(phase);         // distance from the left sample
- 528              		.loc 1 50 18 view .LVU136
- 529 00aa 92B2     		uxth	r2, r2
- 530              	.LVL30:
-  51:wavetable.cpp ****         if(i_next >= 2048){ i_next -= 2048;}                // wrap if needed
- 531              		.loc 1 51 9 is_stmt 1 view .LVU137
- 532              	.LBB293:
- 533              	.LBI288:
+ 458              	.LBE281:
+ 459              	.LBE280:
+ 460              	.LBE279:
+  52:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
+ 461              		.loc 1 52 35 view .LVU116
+ 462 0070 92B2     		uxth	r2, r2
+ 463              	.LBB283:
+ 464              	.LBB284:
+ 465              		.loc 4 102 14 view .LVU117
+ 466 0072 B8EEC66A 		vcvt.f32.s32	s12, s12
+ 467              	.LBE284:
+ 468              	.LBE283:
+ 469              	.LBB287:
+ 470              	.LBB288:
+ 471              	.LBB289:
+  56:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
+ 472              		.loc 3 56 41 view .LVU118
+ 473 0076 0EEB8121 		add	r1, lr, r1, lsl #10
+ 474              	.LVL27:
+  56:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
+ 475              		.loc 3 56 41 view .LVU119
+ 476              	.LBE289:
+ 477              	.LBE288:
+ 478              	.LBE287:
+ 479              	.LBB291:
+ 480              	.LBB276:
+ 481              		.loc 4 102 34 view .LVU120
+ 482 007a 37EE657A 		vsub.f32	s14, s14, s11
+ 483              	.LVL28:
+ 484              		.loc 4 102 34 view .LVU121
+ 485              	.LBE276:
+ 486              	.LBE291:
+  54:wavetable.cpp ****         float ce2 = waves[wave2][i_next];
+ 487              		.loc 1 54 35 view .LVU122
+ 488 007e 03EB8209 		add	r9, r3, r2, lsl #2
+  52:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
+ 489              		.loc 1 52 35 view .LVU123
+ 490 0082 01EB8207 		add	r7, r1, r2, lsl #2
+  48:wavetable.cpp ****         float i_weight = daisysp::fastmod1f(phase);         // distance from the left sample
+ 491              		.loc 1 48 18 view .LVU124
+ 492 0086 08F10102 		add	r2, r8, #1
+ 493              	.LVL29:
+  46:wavetable.cpp ****         uint16_t i = (int)phase;                            // closest sample to left
+ 494              		.loc 1 46 9 is_stmt 1 view .LVU125
+  47:wavetable.cpp ****         uint16_t i_next = i + 1;                            // closest sample to the right
+ 495              		.loc 1 47 9 view .LVU126
+  48:wavetable.cpp ****         float i_weight = daisysp::fastmod1f(phase);         // distance from the left sample
+ 496              		.loc 1 48 9 view .LVU127
+  50:wavetable.cpp **** 
+ 497              		.loc 1 50 48 is_stmt 0 view .LVU128
+ 498 008a A8F1FF08 		sub	r8, r8, #255
+ 499              	.LVL30:
+  57:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
+ 500              		.loc 1 57 22 view .LVU129
+ 501 008e 75EE475A 		vsub.f32	s11, s10, s14
+  48:wavetable.cpp ****         float i_weight = daisysp::fastmod1f(phase);         // distance from the left sample
+ 502              		.loc 1 48 18 view .LVU130
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 37
+
+
+ 503 0092 92B2     		uxth	r2, r2
+ 504              	.LVL31:
+  49:wavetable.cpp ****         if(i_next >= samples_per_wave){ i_next -= samples_per_wave;}                // wrap if need
+ 505              		.loc 1 49 9 is_stmt 1 view .LVU131
+ 506              	.LBB292:
+ 507              	.LBI283:
  100:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** {
- 534              		.loc 4 100 14 view .LVU138
- 535              	.LBB291:
- 536              		.loc 4 102 5 view .LVU139
- 537              		.loc 4 102 5 is_stmt 0 view .LVU140
- 538              	.LBE291:
- 539              	.LBE293:
-  52:wavetable.cpp **** 
- 540              		.loc 1 52 9 is_stmt 1 view .LVU141
-  59:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
- 541              		.loc 1 59 15 is_stmt 0 view .LVU142
- 542 00ac D7ED002A 		vldr.32	s5, [r7]
-  59:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
- 543              		.loc 1 59 46 view .LVU143
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 38
+ 508              		.loc 4 100 14 view .LVU132
+ 509              	.LBB285:
+ 510              		.loc 4 102 5 view .LVU133
+ 511              		.loc 4 102 5 is_stmt 0 view .LVU134
+ 512              	.LBE285:
+ 513              	.LBE292:
+  62:wavetable.cpp ****         if(phase >= (float)samples_per_wave){ phase -= (float)samples_per_wave; }
+ 514              		.loc 1 62 15 view .LVU135
+ 515 0094 76EEA76A 		vadd.f32	s13, s13, s15
+ 516              	.LVL32:
+ 517              	.LBB293:
+ 518              	.LBB286:
+ 519              		.loc 4 102 34 view .LVU136
+ 520 0098 77EEC67A 		vsub.f32	s15, s15, s12
+ 521              	.LVL33:
+ 522              		.loc 4 102 34 view .LVU137
+ 523              	.LBE286:
+ 524              	.LBE293:
+  50:wavetable.cpp **** 
+ 525              		.loc 1 50 9 is_stmt 1 view .LVU138
+  57:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
+ 526              		.loc 1 57 46 is_stmt 0 view .LVU139
+ 527 009c 99ED006A 		vldr.32	s12, [r9]
+  50:wavetable.cpp **** 
+ 528              		.loc 1 50 9 view .LVU140
+ 529 00a0 FF2A     		cmp	r2, #255
+  57:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
+ 530              		.loc 1 57 15 view .LVU141
+ 531 00a2 D7ED003A 		vldr.32	s7, [r7]
+  57:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
+ 532              		.loc 1 57 46 view .LVU142
+ 533 00a6 27EE066A 		vmul.f32	s12, s14, s12
+  50:wavetable.cpp **** 
+ 534              		.loc 1 50 48 view .LVU143
+ 535 00aa 88BF     		it	hi
+ 536 00ac 1FFA88F2 		uxthhi	r2, r8
+ 537              	.LVL34:
+  52:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
+ 538              		.loc 1 52 9 is_stmt 1 view .LVU144
+ 539              	.LBB294:
+ 540              	.LBI287:
+ 185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
+ 541              		.loc 3 185 7 view .LVU145
+ 542              	.LBB290:
+ 543              	.LBI288:
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
+ 544              		.loc 3 55 7 view .LVU146
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
+ 545              		.loc 3 55 7 is_stmt 0 view .LVU147
+ 546              	.LBE290:
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 38
 
 
- 544 00b0 67EE266A 		vmul.f32	s13, s14, s13
-  52:wavetable.cpp **** 
- 545              		.loc 1 52 9 view .LVU144
- 546 00b4 B2F5006F 		cmp	r2, #2048
-  62:wavetable.cpp **** 
- 547              		.loc 1 62 23 view .LVU145
- 548 00b8 34EE674A 		vsub.f32	s8, s8, s15
-  52:wavetable.cpp **** 
- 549              		.loc 1 52 36 view .LVU146
- 550 00bc 28BF     		it	cs
- 551 00be 1FFA88F2 		uxthcs	r2, r8
- 552              	.LVL31:
-  54:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
- 553              		.loc 1 54 9 is_stmt 1 view .LVU147
- 554              	.LBB294:
- 555              	.LBI282:
+ 547              	.LBE294:
+ 548              	.LBB295:
+ 549              	.LBI295:
  185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 556              		.loc 3 185 7 view .LVU148
- 557              	.LBB285:
- 558              	.LBI283:
+ 550              		.loc 3 185 7 is_stmt 1 view .LVU148
+ 551              	.LBB296:
+ 552              	.LBI296:
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 559              		.loc 3 55 7 view .LVU149
+ 553              		.loc 3 55 7 view .LVU149
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 560              		.loc 3 55 7 is_stmt 0 view .LVU150
- 561              	.LBE285:
- 562              	.LBE294:
- 563              	.LBB295:
- 564              	.LBI295:
+ 554              		.loc 3 55 7 is_stmt 0 view .LVU150
+ 555              	.LBE296:
+ 556              	.LBE295:
+  53:wavetable.cpp ****         float fl2 = waves[wave2][i];        
+ 557              		.loc 1 53 9 is_stmt 1 view .LVU151
+ 558              	.LBB297:
+ 559              	.LBI297:
  185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 565              		.loc 3 185 7 is_stmt 1 view .LVU151
- 566              	.LBB296:
- 567              	.LBI296:
+ 560              		.loc 3 185 7 view .LVU152
+ 561              	.LBB298:
+ 562              	.LBI298:
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 568              		.loc 3 55 7 view .LVU152
+ 563              		.loc 3 55 7 view .LVU153
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 569              		.loc 3 55 7 is_stmt 0 view .LVU153
- 570              	.LBE296:
- 571              	.LBE295:
-  55:wavetable.cpp ****         float fl2 = waves[wave2][i];        
- 572              		.loc 1 55 9 is_stmt 1 view .LVU154
- 573              	.LBB297:
- 574              	.LBI297:
- 185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 575              		.loc 3 185 7 view .LVU155
- 576              	.LBB298:
- 577              	.LBI298:
-  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 578              		.loc 3 55 7 view .LVU156
-  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 579              		.loc 3 55 7 is_stmt 0 view .LVU157
- 580              	.LBE298:
- 581              	.LBE297:
-  59:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
- 582              		.loc 1 59 15 view .LVU158
- 583 00c2 E4EEA26A 		vfma.f32	s13, s9, s5
- 584              		.loc 1 65 9 view .LVU159
- 585 00c6 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 39
-
-
-  57:wavetable.cpp **** 
- 586              		.loc 1 57 40 view .LVU160
- 587 00ca 03EB8203 		add	r3, r3, r2, lsl #2
-  55:wavetable.cpp ****         float fl2 = waves[wave2][i];        
- 588              		.loc 1 55 40 view .LVU161
- 589 00ce 01EB8202 		add	r2, r1, r2, lsl #2
- 590              	.LVL32:
-  57:wavetable.cpp **** 
- 591              		.loc 1 57 40 view .LVU162
- 592 00d2 93ED002A 		vldr.32	s4, [r3]
- 593              		.loc 1 65 37 view .LVU163
- 594 00d6 A8BF     		it	ge
- 595 00d8 36EE636A 		vsubge.f32	s12, s12, s7
-  55:wavetable.cpp ****         float fl2 = waves[wave2][i];        
- 596              		.loc 1 55 40 view .LVU164
- 597 00dc 92ED003A 		vldr.32	s6, [r2]
- 598              	.LVL33:
-  56:wavetable.cpp ****         float ce2 = waves[wave2][i_next];
- 599              		.loc 1 56 9 is_stmt 1 view .LVU165
- 600              	.LBB299:
- 601              	.LBI278:
- 185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 602              		.loc 3 185 7 view .LVU166
- 603              	.LBB281:
- 604              	.LBI279:
-  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 605              		.loc 3 55 7 view .LVU167
-  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 606              		.loc 3 55 7 is_stmt 0 view .LVU168
- 607              	.LBE281:
- 608              	.LBE299:
- 609              	.LBB300:
- 610              	.LBI300:
- 185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 611              		.loc 3 185 7 is_stmt 1 view .LVU169
- 612              	.LBB301:
- 613              	.LBI301:
-  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 614              		.loc 3 55 7 view .LVU170
-  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 615              		.loc 3 55 7 is_stmt 0 view .LVU171
- 616              	.LBE301:
- 617              	.LBE300:
-  57:wavetable.cpp **** 
- 618              		.loc 1 57 9 is_stmt 1 view .LVU172
- 619              	.LBB302:
- 620              	.LBI302:
- 185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 621              		.loc 3 185 7 view .LVU173
- 622              	.LBB303:
- 623              	.LBI303:
-  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 624              		.loc 3 55 7 view .LVU174
-  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 625              		.loc 3 55 7 is_stmt 0 view .LVU175
- 626              	.LBE303:
- 627              	.LBE302:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 40
-
-
-  59:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
- 628              		.loc 1 59 9 is_stmt 1 view .LVU176
+ 564              		.loc 3 55 7 is_stmt 0 view .LVU154
+ 565              	.LBE298:
+ 566              	.LBE297:
   60:wavetable.cpp **** 
- 629              		.loc 1 60 9 view .LVU177
- 630              	.LBE304:
-  38:wavetable.cpp ****         float dt = frequencies[osc] * 2048.0 / fs;          // time difference between samples
- 631              		.loc 1 38 26 is_stmt 0 view .LVU178
- 632 00e0 A542     		cmp	r5, r4
- 633              	.LBB305:
+ 567              		.loc 1 60 23 view .LVU155
+ 568 00b0 35EE675A 		vsub.f32	s10, s10, s15
+ 569              		.loc 1 63 9 view .LVU156
+ 570 00b4 F4EEE46A 		vcmpe.f32	s13, s9
+  55:wavetable.cpp **** 
+ 571              		.loc 1 55 40 view .LVU157
+ 572 00b8 03EB8203 		add	r3, r3, r2, lsl #2
+  57:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
+ 573              		.loc 1 57 15 view .LVU158
+ 574 00bc A5EEA36A 		vfma.f32	s12, s11, s7
+  53:wavetable.cpp ****         float fl2 = waves[wave2][i];        
+ 575              		.loc 1 53 40 view .LVU159
+ 576 00c0 01EB8202 		add	r2, r1, r2, lsl #2
+ 577              	.LVL35:
+  55:wavetable.cpp **** 
+ 578              		.loc 1 55 40 view .LVU160
+ 579 00c4 93ED003A 		vldr.32	s6, [r3]
+ 580              		.loc 1 63 9 view .LVU161
+ 581 00c8 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 582              	.LVL36:
+  53:wavetable.cpp ****         float fl2 = waves[wave2][i];        
+ 583              		.loc 1 53 40 view .LVU162
+ 584 00cc 92ED004A 		vldr.32	s8, [r2]
+ 585              	.LVL37:
+  54:wavetable.cpp ****         float ce2 = waves[wave2][i_next];
+ 586              		.loc 1 54 9 is_stmt 1 view .LVU163
+ 587              	.LBB299:
+ 588              	.LBI279:
+ 185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 39
+
+
+ 589              		.loc 3 185 7 view .LVU164
+ 590              	.LBB282:
+ 591              	.LBI280:
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
+ 592              		.loc 3 55 7 view .LVU165
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
+ 593              		.loc 3 55 7 is_stmt 0 view .LVU166
+ 594              	.LBE282:
+ 595              	.LBE299:
+ 596              	.LBB300:
+ 597              	.LBI300:
+ 185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
+ 598              		.loc 3 185 7 is_stmt 1 view .LVU167
+ 599              	.LBB301:
+ 600              	.LBI301:
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
+ 601              		.loc 3 55 7 view .LVU168
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
+ 602              		.loc 3 55 7 is_stmt 0 view .LVU169
+ 603              	.LBE301:
+ 604              	.LBE300:
+  55:wavetable.cpp **** 
+ 605              		.loc 1 55 9 is_stmt 1 view .LVU170
+ 606              	.LBB302:
+ 607              	.LBI302:
+ 185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
+ 608              		.loc 3 185 7 view .LVU171
+ 609              	.LBB303:
+ 610              	.LBI303:
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
+ 611              		.loc 3 55 7 view .LVU172
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
+ 612              		.loc 3 55 7 is_stmt 0 view .LVU173
+ 613              	.LBE303:
+ 614              	.LBE302:
+  57:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
+ 615              		.loc 1 57 9 is_stmt 1 view .LVU174
+  58:wavetable.cpp **** 
+ 616              		.loc 1 58 9 view .LVU175
+  58:wavetable.cpp **** 
+ 617              		.loc 1 58 46 is_stmt 0 view .LVU176
+ 618 00d0 27EE037A 		vmul.f32	s14, s14, s6
+ 619              	.LVL38:
+ 620              		.loc 1 63 53 view .LVU177
+ 621 00d4 A8BF     		it	ge
+ 622 00d6 76EEE46A 		vsubge.f32	s13, s13, s9
+ 623              	.LBE271:
+  36:wavetable.cpp ****         float dt = frequencies[osc] * (float)samples_per_wave / fs;          // time difference bet
+ 624              		.loc 1 36 26 view .LVU178
+ 625 00da 6545     		cmp	r5, ip
+ 626              	.LBB304:
+  58:wavetable.cpp **** 
+ 627              		.loc 1 58 15 view .LVU179
+ 628 00dc A5EE847A 		vfma.f32	s14, s11, s8
+ 629              	.LVL39:
   60:wavetable.cpp **** 
- 634              		.loc 1 60 46 view .LVU179
- 635 00e2 27EE027A 		vmul.f32	s14, s14, s4
- 636              	.LVL34:
-  66:wavetable.cpp ****         phases[osc] = phase;
- 637              		.loc 1 66 21 view .LVU180
- 638 00e6 84ED076A 		vstr.32	s12, [r4, #28]
- 639              	.LVL35:
+ 630              		.loc 1 60 9 is_stmt 1 view .LVU180
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 40
+
+
+  64:wavetable.cpp ****         phases[osc] = phase;
+ 631              		.loc 1 64 21 is_stmt 0 view .LVU181
+ 632 00e0 CCED076A 		vstr.32	s13, [ip, #28]
+ 633              	.LVL40:
   60:wavetable.cpp **** 
- 640              		.loc 1 60 15 view .LVU181
- 641 00ea A4EE837A 		vfma.f32	s14, s9, s6
- 642              	.LVL36:
-  62:wavetable.cpp **** 
- 643              		.loc 1 62 9 is_stmt 1 view .LVU182
-  62:wavetable.cpp **** 
- 644              		.loc 1 62 51 is_stmt 0 view .LVU183
- 645 00ee 67EE877A 		vmul.f32	s15, s15, s14
- 646              	.LVL37:
-  62:wavetable.cpp **** 
- 647              		.loc 1 62 40 view .LVU184
- 648 00f2 E4EE267A 		vfma.f32	s15, s8, s13
-  62:wavetable.cpp **** 
- 649              		.loc 1 62 18 view .LVU185
- 650 00f6 EEEC017A 		vstmia.32	lr!, {s15}
-  64:wavetable.cpp ****         if(phase >= 2048.0f){ phase -= 2048.0f; }
- 651              		.loc 1 64 9 is_stmt 1 view .LVU186
-  65:wavetable.cpp ****         phases[osc] = phase;
- 652              		.loc 1 65 9 view .LVU187
- 653              	.LVL38:
- 654              		.loc 1 66 9 view .LVU188
- 655              	.LBE305:
-  38:wavetable.cpp ****         float dt = frequencies[osc] * 2048.0 / fs;          // time difference between samples
- 656              		.loc 1 38 5 view .LVU189
-  38:wavetable.cpp ****         float dt = frequencies[osc] * 2048.0 / fs;          // time difference between samples
- 657              		.loc 1 38 26 view .LVU190
- 658 00fa 91D1     		bne	.L17
- 659              	.LBE306:
-  67:wavetable.cpp ****     }
-  68:wavetable.cpp **** 
-  69:wavetable.cpp ****     return out;
- 660              		.loc 1 69 5 view .LVU191
-  70:wavetable.cpp **** }
- 661              		.loc 1 70 1 is_stmt 0 view .LVU192
- 662 00fc BDE8F083 		pop	{r4, r5, r6, r7, r8, r9, pc}
- 663              	.LVL39:
- 664              	.L23:
- 665              		.loc 1 70 1 view .LVU193
- 666              		.align	3
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 41
+ 634              		.loc 1 60 51 view .LVU182
+ 635 00e4 67EE877A 		vmul.f32	s15, s15, s14
+ 636              	.LVL41:
+  60:wavetable.cpp **** 
+ 637              		.loc 1 60 40 view .LVU183
+ 638 00e8 E5EE067A 		vfma.f32	s15, s10, s12
+  60:wavetable.cpp **** 
+ 639              		.loc 1 60 18 view .LVU184
+ 640 00ec E4EC017A 		vstmia.32	r4!, {s15}
+  62:wavetable.cpp ****         if(phase >= (float)samples_per_wave){ phase -= (float)samples_per_wave; }
+ 641              		.loc 1 62 9 is_stmt 1 view .LVU185
+  63:wavetable.cpp ****         phases[osc] = phase;
+ 642              		.loc 1 63 9 view .LVU186
+ 643              	.LVL42:
+ 644              		.loc 1 64 9 view .LVU187
+ 645              	.LBE304:
+  36:wavetable.cpp ****         float dt = frequencies[osc] * (float)samples_per_wave / fs;          // time difference bet
+ 646              		.loc 1 36 5 view .LVU188
+  36:wavetable.cpp ****         float dt = frequencies[osc] * (float)samples_per_wave / fs;          // time difference bet
+ 647              		.loc 1 36 26 view .LVU189
+ 648 00f0 96D1     		bne	.L15
+ 649              	.LBE270:
+  65:wavetable.cpp ****     }
+  66:wavetable.cpp **** 
+  67:wavetable.cpp ****     return out;
+ 650              		.loc 1 67 5 view .LVU190
+  68:wavetable.cpp **** }
+ 651              		.loc 1 68 1 is_stmt 0 view .LVU191
+ 652 00f2 BDE8F083 		pop	{r4, r5, r6, r7, r8, r9, pc}
+ 653              	.LVL43:
+ 654              	.L21:
+ 655              		.loc 1 68 1 view .LVU192
+ 656 00f6 00BF     		.align	2
+ 657              	.L20:
+ 658 00f8 00008043 		.word	1132462080
+ 659              		.cfi_endproc
+ 660              	.LFE4733:
+ 662              		.section	.text._ZN9Wavetable7SetFreqEif,"ax",%progbits
+ 663              		.align	1
+ 664              		.p2align 2,,3
+ 665              		.global	_ZN9Wavetable7SetFreqEif
+ 666              		.syntax unified
+ 667              		.thumb
+ 668              		.thumb_func
+ 669              		.fpu fpv5-d16
+ 671              	_ZN9Wavetable7SetFreqEif:
+ 672              	.LVL44:
+ 673              	.LFB4734:
+  69:wavetable.cpp **** 
+  70:wavetable.cpp **** void Wavetable::SetFreq(int osc, float freq){
+ 674              		.loc 1 70 45 is_stmt 1 view -0
+ 675              		.cfi_startproc
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 41
 
 
- 667              	.L22:
- 668 0100 00000000 		.word	0
- 669 0104 0000A040 		.word	1084227584
- 670 0108 08000100 		.word	65544
- 671 010c 28000100 		.word	65576
- 672 0110 00000045 		.word	1157627904
- 673              		.cfi_endproc
- 674              	.LFE4733:
- 676              		.section	.text._ZN9Wavetable7SetFreqEif,"ax",%progbits
- 677              		.align	1
- 678              		.p2align 2,,3
- 679              		.global	_ZN9Wavetable7SetFreqEif
- 680              		.syntax unified
- 681              		.thumb
- 682              		.thumb_func
- 683              		.fpu fpv5-d16
- 685              	_ZN9Wavetable7SetFreqEif:
- 686              	.LVL40:
- 687              	.LFB4734:
-  71:wavetable.cpp **** 
-  72:wavetable.cpp **** void Wavetable::SetFreq(int osc, float freq){
- 688              		.loc 1 72 45 is_stmt 1 view -0
- 689              		.cfi_startproc
- 690              		@ args = 0, pretend = 0, frame = 0
- 691              		@ frame_needed = 0, uses_anonymous_args = 0
- 692              		@ link register save eliminated.
-  73:wavetable.cpp ****     frequencies[osc] = freq;
- 693              		.loc 1 73 5 view .LVU195
- 694              	.LBB307:
- 695              	.LBI307:
+ 676              		@ args = 0, pretend = 0, frame = 0
+ 677              		@ frame_needed = 0, uses_anonymous_args = 0
+ 678              		@ link register save eliminated.
+  71:wavetable.cpp ****     frequencies[osc] = freq;
+ 679              		.loc 1 71 5 view .LVU194
+ 680              	.LBB305:
+ 681              	.LBI305:
  185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 696              		.loc 3 185 7 view .LVU196
- 697              	.LBB308:
- 698              	.LBI308:
+ 682              		.loc 3 185 7 view .LVU195
+ 683              	.LBB306:
+ 684              	.LBI306:
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 699              		.loc 3 55 7 view .LVU197
+ 685              		.loc 3 55 7 view .LVU196
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 700              		.loc 3 55 7 is_stmt 0 view .LVU198
- 701              	.LBE308:
- 702              	.LBE307:
- 703              		.loc 1 73 22 view .LVU199
- 704 0000 00F58030 		add	r0, r0, #65536
- 705              	.LVL41:
- 706              		.loc 1 73 22 view .LVU200
- 707 0004 00EB8100 		add	r0, r0, r1, lsl #2
- 708              	.LVL42:
- 709              		.loc 1 73 22 view .LVU201
- 710 0008 80ED020A 		vstr.32	s0, [r0, #8]
-  74:wavetable.cpp **** }
- 711              		.loc 1 74 1 view .LVU202
- 712 000c 7047     		bx	lr
- 713              		.cfi_endproc
- 714              	.LFE4734:
- 716 000e 00BF     		.section	.text._ZN9Wavetable8SetIndexEif,"ax",%progbits
- 717              		.align	1
- 718              		.p2align 2,,3
- 719              		.global	_ZN9Wavetable8SetIndexEif
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 42
-
-
- 720              		.syntax unified
- 721              		.thumb
- 722              		.thumb_func
- 723              		.fpu fpv5-d16
- 725              	_ZN9Wavetable8SetIndexEif:
- 726              	.LVL43:
- 727              	.LFB4735:
-  75:wavetable.cpp **** 
-  76:wavetable.cpp **** void Wavetable::SetIndex(int osc, float index){
- 728              		.loc 1 76 47 is_stmt 1 view -0
- 729              		.cfi_startproc
- 730              		@ args = 0, pretend = 0, frame = 0
- 731              		@ frame_needed = 0, uses_anonymous_args = 0
- 732              		@ link register save eliminated.
-  77:wavetable.cpp ****     indicies[osc] = index;
- 733              		.loc 1 77 5 view .LVU204
- 734              	.LBB309:
- 735              	.LBI309:
+ 686              		.loc 3 55 7 is_stmt 0 view .LVU197
+ 687              	.LBE306:
+ 688              	.LBE305:
+ 689              		.loc 1 71 22 view .LVU198
+ 690 0000 00F50050 		add	r0, r0, #8192
+ 691              	.LVL45:
+ 692              		.loc 1 71 22 view .LVU199
+ 693 0004 00EB8100 		add	r0, r0, r1, lsl #2
+ 694              	.LVL46:
+ 695              		.loc 1 71 22 view .LVU200
+ 696 0008 80ED020A 		vstr.32	s0, [r0, #8]
+  72:wavetable.cpp **** }
+ 697              		.loc 1 72 1 view .LVU201
+ 698 000c 7047     		bx	lr
+ 699              		.cfi_endproc
+ 700              	.LFE4734:
+ 702 000e 00BF     		.section	.text._ZN9Wavetable8SetIndexEif,"ax",%progbits
+ 703              		.align	1
+ 704              		.p2align 2,,3
+ 705              		.global	_ZN9Wavetable8SetIndexEif
+ 706              		.syntax unified
+ 707              		.thumb
+ 708              		.thumb_func
+ 709              		.fpu fpv5-d16
+ 711              	_ZN9Wavetable8SetIndexEif:
+ 712              	.LVL47:
+ 713              	.LFB4735:
+  73:wavetable.cpp **** 
+  74:wavetable.cpp **** void Wavetable::SetIndex(int osc, float index){
+ 714              		.loc 1 74 47 is_stmt 1 view -0
+ 715              		.cfi_startproc
+ 716              		@ args = 0, pretend = 0, frame = 0
+ 717              		@ frame_needed = 0, uses_anonymous_args = 0
+ 718              		@ link register save eliminated.
+  75:wavetable.cpp ****     indicies[osc] = index;
+ 719              		.loc 1 75 5 view .LVU203
+ 720              	.LBB307:
+ 721              	.LBI307:
  185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 736              		.loc 3 185 7 view .LVU205
- 737              	.LBB310:
- 738              	.LBI310:
+ 722              		.loc 3 185 7 view .LVU204
+ 723              	.LBB308:
+ 724              	.LBI308:
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 739              		.loc 3 55 7 view .LVU206
-  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 740              		.loc 3 55 7 is_stmt 0 view .LVU207
- 741              	.LBE310:
- 742              	.LBE309:
- 743              		.loc 1 77 19 view .LVU208
- 744 0000 00F58030 		add	r0, r0, #65536
- 745              	.LVL44:
- 746              		.loc 1 77 19 view .LVU209
- 747 0004 00EB8100 		add	r0, r0, r1, lsl #2
- 748              	.LVL45:
- 749              		.loc 1 77 19 view .LVU210
- 750 0008 80ED120A 		vstr.32	s0, [r0, #72]
-  78:wavetable.cpp **** }
- 751              		.loc 1 78 1 view .LVU211
- 752 000c 7047     		bx	lr
- 753              		.cfi_endproc
- 754              	.LFE4735:
- 756 000e 00BF     		.section	.text._ZN9Wavetable7AddNoteEh,"ax",%progbits
- 757              		.align	1
- 758              		.p2align 2,,3
- 759              		.global	_ZN9Wavetable7AddNoteEh
- 760              		.syntax unified
- 761              		.thumb
- 762              		.thumb_func
- 763              		.fpu fpv5-d16
- 765              	_ZN9Wavetable7AddNoteEh:
- 766              	.LVL46:
- 767              	.LFB4736:
-  79:wavetable.cpp **** 
-  80:wavetable.cpp **** void Wavetable::AddNote(uint8_t note){
- 768              		.loc 1 80 38 is_stmt 1 view -0
- 769              		.cfi_startproc
- 770              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 43
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 42
 
 
- 771              		@ frame_needed = 0, uses_anonymous_args = 0
-  81:wavetable.cpp ****     /* Find a target oscillator */
-  82:wavetable.cpp ****     uint8_t target = 0;                             // keep track of the oldest oscillator
- 772              		.loc 1 82 5 view .LVU213
-  83:wavetable.cpp ****     for(int i = 0; i < 8; i++){                     // search through all oscillators
- 773              		.loc 1 83 5 view .LVU214
- 774              	.LBB311:
- 775              		.loc 1 83 22 view .LVU215
- 776 0000 1A4B     		ldr	r3, .L41
- 777              		.loc 1 83 13 is_stmt 0 view .LVU216
- 778 0002 0022     		movs	r2, #0
- 779 0004 0344     		add	r3, r3, r0
- 780              	.LBE311:
-  80:wavetable.cpp ****     /* Find a target oscillator */
- 781              		.loc 1 80 38 view .LVU217
- 782 0006 F0B5     		push	{r4, r5, r6, r7, lr}
- 783              		.cfi_def_cfa_offset 20
- 784              		.cfi_offset 4, -20
- 785              		.cfi_offset 5, -16
- 786              		.cfi_offset 6, -12
- 787              		.cfi_offset 7, -8
- 788              		.cfi_offset 14, -4
-  80:wavetable.cpp ****     /* Find a target oscillator */
- 789              		.loc 1 80 38 view .LVU218
- 790 0008 9C46     		mov	ip, r3
-  82:wavetable.cpp ****     for(int i = 0; i < 8; i++){                     // search through all oscillators
- 791              		.loc 1 82 13 view .LVU219
- 792 000a 1746     		mov	r7, r2
- 793 000c 00F5803E 		add	lr, r0, #65536
- 794              	.LVL47:
- 795              	.L29:
- 796              	.LBB314:
-  84:wavetable.cpp ****         //if(notes[i] == note){ return; }             // return if we are playing the note
-  85:wavetable.cpp ****         if(notes[i] == 255){                        // if oscillator is empty
- 797              		.loc 1 85 9 is_stmt 1 view .LVU220
-  86:wavetable.cpp ****             target = i;
-  87:wavetable.cpp ****             break;
-  88:wavetable.cpp ****         }                        
-  89:wavetable.cpp ****         if(ages[i] > ages[target]){ target = i; }   // update oldest
- 798              		.loc 1 89 9 view .LVU221
- 799              	.LBB312:
- 800              	.LBI312:
+ 725              		.loc 3 55 7 view .LVU205
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
+ 726              		.loc 3 55 7 is_stmt 0 view .LVU206
+ 727              	.LBE308:
+ 728              	.LBE307:
+ 729              		.loc 1 75 19 view .LVU207
+ 730 0000 00F50050 		add	r0, r0, #8192
+ 731              	.LVL48:
+ 732              		.loc 1 75 19 view .LVU208
+ 733 0004 00EB8100 		add	r0, r0, r1, lsl #2
+ 734              	.LVL49:
+ 735              		.loc 1 75 19 view .LVU209
+ 736 0008 80ED120A 		vstr.32	s0, [r0, #72]
+  76:wavetable.cpp **** }
+ 737              		.loc 1 76 1 view .LVU210
+ 738 000c 7047     		bx	lr
+ 739              		.cfi_endproc
+ 740              	.LFE4735:
+ 742 000e 00BF     		.section	.text._ZN9Wavetable7AddNoteEh,"ax",%progbits
+ 743              		.align	1
+ 744              		.p2align 2,,3
+ 745              		.global	_ZN9Wavetable7AddNoteEh
+ 746              		.syntax unified
+ 747              		.thumb
+ 748              		.thumb_func
+ 749              		.fpu fpv5-d16
+ 751              	_ZN9Wavetable7AddNoteEh:
+ 752              	.LVL50:
+ 753              	.LFB4736:
+  77:wavetable.cpp **** 
+  78:wavetable.cpp **** void Wavetable::AddNote(uint8_t note){
+ 754              		.loc 1 78 38 is_stmt 1 view -0
+ 755              		.cfi_startproc
+ 756              		@ args = 0, pretend = 0, frame = 0
+ 757              		@ frame_needed = 0, uses_anonymous_args = 0
+  79:wavetable.cpp ****     /* Find a target oscillator */
+  80:wavetable.cpp ****     uint8_t target = 0;                             // keep track of the oldest oscillator
+ 758              		.loc 1 80 5 view .LVU212
+  81:wavetable.cpp ****     for(int i = 0; i < 8; i++){                     // search through all oscillators
+ 759              		.loc 1 81 5 view .LVU213
+ 760              	.LBB309:
+ 761              		.loc 1 81 22 view .LVU214
+ 762 0000 42F26803 		movw	r3, #8296
+ 763              		.loc 1 81 13 is_stmt 0 view .LVU215
+ 764 0004 0022     		movs	r2, #0
+ 765 0006 0344     		add	r3, r3, r0
+ 766              	.LBE309:
+  78:wavetable.cpp ****     /* Find a target oscillator */
+ 767              		.loc 1 78 38 view .LVU216
+ 768 0008 F0B5     		push	{r4, r5, r6, r7, lr}
+ 769              		.cfi_def_cfa_offset 20
+ 770              		.cfi_offset 4, -20
+ 771              		.cfi_offset 5, -16
+ 772              		.cfi_offset 6, -12
+ 773              		.cfi_offset 7, -8
+ 774              		.cfi_offset 14, -4
+  78:wavetable.cpp ****     /* Find a target oscillator */
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 43
+
+
+ 775              		.loc 1 78 38 view .LVU217
+ 776 000a 9C46     		mov	ip, r3
+  80:wavetable.cpp ****     for(int i = 0; i < 8; i++){                     // search through all oscillators
+ 777              		.loc 1 80 13 view .LVU218
+ 778 000c 1746     		mov	r7, r2
+ 779 000e 00F5005E 		add	lr, r0, #8192
+ 780              	.LVL51:
+ 781              	.L27:
+ 782              	.LBB312:
+  82:wavetable.cpp ****         //if(notes[i] == note){ return; }             // return if we are playing the note
+  83:wavetable.cpp ****         if(notes[i] == 255){                        // if oscillator is empty
+ 783              		.loc 1 83 9 is_stmt 1 view .LVU219
+  84:wavetable.cpp ****             target = i;
+  85:wavetable.cpp ****             break;
+  86:wavetable.cpp ****         }                        
+  87:wavetable.cpp ****         if(ages[i] > ages[target]){ target = i; }   // update oldest
+ 784              		.loc 1 87 9 view .LVU220
+ 785              	.LBB310:
+ 786              	.LBI310:
  185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 801              		.loc 3 185 7 view .LVU222
- 802              	.LBB313:
- 803              	.LBI313:
+ 787              		.loc 3 185 7 view .LVU221
+ 788              	.LBB311:
+ 789              	.LBI311:
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 804              		.loc 3 55 7 view .LVU223
+ 790              		.loc 3 55 7 view .LVU222
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 805              		.loc 3 55 7 is_stmt 0 view .LVU224
- 806              	.LBE313:
- 807              	.LBE312:
- 808              		.loc 1 89 37 is_stmt 1 view .LVU225
-  85:wavetable.cpp ****             target = i;
- 809              		.loc 1 85 21 is_stmt 0 view .LVU226
- 810 0010 1CF8014B 		ldrb	r4, [ip], #1	@ zero_extendqisi2
- 811              		.loc 1 89 20 view .LVU227
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 44
+ 791              		.loc 3 55 7 is_stmt 0 view .LVU223
+ 792              	.LBE311:
+ 793              	.LBE310:
+ 794              		.loc 1 87 37 is_stmt 1 view .LVU224
+  83:wavetable.cpp ****             target = i;
+ 795              		.loc 1 83 21 is_stmt 0 view .LVU225
+ 796 0012 1CF8014B 		ldrb	r4, [ip], #1	@ zero_extendqisi2
+ 797              		.loc 1 87 20 view .LVU226
+ 798 0016 0EEB0705 		add	r5, lr, r7
+ 799 001a 1646     		mov	r6, r2
+  83:wavetable.cpp ****             target = i;
+ 800              		.loc 1 83 9 view .LVU227
+ 801 001c FF2C     		cmp	r4, #255
+ 802 001e 0AD0     		beq	.L25
+ 803              		.loc 1 87 9 view .LVU228
+ 804 0020 9CF80760 		ldrb	r6, [ip, #7]	@ zero_extendqisi2
+ 805 0024 95F87040 		ldrb	r4, [r5, #112]	@ zero_extendqisi2
+ 806 0028 A642     		cmp	r6, r4
+ 807 002a 88BF     		it	hi
+ 808 002c D7B2     		uxtbhi	r7, r2
+ 809              	.LVL52:
+  81:wavetable.cpp ****         //if(notes[i] == note){ return; }             // return if we are playing the note
+ 810              		.loc 1 81 5 is_stmt 1 view .LVU229
+ 811 002e 0132     		adds	r2, r2, #1
+ 812              	.LVL53:
+  81:wavetable.cpp ****         //if(notes[i] == note){ return; }             // return if we are playing the note
+ 813              		.loc 1 81 22 view .LVU230
+ 814 0030 082A     		cmp	r2, #8
+ 815 0032 EED1     		bne	.L27
+ 816              	.LBE312:
+  88:wavetable.cpp ****     }
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 44
 
 
- 812 0014 0EEB0705 		add	r5, lr, r7
- 813 0018 1646     		mov	r6, r2
-  85:wavetable.cpp ****             target = i;
- 814              		.loc 1 85 9 view .LVU228
- 815 001a FF2C     		cmp	r4, #255
- 816 001c 0AD0     		beq	.L27
- 817              		.loc 1 89 9 view .LVU229
- 818 001e 9CF80760 		ldrb	r6, [ip, #7]	@ zero_extendqisi2
- 819 0022 95F87040 		ldrb	r4, [r5, #112]	@ zero_extendqisi2
- 820 0026 A642     		cmp	r6, r4
- 821 0028 88BF     		it	hi
- 822 002a D7B2     		uxtbhi	r7, r2
- 823              	.LVL48:
-  83:wavetable.cpp ****         //if(notes[i] == note){ return; }             // return if we are playing the note
- 824              		.loc 1 83 5 is_stmt 1 view .LVU230
- 825 002c 0132     		adds	r2, r2, #1
- 826              	.LVL49:
-  83:wavetable.cpp ****         //if(notes[i] == note){ return; }             // return if we are playing the note
- 827              		.loc 1 83 22 view .LVU231
- 828 002e 082A     		cmp	r2, #8
- 829 0030 EED1     		bne	.L29
- 830              	.LBE314:
-  90:wavetable.cpp ****     }
-  91:wavetable.cpp **** 
-  92:wavetable.cpp ****     /* Update target oscillator */
-  93:wavetable.cpp ****     notes[target] = note;                           // assign oscillator
- 831              		.loc 1 93 17 is_stmt 0 view .LVU232
- 832 0032 3E46     		mov	r6, r7
- 833              	.L27:
- 834              	.LVL50:
- 835              		.loc 1 93 5 is_stmt 1 view .LVU233
- 836              	.LBB315:
- 837              	.LBI315:
+  89:wavetable.cpp **** 
+  90:wavetable.cpp ****     /* Update target oscillator */
+  91:wavetable.cpp ****     notes[target] = note;                           // assign oscillator
+ 817              		.loc 1 91 17 is_stmt 0 view .LVU231
+ 818 0034 3E46     		mov	r6, r7
+ 819              	.L25:
+ 820              	.LVL54:
+ 821              		.loc 1 91 5 is_stmt 1 view .LVU232
+ 822              	.LBB313:
+ 823              	.LBI313:
  185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 838              		.loc 3 185 7 view .LVU234
- 839              	.LBB316:
- 840              	.LBI316:
+ 824              		.loc 3 185 7 view .LVU233
+ 825              	.LBB314:
+ 826              	.LBI314:
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 841              		.loc 3 55 7 view .LVU235
+ 827              		.loc 3 55 7 view .LVU234
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 842              		.loc 3 55 7 is_stmt 0 view .LVU236
- 843              	.LBE316:
- 844              	.LBE315:
-  94:wavetable.cpp ****     frequencies[target] = midi_to_freq[note];       // update the oscillator's frequency (could pro
- 845              		.loc 1 94 44 view .LVU237
- 846 0034 0E4A     		ldr	r2, .L41+4
- 847              	.LVL51:
- 848              		.loc 1 94 44 view .LVU238
- 849 0036 0F4C     		ldr	r4, .L41+8
- 850 0038 02EB8102 		add	r2, r2, r1, lsl #2
- 851 003c 0444     		add	r4, r4, r0
- 852              		.loc 1 94 25 view .LVU239
- 853 003e 1568     		ldr	r5, [r2]	@ float
-  93:wavetable.cpp ****     frequencies[target] = midi_to_freq[note];       // update the oscillator's frequency (could pro
- 854              		.loc 1 93 19 view .LVU240
- 855 0040 0EEB0602 		add	r2, lr, r6
- 856 0044 82F86810 		strb	r1, [r2, #104]
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 45
-
-
- 857              		.loc 1 94 5 is_stmt 1 view .LVU241
- 858              	.LVL52:
+ 828              		.loc 3 55 7 is_stmt 0 view .LVU235
+ 829              	.LBE314:
+ 830              	.LBE313:
+  92:wavetable.cpp ****     frequencies[target] = midi_to_freq[note];       // update the oscillator's frequency (could pro
+ 831              		.loc 1 92 44 view .LVU236
+ 832 0036 0E4A     		ldr	r2, .L39
+ 833              	.LVL55:
+ 834              		.loc 1 92 44 view .LVU237
+ 835 0038 42F27004 		movw	r4, #8304
+ 836 003c 02EB8102 		add	r2, r2, r1, lsl #2
+ 837 0040 0444     		add	r4, r4, r0
+ 838              		.loc 1 92 25 view .LVU238
+ 839 0042 1568     		ldr	r5, [r2]	@ float
+  91:wavetable.cpp ****     frequencies[target] = midi_to_freq[note];       // update the oscillator's frequency (could pro
+ 840              		.loc 1 91 19 view .LVU239
+ 841 0044 0EEB0602 		add	r2, lr, r6
+ 842 0048 82F86810 		strb	r1, [r2, #104]
+ 843              		.loc 1 92 5 is_stmt 1 view .LVU240
+ 844              	.LVL56:
+ 845              	.LBB315:
+ 846              	.LBI315:
+ 185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
+ 847              		.loc 3 185 7 view .LVU241
+ 848              	.LBB316:
+ 849              	.LBI316:
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
+ 850              		.loc 3 55 7 view .LVU242
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
+ 851              		.loc 3 55 7 is_stmt 0 view .LVU243
+ 852              	.LBE316:
+ 853              	.LBE315:
+ 854              		.loc 1 92 25 view .LVU244
+ 855 004c 0EEB8602 		add	r2, lr, r6, lsl #2
+ 856 0050 9560     		str	r5, [r2, #8]	@ float
+  93:wavetable.cpp ****     for(int j = 0; j < 8; j++){                     // increment every active oscillator's age
+ 857              		.loc 1 93 5 is_stmt 1 view .LVU245
+ 858              	.LVL57:
  859              	.LBB317:
- 860              	.LBI317:
+ 860              		.loc 1 93 22 view .LVU246
+ 861              	.L29:
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 45
+
+
+  94:wavetable.cpp ****         if(notes[j] != 255){ ages[j]++; }
+ 862              		.loc 1 94 9 view .LVU247
+ 863              		.loc 1 94 30 view .LVU248
+  93:wavetable.cpp ****     for(int j = 0; j < 8; j++){                     // increment every active oscillator's age
+ 864              		.loc 1 93 5 view .LVU249
+ 865              		.loc 1 94 21 is_stmt 0 view .LVU250
+ 866 0052 13F8012B 		ldrb	r2, [r3], #1	@ zero_extendqisi2
+ 867              	.LVL58:
+  93:wavetable.cpp ****     for(int j = 0; j < 8; j++){                     // increment every active oscillator's age
+ 868              		.loc 1 93 22 is_stmt 1 view .LVU251
+ 869              		.loc 1 94 9 is_stmt 0 view .LVU252
+ 870 0056 FF2A     		cmp	r2, #255
+ 871 0058 02D0     		beq	.L28
+ 872              		.loc 1 94 37 discriminator 1 view .LVU253
+ 873 005a DA79     		ldrb	r2, [r3, #7]	@ zero_extendqisi2
+ 874 005c 0132     		adds	r2, r2, #1
+ 875 005e DA71     		strb	r2, [r3, #7]
+ 876              	.L28:
+  93:wavetable.cpp ****     for(int j = 0; j < 8; j++){                     // increment every active oscillator's age
+ 877              		.loc 1 93 22 discriminator 2 view .LVU254
+ 878 0060 A342     		cmp	r3, r4
+ 879 0062 F6D1     		bne	.L29
+ 880              	.LBE317:
+  95:wavetable.cpp ****     }
+  96:wavetable.cpp ****     ages[target] = 1;                               // oldest is now youngest
+ 881              		.loc 1 96 5 is_stmt 1 view .LVU255
+ 882              	.LVL59:
+ 883              	.LBB318:
+ 884              	.LBI318:
  185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 861              		.loc 3 185 7 view .LVU242
- 862              	.LBB318:
- 863              	.LBI318:
+ 885              		.loc 3 185 7 view .LVU256
+ 886              	.LBB319:
+ 887              	.LBI319:
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 864              		.loc 3 55 7 view .LVU243
+ 888              		.loc 3 55 7 view .LVU257
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 865              		.loc 3 55 7 is_stmt 0 view .LVU244
- 866              	.LBE318:
- 867              	.LBE317:
- 868              		.loc 1 94 25 view .LVU245
- 869 0048 0EEB8602 		add	r2, lr, r6, lsl #2
- 870 004c 9560     		str	r5, [r2, #8]	@ float
-  95:wavetable.cpp ****     for(int j = 0; j < 8; j++){                     // increment every active oscillator's age
- 871              		.loc 1 95 5 is_stmt 1 view .LVU246
- 872              	.LVL53:
- 873              	.LBB319:
- 874              		.loc 1 95 22 view .LVU247
- 875              	.L31:
-  96:wavetable.cpp ****         if(notes[j] != 255){ ages[j]++; }
- 876              		.loc 1 96 9 view .LVU248
- 877              		.loc 1 96 30 view .LVU249
-  95:wavetable.cpp ****     for(int j = 0; j < 8; j++){                     // increment every active oscillator's age
- 878              		.loc 1 95 5 view .LVU250
- 879              		.loc 1 96 21 is_stmt 0 view .LVU251
- 880 004e 13F8012B 		ldrb	r2, [r3], #1	@ zero_extendqisi2
- 881              	.LVL54:
-  95:wavetable.cpp ****     for(int j = 0; j < 8; j++){                     // increment every active oscillator's age
- 882              		.loc 1 95 22 is_stmt 1 view .LVU252
- 883              		.loc 1 96 9 is_stmt 0 view .LVU253
- 884 0052 FF2A     		cmp	r2, #255
- 885 0054 02D0     		beq	.L30
- 886              		.loc 1 96 37 discriminator 1 view .LVU254
- 887 0056 DA79     		ldrb	r2, [r3, #7]	@ zero_extendqisi2
- 888 0058 0132     		adds	r2, r2, #1
- 889 005a DA71     		strb	r2, [r3, #7]
- 890              	.L30:
-  95:wavetable.cpp ****     for(int j = 0; j < 8; j++){                     // increment every active oscillator's age
- 891              		.loc 1 95 22 discriminator 2 view .LVU255
- 892 005c A342     		cmp	r3, r4
- 893 005e F6D1     		bne	.L31
- 894              	.LBE319:
-  97:wavetable.cpp ****     }
-  98:wavetable.cpp ****     ages[target] = 1;                               // oldest is now youngest
- 895              		.loc 1 98 5 is_stmt 1 view .LVU256
- 896              	.LVL55:
- 897              	.LBB320:
- 898              	.LBI320:
+ 889              		.loc 3 55 7 is_stmt 0 view .LVU258
+ 890              	.LBE319:
+ 891              	.LBE318:
+ 892              		.loc 1 96 18 view .LVU259
+ 893 0064 B644     		add	lr, lr, r6
+ 894 0066 0123     		movs	r3, #1
+ 895              	.LVL60:
+ 896              		.loc 1 96 18 view .LVU260
+ 897 0068 8EF87030 		strb	r3, [lr, #112]
+  97:wavetable.cpp ****     return;
+ 898              		.loc 1 97 5 is_stmt 1 view .LVU261
+  98:wavetable.cpp **** }
+ 899              		.loc 1 98 1 is_stmt 0 view .LVU262
+ 900 006c F0BD     		pop	{r4, r5, r6, r7, pc}
+ 901              	.L40:
+ 902 006e 00BF     		.align	2
+ 903              	.L39:
+ 904 0070 00000000 		.word	.LANCHOR0
+ 905              		.cfi_endproc
+ 906              	.LFE4736:
+ 908              		.section	.text._ZN9Wavetable10RemoveNoteEh,"ax",%progbits
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 46
+
+
+ 909              		.align	1
+ 910              		.p2align 2,,3
+ 911              		.global	_ZN9Wavetable10RemoveNoteEh
+ 912              		.syntax unified
+ 913              		.thumb
+ 914              		.thumb_func
+ 915              		.fpu fpv5-d16
+ 917              	_ZN9Wavetable10RemoveNoteEh:
+ 918              	.LVL61:
+ 919              	.LFB4737:
+  99:wavetable.cpp **** 
+ 100:wavetable.cpp **** void Wavetable::RemoveNote(uint8_t note){
+ 920              		.loc 1 100 41 is_stmt 1 view -0
+ 921              		.cfi_startproc
+ 922              		@ args = 0, pretend = 0, frame = 0
+ 923              		@ frame_needed = 0, uses_anonymous_args = 0
+ 101:wavetable.cpp ****     /* Start by finding the oscillator to turn off */
+ 102:wavetable.cpp ****     for(int i = 0; i < 8; i++){                     // search through all oscillators
+ 924              		.loc 1 102 5 view .LVU264
+ 925              	.LBB320:
+ 926              		.loc 1 102 22 view .LVU265
+ 927 0000 42F26802 		movw	r2, #8296
+ 928              		.loc 1 102 13 is_stmt 0 view .LVU266
+ 929 0004 0023     		movs	r3, #0
+ 930 0006 0244     		add	r2, r2, r0
+ 931              	.LVL62:
+ 932              	.L46:
+ 933              		.loc 1 102 13 view .LVU267
+ 934              	.LBE320:
+ 103:wavetable.cpp ****         if(notes[i] == note){                       // if oscillator is target
+ 935              		.loc 1 103 9 is_stmt 1 view .LVU268
+ 936              	.LBB333:
+ 102:wavetable.cpp ****         if(notes[i] == note){                       // if oscillator is target
+ 937              		.loc 1 102 5 view .LVU269
+ 938              	.LBB321:
+ 939              		.loc 1 103 21 is_stmt 0 view .LVU270
+ 940 0008 12F801CB 		ldrb	ip, [r2], #1	@ zero_extendqisi2
+ 941              		.loc 1 103 9 view .LVU271
+ 942 000c 8C45     		cmp	ip, r1
+ 943 000e 03D0     		beq	.L53
+ 944              	.LBE321:
+ 102:wavetable.cpp ****         if(notes[i] == note){                       // if oscillator is target
+ 945              		.loc 1 102 5 discriminator 2 view .LVU272
+ 946 0010 0133     		adds	r3, r3, #1
+ 947              	.LVL63:
+ 102:wavetable.cpp ****         if(notes[i] == note){                       // if oscillator is target
+ 948              		.loc 1 102 22 is_stmt 1 discriminator 2 view .LVU273
+ 949 0012 082B     		cmp	r3, #8
+ 950 0014 F8D1     		bne	.L46
+ 951 0016 7047     		bx	lr
+ 952              	.L53:
+ 953              	.LBB331:
+ 954              	.LBB322:
+ 104:wavetable.cpp ****             notes[i] = 255;                         // turn it off
+ 955              		.loc 1 104 13 view .LVU274
+ 956              	.LVL64:
+ 957              	.LBB323:
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 47
+
+
+ 958              	.LBI323:
  185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 899              		.loc 3 185 7 view .LVU257
- 900              	.LBB321:
- 901              	.LBI321:
+ 959              		.loc 3 185 7 view .LVU275
+ 960              	.LBB324:
+ 961              	.LBI324:
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 46
-
-
- 902              		.loc 3 55 7 view .LVU258
+ 962              		.loc 3 55 7 view .LVU276
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 903              		.loc 3 55 7 is_stmt 0 view .LVU259
- 904              	.LBE321:
- 905              	.LBE320:
- 906              		.loc 1 98 18 view .LVU260
- 907 0060 B644     		add	lr, lr, r6
- 908 0062 0123     		movs	r3, #1
- 909              	.LVL56:
- 910              		.loc 1 98 18 view .LVU261
- 911 0064 8EF87030 		strb	r3, [lr, #112]
-  99:wavetable.cpp ****     return;
- 912              		.loc 1 99 5 is_stmt 1 view .LVU262
- 100:wavetable.cpp **** }
- 913              		.loc 1 100 1 is_stmt 0 view .LVU263
- 914 0068 F0BD     		pop	{r4, r5, r6, r7, pc}
- 915              	.L42:
- 916 006a 00BF     		.align	2
- 917              	.L41:
- 918 006c 68000100 		.word	65640
- 919 0070 00000000 		.word	.LANCHOR0
- 920 0074 70000100 		.word	65648
- 921              		.cfi_endproc
- 922              	.LFE4736:
- 924              		.section	.text._ZN9Wavetable10RemoveNoteEh,"ax",%progbits
- 925              		.align	1
- 926              		.p2align 2,,3
- 927              		.global	_ZN9Wavetable10RemoveNoteEh
- 928              		.syntax unified
- 929              		.thumb
- 930              		.thumb_func
- 931              		.fpu fpv5-d16
- 933              	_ZN9Wavetable10RemoveNoteEh:
- 934              	.LVL57:
- 935              	.LFB4737:
- 101:wavetable.cpp **** 
- 102:wavetable.cpp **** void Wavetable::RemoveNote(uint8_t note){
- 936              		.loc 1 102 41 is_stmt 1 view -0
- 937              		.cfi_startproc
- 938              		@ args = 0, pretend = 0, frame = 0
- 939              		@ frame_needed = 0, uses_anonymous_args = 0
- 103:wavetable.cpp ****     /* Start by finding the oscillator to turn off */
- 104:wavetable.cpp ****     for(int i = 0; i < 8; i++){                     // search through all oscillators
- 940              		.loc 1 104 5 view .LVU265
- 941              	.LBB322:
- 942              		.loc 1 104 22 view .LVU266
- 943 0000 184A     		ldr	r2, .L56
- 944              		.loc 1 104 13 is_stmt 0 view .LVU267
- 945 0002 0023     		movs	r3, #0
- 946 0004 0244     		add	r2, r2, r0
- 947              	.LVL58:
- 948              	.L48:
- 949              		.loc 1 104 13 view .LVU268
- 950              	.LBE322:
- 105:wavetable.cpp ****         if(notes[i] == note){                       // if oscillator is target
- 951              		.loc 1 105 9 is_stmt 1 view .LVU269
- 952              	.LBB335:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 47
+ 963              		.loc 3 55 7 is_stmt 0 view .LVU277
+ 964              	.LBE324:
+ 965              	.LBE323:
+ 966              		.loc 1 104 22 view .LVU278
+ 967 0018 00F5005C 		add	ip, r0, #8192
+ 968 001c 00EB8302 		add	r2, r0, r3, lsl #2
+ 969              	.LBE322:
+ 970              	.LBE331:
+ 971              	.LBE333:
+ 100:wavetable.cpp ****     /* Start by finding the oscillator to turn off */
+ 972              		.loc 1 100 41 view .LVU279
+ 973 0020 10B5     		push	{r4, lr}
+ 974              		.cfi_def_cfa_offset 8
+ 975              		.cfi_offset 4, -8
+ 976              		.cfi_offset 14, -4
+ 977              	.LBB334:
+ 978              	.LBB332:
+ 979              	.LBB330:
+ 980              		.loc 1 104 22 view .LVU280
+ 981 0022 0CEB0301 		add	r1, ip, r3
+ 982              	.LVL65:
+ 983              		.loc 1 104 22 view .LVU281
+ 984 0026 FF24     		movs	r4, #255
+ 105:wavetable.cpp ****             phases[i] = 0;                          // reset phase
+ 985              		.loc 1 105 23 view .LVU282
+ 986 0028 02F50052 		add	r2, r2, #8192
+ 104:wavetable.cpp ****             phases[i] = 0;                          // reset phase
+ 987              		.loc 1 104 22 view .LVU283
+ 988 002c 81F86840 		strb	r4, [r1, #104]
+ 989              		.loc 1 105 13 is_stmt 1 view .LVU284
+ 990              		.loc 1 105 23 is_stmt 0 view .LVU285
+ 991 0030 0021     		movs	r1, #0
+ 992 0032 42F27804 		movw	r4, #8312
+ 993 0036 9162     		str	r1, [r2, #40]	@ float
+ 106:wavetable.cpp ****             frequencies[i] = 0;                     // update the oscillator's frequency (could pro
+ 994              		.loc 1 106 13 is_stmt 1 view .LVU286
+ 995              		.loc 1 106 28 is_stmt 0 view .LVU287
+ 996 0038 9160     		str	r1, [r2, #8]	@ float
+ 107:wavetable.cpp ****             for(int j = 0; j < 8; j++){             // decrement every active oscillator's age olde
+ 997              		.loc 1 107 13 is_stmt 1 view .LVU288
+ 998              	.LVL66:
+ 999              	.LBB325:
+ 1000              		.loc 1 107 30 view .LVU289
+ 1001 003a 42F27001 		movw	r1, #8304
+ 1002 003e 0444     		add	r4, r4, r0
+ 1003 0040 0144     		add	r1, r1, r0
+ 1004              	.LVL67:
+ 1005              	.L44:
+ 108:wavetable.cpp ****                 if(ages[j] > ages[i]){ ages[j]--; }
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 48
 
 
- 104:wavetable.cpp ****         if(notes[i] == note){                       // if oscillator is target
- 953              		.loc 1 104 5 view .LVU270
- 954              	.LBB323:
- 955              		.loc 1 105 21 is_stmt 0 view .LVU271
- 956 0006 12F801CB 		ldrb	ip, [r2], #1	@ zero_extendqisi2
- 957              		.loc 1 105 9 view .LVU272
- 958 000a 8C45     		cmp	ip, r1
- 959 000c 03D0     		beq	.L55
- 960              	.LBE323:
- 104:wavetable.cpp ****         if(notes[i] == note){                       // if oscillator is target
- 961              		.loc 1 104 5 discriminator 2 view .LVU273
- 962 000e 0133     		adds	r3, r3, #1
- 963              	.LVL59:
- 104:wavetable.cpp ****         if(notes[i] == note){                       // if oscillator is target
- 964              		.loc 1 104 22 is_stmt 1 discriminator 2 view .LVU274
- 965 0010 082B     		cmp	r3, #8
- 966 0012 F8D1     		bne	.L48
- 967 0014 7047     		bx	lr
- 968              	.L55:
- 969              	.LBB333:
- 970              	.LBB324:
- 106:wavetable.cpp ****             notes[i] = 255;                         // turn it off
- 971              		.loc 1 106 13 view .LVU275
- 972              	.LVL60:
- 973              	.LBB325:
- 974              	.LBI325:
+ 1006              		.loc 1 108 17 view .LVU290
+ 1007              		.loc 1 108 40 view .LVU291
+ 107:wavetable.cpp ****             for(int j = 0; j < 8; j++){             // decrement every active oscillator's age olde
+ 1008              		.loc 1 107 13 view .LVU292
+ 1009              		.loc 1 108 28 is_stmt 0 view .LVU293
+ 1010 0042 0CEB0302 		add	r2, ip, r3
+ 1011 0046 11F8010B 		ldrb	r0, [r1], #1	@ zero_extendqisi2
+ 1012              	.LVL68:
+ 1013              	.LBB326:
+ 1014              	.LBI326:
  185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 975              		.loc 3 185 7 view .LVU276
- 976              	.LBB326:
- 977              	.LBI326:
+ 1015              		.loc 3 185 7 is_stmt 1 view .LVU294
+ 1016              	.LBB327:
+ 1017              	.LBI327:
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 978              		.loc 3 55 7 view .LVU277
+ 1018              		.loc 3 55 7 view .LVU295
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 979              		.loc 3 55 7 is_stmt 0 view .LVU278
- 980              	.LBE326:
- 981              	.LBE325:
- 982              		.loc 1 106 22 view .LVU279
- 983 0016 00F5803C 		add	ip, r0, #65536
- 984 001a 00EB8302 		add	r2, r0, r3, lsl #2
- 985              	.LBE324:
- 986              	.LBE333:
- 987              	.LBE335:
- 102:wavetable.cpp ****     /* Start by finding the oscillator to turn off */
- 988              		.loc 1 102 41 view .LVU280
- 989 001e 10B5     		push	{r4, lr}
- 990              		.cfi_def_cfa_offset 8
- 991              		.cfi_offset 4, -8
- 992              		.cfi_offset 14, -4
- 993              	.LBB336:
- 994              	.LBB334:
- 995              	.LBB332:
- 996              		.loc 1 106 22 view .LVU281
- 997 0020 0CEB0301 		add	r1, ip, r3
- 998              	.LVL61:
- 999              		.loc 1 106 22 view .LVU282
- 1000 0024 FF24     		movs	r4, #255
- 107:wavetable.cpp ****             phases[i] = 0;                          // reset phase
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 48
-
-
- 1001              		.loc 1 107 23 view .LVU283
- 1002 0026 02F58032 		add	r2, r2, #65536
- 106:wavetable.cpp ****             phases[i] = 0;                          // reset phase
- 1003              		.loc 1 106 22 view .LVU284
- 1004 002a 81F86840 		strb	r4, [r1, #104]
- 1005              		.loc 1 107 13 is_stmt 1 view .LVU285
- 1006              		.loc 1 107 23 is_stmt 0 view .LVU286
- 1007 002e 0021     		movs	r1, #0
- 1008 0030 0D4C     		ldr	r4, .L56+4
- 1009 0032 9162     		str	r1, [r2, #40]	@ float
- 108:wavetable.cpp ****             frequencies[i] = 0;                     // update the oscillator's frequency (could pro
- 1010              		.loc 1 108 13 is_stmt 1 view .LVU287
- 1011              		.loc 1 108 28 is_stmt 0 view .LVU288
- 1012 0034 9160     		str	r1, [r2, #8]	@ float
- 109:wavetable.cpp ****             for(int j = 0; j < 8; j++){             // decrement every active oscillator's age olde
- 1013              		.loc 1 109 13 is_stmt 1 view .LVU289
- 1014              	.LVL62:
- 1015              	.LBB327:
- 1016              		.loc 1 109 30 view .LVU290
- 1017 0036 0444     		add	r4, r4, r0
- 1018 0038 0C49     		ldr	r1, .L56+8
- 1019 003a 0144     		add	r1, r1, r0
- 1020              	.LVL63:
- 1021              	.L46:
- 110:wavetable.cpp ****                 if(ages[j] > ages[i]){ ages[j]--; }
- 1022              		.loc 1 110 17 view .LVU291
- 1023              		.loc 1 110 40 view .LVU292
- 109:wavetable.cpp ****             for(int j = 0; j < 8; j++){             // decrement every active oscillator's age olde
- 1024              		.loc 1 109 13 view .LVU293
- 1025              		.loc 1 110 28 is_stmt 0 view .LVU294
- 1026 003c 0CEB0302 		add	r2, ip, r3
- 1027 0040 11F8010B 		ldrb	r0, [r1], #1	@ zero_extendqisi2
- 1028              	.LVL64:
- 1029              	.LBB328:
- 1030              	.LBI328:
+ 1019              		.loc 3 55 7 is_stmt 0 view .LVU296
+ 1020              	.LBE327:
+ 1021              	.LBE326:
+ 107:wavetable.cpp ****                 if(ages[j] > ages[i]){ ages[j]--; }
+ 1022              		.loc 1 107 30 is_stmt 1 view .LVU297
+ 1023              		.loc 1 108 17 is_stmt 0 view .LVU298
+ 1024 004a 92F87020 		ldrb	r2, [r2, #112]	@ zero_extendqisi2
+ 1025              		.loc 1 108 47 view .LVU299
+ 1026 004e 00F1FF3E 		add	lr, r0, #-1
+ 1027              		.loc 1 108 17 view .LVU300
+ 1028 0052 8242     		cmp	r2, r0
+ 1029              		.loc 1 108 47 view .LVU301
+ 1030 0054 38BF     		it	cc
+ 1031 0056 01F801EC 		strbcc	lr, [r1, #-1]
+ 107:wavetable.cpp ****                 if(ages[j] > ages[i]){ ages[j]--; }
+ 1032              		.loc 1 107 30 view .LVU302
+ 1033 005a 8C42     		cmp	r4, r1
+ 1034 005c F1D1     		bne	.L44
+ 1035              	.LBE325:
+ 109:wavetable.cpp ****             }
+ 110:wavetable.cpp ****             ages[i] = 0;                            // clear the target oscillator's age
+ 1036              		.loc 1 110 13 is_stmt 1 view .LVU303
+ 1037              	.LVL69:
+ 1038              	.LBB328:
+ 1039              	.LBI328:
  185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 1031              		.loc 3 185 7 is_stmt 1 view .LVU295
- 1032              	.LBB329:
- 1033              	.LBI329:
+ 1040              		.loc 3 185 7 view .LVU304
+ 1041              	.LBB329:
+ 1042              	.LBI329:
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 1034              		.loc 3 55 7 view .LVU296
+ 1043              		.loc 3 55 7 view .LVU305
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 1035              		.loc 3 55 7 is_stmt 0 view .LVU297
- 1036              	.LBE329:
- 1037              	.LBE328:
- 109:wavetable.cpp ****                 if(ages[j] > ages[i]){ ages[j]--; }
- 1038              		.loc 1 109 30 is_stmt 1 view .LVU298
- 1039              		.loc 1 110 17 is_stmt 0 view .LVU299
- 1040 0044 92F87020 		ldrb	r2, [r2, #112]	@ zero_extendqisi2
- 1041              		.loc 1 110 47 view .LVU300
- 1042 0048 00F1FF3E 		add	lr, r0, #-1
- 1043              		.loc 1 110 17 view .LVU301
- 1044 004c 8242     		cmp	r2, r0
- 1045              		.loc 1 110 47 view .LVU302
- 1046 004e 38BF     		it	cc
- 1047 0050 01F801EC 		strbcc	lr, [r1, #-1]
- 109:wavetable.cpp ****                 if(ages[j] > ages[i]){ ages[j]--; }
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 49
+ 1044              		.loc 3 55 7 is_stmt 0 view .LVU306
+ 1045              	.LBE329:
+ 1046              	.LBE328:
+ 1047              		.loc 1 110 21 view .LVU307
+ 1048 005e 6344     		add	r3, r3, ip
+ 1049              	.LVL70:
+ 1050              		.loc 1 110 21 view .LVU308
+ 1051 0060 0022     		movs	r2, #0
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 49
 
 
- 1048              		.loc 1 109 30 view .LVU303
- 1049 0054 8C42     		cmp	r4, r1
- 1050 0056 F1D1     		bne	.L46
- 1051              	.LBE327:
- 111:wavetable.cpp ****             }
- 112:wavetable.cpp ****             ages[i] = 0;                            // clear the target oscillator's age
- 1052              		.loc 1 112 13 is_stmt 1 view .LVU304
- 1053              	.LVL65:
- 1054              	.LBB330:
- 1055              	.LBI330:
- 185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return _AT_Type::_S_ref(_M_elems, __n); }
- 1056              		.loc 3 185 7 view .LVU305
- 1057              	.LBB331:
- 1058              	.LBI331:
-  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 1059              		.loc 3 55 7 view .LVU306
-  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
- 1060              		.loc 3 55 7 is_stmt 0 view .LVU307
- 1061              	.LBE331:
- 1062              	.LBE330:
- 1063              		.loc 1 112 21 view .LVU308
- 1064 0058 6344     		add	r3, r3, ip
- 1065              	.LVL66:
- 1066              		.loc 1 112 21 view .LVU309
- 1067 005a 0022     		movs	r2, #0
- 1068 005c 83F87020 		strb	r2, [r3, #112]
- 113:wavetable.cpp ****             return;
- 1069              		.loc 1 113 13 is_stmt 1 view .LVU310
- 1070              	.LBE332:
- 1071              	.LBE334:
- 1072              	.LBE336:
- 114:wavetable.cpp ****         }
- 115:wavetable.cpp ****     }
- 116:wavetable.cpp **** 
- 117:wavetable.cpp ****     /* Note to turn off is not currently being played */
- 118:wavetable.cpp ****     return;
- 119:wavetable.cpp **** }
- 1073              		.loc 1 119 1 is_stmt 0 view .LVU311
- 1074 0060 10BD     		pop	{r4, pc}
- 1075              	.L57:
- 1076 0062 00BF     		.align	2
- 1077              	.L56:
- 1078 0064 68000100 		.word	65640
- 1079 0068 78000100 		.word	65656
- 1080 006c 70000100 		.word	65648
- 1081              		.cfi_endproc
- 1082              	.LFE4737:
- 1084              		.section	.text._ZN9Wavetable9ReadNotesEv,"ax",%progbits
- 1085              		.align	1
- 1086              		.p2align 2,,3
- 1087              		.global	_ZN9Wavetable9ReadNotesEv
- 1088              		.syntax unified
- 1089              		.thumb
- 1090              		.thumb_func
- 1091              		.fpu fpv5-d16
- 1093              	_ZN9Wavetable9ReadNotesEv:
- 1094              	.LVL67:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 50
+ 1052 0062 83F87020 		strb	r2, [r3, #112]
+ 111:wavetable.cpp ****             return;
+ 1053              		.loc 1 111 13 is_stmt 1 view .LVU309
+ 1054              	.LBE330:
+ 1055              	.LBE332:
+ 1056              	.LBE334:
+ 112:wavetable.cpp ****         }
+ 113:wavetable.cpp ****     }
+ 114:wavetable.cpp **** 
+ 115:wavetable.cpp ****     /* Note to turn off is not currently being played */
+ 116:wavetable.cpp ****     return;
+ 117:wavetable.cpp **** }
+ 1057              		.loc 1 117 1 is_stmt 0 view .LVU310
+ 1058 0066 10BD     		pop	{r4, pc}
+ 1059              		.cfi_endproc
+ 1060              	.LFE4737:
+ 1062              		.section	.text._ZN9Wavetable9ReadNotesEv,"ax",%progbits
+ 1063              		.align	1
+ 1064              		.p2align 2,,3
+ 1065              		.global	_ZN9Wavetable9ReadNotesEv
+ 1066              		.syntax unified
+ 1067              		.thumb
+ 1068              		.thumb_func
+ 1069              		.fpu fpv5-d16
+ 1071              	_ZN9Wavetable9ReadNotesEv:
+ 1072              	.LVL71:
+ 1073              	.LFB4738:
+ 118:wavetable.cpp **** 
+ 119:wavetable.cpp **** std::array<uint8_t, 8> Wavetable::ReadNotes(){
+ 1074              		.loc 1 119 46 is_stmt 1 view -0
+ 1075              		.cfi_startproc
+ 1076              		@ args = 0, pretend = 0, frame = 0
+ 1077              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1078              		@ link register save eliminated.
+ 120:wavetable.cpp ****     return notes;
+ 1079              		.loc 1 120 5 view .LVU312
+ 1080              		.loc 1 120 12 is_stmt 0 view .LVU313
+ 1081 0000 42F26803 		movw	r3, #8296
+ 119:wavetable.cpp ****     return notes;
+ 1082              		.loc 1 119 46 view .LVU314
+ 1083 0004 0246     		mov	r2, r0
+ 1084              		.loc 1 120 12 view .LVU315
+ 1085 0006 0B44     		add	r3, r3, r1
+ 1086 0008 03CB     		ldmia	r3!, {r0, r1}
+ 1087              	.LVL72:
+ 1088              		.loc 1 120 12 view .LVU316
+ 1089 000a 1060     		str	r0, [r2]	@ unaligned
+ 121:wavetable.cpp **** }
+ 1090              		.loc 1 121 1 view .LVU317
+ 1091 000c 1046     		mov	r0, r2
+ 120:wavetable.cpp ****     return notes;
+ 1092              		.loc 1 120 12 view .LVU318
+ 1093 000e 5160     		str	r1, [r2, #4]	@ unaligned
+ 1094              		.loc 1 121 1 view .LVU319
+ 1095 0010 7047     		bx	lr
+ 1096              		.cfi_endproc
+ 1097              	.LFE4738:
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 50
 
 
- 1095              	.LFB4738:
- 120:wavetable.cpp **** 
- 121:wavetable.cpp **** std::array<uint8_t, 8> Wavetable::ReadNotes(){
- 1096              		.loc 1 121 46 is_stmt 1 view -0
- 1097              		.cfi_startproc
- 1098              		@ args = 0, pretend = 0, frame = 0
- 1099              		@ frame_needed = 0, uses_anonymous_args = 0
- 1100              		@ link register save eliminated.
- 122:wavetable.cpp ****     return notes;
- 1101              		.loc 1 122 5 view .LVU313
- 1102              		.loc 1 122 12 is_stmt 0 view .LVU314
- 1103 0000 034B     		ldr	r3, .L59
- 121:wavetable.cpp ****     return notes;
- 1104              		.loc 1 121 46 view .LVU315
- 1105 0002 0246     		mov	r2, r0
- 1106              		.loc 1 122 12 view .LVU316
- 1107 0004 0B44     		add	r3, r3, r1
- 1108 0006 03CB     		ldmia	r3!, {r0, r1}
- 1109              	.LVL68:
- 1110              		.loc 1 122 12 view .LVU317
- 1111 0008 1060     		str	r0, [r2]	@ unaligned
- 123:wavetable.cpp **** }
- 1112              		.loc 1 123 1 view .LVU318
- 1113 000a 1046     		mov	r0, r2
- 122:wavetable.cpp ****     return notes;
- 1114              		.loc 1 122 12 view .LVU319
- 1115 000c 5160     		str	r1, [r2, #4]	@ unaligned
- 1116              		.loc 1 123 1 view .LVU320
- 1117 000e 7047     		bx	lr
- 1118              	.L60:
- 1119              		.align	2
- 1120              	.L59:
- 1121 0010 68000100 		.word	65640
- 1122              		.cfi_endproc
- 1123              	.LFE4738:
- 1125              		.section	.text._ZN9Wavetable9ReadFreqsEv,"ax",%progbits
- 1126              		.align	1
- 1127              		.p2align 2,,3
- 1128              		.global	_ZN9Wavetable9ReadFreqsEv
- 1129              		.syntax unified
- 1130              		.thumb
- 1131              		.thumb_func
- 1132              		.fpu fpv5-d16
- 1134              	_ZN9Wavetable9ReadFreqsEv:
- 1135              	.LVL69:
- 1136              	.LFB4739:
- 124:wavetable.cpp **** std::array<float, 8> Wavetable::ReadFreqs(){
- 1137              		.loc 1 124 44 is_stmt 1 view -0
- 1138              		.cfi_startproc
- 1139              		@ args = 0, pretend = 0, frame = 0
- 1140              		@ frame_needed = 0, uses_anonymous_args = 0
- 125:wavetable.cpp ****     return frequencies;
- 1141              		.loc 1 125 5 view .LVU322
- 124:wavetable.cpp **** std::array<float, 8> Wavetable::ReadFreqs(){
- 1142              		.loc 1 124 44 is_stmt 0 view .LVU323
- 1143 0000 10B5     		push	{r4, lr}
- 1144              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 51
+ 1099 0012 00BF     		.section	.text._ZN9Wavetable9ReadFreqsEv,"ax",%progbits
+ 1100              		.align	1
+ 1101              		.p2align 2,,3
+ 1102              		.global	_ZN9Wavetable9ReadFreqsEv
+ 1103              		.syntax unified
+ 1104              		.thumb
+ 1105              		.thumb_func
+ 1106              		.fpu fpv5-d16
+ 1108              	_ZN9Wavetable9ReadFreqsEv:
+ 1109              	.LVL73:
+ 1110              	.LFB4739:
+ 122:wavetable.cpp **** std::array<float, 8> Wavetable::ReadFreqs(){
+ 1111              		.loc 1 122 44 is_stmt 1 view -0
+ 1112              		.cfi_startproc
+ 1113              		@ args = 0, pretend = 0, frame = 0
+ 1114              		@ frame_needed = 0, uses_anonymous_args = 0
+ 123:wavetable.cpp ****     return frequencies;
+ 1115              		.loc 1 123 5 view .LVU321
+ 1116              		.loc 1 123 12 is_stmt 0 view .LVU322
+ 1117 0000 42F2080C 		movw	ip, #8200
+ 1118 0004 8C44     		add	ip, ip, r1
+ 122:wavetable.cpp **** std::array<float, 8> Wavetable::ReadFreqs(){
+ 1119              		.loc 1 122 44 view .LVU323
+ 1120 0006 10B5     		push	{r4, lr}
+ 1121              		.cfi_def_cfa_offset 8
+ 1122              		.cfi_offset 4, -8
+ 1123              		.cfi_offset 14, -4
+ 122:wavetable.cpp **** std::array<float, 8> Wavetable::ReadFreqs(){
+ 1124              		.loc 1 122 44 view .LVU324
+ 1125 0008 0446     		mov	r4, r0
+ 1126              		.loc 1 123 12 view .LVU325
+ 1127 000a 8646     		mov	lr, r0
+ 1128 000c BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
+ 1129              	.LVL74:
+ 1130              		.loc 1 123 12 view .LVU326
+ 1131 0010 AEE80F00 		stmia	lr!, {r0, r1, r2, r3}
+ 1132 0014 9CE80F00 		ldm	ip, {r0, r1, r2, r3}
+ 1133 0018 8EE80F00 		stm	lr, {r0, r1, r2, r3}
+ 124:wavetable.cpp **** }
+ 1134              		.loc 1 124 1 view .LVU327
+ 1135 001c 2046     		mov	r0, r4
+ 1136 001e 10BD     		pop	{r4, pc}
+ 1137              		.loc 1 124 1 view .LVU328
+ 1138              		.cfi_endproc
+ 1139              	.LFE4739:
+ 1141              		.section	.text._ZN9Wavetable10ReadPhasesEv,"ax",%progbits
+ 1142              		.align	1
+ 1143              		.p2align 2,,3
+ 1144              		.global	_ZN9Wavetable10ReadPhasesEv
+ 1145              		.syntax unified
+ 1146              		.thumb
+ 1147              		.thumb_func
+ 1148              		.fpu fpv5-d16
+ 1150              	_ZN9Wavetable10ReadPhasesEv:
+ 1151              	.LVL75:
+ 1152              	.LFB4740:
+ 125:wavetable.cpp **** std::array<float, 8> Wavetable::ReadPhases(){
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 51
 
 
- 1145              		.cfi_offset 4, -8
- 1146              		.cfi_offset 14, -4
- 1147              		.loc 1 125 12 view .LVU324
- 1148 0002 064C     		ldr	r4, .L63
- 124:wavetable.cpp **** std::array<float, 8> Wavetable::ReadFreqs(){
- 1149              		.loc 1 124 44 view .LVU325
- 1150 0004 8646     		mov	lr, r0
- 1151              		.loc 1 125 12 view .LVU326
- 1152 0006 8446     		mov	ip, r0
- 1153 0008 0C44     		add	r4, r4, r1
- 1154 000a 0FCC     		ldmia	r4!, {r0, r1, r2, r3}
- 1155              	.LVL70:
- 1156              		.loc 1 125 12 view .LVU327
- 1157 000c ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
- 1158              	.LVL71:
- 1159              		.loc 1 125 12 view .LVU328
- 1160 0010 94E80F00 		ldm	r4, {r0, r1, r2, r3}
- 1161 0014 8CE80F00 		stm	ip, {r0, r1, r2, r3}
- 126:wavetable.cpp **** }
- 1162              		.loc 1 126 1 view .LVU329
- 1163 0018 7046     		mov	r0, lr
- 1164 001a 10BD     		pop	{r4, pc}
- 1165              	.L64:
- 1166              		.align	2
- 1167              	.L63:
- 1168 001c 08000100 		.word	65544
- 1169              		.cfi_endproc
- 1170              	.LFE4739:
- 1172              		.section	.text._ZN9Wavetable10ReadPhasesEv,"ax",%progbits
- 1173              		.align	1
- 1174              		.p2align 2,,3
- 1175              		.global	_ZN9Wavetable10ReadPhasesEv
- 1176              		.syntax unified
- 1177              		.thumb
- 1178              		.thumb_func
- 1179              		.fpu fpv5-d16
- 1181              	_ZN9Wavetable10ReadPhasesEv:
- 1182              	.LVL72:
- 1183              	.LFB4740:
- 127:wavetable.cpp **** std::array<float, 8> Wavetable::ReadPhases(){
- 1184              		.loc 1 127 45 is_stmt 1 view -0
- 1185              		.cfi_startproc
- 1186              		@ args = 0, pretend = 0, frame = 0
- 1187              		@ frame_needed = 0, uses_anonymous_args = 0
- 128:wavetable.cpp ****     return phases;
- 1188              		.loc 1 128 5 view .LVU331
- 127:wavetable.cpp **** std::array<float, 8> Wavetable::ReadPhases(){
- 1189              		.loc 1 127 45 is_stmt 0 view .LVU332
- 1190 0000 10B5     		push	{r4, lr}
- 1191              		.cfi_def_cfa_offset 8
- 1192              		.cfi_offset 4, -8
- 1193              		.cfi_offset 14, -4
- 1194              		.loc 1 128 12 view .LVU333
- 1195 0002 064C     		ldr	r4, .L67
- 127:wavetable.cpp **** std::array<float, 8> Wavetable::ReadPhases(){
- 1196              		.loc 1 127 45 view .LVU334
- 1197 0004 8646     		mov	lr, r0
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 52
+ 1153              		.loc 1 125 45 is_stmt 1 view -0
+ 1154              		.cfi_startproc
+ 1155              		@ args = 0, pretend = 0, frame = 0
+ 1156              		@ frame_needed = 0, uses_anonymous_args = 0
+ 126:wavetable.cpp ****     return phases;
+ 1157              		.loc 1 126 5 view .LVU330
+ 1158              		.loc 1 126 12 is_stmt 0 view .LVU331
+ 1159 0000 42F2280C 		movw	ip, #8232
+ 1160 0004 8C44     		add	ip, ip, r1
+ 125:wavetable.cpp **** std::array<float, 8> Wavetable::ReadPhases(){
+ 1161              		.loc 1 125 45 view .LVU332
+ 1162 0006 10B5     		push	{r4, lr}
+ 1163              		.cfi_def_cfa_offset 8
+ 1164              		.cfi_offset 4, -8
+ 1165              		.cfi_offset 14, -4
+ 125:wavetable.cpp **** std::array<float, 8> Wavetable::ReadPhases(){
+ 1166              		.loc 1 125 45 view .LVU333
+ 1167 0008 0446     		mov	r4, r0
+ 1168              		.loc 1 126 12 view .LVU334
+ 1169 000a 8646     		mov	lr, r0
+ 1170 000c BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
+ 1171              	.LVL76:
+ 1172              		.loc 1 126 12 view .LVU335
+ 1173 0010 AEE80F00 		stmia	lr!, {r0, r1, r2, r3}
+ 1174 0014 9CE80F00 		ldm	ip, {r0, r1, r2, r3}
+ 1175 0018 8EE80F00 		stm	lr, {r0, r1, r2, r3}
+ 127:wavetable.cpp **** }
+ 1176              		.loc 1 127 1 view .LVU336
+ 1177 001c 2046     		mov	r0, r4
+ 1178 001e 10BD     		pop	{r4, pc}
+ 1179              		.loc 1 127 1 view .LVU337
+ 1180              		.cfi_endproc
+ 1181              	.LFE4740:
+ 1183              		.section	.text._ZN9Wavetable12ReadIndiciesEv,"ax",%progbits
+ 1184              		.align	1
+ 1185              		.p2align 2,,3
+ 1186              		.global	_ZN9Wavetable12ReadIndiciesEv
+ 1187              		.syntax unified
+ 1188              		.thumb
+ 1189              		.thumb_func
+ 1190              		.fpu fpv5-d16
+ 1192              	_ZN9Wavetable12ReadIndiciesEv:
+ 1193              	.LVL77:
+ 1194              	.LFB4741:
+ 128:wavetable.cpp **** std::array<float, 8> Wavetable::ReadIndicies(){
+ 1195              		.loc 1 128 47 is_stmt 1 view -0
+ 1196              		.cfi_startproc
+ 1197              		@ args = 0, pretend = 0, frame = 0
+ 1198              		@ frame_needed = 0, uses_anonymous_args = 0
+ 129:wavetable.cpp ****     return indicies;
+ 1199              		.loc 1 129 5 view .LVU339
+ 1200              		.loc 1 129 12 is_stmt 0 view .LVU340
+ 1201 0000 42F2480C 		movw	ip, #8264
+ 1202 0004 8C44     		add	ip, ip, r1
+ 128:wavetable.cpp **** std::array<float, 8> Wavetable::ReadIndicies(){
+ 1203              		.loc 1 128 47 view .LVU341
+ 1204 0006 10B5     		push	{r4, lr}
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 52
 
 
- 1198              		.loc 1 128 12 view .LVU335
- 1199 0006 8446     		mov	ip, r0
- 1200 0008 0C44     		add	r4, r4, r1
- 1201 000a 0FCC     		ldmia	r4!, {r0, r1, r2, r3}
- 1202              	.LVL73:
- 1203              		.loc 1 128 12 view .LVU336
- 1204 000c ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
- 1205              	.LVL74:
- 1206              		.loc 1 128 12 view .LVU337
- 1207 0010 94E80F00 		ldm	r4, {r0, r1, r2, r3}
- 1208 0014 8CE80F00 		stm	ip, {r0, r1, r2, r3}
- 129:wavetable.cpp **** }
- 1209              		.loc 1 129 1 view .LVU338
- 1210 0018 7046     		mov	r0, lr
- 1211 001a 10BD     		pop	{r4, pc}
- 1212              	.L68:
- 1213              		.align	2
- 1214              	.L67:
- 1215 001c 28000100 		.word	65576
- 1216              		.cfi_endproc
- 1217              	.LFE4740:
- 1219              		.section	.text._ZN9Wavetable12ReadIndiciesEv,"ax",%progbits
- 1220              		.align	1
- 1221              		.p2align 2,,3
- 1222              		.global	_ZN9Wavetable12ReadIndiciesEv
- 1223              		.syntax unified
- 1224              		.thumb
- 1225              		.thumb_func
- 1226              		.fpu fpv5-d16
- 1228              	_ZN9Wavetable12ReadIndiciesEv:
- 1229              	.LVL75:
- 1230              	.LFB4741:
- 130:wavetable.cpp **** std::array<float, 8> Wavetable::ReadIndicies(){
- 1231              		.loc 1 130 47 is_stmt 1 view -0
- 1232              		.cfi_startproc
- 1233              		@ args = 0, pretend = 0, frame = 0
- 1234              		@ frame_needed = 0, uses_anonymous_args = 0
- 131:wavetable.cpp ****     return indicies;
- 1235              		.loc 1 131 5 view .LVU340
- 130:wavetable.cpp **** std::array<float, 8> Wavetable::ReadIndicies(){
- 1236              		.loc 1 130 47 is_stmt 0 view .LVU341
- 1237 0000 10B5     		push	{r4, lr}
- 1238              		.cfi_def_cfa_offset 8
- 1239              		.cfi_offset 4, -8
- 1240              		.cfi_offset 14, -4
- 1241              		.loc 1 131 12 view .LVU342
- 1242 0002 064C     		ldr	r4, .L71
- 130:wavetable.cpp **** std::array<float, 8> Wavetable::ReadIndicies(){
- 1243              		.loc 1 130 47 view .LVU343
- 1244 0004 8646     		mov	lr, r0
- 1245              		.loc 1 131 12 view .LVU344
- 1246 0006 8446     		mov	ip, r0
- 1247 0008 0C44     		add	r4, r4, r1
- 1248 000a 0FCC     		ldmia	r4!, {r0, r1, r2, r3}
- 1249              	.LVL76:
- 1250              		.loc 1 131 12 view .LVU345
- 1251 000c ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 53
+ 1205              		.cfi_def_cfa_offset 8
+ 1206              		.cfi_offset 4, -8
+ 1207              		.cfi_offset 14, -4
+ 128:wavetable.cpp **** std::array<float, 8> Wavetable::ReadIndicies(){
+ 1208              		.loc 1 128 47 view .LVU342
+ 1209 0008 0446     		mov	r4, r0
+ 1210              		.loc 1 129 12 view .LVU343
+ 1211 000a 8646     		mov	lr, r0
+ 1212 000c BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
+ 1213              	.LVL78:
+ 1214              		.loc 1 129 12 view .LVU344
+ 1215 0010 AEE80F00 		stmia	lr!, {r0, r1, r2, r3}
+ 1216 0014 9CE80F00 		ldm	ip, {r0, r1, r2, r3}
+ 1217 0018 8EE80F00 		stm	lr, {r0, r1, r2, r3}
+ 130:wavetable.cpp **** }
+ 1218              		.loc 1 130 1 view .LVU345
+ 1219 001c 2046     		mov	r0, r4
+ 1220 001e 10BD     		pop	{r4, pc}
+ 1221              		.loc 1 130 1 view .LVU346
+ 1222              		.cfi_endproc
+ 1223              	.LFE4741:
+ 1225              		.section	.rodata._ZL12midi_to_freq,"a"
+ 1226              		.align	2
+ 1227              		.set	.LANCHOR0,. + 0
+ 1230              	_ZL12midi_to_freq:
+ 1231 0000 48E10241 		.word	1090707784
+ 1232 0004 5C8F0A41 		.word	1091211100
+ 1233 0008 48E11241 		.word	1091756360
+ 1234 000c 1F851B41 		.word	1092322591
+ 1235 0010 CDCC2441 		.word	1092930765
+ 1236 0014 5C8F2E41 		.word	1093570396
+ 1237 0018 C3F53841 		.word	1094251971
+ 1238 001c 00004441 		.word	1094975488
+ 1239 0020 14AE4F41 		.word	1095740948
+ 1240 0024 00005C41 		.word	1096548352
+ 1241 0028 B81E6941 		.word	1097408184
+ 1242 002c 48E17641 		.word	1098309960
+ 1243 0030 CDCC8241 		.word	1099091149
+ 1244 0034 5C8F8A41 		.word	1099599708
+ 1245 0038 CDCC9241 		.word	1100139725
+ 1246 003c 9A999B41 		.word	1100716442
+ 1247 0040 CDCCA441 		.word	1101319373
+ 1248 0044 D7A3AE41 		.word	1101964247
+ 1249 0048 C3F5B841 		.word	1102640579
+ 1250 004c 0000C441 		.word	1103364096
+ 1251 0050 14AECF41 		.word	1104129556
+ 1252 0054 0000DC41 		.word	1104936960
+ 1253 0058 B81EE941 		.word	1105796792
+ 1254 005c C3F5F641 		.word	1106703811
+ 1255 0060 CDCC0242 		.word	1107479757
+ 1256 0064 9A990A42 		.word	1107990938
+ 1257 0068 0AD71242 		.word	1108530954
+ 1258 006c 5C8F1B42 		.word	1109102428
+ 1259 0070 CDCC2442 		.word	1109707981
+ 1260 0074 9A992E42 		.word	1110350234
+ 1261 0078 00003942 		.word	1111031808
+ 1262 007c 00004442 		.word	1111752704
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 53
 
 
- 1252              	.LVL77:
- 1253              		.loc 1 131 12 view .LVU346
- 1254 0010 94E80F00 		ldm	r4, {r0, r1, r2, r3}
- 1255 0014 8CE80F00 		stm	ip, {r0, r1, r2, r3}
- 132:wavetable.cpp **** }
- 1256              		.loc 1 132 1 view .LVU347
- 1257 0018 7046     		mov	r0, lr
- 1258 001a 10BD     		pop	{r4, pc}
- 1259              	.L72:
- 1260              		.align	2
- 1261              	.L71:
- 1262 001c 48000100 		.word	65608
- 1263              		.cfi_endproc
- 1264              	.LFE4741:
- 1266              		.section	.rodata._ZL12midi_to_freq,"a"
- 1267              		.align	2
- 1268              		.set	.LANCHOR0,. + 0
- 1271              	_ZL12midi_to_freq:
- 1272 0000 48E10241 		.word	1090707784
- 1273 0004 5C8F0A41 		.word	1091211100
- 1274 0008 48E11241 		.word	1091756360
- 1275 000c 1F851B41 		.word	1092322591
- 1276 0010 CDCC2441 		.word	1092930765
- 1277 0014 5C8F2E41 		.word	1093570396
- 1278 0018 C3F53841 		.word	1094251971
- 1279 001c 00004441 		.word	1094975488
- 1280 0020 14AE4F41 		.word	1095740948
- 1281 0024 00005C41 		.word	1096548352
- 1282 0028 B81E6941 		.word	1097408184
- 1283 002c 48E17641 		.word	1098309960
- 1284 0030 CDCC8241 		.word	1099091149
- 1285 0034 5C8F8A41 		.word	1099599708
- 1286 0038 CDCC9241 		.word	1100139725
- 1287 003c 9A999B41 		.word	1100716442
- 1288 0040 CDCCA441 		.word	1101319373
- 1289 0044 D7A3AE41 		.word	1101964247
- 1290 0048 C3F5B841 		.word	1102640579
- 1291 004c 0000C441 		.word	1103364096
- 1292 0050 14AECF41 		.word	1104129556
- 1293 0054 0000DC41 		.word	1104936960
- 1294 0058 B81EE941 		.word	1105796792
- 1295 005c C3F5F641 		.word	1106703811
- 1296 0060 CDCC0242 		.word	1107479757
- 1297 0064 9A990A42 		.word	1107990938
- 1298 0068 0AD71242 		.word	1108530954
- 1299 006c 5C8F1B42 		.word	1109102428
- 1300 0070 CDCC2442 		.word	1109707981
- 1301 0074 9A992E42 		.word	1110350234
- 1302 0078 00003942 		.word	1111031808
- 1303 007c 00004442 		.word	1111752704
- 1304 0080 D7A34F42 		.word	1112515543
- 1305 0084 00005C42 		.word	1113325568
- 1306 0088 7B146942 		.word	1114182779
- 1307 008c C3F57642 		.word	1115092419
- 1308 0090 ECD18242 		.word	1115869676
- 1309 0094 9A998A42 		.word	1116379546
- 1310 0098 0AD79242 		.word	1116919562
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 54
+ 1263 0080 D7A34F42 		.word	1112515543
+ 1264 0084 00005C42 		.word	1113325568
+ 1265 0088 7B146942 		.word	1114182779
+ 1266 008c C3F57642 		.word	1115092419
+ 1267 0090 ECD18242 		.word	1115869676
+ 1268 0094 9A998A42 		.word	1116379546
+ 1269 0098 0AD79242 		.word	1116919562
+ 1270 009c 5C8F9B42 		.word	1117491036
+ 1271 00a0 ECD1A442 		.word	1118097900
+ 1272 00a4 B89EAE42 		.word	1118740152
+ 1273 00a8 0000B942 		.word	1119420416
+ 1274 00ac 0000C442 		.word	1120141312
+ 1275 00b0 F6A8CF42 		.word	1120905462
+ 1276 00b4 0000DC42 		.word	1121714176
+ 1277 00b8 7B14E942 		.word	1122571387
+ 1278 00bc A4F0F642 		.word	1123479716
+ 1279 00c0 5CCF0243 		.word	1124257628
+ 1280 00c4 0A970A43 		.word	1124767498
+ 1281 00c8 7BD41243 		.word	1125307515
+ 1282 00cc 5C8F1B43 		.word	1125879644
+ 1283 00d0 5CCF2443 		.word	1126485852
+ 1284 00d4 299C2E43 		.word	1127128105
+ 1285 00d8 00003943 		.word	1127809024
+ 1286 00dc 00004443 		.word	1128529920
+ 1287 00e0 66A64F43 		.word	1129293414
+ 1288 00e4 00005C43 		.word	1130102784
+ 1289 00e8 7B146943 		.word	1130959995
+ 1290 00ec A4F07643 		.word	1131868324
+ 1291 00f0 A4D08243 		.word	1132646564
+ 1292 00f4 0A978A43 		.word	1133156106
+ 1293 00f8 7BD49243 		.word	1133696123
+ 1294 00fc A4909B43 		.word	1134268580
+ 1295 0100 A4D0A443 		.word	1134874788
+ 1296 0104 719DAE43 		.word	1135517041
+ 1297 0108 B8FEB843 		.word	1136197304
+ 1298 010c 0000C443 		.word	1136918528
+ 1299 0110 66A6CF43 		.word	1137682022
+ 1300 0114 0000DC43 		.word	1138491392
+ 1301 0118 7B14E943 		.word	1139348603
+ 1302 011c A4F0F643 		.word	1140256932
+ 1303 0120 00D00244 		.word	1141035008
+ 1304 0124 AE970A44 		.word	1141544878
+ 1305 0128 1FD51244 		.word	1142084895
+ 1306 012c 00901B44 		.word	1142657024
+ 1307 0130 A4D02444 		.word	1143263396
+ 1308 0134 719D2E44 		.word	1143905649
+ 1309 0138 5CFF3844 		.word	1144586076
+ 1310 013c 5CFF4344 		.word	1145306972
+ 1311 0140 0AA74F44 		.word	1146070794
+ 1312 0144 00005C44 		.word	1146880000
+ 1313 0148 1F156944 		.word	1147737375
+ 1314 014c 48F17644 		.word	1148645704
+ 1315 0150 00D08244 		.word	1149423616
+ 1316 0154 5C978A44 		.word	1149933404
+ 1317 0158 1FD59244 		.word	1150473503
+ 1318 015c 52909B44 		.word	1151045714
+ 1319 0160 52D0A444 		.word	1151651922
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 54
 
 
- 1311 009c 5C8F9B42 		.word	1117491036
- 1312 00a0 ECD1A442 		.word	1118097900
- 1313 00a4 B89EAE42 		.word	1118740152
- 1314 00a8 0000B942 		.word	1119420416
- 1315 00ac 0000C442 		.word	1120141312
- 1316 00b0 F6A8CF42 		.word	1120905462
- 1317 00b4 0000DC42 		.word	1121714176
- 1318 00b8 7B14E942 		.word	1122571387
- 1319 00bc A4F0F642 		.word	1123479716
- 1320 00c0 5CCF0243 		.word	1124257628
- 1321 00c4 0A970A43 		.word	1124767498
- 1322 00c8 7BD41243 		.word	1125307515
- 1323 00cc 5C8F1B43 		.word	1125879644
- 1324 00d0 5CCF2443 		.word	1126485852
- 1325 00d4 299C2E43 		.word	1127128105
- 1326 00d8 00003943 		.word	1127809024
- 1327 00dc 00004443 		.word	1128529920
- 1328 00e0 66A64F43 		.word	1129293414
- 1329 00e4 00005C43 		.word	1130102784
- 1330 00e8 7B146943 		.word	1130959995
- 1331 00ec A4F07643 		.word	1131868324
- 1332 00f0 A4D08243 		.word	1132646564
- 1333 00f4 0A978A43 		.word	1133156106
- 1334 00f8 7BD49243 		.word	1133696123
- 1335 00fc A4909B43 		.word	1134268580
- 1336 0100 A4D0A443 		.word	1134874788
- 1337 0104 719DAE43 		.word	1135517041
- 1338 0108 B8FEB843 		.word	1136197304
- 1339 010c 0000C443 		.word	1136918528
- 1340 0110 66A6CF43 		.word	1137682022
- 1341 0114 0000DC43 		.word	1138491392
- 1342 0118 7B14E943 		.word	1139348603
- 1343 011c A4F0F643 		.word	1140256932
- 1344 0120 00D00244 		.word	1141035008
- 1345 0124 AE970A44 		.word	1141544878
- 1346 0128 1FD51244 		.word	1142084895
- 1347 012c 00901B44 		.word	1142657024
- 1348 0130 A4D02444 		.word	1143263396
- 1349 0134 719D2E44 		.word	1143905649
- 1350 0138 5CFF3844 		.word	1144586076
- 1351 013c 5CFF4344 		.word	1145306972
- 1352 0140 0AA74F44 		.word	1146070794
- 1353 0144 00005C44 		.word	1146880000
- 1354 0148 1F156944 		.word	1147737375
- 1355 014c 48F17644 		.word	1148645704
- 1356 0150 00D08244 		.word	1149423616
- 1357 0154 5C978A44 		.word	1149933404
- 1358 0158 1FD59244 		.word	1150473503
- 1359 015c 52909B44 		.word	1151045714
- 1360 0160 52D0A444 		.word	1151651922
- 1361 0164 1F9DAE44 		.word	1152294175
- 1362 0168 5CFFB844 		.word	1152974684
- 1363 016c 5CFFC344 		.word	1153695580
- 1364 0170 0AA7CF44 		.word	1154459402
- 1365 0174 0000DC44 		.word	1155268608
- 1366 0178 1F15E944 		.word	1156125983
- 1367 017c F6F0F644 		.word	1157034230
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 55
+ 1320 0164 1F9DAE44 		.word	1152294175
+ 1321 0168 5CFFB844 		.word	1152974684
+ 1322 016c 5CFFC344 		.word	1153695580
+ 1323 0170 0AA7CF44 		.word	1154459402
+ 1324 0174 0000DC44 		.word	1155268608
+ 1325 0178 1F15E944 		.word	1156125983
+ 1326 017c F6F0F644 		.word	1157034230
+ 1327 0180 00D00245 		.word	1157812224
+ 1328 0184 5C970A45 		.word	1158322012
+ 1329 0188 1FD51245 		.word	1158862111
+ 1330 018c 52901B45 		.word	1159434322
+ 1331 0190 52D02445 		.word	1160040530
+ 1332 0194 489D2E45 		.word	1160682824
+ 1333 0198 5CFF3845 		.word	1161363292
+ 1334 019c 5CFF4345 		.word	1162084188
+ 1335 01a0 0AA74F45 		.word	1162848010
+ 1336 01a4 00005C45 		.word	1163657216
+ 1337 01a8 F6146945 		.word	1164514550
+ 1338 01ac 1FF17645 		.word	1165422879
+ 1339 01b0 14D08245 		.word	1166200852
+ 1340 01b4 5C978A45 		.word	1166710620
+ 1341 01b8 1FD59245 		.word	1167250719
+ 1342 01bc 3D909B45 		.word	1167822909
+ 1343 01c0 52D0A445 		.word	1168429138
+ 1344 01c4 339DAE45 		.word	1169071411
+ 1345 01c8 48FFB845 		.word	1169751880
+ 1346 01cc 71FFC345 		.word	1170472817
+ 1347 01d0 0AA7CF45 		.word	1171236618
+ 1348 01d4 0000DC45 		.word	1172045824
+ 1349 01d8 F614E945 		.word	1172903158
+ 1350 01dc 0AF1F645 		.word	1173811466
+ 1351 01e0 14D00246 		.word	1174589460
+ 1352 01e4 5C970A46 		.word	1175099228
+ 1353 01e8 14D51246 		.word	1175639316
+ 1354 01ec 3D901B46 		.word	1176211517
+ 1355 01f0 52D02446 		.word	1176817746
+ 1356 01f4 339D2E46 		.word	1177460019
+ 1357 01f8 48FF3846 		.word	1178140488
+ 1358 01fc 66FF4346 		.word	1178861414
+ 1359              		.text
+ 1360              	.Letext0:
+ 1361              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 1362              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 1363              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
+ 1364              		.file 8 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
+ 1365              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+ 1366              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 1367              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
+ 1368              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
+ 1369              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
+ 1370              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_iterat
+ 1371              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
+ 1372              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
+ 1373              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
+ 1374              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
+ 1375              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
+ 1376              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 55
 
 
- 1368 0180 00D00245 		.word	1157812224
- 1369 0184 5C970A45 		.word	1158322012
- 1370 0188 1FD51245 		.word	1158862111
- 1371 018c 52901B45 		.word	1159434322
- 1372 0190 52D02445 		.word	1160040530
- 1373 0194 489D2E45 		.word	1160682824
- 1374 0198 5CFF3845 		.word	1161363292
- 1375 019c 5CFF4345 		.word	1162084188
- 1376 01a0 0AA74F45 		.word	1162848010
- 1377 01a4 00005C45 		.word	1163657216
- 1378 01a8 F6146945 		.word	1164514550
- 1379 01ac 1FF17645 		.word	1165422879
- 1380 01b0 14D08245 		.word	1166200852
- 1381 01b4 5C978A45 		.word	1166710620
- 1382 01b8 1FD59245 		.word	1167250719
- 1383 01bc 3D909B45 		.word	1167822909
- 1384 01c0 52D0A445 		.word	1168429138
- 1385 01c4 339DAE45 		.word	1169071411
- 1386 01c8 48FFB845 		.word	1169751880
- 1387 01cc 71FFC345 		.word	1170472817
- 1388 01d0 0AA7CF45 		.word	1171236618
- 1389 01d4 0000DC45 		.word	1172045824
- 1390 01d8 F614E945 		.word	1172903158
- 1391 01dc 0AF1F645 		.word	1173811466
- 1392 01e0 14D00246 		.word	1174589460
- 1393 01e4 5C970A46 		.word	1175099228
- 1394 01e8 14D51246 		.word	1175639316
- 1395 01ec 3D901B46 		.word	1176211517
- 1396 01f0 52D02446 		.word	1176817746
- 1397 01f4 339D2E46 		.word	1177460019
- 1398 01f8 48FF3846 		.word	1178140488
- 1399 01fc 66FF4346 		.word	1178861414
- 1400              		.text
- 1401              	.Letext0:
- 1402              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\machine\\_default_types.h"
- 1403              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_stdint.h"
- 1404              		.file 7 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdint.h"
- 1405              		.file 8 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stddef.h"
- 1406              		.file 9 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
- 1407              		.file 10 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
- 1408              		.file 11 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdint"
- 1409              		.file 12 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdlib"
- 1410              		.file 13 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\type_traits"
- 1411              		.file 14 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\t
- 1412              		.file 15 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_pair.h
- 1413              		.file 16 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\stl_iterat
- 1414              		.file 17 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\debug\\debug.h"
- 1415              		.file 18 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cwchar"
- 1416              		.file 19 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\exception_
- 1417              		.file 20 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\clocale"
- 1418              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
- 1419              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
- 1420              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\charconv.h
- 1421              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
- 1422              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
- 1423              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
- 1424              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 56
-
-
- 1425              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
- 1426              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
- 1427              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
- 1428              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
- 1429              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
- 1430              		.file 33 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
- 1431              		.file 34 "../DaisyExamples/DaisySP/Source/Control/adenv.h"
- 1432              		.file 35 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
- 1433              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
- 1434              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
- 1435              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
- 1436              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
- 1437              		.file 40 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
- 1438              		.file 41 "wavetable.h"
- 1439              		.file 42 "../DaisyExamples/libDaisy/src/daisy_core.h"
- 1440              		.file 43 "../DaisyExamples/libDaisy/src/util/wav_format.h"
- 1441              		.file 44 "../DaisyExamples/libDaisy/src/dev/max11300.h"
- 1442              		.file 45 "../DaisyExamples/libDaisy/src/daisy_seed.h"
- 1443              		.file 46 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
- 1444              		.file 47 "<built-in>"
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s 			page 57
+ 1377              		.file 21 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdio"
+ 1378              		.file 22 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\basic_stri
+ 1379              		.file 23 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\charconv.h
+ 1380              		.file 24 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\algorithmf
+ 1381              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
+ 1382              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
+ 1383              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
+ 1384              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
+ 1385              		.file 29 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\reent.h"
+ 1386              		.file 30 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\lock.h"
+ 1387              		.file 31 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 1388              		.file 32 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdlib.h"
+ 1389              		.file 33 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 1390              		.file 34 "../DaisyExamples/DaisySP/Source/Control/adenv.h"
+ 1391              		.file 35 "c:\\program files\\daisytoolchain\\lib\\gcc\\arm-none-eabi\\10.2.1\\include\\stdarg.h"
+ 1392              		.file 36 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\wchar.h"
+ 1393              		.file 37 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\locale.h"
+ 1394              		.file 38 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\stdio.h"
+ 1395              		.file 39 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\stdlib.h"
+ 1396              		.file 40 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\string.h"
+ 1397              		.file 41 "../DaisyExamples/libDaisy/src/daisy_core.h"
+ 1398              		.file 42 "../DaisyExamples/libDaisy/src/util/wav_format.h"
+ 1399              		.file 43 "../DaisyExamples/libDaisy/src/dev/max11300.h"
+ 1400              		.file 44 "../DaisyExamples/libDaisy/src/daisy_seed.h"
+ 1401              		.file 45 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
+ 1402              		.file 46 "wavetable.h"
+ 1403              		.file 47 "<built-in>"
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s 			page 56
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 wavetable.cpp
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:17     .text._ZN9WavetableC2Ev:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:26     .text._ZN9WavetableC2Ev:00000000 _ZN9WavetableC2Ev
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:141    .text._ZN9WavetableC2Ev:00000020 $d
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:26     .text._ZN9WavetableC2Ev:00000000 _ZN9WavetableC1Ev
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:149    .text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:157    .text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 _ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:157    .text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 _ZN9WavetableC1EfRKSt5arrayIS0_IfLj2048EELj8EEi
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:203    .text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:211    .text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 _ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:340    .text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi:00000040 $d
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:346    .text._ZN9Wavetable7ProcessEv:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:354    .text._ZN9Wavetable7ProcessEv:00000000 _ZN9Wavetable7ProcessEv
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:668    .text._ZN9Wavetable7ProcessEv:00000100 $d
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:677    .text._ZN9Wavetable7SetFreqEif:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:685    .text._ZN9Wavetable7SetFreqEif:00000000 _ZN9Wavetable7SetFreqEif
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:717    .text._ZN9Wavetable8SetIndexEif:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:725    .text._ZN9Wavetable8SetIndexEif:00000000 _ZN9Wavetable8SetIndexEif
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:757    .text._ZN9Wavetable7AddNoteEh:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:765    .text._ZN9Wavetable7AddNoteEh:00000000 _ZN9Wavetable7AddNoteEh
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:918    .text._ZN9Wavetable7AddNoteEh:0000006c $d
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:925    .text._ZN9Wavetable10RemoveNoteEh:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:933    .text._ZN9Wavetable10RemoveNoteEh:00000000 _ZN9Wavetable10RemoveNoteEh
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1078   .text._ZN9Wavetable10RemoveNoteEh:00000064 $d
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1085   .text._ZN9Wavetable9ReadNotesEv:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1093   .text._ZN9Wavetable9ReadNotesEv:00000000 _ZN9Wavetable9ReadNotesEv
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1121   .text._ZN9Wavetable9ReadNotesEv:00000010 $d
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1126   .text._ZN9Wavetable9ReadFreqsEv:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1134   .text._ZN9Wavetable9ReadFreqsEv:00000000 _ZN9Wavetable9ReadFreqsEv
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1168   .text._ZN9Wavetable9ReadFreqsEv:0000001c $d
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1173   .text._ZN9Wavetable10ReadPhasesEv:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1181   .text._ZN9Wavetable10ReadPhasesEv:00000000 _ZN9Wavetable10ReadPhasesEv
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1215   .text._ZN9Wavetable10ReadPhasesEv:0000001c $d
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1220   .text._ZN9Wavetable12ReadIndiciesEv:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1228   .text._ZN9Wavetable12ReadIndiciesEv:00000000 _ZN9Wavetable12ReadIndiciesEv
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1262   .text._ZN9Wavetable12ReadIndiciesEv:0000001c $d
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1267   .rodata._ZL12midi_to_freq:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccLk9UD3.s:1271   .rodata._ZL12midi_to_freq:00000000 _ZL12midi_to_freq
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:17     .text._ZN9WavetableC2Ev:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:26     .text._ZN9WavetableC2Ev:00000000 _ZN9WavetableC2Ev
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:141    .text._ZN9WavetableC2Ev:00000024 $d
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:26     .text._ZN9WavetableC2Ev:00000000 _ZN9WavetableC1Ev
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:148    .text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj256EELj8EEi:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:156    .text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj256EELj8EEi:00000000 _ZN9WavetableC2EfRKSt5arrayIS0_IfLj256EELj8EEi
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:156    .text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj256EELj8EEi:00000000 _ZN9WavetableC1EfRKSt5arrayIS0_IfLj256EELj8EEi
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:202    .text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj256EELj8EEi:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:210    .text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj256EELj8EEi:00000000 _ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj256EELj8EEi
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:339    .text._ZN9Wavetable7ProcessEv:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:347    .text._ZN9Wavetable7ProcessEv:00000000 _ZN9Wavetable7ProcessEv
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:658    .text._ZN9Wavetable7ProcessEv:000000f8 $d
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:663    .text._ZN9Wavetable7SetFreqEif:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:671    .text._ZN9Wavetable7SetFreqEif:00000000 _ZN9Wavetable7SetFreqEif
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:703    .text._ZN9Wavetable8SetIndexEif:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:711    .text._ZN9Wavetable8SetIndexEif:00000000 _ZN9Wavetable8SetIndexEif
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:743    .text._ZN9Wavetable7AddNoteEh:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:751    .text._ZN9Wavetable7AddNoteEh:00000000 _ZN9Wavetable7AddNoteEh
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:904    .text._ZN9Wavetable7AddNoteEh:00000070 $d
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:909    .text._ZN9Wavetable10RemoveNoteEh:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:917    .text._ZN9Wavetable10RemoveNoteEh:00000000 _ZN9Wavetable10RemoveNoteEh
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:1063   .text._ZN9Wavetable9ReadNotesEv:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:1071   .text._ZN9Wavetable9ReadNotesEv:00000000 _ZN9Wavetable9ReadNotesEv
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:1100   .text._ZN9Wavetable9ReadFreqsEv:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:1108   .text._ZN9Wavetable9ReadFreqsEv:00000000 _ZN9Wavetable9ReadFreqsEv
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:1142   .text._ZN9Wavetable10ReadPhasesEv:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:1150   .text._ZN9Wavetable10ReadPhasesEv:00000000 _ZN9Wavetable10ReadPhasesEv
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:1184   .text._ZN9Wavetable12ReadIndiciesEv:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:1192   .text._ZN9Wavetable12ReadIndiciesEv:00000000 _ZN9Wavetable12ReadIndiciesEv
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:1226   .rodata._ZL12midi_to_freq:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\cc0E0lMN.s:1230   .rodata._ZL12midi_to_freq:00000000 _ZL12midi_to_freq
 
 UNDEFINED SYMBOLS
 memset

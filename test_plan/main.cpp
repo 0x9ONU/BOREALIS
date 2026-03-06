@@ -21,9 +21,12 @@ FIFO<MidiEvent, 128> event_log;
 std::array<float, 8> oscillators_out;
 float mix;
 
+int num_waves = 4;
+const int table_size = 256;
+std::array<std::array<float, table_size>, 8> DSY_SDRAM_BSS waves;
 
 //Testing variables
-uint32_t start_test = System::GetUs();
+uint32_t start_test;
 
 uint32_t test_high = 0;
 uint32_t test_low = 0xFFFFFFFF;
@@ -61,7 +64,8 @@ void AudioCallback(AudioHandle::InputBuffer  in,
             mix = mix + (oscillators_out[j] * 0.125);
         }
         
-        out[0][i] = out[1][i] = mix;
+        out[0][i] = oscillators_out[0];
+        out[1][i] = mix;
     }  
 
     uint32_t test_time = System::GetUs() - start_test; // calculate time for callback
@@ -69,24 +73,12 @@ void AudioCallback(AudioHandle::InputBuffer  in,
     if(test_time < test_low){test_low = test_time;} // update low time
     test_sum += test_time; // add to time counter
     test_n++; // increment number of blocks processed
-    
-
 }
 
-int main(void){
-    // Begin Initialization
-    hw.Configure();
-    hw.Init();
-    hw.SetAudioBlockSize(64);
-    hw.StartLog(true);
-    float sample_rate = hw.AudioSampleRate();
-    
-    hw.PrintLine("Start wavetable creation");
+void GenerateWavetable(){
     // create the wavetable here, currently 3 waves, sine, triangle, square
-    int num_waves = 4;
-    std::array<std::array<float, 2048>, 8> waves;
-    for(int i = 0; i < 2048; i++){
-        float phase = (float)i / 2048.0f;   // 
+    for(int i = 0; i < table_size; i++){
+        float phase = (float)i / (float)table_size;   // 
         
         waves[0][i] = sinf(2.0f * PI * phase);
 
@@ -101,7 +93,20 @@ int main(void){
 
         waves[2][i] = (phase < 0.5f) ? 1.0f : -1.0f;
     }
+}
 
+int main(void){
+    // Begin Initialization
+    hw.Configure();
+    hw.Init();
+    hw.SetAudioBlockSize(64);
+    hw.StartLog(true);
+    float sample_rate = hw.AudioSampleRate();
+    
+    hw.PrintLine("Start wavetable creation");
+
+    GenerateWavetable();
+    
     // Initialize the WT
     wt.Init(sample_rate, waves, num_waves);
     for(int i = 0; i < 8; i++){
@@ -122,10 +127,17 @@ int main(void){
 
     hw.StartAudio(AudioCallback);
     hw.PrintLine("Audio Callback Started, begin main loop");
-
+    
+    // max load for now
+    wt.AddNote(71); // testing
     wt.AddNote(69); // testing
-
-
+    wt.AddNote(66); // testing
+    wt.AddNote(62); // testing
+    wt.AddNote(59); // testing
+    wt.AddNote(56); // testing
+    wt.AddNote(53); // testing
+    wt.AddNote(49); // testing
+    
     // Main Loop
     while(1) {
         System::Delay(1);
@@ -167,7 +179,7 @@ int main(void){
 
         /** Every 2 minutes we'll print the test results */
         /** Currently, all test results are integers, should probably format as floats */
-        if(now - log_time > 15000){
+        if(now - log_time > 120000){
             test_avg = (float)test_sum / (float)test_n;
             char outstr[128];
             sprintf(outstr,

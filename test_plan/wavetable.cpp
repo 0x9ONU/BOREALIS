@@ -1,7 +1,5 @@
 
-#include "daisysp.h"
 #include "wavetable.h"
-#include "daisy_seed.h"
 
 
 // Defailt constructor
@@ -13,7 +11,7 @@ Wavetable::Wavetable()
 }
 
 // Constructor 
-Wavetable::Wavetable(float samp_freq, const std::array<std::array<float, 2048>, 8>& wavesin, int num_waves):
+Wavetable::Wavetable(float samp_freq, const std::array<std::array<float, samples_per_wave>, 8>& wavesin, int num_waves):
     fs(samp_freq),
     waves(wavesin),
     num_waves(num_waves),
@@ -21,8 +19,8 @@ Wavetable::Wavetable(float samp_freq, const std::array<std::array<float, 2048>, 
 {}
 
 // Initialize function
-void Wavetable::Init(float samp_freq, const std::array<std::array<float, 2048>, 8>& wavesin, int num_waves){
-    this->waves = wavesin;      // copy all 8 × 2048 samples
+void Wavetable::Init(float samp_freq, const std::array<std::array<float, samples_per_wave>, 8>& wavesin, int num_waves){
+    this->waves = wavesin;      // copy all 8 × samples_per_wave samples
     this->phases.fill(0.0f);    // zero all phases
     this->num_waves = num_waves;
     this->fs = samp_freq;
@@ -36,7 +34,7 @@ std::array<float, 8> Wavetable::Process(){
     std::array<float, 8> out;                              
     // calculate every oscillator's next sample
     for(int osc = 0; osc < 8; osc++){
-        float dt = frequencies[osc] * 2048.0 / fs;          // time difference between samples
+        float dt = frequencies[osc] * (float)samples_per_wave / fs;          // time difference between samples
 
         // finds indicies and weights 
         uint8_t wave1 = (int)indicies[osc];                 // closest wave to the left
@@ -49,7 +47,7 @@ std::array<float, 8> Wavetable::Process(){
         uint16_t i = (int)phase;                            // closest sample to left
         uint16_t i_next = i + 1;                            // closest sample to the right
         float i_weight = daisysp::fastmod1f(phase);         // distance from the left sample
-        if(i_next >= 2048){ i_next -= 2048;}                // wrap if needed
+        if(i_next >= samples_per_wave){ i_next -= samples_per_wave;}                // wrap if needed
 
         float fl1 = waves[wave1][i];    
         float ce1 = waves[wave1][i_next];
@@ -62,7 +60,7 @@ std::array<float, 8> Wavetable::Process(){
         out[osc] = (1 - i_weight) * fl + i_weight * ce;
 
         phase += dt;
-        if(phase >= 2048.0f){ phase -= 2048.0f; }
+        if(phase >= (float)samples_per_wave){ phase -= (float)samples_per_wave; }
         phases[osc] = phase;
     }
 
