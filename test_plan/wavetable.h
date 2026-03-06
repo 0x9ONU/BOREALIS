@@ -2,8 +2,10 @@
 
 #include <stdint.h>
 #include <array>
+#include "daisysp.h"
+#include "daisy_seed.h"
 
-const float midi_to_freq[128] = {
+static const float midi_to_freq[128] = {
     8.18, 8.66, 9.18, 9.72, 10.30, 10.91, 11.56, 12.25, 12.98, 13.75, 14.57, 15.43,
     16.35, 17.32, 18.35, 19.45, 20.60, 21.83, 23.12, 24.50, 25.96, 27.50, 29.14, 30.87,
     32.70, 34.65, 36.71, 38.89, 41.20, 43.65, 46.25, 49.00, 51.91, 55.00, 58.27, 61.74,
@@ -17,6 +19,7 @@ const float midi_to_freq[128] = {
     8372.02, 8869.84, 9397.27, 9956.06, 10548.08, 11175.30, 11839.82, 12543.85
 };
 
+const int samples_per_wave = 256;
 
 /** Class for containing the data on a wavetable
 */
@@ -24,9 +27,9 @@ class Wavetable
 {
   public:    
     Wavetable();
-    Wavetable(float samp_freq, const std::array<std::array<float, 2048>, 8>& wavesin, int num_waves);
+    Wavetable(float samp_freq, const std::array<std::array<float, samples_per_wave>, 8>& wavesin, int num_waves);
     ~Wavetable() {}
-    void Init(float samp_freq, const std::array<std::array<float, 2048>, 8>& wavesin, int num_waves);
+    void Init(float samp_freq, const std::array<std::array<float, samples_per_wave>, 8>& wavesin, int num_waves);
     std::array<float, 8> Process();
     void SetFreq(int osc, float freq);
     void SetIndex(int osc, float index);
@@ -42,7 +45,7 @@ class Wavetable
 
   private:
     float fs;                                     // sampling frequency (44.1 kHz probably)
-    std::array<std::array<float, 2048>, 8> waves; // table to hold up to 8 waves of 2048 samples each
+    std::array<std::array<float, samples_per_wave>, 8> waves; // table to hold up to 8 waves of samples_per_wave samples each
     int num_waves;                                // actual number of waves in the table, up to 8
     
     std::array<float, 8> frequencies;             // the frequency of each oscillator 

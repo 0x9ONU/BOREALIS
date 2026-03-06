@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
   44              	.LBB236:
   45              	.LBB219:
   46              	.LBB220:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 2
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 2
 
 
   47              	.LBB221:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
   49:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****  */
   50:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
   51:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** /** @file bits/stl_algobase.h
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 3
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 3
 
 
   52:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****  *  This is an internal header file, included by other library headers.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  106:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     }
  107:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  108:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #if __cplusplus < 201103L
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 4
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 4
 
 
  109:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // See http://gcc.gnu.org/ml/libstdc++/2004-08/msg00167.html: in a
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  163:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       typedef typename iterator_traits<_ForwardIterator2>::value_type
  164:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	_ValueType2;
  165:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 5
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 5
 
 
  166:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       __glibcxx_function_requires(_ConvertibleConcept<_ValueType1,
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  220:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  @param  __b  Another thing of arbitrary type.
  221:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  @return   The lesser of the parameters.
  222:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 6
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 6
 
 
  223:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  This is the simple classic generic implementation.  It will work on
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  277:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     inline const _Tp&
  278:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
  279:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     {
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 7
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 7
 
 
  280:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       //return __comp(__b, __a) ? __b : __a;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  334:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // calls to copy with memmove whenever possible.  (Memmove, not memcpy,
  335:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // because the input and output ranges are permitted to overlap.)
  336:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // (2) If we're using random access iterators, then write the loop as
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 8
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 8
 
 
  337:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   // a for loop with an explicit count.
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  391:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     {
  392:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       template<typename _II, typename _OI>
  393:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	_GLIBCXX20_CONSTEXPR
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 9
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 9
 
 
  394:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	static _OI
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  448:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<bool _IsMove, typename _CharT>
  449:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value,
  450:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	     ostreambuf_iterator<_CharT, char_traits<_CharT> > >::__type
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 10
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 10
 
 
  451:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __copy_move_a2(const _CharT*, const _CharT*,
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  505:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __copy_move_a1(_II __first, _II __last, _OI __result)
  506:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     { return std::__copy_move_a2<_IsMove>(__first, __last, __result); }
  507:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 11
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 11
 
 
  508:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<bool _IsMove, typename _II, typename _OI>
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  562:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       // concept requirements
  563:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       __glibcxx_function_requires(_InputIteratorConcept<_II>)
  564:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       __glibcxx_function_requires(_OutputIteratorConcept<_OI,
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 12
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 12
 
 
  565:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	    typename iterator_traits<_II>::value_type>)
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  619:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	    *--__result = *--__last;
  620:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	  return __result;
  621:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	}
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 13
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 13
 
 
  622:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     };
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  676:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     {
  677:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****       template<typename _Tp>
  678:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	_GLIBCXX20_CONSTEXPR
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 14
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 14
 
 
  679:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	static _Tp*
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  733:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 			_GLIBCXX_STD_C::_Deque_iterator<_OTp, _OTp&, _OTp*>);
  734:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  735:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   template<bool _IsMove, typename _II, typename _Tp>
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 15
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 15
 
 
  736:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     typename __gnu_cxx::__enable_if<
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  790:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *
  791:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  Result may not be in the range (first,last].  Use copy instead.  Note
  792:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  that the start of the output range may overlap [first,last).
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 16
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 16
 
 
  793:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   */
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  847:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  848:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #define _GLIBCXX_MOVE_BACKWARD3(_Tp, _Up, _Vp) std::move_backward(_Tp, _Up, _Vp)
  849:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #else
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 17
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 17
 
 
  850:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #define _GLIBCXX_MOVE_BACKWARD3(_Tp, _Up, _Vp) std::copy_backward(_Tp, _Up, _Vp)
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
   15:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
   16:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** // Under Section 7 of GPL version 3, you are granted additional
   17:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** // permissions described in the GCC Runtime Library Exception, version
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 18
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 18
 
 
   18:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** // 3.1, as published by the Free Software Foundation.
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
   72:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****      { return *static_cast<_Tp*>(nullptr); }
   73:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
   74:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****      static constexpr _Tp*
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 19
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 19
 
 
   75:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****      _S_ptr(const _Type&) noexcept
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  126:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       begin() noexcept
   72              		.loc 3 126 7 view .LVU8
   73              	.LBB232:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 20
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 20
 
 
   74              	.LBI232:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  180:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       _GLIBCXX_NODISCARD constexpr bool
  181:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       empty() const noexcept { return size() == 0; }
  182:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array **** 
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 21
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 21
 
 
  183:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       // Element access.
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
   77              	.LBE232:
   78              	.LBE231:
   79              	.LBB233:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 22
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 22
 
 
   80              	.LBI220:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  927:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  @param  __value  A reference-to-const of arbitrary type.
  928:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  @return   Nothing.
  929:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 23
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 23
 
 
  930:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****    *  This function fills a range with copies of the same value.  For char
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  984:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** #endif
  985:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 
  986:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   inline _GLIBCXX_CONSTEXPR long long
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 24
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 24
 
 
  987:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****   __size_to_integer(float __n) { return __n; }
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
 1041:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     inline _OutputIterator
 1042:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     __fill_n_a(_OutputIterator __first, _Size __n, const _Tp& __value,
 1043:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h **** 	       std::input_iterator_tag)
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 25
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 25
 
 
 1044:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\bits\stl_algobase.h ****     {
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
   88              	.LBB235:
   89              	.LBB234:
   90              	.LBB230:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 26
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 26
 
 
   91              	.LBI221:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  131              		.loc 1 12 14 is_stmt 0 view .LVU28
  132 001c 2360     		str	r3, [r4]	@ float
  133              	.LBE238:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 27
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 27
 
 
  134              		.loc 1 13 1 view .LVU29
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  183              	.LVL9:
  184              		.loc 1 20 16 view .LVU37
  185 0012 04F58030 		add	r0, r4, #65536
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 28
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 28
 
 
  186 0016 2022     		movs	r2, #32
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  235 000c 2DED028B 		vpush.64	{d8}
  236              		.cfi_def_cfa_offset 24
  237              		.cfi_offset 80, -24
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 29
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 29
 
 
  238              		.cfi_offset 81, -20
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  281 0018 0948     		ldr	r0, .L10
  282 001a 2022     		movs	r2, #32
  283 001c 0021     		movs	r1, #0
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 30
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 30
 
 
  284 001e 2044     		add	r0, r0, r4
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  326              	.LBE269:
   31:wavetable.cpp ****     }
   32:wavetable.cpp **** }
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 31
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 31
 
 
  327              		.loc 1 32 1 view .LVU76
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  370              	.LBE271:
  371              	.LBE270:
   35:wavetable.cpp ****     std::array<float, 8> out;                              
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 32
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 32
 
 
  372              		.loc 1 35 42 view .LVU83
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
   65:wavetable.cpp ****         if(phase >= 2048.0f){ phase -= 2048.0f; }
  401              		.loc 1 65 9 view .LVU90
  402 0026 DFED3A3A 		vldr.32	s7, .L22+16
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 33
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 33
 
 
   39:wavetable.cpp **** 
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
   24:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** #define DSY_MIN(in, mn) (in < mn ? in : mn)
   25:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** #define DSY_MAX(in, mx) (in > mx ? in : mx)
   26:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** #define DSY_CLAMP(in, mn, mx) (DSY_MIN(DSY_MAX(in, mn), mx))
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 34
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 34
 
 
   27:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** #define DSY_COUNTOF(_arr) (sizeof(_arr) / sizeof(_arr[0]))
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
   81:../DaisyExamples/DaisySP/Source/Utility/dsp.h ****     *lp = l;
   82:../DaisyExamples/DaisySP/Source/Utility/dsp.h ****     return f;
   83:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** }
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 35
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 35
 
 
   84:../DaisyExamples/DaisySP/Source/Utility/dsp.h **** 
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  455 0064 0CEB4131 		add	r1, ip, r1, lsl #13
  456              	.LBE284:
  457              	.LBE283:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 36
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 36
 
 
  458              	.LBE282:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  498 0084 F8EEE66A 		vcvt.f32.s32	s13, s13
  499              	.LBE289:
  500              	.LBE288:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 37
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 37
 
 
   54:wavetable.cpp ****         float ce1 = waves[wave1][i_next];
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  542 00ac D7ED002A 		vldr.32	s5, [r7]
   59:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
  543              		.loc 1 59 46 view .LVU143
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 38
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 38
 
 
  544 00b0 67EE266A 		vmul.f32	s13, s14, s13
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  583 00c2 E4EEA26A 		vfma.f32	s13, s9, s5
  584              		.loc 1 65 9 view .LVU159
  585 00c6 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 39
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 39
 
 
   57:wavetable.cpp **** 
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  625              		.loc 3 55 7 is_stmt 0 view .LVU175
  626              	.LBE303:
  627              	.LBE302:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 40
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 40
 
 
   59:wavetable.cpp ****         float ce = (1-weight) * ce1 + weight * ce2;
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  664              	.L23:
  665              		.loc 1 70 1 view .LVU193
  666              		.align	3
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 41
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 41
 
 
  667              	.L22:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  717              		.align	1
  718              		.p2align 2,,3
  719              		.global	_ZN9Wavetable8SetIndexEif
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 42
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 42
 
 
  720              		.syntax unified
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  768              		.loc 1 80 38 is_stmt 1 view -0
  769              		.cfi_startproc
  770              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 43
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 43
 
 
  771              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  809              		.loc 1 85 21 is_stmt 0 view .LVU226
  810 0010 1CF8014B 		ldrb	r4, [ip], #1	@ zero_extendqisi2
  811              		.loc 1 89 20 view .LVU227
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 44
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 44
 
 
  812 0014 0EEB0705 		add	r5, lr, r7
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  854              		.loc 1 93 19 view .LVU240
  855 0040 0EEB0602 		add	r2, lr, r6
  856 0044 82F86810 		strb	r1, [r2, #104]
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 45
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 45
 
 
  857              		.loc 1 94 5 is_stmt 1 view .LVU241
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  900              	.LBB321:
  901              	.LBI321:
   55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\array ****       { return const_cast<_Tp&>(__t[__n]); }
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 46
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 46
 
 
  902              		.loc 3 55 7 view .LVU258
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  105:wavetable.cpp ****         if(notes[i] == note){                       // if oscillator is target
  951              		.loc 1 105 9 is_stmt 1 view .LVU269
  952              	.LBB335:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 47
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 47
 
 
  104:wavetable.cpp ****         if(notes[i] == note){                       // if oscillator is target
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  999              		.loc 1 106 22 view .LVU282
  1000 0024 FF24     		movs	r4, #255
  107:wavetable.cpp ****             phases[i] = 0;                          // reset phase
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 48
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 48
 
 
  1001              		.loc 1 107 23 view .LVU283
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  1046 004e 38BF     		it	cc
  1047 0050 01F801EC 		strbcc	lr, [r1, #-1]
  109:wavetable.cpp ****                 if(ages[j] > ages[i]){ ages[j]--; }
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 49
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 49
 
 
  1048              		.loc 1 109 30 view .LVU303
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  1091              		.fpu fpv5-d16
  1093              	_ZN9Wavetable9ReadNotesEv:
  1094              	.LVL67:
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 50
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 50
 
 
  1095              	.LFB4738:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  1142              		.loc 1 124 44 is_stmt 0 view .LVU323
  1143 0000 10B5     		push	{r4, lr}
  1144              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 51
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 51
 
 
  1145              		.cfi_offset 4, -8
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  127:wavetable.cpp **** std::array<float, 8> Wavetable::ReadPhases(){
  1196              		.loc 1 127 45 view .LVU334
  1197 0004 8646     		mov	lr, r0
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 52
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 52
 
 
  1198              		.loc 1 128 12 view .LVU335
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  1249              	.LVL76:
  1250              		.loc 1 131 12 view .LVU345
  1251 000c ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 53
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 53
 
 
  1252              	.LVL77:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  1308 0090 ECD18242 		.word	1115869676
  1309 0094 9A998A42 		.word	1116379546
  1310 0098 0AD79242 		.word	1116919562
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 54
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 54
 
 
  1311 009c 5C8F9B42 		.word	1117491036
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  1365 0174 0000DC44 		.word	1155268608
  1366 0178 1F15E944 		.word	1156125983
  1367 017c F6F0F644 		.word	1157034230
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 55
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 55
 
 
  1368 0180 00D00245 		.word	1157812224
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  1422              		.file 25 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstring"
  1423              		.file 26 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cstdarg"
  1424              		.file 27 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\predefined
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 56
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 56
 
 
  1425              		.file 28 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\sys\\_types.h"
@@ -3321,48 +3321,48 @@ ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 1
  1442              		.file 45 "../DaisyExamples/libDaisy/src/daisy_seed.h"
  1443              		.file 46 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
  1444              		.file 47 "<built-in>"
-ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s 			page 57
+ARM GAS  C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s 			page 57
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 wavetable.cpp
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:17     .text._ZN9WavetableC2Ev:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:26     .text._ZN9WavetableC2Ev:00000000 _ZN9WavetableC2Ev
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:141    .text._ZN9WavetableC2Ev:00000020 $d
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:26     .text._ZN9WavetableC2Ev:00000000 _ZN9WavetableC1Ev
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:149    .text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:157    .text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 _ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:157    .text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 _ZN9WavetableC1EfRKSt5arrayIS0_IfLj2048EELj8EEi
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:203    .text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:211    .text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 _ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:340    .text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi:00000040 $d
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:346    .text._ZN9Wavetable7ProcessEv:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:354    .text._ZN9Wavetable7ProcessEv:00000000 _ZN9Wavetable7ProcessEv
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:668    .text._ZN9Wavetable7ProcessEv:00000100 $d
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:677    .text._ZN9Wavetable7SetFreqEif:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:685    .text._ZN9Wavetable7SetFreqEif:00000000 _ZN9Wavetable7SetFreqEif
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:717    .text._ZN9Wavetable8SetIndexEif:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:725    .text._ZN9Wavetable8SetIndexEif:00000000 _ZN9Wavetable8SetIndexEif
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:757    .text._ZN9Wavetable7AddNoteEh:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:765    .text._ZN9Wavetable7AddNoteEh:00000000 _ZN9Wavetable7AddNoteEh
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:918    .text._ZN9Wavetable7AddNoteEh:0000006c $d
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:925    .text._ZN9Wavetable10RemoveNoteEh:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:933    .text._ZN9Wavetable10RemoveNoteEh:00000000 _ZN9Wavetable10RemoveNoteEh
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1078   .text._ZN9Wavetable10RemoveNoteEh:00000064 $d
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1085   .text._ZN9Wavetable9ReadNotesEv:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1093   .text._ZN9Wavetable9ReadNotesEv:00000000 _ZN9Wavetable9ReadNotesEv
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1121   .text._ZN9Wavetable9ReadNotesEv:00000010 $d
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1126   .text._ZN9Wavetable9ReadFreqsEv:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1134   .text._ZN9Wavetable9ReadFreqsEv:00000000 _ZN9Wavetable9ReadFreqsEv
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1168   .text._ZN9Wavetable9ReadFreqsEv:0000001c $d
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1173   .text._ZN9Wavetable10ReadPhasesEv:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1181   .text._ZN9Wavetable10ReadPhasesEv:00000000 _ZN9Wavetable10ReadPhasesEv
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1215   .text._ZN9Wavetable10ReadPhasesEv:0000001c $d
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1220   .text._ZN9Wavetable12ReadIndiciesEv:00000000 $t
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1228   .text._ZN9Wavetable12ReadIndiciesEv:00000000 _ZN9Wavetable12ReadIndiciesEv
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1262   .text._ZN9Wavetable12ReadIndiciesEv:0000001c $d
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1267   .rodata._ZL12midi_to_freq:00000000 $d
-C:\Users\22bur\AppData\Local\Temp\ccUiQk2f.s:1271   .rodata._ZL12midi_to_freq:00000000 _ZL12midi_to_freq
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:17     .text._ZN9WavetableC2Ev:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:26     .text._ZN9WavetableC2Ev:00000000 _ZN9WavetableC2Ev
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:141    .text._ZN9WavetableC2Ev:00000020 $d
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:26     .text._ZN9WavetableC2Ev:00000000 _ZN9WavetableC1Ev
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:149    .text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:157    .text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 _ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:157    .text._ZN9WavetableC2EfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 _ZN9WavetableC1EfRKSt5arrayIS0_IfLj2048EELj8EEi
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:203    .text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:211    .text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi:00000000 _ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:340    .text._ZN9Wavetable4InitEfRKSt5arrayIS0_IfLj2048EELj8EEi:00000040 $d
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:346    .text._ZN9Wavetable7ProcessEv:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:354    .text._ZN9Wavetable7ProcessEv:00000000 _ZN9Wavetable7ProcessEv
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:668    .text._ZN9Wavetable7ProcessEv:00000100 $d
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:677    .text._ZN9Wavetable7SetFreqEif:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:685    .text._ZN9Wavetable7SetFreqEif:00000000 _ZN9Wavetable7SetFreqEif
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:717    .text._ZN9Wavetable8SetIndexEif:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:725    .text._ZN9Wavetable8SetIndexEif:00000000 _ZN9Wavetable8SetIndexEif
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:757    .text._ZN9Wavetable7AddNoteEh:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:765    .text._ZN9Wavetable7AddNoteEh:00000000 _ZN9Wavetable7AddNoteEh
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:918    .text._ZN9Wavetable7AddNoteEh:0000006c $d
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:925    .text._ZN9Wavetable10RemoveNoteEh:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:933    .text._ZN9Wavetable10RemoveNoteEh:00000000 _ZN9Wavetable10RemoveNoteEh
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1078   .text._ZN9Wavetable10RemoveNoteEh:00000064 $d
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1085   .text._ZN9Wavetable9ReadNotesEv:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1093   .text._ZN9Wavetable9ReadNotesEv:00000000 _ZN9Wavetable9ReadNotesEv
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1121   .text._ZN9Wavetable9ReadNotesEv:00000010 $d
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1126   .text._ZN9Wavetable9ReadFreqsEv:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1134   .text._ZN9Wavetable9ReadFreqsEv:00000000 _ZN9Wavetable9ReadFreqsEv
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1168   .text._ZN9Wavetable9ReadFreqsEv:0000001c $d
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1173   .text._ZN9Wavetable10ReadPhasesEv:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1181   .text._ZN9Wavetable10ReadPhasesEv:00000000 _ZN9Wavetable10ReadPhasesEv
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1215   .text._ZN9Wavetable10ReadPhasesEv:0000001c $d
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1220   .text._ZN9Wavetable12ReadIndiciesEv:00000000 $t
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1228   .text._ZN9Wavetable12ReadIndiciesEv:00000000 _ZN9Wavetable12ReadIndiciesEv
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1262   .text._ZN9Wavetable12ReadIndiciesEv:0000001c $d
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1267   .rodata._ZL12midi_to_freq:00000000 $d
+C:\Users\22bur\AppData\Local\Temp\ccTqiRuv.s:1271   .rodata._ZL12midi_to_freq:00000000 _ZL12midi_to_freq
 
 UNDEFINED SYMBOLS
 memset

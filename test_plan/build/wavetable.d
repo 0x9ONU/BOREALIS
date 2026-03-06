@@ -93,7 +93,7 @@ build/wavetable.o: wavetable.cpp \
  ../DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h \
  ../DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h \
  ../DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hcd.h \
- ../DaisyExamples/DaisySP/Source/daisysp.h \
+ wavetable.h ../DaisyExamples/DaisySP/Source/daisysp.h \
  ../DaisyExamples/DaisySP/Source/Control/adenv.h \
  ../DaisyExamples/DaisySP/Source/Control/adsr.h \
  ../DaisyExamples/DaisySP/Source/Control/phasor.h \
@@ -147,7 +147,7 @@ build/wavetable.o: wavetable.cpp \
  ../DaisyExamples/DaisySP/Source/Utility/maytrig.h \
  ../DaisyExamples/DaisySP/Source/Utility/metro.h \
  ../DaisyExamples/DaisySP/Source/Utility/samplehold.h \
- ../DaisyExamples/DaisySP/Source/Utility/smooth_random.h wavetable.h \
+ ../DaisyExamples/DaisySP/Source/Utility/smooth_random.h \
  ../DaisyExamples/libDaisy/src/daisy_seed.h \
  ../DaisyExamples/libDaisy/src/daisy.h \
  ../DaisyExamples/libDaisy/src/daisy_core.h \
@@ -328,6 +328,7 @@ build/wavetable.o: wavetable.cpp \
 ../DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h:
 ../DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h:
 ../DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hcd.h:
+wavetable.h:
 ../DaisyExamples/DaisySP/Source/daisysp.h:
 ../DaisyExamples/DaisySP/Source/Control/adenv.h:
 ../DaisyExamples/DaisySP/Source/Control/adsr.h:
@@ -383,7 +384,6 @@ build/wavetable.o: wavetable.cpp \
 ../DaisyExamples/DaisySP/Source/Utility/metro.h:
 ../DaisyExamples/DaisySP/Source/Utility/samplehold.h:
 ../DaisyExamples/DaisySP/Source/Utility/smooth_random.h:
-wavetable.h:
 ../DaisyExamples/libDaisy/src/daisy_seed.h:
 ../DaisyExamples/libDaisy/src/daisy.h:
 ../DaisyExamples/libDaisy/src/daisy_core.h:
