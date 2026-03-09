@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccx2Ljsw.s 			page 1
+ARM GAS  /tmp/ccmowyyV.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   34              		@ frame_needed = 0, uses_anonymous_args = 0
   35              		@ link register save eliminated.
   36              	.LBB66:
-ARM GAS  /tmp/ccx2Ljsw.s 			page 2
+ARM GAS  /tmp/ccmowyyV.s 			page 2
 
 
   37              	.LBB67:
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   52:../DaisyExamples/libDaisy/src/sys/system.h ****             skip_clocks = false;
   53:../DaisyExamples/libDaisy/src/sys/system.h ****         }
   54:../DaisyExamples/libDaisy/src/sys/system.h **** 
-ARM GAS  /tmp/ccx2Ljsw.s 			page 3
+ARM GAS  /tmp/ccmowyyV.s 			page 3
 
 
   55:../DaisyExamples/libDaisy/src/sys/system.h ****         SysClkFreq cpu_freq;
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
    6:../DaisyExamples/libDaisy/src/hid/usb.h **** 
    7:../DaisyExamples/libDaisy/src/hid/usb.h **** namespace daisy
    8:../DaisyExamples/libDaisy/src/hid/usb.h **** /** @addtogroup human_interface
-ARM GAS  /tmp/ccx2Ljsw.s 			page 4
+ARM GAS  /tmp/ccmowyyV.s 			page 4
 
 
    9:../DaisyExamples/libDaisy/src/hid/usb.h ****     @{
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   15:../DaisyExamples/libDaisy/src/per/adc.h **** */
   16:../DaisyExamples/libDaisy/src/per/adc.h **** 
   17:../DaisyExamples/libDaisy/src/per/adc.h **** /* While there may not be many configuration options here,
-ARM GAS  /tmp/ccx2Ljsw.s 			page 5
+ARM GAS  /tmp/ccmowyyV.s 			page 5
 
 
   18:../DaisyExamples/libDaisy/src/per/adc.h **** using a struct like this allows us to add more configuration
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   72:../DaisyExamples/libDaisy/src/per/adc.h ****     \param speed conversion speed for this pin defaults to 8.5 cycles
   73:../DaisyExamples/libDaisy/src/per/adc.h ****     */
   74:../DaisyExamples/libDaisy/src/per/adc.h ****     void InitMux(dsy_gpio_pin    adc_pin,
-ARM GAS  /tmp/ccx2Ljsw.s 			page 6
+ARM GAS  /tmp/ccmowyyV.s 			page 6
 
 
   75:../DaisyExamples/libDaisy/src/per/adc.h ****                  size_t          mux_channels,
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   13:../DaisyExamples/libDaisy/src/hid/audio.h ****  *            is already taken  care of.
   14:../DaisyExamples/libDaisy/src/hid/audio.h ****  *           If you're setting up your own custom hardware, or need to make changes
   15:../DaisyExamples/libDaisy/src/hid/audio.h ****  *           you will have to take the following steps:
-ARM GAS  /tmp/ccx2Ljsw.s 			page 7
+ARM GAS  /tmp/ccmowyyV.s 			page 7
 
 
   16:../DaisyExamples/libDaisy/src/hid/audio.h ****  *             1. Create and Initialize an SaiHandle or two depending on your requirements
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   70:../DaisyExamples/libDaisy/src/hid/audio.h ****     /** Type for a Non-Interleaving audio callback 
   71:../DaisyExamples/libDaisy/src/hid/audio.h ****      * Non-Interleaving audio callbacks in daisy will be of this type
   72:../DaisyExamples/libDaisy/src/hid/audio.h ****      */
-ARM GAS  /tmp/ccx2Ljsw.s 			page 8
+ARM GAS  /tmp/ccmowyyV.s 			page 8
 
 
   73:../DaisyExamples/libDaisy/src/hid/audio.h ****     typedef void (*AudioCallback)(InputBuffer  in,
@@ -473,28 +473,33 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
    7:main.cpp      **** uint8_t DMA_BUFFER_MEM_SECTION tx_buffer[64];
    8:main.cpp      **** 
    9:main.cpp      **** // Test variables
-  10:main.cpp      **** uint8_t test_menu = 2; 
+  10:main.cpp      **** uint8_t test_menu = 0; 
   11:main.cpp      **** uint32_t last_send = 0;
   12:main.cpp      **** uint8_t loc_temp = 0;
   13:main.cpp      **** uint8_t attack = 0;
   14:main.cpp      **** uint8_t decay = 0;
-ARM GAS  /tmp/ccx2Ljsw.s 			page 9
+ARM GAS  /tmp/ccmowyyV.s 			page 9
 
 
   15:main.cpp      **** uint8_t sustain = 0;
   16:main.cpp      **** uint8_t release = 0;
   17:main.cpp      **** uint8_t preset = 0;
-  18:main.cpp      **** uint8_t sub_menu = 1;
-  19:main.cpp      **** 
-  20:main.cpp      **** int main(void) {
-  79              		.loc 1 20 16 is_stmt 1 view -0
+  18:main.cpp      **** uint8_t sub_menu = 0;
+  19:main.cpp      **** uint8_t fx_type = 0;
+  20:main.cpp      **** 
+  21:main.cpp      **** uint8_t fx_val_1 = 0;
+  22:main.cpp      **** uint8_t fx_val_2 = 0;
+  23:main.cpp      **** uint8_t fx_val_3 = 0;
+  24:main.cpp      **** 
+  25:main.cpp      **** int main(void) {
+  79              		.loc 1 25 16 is_stmt 1 view -0
   80              		.cfi_startproc
   81              		@ args = 0, pretend = 0, frame = 32
   82              		@ frame_needed = 0, uses_anonymous_args = 0
-  21:main.cpp      ****     hw.Init();
-  83              		.loc 1 21 5 view .LVU11
-  20:main.cpp      ****     hw.Init();
-  84              		.loc 1 20 16 is_stmt 0 view .LVU12
+  26:main.cpp      ****     hw.Init();
+  83              		.loc 1 26 5 view .LVU11
+  25:main.cpp      ****     hw.Init();
+  84              		.loc 1 25 16 is_stmt 0 view .LVU12
   85 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
   86              		.cfi_def_cfa_offset 36
   87              		.cfi_offset 4, -36
@@ -506,41 +511,41 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   93              		.cfi_offset 10, -12
   94              		.cfi_offset 11, -8
   95              		.cfi_offset 14, -4
-  96              		.loc 1 21 12 view .LVU13
+  96              		.loc 1 26 12 view .LVU13
   97 0004 0021     		movs	r1, #0
-  20:main.cpp      ****     hw.Init();
-  98              		.loc 1 20 16 view .LVU14
+  25:main.cpp      ****     hw.Init();
+  98              		.loc 1 25 16 view .LVU14
   99 0006 8BB0     		sub	sp, sp, #44
  100              		.cfi_def_cfa_offset 80
- 101              		.loc 1 21 12 view .LVU15
- 102 0008 4248     		ldr	r0, .L18
-  22:main.cpp      **** 
-  23:main.cpp      ****     // UART Config (Pins 14 TX, 15 RX)
-  24:main.cpp      ****     UartHandler::Config uart_conf;
-  25:main.cpp      ****     uart_conf.baudrate      = 115200;
-  26:main.cpp      ****     uart_conf.periph        = UartHandler::Config::Peripheral::USART_1;
-  27:main.cpp      ****     uart_conf.stopbits      = UartHandler::Config::StopBits::BITS_1;
-  28:main.cpp      ****     uart_conf.parity        = UartHandler::Config::Parity::NONE;
-  29:main.cpp      ****     uart_conf.wordlength    = UartHandler::Config::WordLength::BITS_8;
-  30:main.cpp      ****     uart_conf.mode          = UartHandler::Config::Mode::TX_RX;
- 103              		.loc 1 30 29 view .LVU16
+ 101              		.loc 1 26 12 view .LVU15
+ 102 0008 8148     		ldr	r0, .L32
+  27:main.cpp      **** 
+  28:main.cpp      ****     // UART Config (Pins 14 TX, 15 RX)
+  29:main.cpp      ****     UartHandler::Config uart_conf;
+  30:main.cpp      ****     uart_conf.baudrate      = 115200;
+  31:main.cpp      ****     uart_conf.periph        = UartHandler::Config::Peripheral::USART_1;
+  32:main.cpp      ****     uart_conf.stopbits      = UartHandler::Config::StopBits::BITS_1;
+  33:main.cpp      ****     uart_conf.parity        = UartHandler::Config::Parity::NONE;
+  34:main.cpp      ****     uart_conf.wordlength    = UartHandler::Config::WordLength::BITS_8;
+  35:main.cpp      ****     uart_conf.mode          = UartHandler::Config::Mode::TX_RX;
+ 103              		.loc 1 35 29 view .LVU16
  104 000a 0224     		movs	r4, #2
-  21:main.cpp      **** 
- 105              		.loc 1 21 12 view .LVU17
+  26:main.cpp      **** 
+ 105              		.loc 1 26 12 view .LVU17
  106 000c FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
  107              	.LVL1:
-  24:main.cpp      ****     uart_conf.baudrate      = 115200;
- 108              		.loc 1 24 5 is_stmt 1 view .LVU18
+  29:main.cpp      ****     uart_conf.baudrate      = 115200;
+ 108              		.loc 1 29 5 is_stmt 1 view .LVU18
  109              	.LBB71:
  110              	.LBI71:
+ARM GAS  /tmp/ccmowyyV.s 			page 10
+
+
  111              		.file 7 "../DaisyExamples/libDaisy/src/per/uart.h"
    1:../DaisyExamples/libDaisy/src/per/uart.h **** /* 
    2:../DaisyExamples/libDaisy/src/per/uart.h **** TODO
    3:../DaisyExamples/libDaisy/src/per/uart.h **** - Overflow handling, etc. for Rx Queue.
    4:../DaisyExamples/libDaisy/src/per/uart.h **** */
-ARM GAS  /tmp/ccx2Ljsw.s 			page 10
-
-
    5:../DaisyExamples/libDaisy/src/per/uart.h **** 
    6:../DaisyExamples/libDaisy/src/per/uart.h **** #pragma once
    7:../DaisyExamples/libDaisy/src/per/uart.h **** #ifndef DSY_UART_H
@@ -593,14 +598,14 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   54:../DaisyExamples/libDaisy/src/per/uart.h ****         };
   55:../DaisyExamples/libDaisy/src/per/uart.h **** 
   56:../DaisyExamples/libDaisy/src/per/uart.h ****         enum class Mode
+ARM GAS  /tmp/ccmowyyV.s 			page 11
+
+
   57:../DaisyExamples/libDaisy/src/per/uart.h ****         {
   58:../DaisyExamples/libDaisy/src/per/uart.h ****             RX,
   59:../DaisyExamples/libDaisy/src/per/uart.h ****             TX,
   60:../DaisyExamples/libDaisy/src/per/uart.h ****             TX_RX,
   61:../DaisyExamples/libDaisy/src/per/uart.h ****         };
-ARM GAS  /tmp/ccx2Ljsw.s 			page 11
-
-
   62:../DaisyExamples/libDaisy/src/per/uart.h **** 
   63:../DaisyExamples/libDaisy/src/per/uart.h ****         enum class WordLength
   64:../DaisyExamples/libDaisy/src/per/uart.h ****         {
@@ -628,11 +633,11 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
  118              	.LBE73:
  119              	.LBE72:
  120              	.LBE71:
-  31:main.cpp      ****     uart_conf.pin_config.tx = {DSY_GPIOB, 6}; // Pin 14
- 121              		.loc 1 31 29 view .LVU22
- 122 0012 414A     		ldr	r2, .L18+4
-  25:main.cpp      ****     uart_conf.periph        = UartHandler::Config::Peripheral::USART_1;
- 123              		.loc 1 25 29 view .LVU23
+  36:main.cpp      ****     uart_conf.pin_config.tx = {DSY_GPIOB, 6}; // Pin 14
+ 121              		.loc 1 36 29 view .LVU22
+ 122 0012 804A     		ldr	r2, .L32+4
+  30:main.cpp      ****     uart_conf.periph        = UartHandler::Config::Peripheral::USART_1;
+ 123              		.loc 1 30 29 view .LVU23
  124 0014 4FF4E130 		mov	r0, #115200
  125              	.LBB78:
  126              	.LBB76:
@@ -643,614 +648,966 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
  130              	.LBE74:
  131              	.LBE76:
  132              	.LBE78:
-  30:main.cpp      ****     uart_conf.pin_config.tx = {DSY_GPIOB, 6}; // Pin 14
- 133              		.loc 1 30 29 view .LVU25
+  35:main.cpp      ****     uart_conf.pin_config.tx = {DSY_GPIOB, 6}; // Pin 14
+ 133              		.loc 1 35 29 view .LVU25
  134 001a 0794     		str	r4, [sp, #28]
- 135 001c 3F4D     		ldr	r5, .L18+8
- 136 001e 404C     		ldr	r4, .L18+12
- 137 0020 DFF82C91 		ldr	r9, .L18+60
- 138 0024 3F4E     		ldr	r6, .L18+16
- 139 0026 404F     		ldr	r7, .L18+20
- 140 0028 DFF82881 		ldr	r8, .L18+64
- 141 002c DFF828B1 		ldr	fp, .L18+68
-  26:main.cpp      ****     uart_conf.stopbits      = UartHandler::Config::StopBits::BITS_1;
- 142              		.loc 1 26 29 view .LVU26
- 143 0030 0493     		str	r3, [sp, #16]
-  25:main.cpp      ****     uart_conf.periph        = UartHandler::Config::Peripheral::USART_1;
- 144              		.loc 1 25 29 view .LVU27
-ARM GAS  /tmp/ccx2Ljsw.s 			page 12
+ 135 001c 7E4D     		ldr	r5, .L32+8
+ 136 001e 7F4C     		ldr	r4, .L32+12
+ 137 0020 7F4E     		ldr	r6, .L32+16
+ 138 0022 804F     		ldr	r7, .L32+20
+ 139 0024 DFF820B2 		ldr	fp, .L32+56
+ 140 0028 DFF820A2 		ldr	r10, .L32+60
+ 141 002c DFF82092 		ldr	r9, .L32+64
+ARM GAS  /tmp/ccmowyyV.s 			page 12
 
 
- 145 0032 CDE90810 		strd	r1, r0, [sp, #32]
- 146              		.loc 1 31 29 view .LVU28
- 147 0036 1088     		ldrh	r0, [r2]
-  32:main.cpp      ****     uart_conf.pin_config.rx = {DSY_GPIOB, 7}; // Pin 15
- 148              		.loc 1 32 29 view .LVU29
- 149 0038 9288     		ldrh	r2, [r2, #4]
-  31:main.cpp      ****     uart_conf.pin_config.rx = {DSY_GPIOB, 7}; // Pin 15
- 150              		.loc 1 31 29 view .LVU30
- 151 003a ADF80C00 		strh	r0, [sp, #12]	@ movhi
-  33:main.cpp      ****     uart.Init(uart_conf);
- 152              		.loc 1 33 14 view .LVU31
- 153 003e 3B48     		ldr	r0, .L18+24
-  32:main.cpp      ****     uart_conf.pin_config.rx = {DSY_GPIOB, 7}; // Pin 15
- 154              		.loc 1 32 29 view .LVU32
- 155 0040 ADF80E20 		strh	r2, [sp, #14]	@ movhi
- 156              	.LBB79:
- 157              	.LBB77:
- 158              	.LBB75:
- 159              		.loc 7 80 24 view .LVU33
- 160 0044 CDE90513 		strd	r1, r3, [sp, #20]
+ 142 0030 DFF82082 		ldr	r8, .L32+68
+  31:main.cpp      ****     uart_conf.stopbits      = UartHandler::Config::StopBits::BITS_1;
+ 143              		.loc 1 31 29 view .LVU26
+ 144 0034 0493     		str	r3, [sp, #16]
+  30:main.cpp      ****     uart_conf.periph        = UartHandler::Config::Peripheral::USART_1;
+ 145              		.loc 1 30 29 view .LVU27
+ 146 0036 CDE90810 		strd	r1, r0, [sp, #32]
+ 147              		.loc 1 36 29 view .LVU28
+ 148 003a 1088     		ldrh	r0, [r2]
+  37:main.cpp      ****     uart_conf.pin_config.rx = {DSY_GPIOB, 7}; // Pin 15
+ 149              		.loc 1 37 29 view .LVU29
+ 150 003c 9288     		ldrh	r2, [r2, #4]
+  36:main.cpp      ****     uart_conf.pin_config.rx = {DSY_GPIOB, 7}; // Pin 15
+ 151              		.loc 1 36 29 view .LVU30
+ 152 003e ADF80C00 		strh	r0, [sp, #12]	@ movhi
+  38:main.cpp      ****     uart.Init(uart_conf);
+ 153              		.loc 1 38 14 view .LVU31
+ 154 0042 7948     		ldr	r0, .L32+24
+  37:main.cpp      ****     uart_conf.pin_config.rx = {DSY_GPIOB, 7}; // Pin 15
+ 155              		.loc 1 37 29 view .LVU32
+ 156 0044 ADF80E20 		strh	r2, [sp, #14]	@ movhi
+ 157              	.LBB79:
+ 158              	.LBB77:
+ 159              	.LBB75:
+ 160              		.loc 7 80 24 view .LVU33
+ 161 0048 CDE90513 		strd	r1, r3, [sp, #20]
   81:../DaisyExamples/libDaisy/src/per/uart.h ****             wordlength = WordLength::BITS_8;
- 161              		.loc 7 81 13 is_stmt 1 view .LVU34
- 162              	.LBE75:
- 163              	.LBE77:
- 164              	.LBE79:
-  26:main.cpp      ****     uart_conf.stopbits      = UartHandler::Config::StopBits::BITS_1;
- 165              		.loc 1 26 5 view .LVU35
-  27:main.cpp      ****     uart_conf.parity        = UartHandler::Config::Parity::NONE;
- 166              		.loc 1 27 5 view .LVU36
-  28:main.cpp      ****     uart_conf.wordlength    = UartHandler::Config::WordLength::BITS_8;
- 167              		.loc 1 28 5 view .LVU37
-  29:main.cpp      ****     uart_conf.mode          = UartHandler::Config::Mode::TX_RX;
- 168              		.loc 1 29 5 view .LVU38
-  30:main.cpp      ****     uart_conf.pin_config.tx = {DSY_GPIOB, 6}; // Pin 14
- 169              		.loc 1 30 5 view .LVU39
-  31:main.cpp      ****     uart_conf.pin_config.rx = {DSY_GPIOB, 7}; // Pin 15
- 170              		.loc 1 31 5 view .LVU40
-  32:main.cpp      ****     uart.Init(uart_conf);
- 171              		.loc 1 32 5 view .LVU41
- 172              		.loc 1 33 5 view .LVU42
- 173              		.loc 1 33 14 is_stmt 0 view .LVU43
- 174 0048 03A9     		add	r1, sp, #12
- 175              	.LVL2:
- 176              		.loc 1 33 14 view .LVU44
- 177 004a FFF7FEFF 		bl	_ZN5daisy11UartHandler4InitERKNS0_6ConfigE
- 178              	.LVL3:
- 179              	.L4:
-  34:main.cpp      **** 
-  35:main.cpp      ****     while(1) {
- 180              		.loc 1 35 5 is_stmt 1 view .LVU45
- 181              	.LBB80:
-  36:main.cpp      ****         // Send a test packet every second
-  37:main.cpp      ****         uint32_t now = System::GetNow();
- 182              		.loc 1 37 9 view .LVU46
- 183              		.loc 1 37 38 is_stmt 0 view .LVU47
- 184 004e FFF7FEFF 		bl	_ZN5daisy6System6GetNowEv
- 185              	.LVL4:
-ARM GAS  /tmp/ccx2Ljsw.s 			page 13
+ 162              		.loc 7 81 13 is_stmt 1 view .LVU34
+ 163              	.LBE75:
+ 164              	.LBE77:
+ 165              	.LBE79:
+  31:main.cpp      ****     uart_conf.stopbits      = UartHandler::Config::StopBits::BITS_1;
+ 166              		.loc 1 31 5 view .LVU35
+  32:main.cpp      ****     uart_conf.parity        = UartHandler::Config::Parity::NONE;
+ 167              		.loc 1 32 5 view .LVU36
+  33:main.cpp      ****     uart_conf.wordlength    = UartHandler::Config::WordLength::BITS_8;
+ 168              		.loc 1 33 5 view .LVU37
+  34:main.cpp      ****     uart_conf.mode          = UartHandler::Config::Mode::TX_RX;
+ 169              		.loc 1 34 5 view .LVU38
+  35:main.cpp      ****     uart_conf.pin_config.tx = {DSY_GPIOB, 6}; // Pin 14
+ 170              		.loc 1 35 5 view .LVU39
+  36:main.cpp      ****     uart_conf.pin_config.rx = {DSY_GPIOB, 7}; // Pin 15
+ 171              		.loc 1 36 5 view .LVU40
+  37:main.cpp      ****     uart.Init(uart_conf);
+ 172              		.loc 1 37 5 view .LVU41
+ 173              		.loc 1 38 5 view .LVU42
+ 174              		.loc 1 38 14 is_stmt 0 view .LVU43
+ 175 004c 03A9     		add	r1, sp, #12
+ 176              	.LVL2:
+ 177              		.loc 1 38 14 view .LVU44
+ 178 004e FFF7FEFF 		bl	_ZN5daisy11UartHandler4InitERKNS0_6ConfigE
+ 179              	.LVL3:
+ 180              	.L6:
+  39:main.cpp      **** 
+  40:main.cpp      ****     while(1) {
+ 181              		.loc 1 40 5 is_stmt 1 view .LVU45
+ 182              	.LBB80:
+ARM GAS  /tmp/ccmowyyV.s 			page 13
 
 
- 186              	.LBB81:
-  38:main.cpp      ****         if(now - last_send > 500) {
- 187              		.loc 1 38 16 view .LVU48
- 188 0052 2368     		ldr	r3, [r4]
- 189              	.LVL5:
- 190              		.loc 1 38 16 view .LVU49
- 191              	.LBE81:
- 192              		.loc 1 38 9 is_stmt 1 view .LVU50
- 193              	.LBB96:
- 194              		.loc 1 38 16 is_stmt 0 view .LVU51
- 195 0054 C31A     		subs	r3, r0, r3
- 196              		.loc 1 38 9 view .LVU52
- 197 0056 B3F5FA7F 		cmp	r3, #500
- 198 005a F8D9     		bls	.L4
- 199              	.LBB82:
-  39:main.cpp      ****             last_send = now;
- 200              		.loc 1 39 13 is_stmt 1 view .LVU53
-  40:main.cpp      ****             int idx = 0;
-  41:main.cpp      **** 
-  42:main.cpp      ****             // 1. START BYTE (The Sync Byte)
-  43:main.cpp      ****             tx_buffer[idx++] = 0xAA; 
-  44:main.cpp      **** 
-  45:main.cpp      ****             // 2. HEADER
-  46:main.cpp      ****             tx_buffer[idx++] = test_menu;
- 201              		.loc 1 46 30 is_stmt 0 view .LVU54
- 202 005c 99F80030 		ldrb	r3, [r9]	@ zero_extendqisi2
-  43:main.cpp      **** 
- 203              		.loc 1 43 30 view .LVU55
- 204 0060 AA21     		movs	r1, #170
-  47:main.cpp      ****             tx_buffer[idx++] = loc_temp; // Location 1 for testing CHANGE VALUE LATER
- 205              		.loc 1 47 30 view .LVU56
- 206 0062 3278     		ldrb	r2, [r6]	@ zero_extendqisi2
-  46:main.cpp      ****             tx_buffer[idx++] = loc_temp; // Location 1 for testing CHANGE VALUE LATER
- 207              		.loc 1 46 30 view .LVU57
- 208 0064 6B70     		strb	r3, [r5, #1]
- 209 0066 023B     		subs	r3, r3, #2
-  39:main.cpp      ****             int idx = 0;
- 210              		.loc 1 39 23 view .LVU58
- 211 0068 2060     		str	r0, [r4]
-  40:main.cpp      **** 
- 212              		.loc 1 40 13 is_stmt 1 view .LVU59
- 213              	.LVL6:
-  43:main.cpp      **** 
- 214              		.loc 1 43 13 view .LVU60
-  43:main.cpp      **** 
- 215              		.loc 1 43 30 is_stmt 0 view .LVU61
- 216 006a 2970     		strb	r1, [r5]
-  46:main.cpp      ****             tx_buffer[idx++] = loc_temp; // Location 1 for testing CHANGE VALUE LATER
- 217              		.loc 1 46 13 is_stmt 1 view .LVU62
- 218              	.LVL7:
- 219              		.loc 1 47 13 view .LVU63
- 220              		.loc 1 47 30 is_stmt 0 view .LVU64
- 221 006c AA70     		strb	r2, [r5, #2]
+  41:main.cpp      ****         // Send a test packet every second
+  42:main.cpp      ****         uint32_t now = System::GetNow();
+ 183              		.loc 1 42 9 view .LVU46
+ 184              		.loc 1 42 38 is_stmt 0 view .LVU47
+ 185 0052 FFF7FEFF 		bl	_ZN5daisy6System6GetNowEv
+ 186              	.LVL4:
+  43:main.cpp      ****         if(now - last_send > 500) {
+ 187              		.loc 1 43 9 is_stmt 1 view .LVU48
+ 188              	.LBB81:
+ 189              		.loc 1 43 16 is_stmt 0 view .LVU49
+ 190 0056 2368     		ldr	r3, [r4]
+ 191 0058 C31A     		subs	r3, r0, r3
+ 192              		.loc 1 43 9 view .LVU50
+ 193 005a B3F5FA7F 		cmp	r3, #500
+ 194 005e F8D9     		bls	.L6
+ 195              	.LBB82:
+  44:main.cpp      ****             last_send = now;
+ 196              		.loc 1 44 13 is_stmt 1 view .LVU51
+  45:main.cpp      ****             int idx = 0;
+  46:main.cpp      **** 
+  47:main.cpp      ****             // 1. START BYTE (The Sync Byte)
+  48:main.cpp      ****             tx_buffer[idx++] = 0xAA; 
+  49:main.cpp      **** 
+  50:main.cpp      ****             // 2. HEADER
+  51:main.cpp      ****             tx_buffer[idx++] = test_menu;
+ 197              		.loc 1 51 30 is_stmt 0 view .LVU52
+ 198 0060 3378     		ldrb	r3, [r6]	@ zero_extendqisi2
   48:main.cpp      **** 
-  49:main.cpp      ****             // 3. GENERATE DUMMY PAYLOADS
-  50:main.cpp      ****             if (test_menu == 1) {
- 222              		.loc 1 50 13 is_stmt 1 view .LVU65
-ARM GAS  /tmp/ccx2Ljsw.s 			page 14
+ 199              		.loc 1 48 30 view .LVU53
+ 200 0062 AA22     		movs	r2, #170
+  44:main.cpp      ****             last_send = now;
+ 201              		.loc 1 44 23 view .LVU54
+ 202 0064 2060     		str	r0, [r4]
+  45:main.cpp      ****             int idx = 0;
+ 203              		.loc 1 45 13 is_stmt 1 view .LVU55
+ 204              	.LVL5:
+  48:main.cpp      **** 
+ 205              		.loc 1 48 13 view .LVU56
+ 206              		.loc 1 51 30 is_stmt 0 view .LVU57
+ 207 0066 6B70     		strb	r3, [r5, #1]
+ 208 0068 023B     		subs	r3, r3, #2
+  48:main.cpp      **** 
+ 209              		.loc 1 48 30 view .LVU58
+ 210 006a 2A70     		strb	r2, [r5]
+ 211              		.loc 1 51 13 is_stmt 1 view .LVU59
+ 212              	.LVL6:
+  52:main.cpp      ****             tx_buffer[idx++] = loc_temp; // Location 1 for testing CHANGE VALUE LATER
+ 213              		.loc 1 52 13 view .LVU60
+ 214              		.loc 1 52 30 is_stmt 0 view .LVU61
+ 215 006c 3A78     		ldrb	r2, [r7]	@ zero_extendqisi2
+ 216 006e AA70     		strb	r2, [r5, #2]
+  53:main.cpp      **** 
+  54:main.cpp      ****             // 3. GENERATE PAYLOADS
+  55:main.cpp      ****             if (test_menu == 1) {
+ 217              		.loc 1 55 13 is_stmt 1 view .LVU62
+  56:main.cpp      ****                 //tx_buffer[idx++] = 2;    // Menu ID
+  57:main.cpp      ****                 //tx_buffer[idx++] = 1;    // Location
+ARM GAS  /tmp/ccmowyyV.s 			page 14
 
 
-  51:main.cpp      ****                 //tx_buffer[idx++] = 2;    // Menu ID
-  52:main.cpp      ****                 //tx_buffer[idx++] = 1;    // Location
-  53:main.cpp      ****             }
-  54:main.cpp      ****             if(test_menu == 2) {
- 223              		.loc 1 54 13 view .LVU66
- 224 006e 032B     		cmp	r3, #3
- 225 0070 4ED8     		bhi	.L13
- 226 0072 DFE803F0 		tbb	[pc, r3]
- 227              	.L7:
- 228 0076 24       		.byte	(.L10-.L7)/2
- 229 0077 02       		.byte	(.L14-.L7)/2
- 230 0078 3B       		.byte	(.L8-.L7)/2
- 231 0079 37       		.byte	(.L6-.L7)/2
- 232              		.p2align 1
- 233              	.L14:
-  47:main.cpp      **** 
- 234              		.loc 1 47 30 is_stmt 0 view .LVU67
- 235 007a 2D4B     		ldr	r3, .L18+28
+  58:main.cpp      ****             }
+  59:main.cpp      ****             if(test_menu == 2) {
+ 218              		.loc 1 59 13 view .LVU63
+ 219 0070 032B     		cmp	r3, #3
+ 220 0072 00F2CB80 		bhi	.L27
+ 221 0076 DFE803F0 		tbb	[pc, r3]
+ 222              	.L9:
+ 223 007a 3B       		.byte	(.L12-.L9)/2
+ 224 007b 29       		.byte	(.L11-.L9)/2
+ 225 007c 14       		.byte	(.L10-.L9)/2
+ 226 007d 02       		.byte	(.L8-.L9)/2
+ 227              		.p2align 1
+ 228              	.L8:
+ 229              	.LBB83:
+  60:main.cpp      ****                 // Payload (26 bytes total)
+  61:main.cpp      ****                 tx_buffer[idx++] = sub_menu;                              // 1 Sub-Menu
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 255; // 8 Amps
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+  64:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+  65:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+  66:main.cpp      ****             }
+  67:main.cpp      ****             else if(test_menu == 3) { // FX Menu (4 bytes payload)
+  68:main.cpp      ****                 tx_buffer[idx++] = fx_type; // Select=1, Type=10
+  69:main.cpp      ****                 tx_buffer[idx++] = fx_val_1;  
+  70:main.cpp      ****                 tx_buffer[idx++] = fx_val_2; 
+  71:main.cpp      ****                 tx_buffer[idx++] = fx_val_3;
+  72:main.cpp      ****             }
+  73:main.cpp      ****             else if(test_menu == 4) { // Envelope (4 bytes payload)
+  74:main.cpp      ****                 tx_buffer[idx++] = attack; 
+  75:main.cpp      ****                 tx_buffer[idx++] = decay; 
+  76:main.cpp      ****                 tx_buffer[idx++] = sustain; 
+  77:main.cpp      ****                 tx_buffer[idx++] = release;
+  78:main.cpp      ****             }
+  79:main.cpp      ****             else if(test_menu == 5) { // Settings (1 byte payload)
+  80:main.cpp      ****                 tx_buffer[idx++] = 0xFF;
+ 230              		.loc 1 80 17 view .LVU64
+ 231              	.LVL7:
+ 232              		.loc 1 80 34 is_stmt 0 view .LVU65
+ 233 007e FF23     		movs	r3, #255
+ 234 0080 0422     		movs	r2, #4
+ 235 0082 EB70     		strb	r3, [r5, #3]
  236              	.LVL8:
- 237              	.L9:
- 238              	.LBB83:
-  55:main.cpp      ****                 // Payload (26 bytes total)
-  56:main.cpp      ****                 tx_buffer[idx++] = sub_menu;                              // 1 Sub-Menu
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 100 + i; // 8 Amps
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
-  59:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
-  60:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
-  61:main.cpp      ****             }
-  62:main.cpp      ****             else if(test_menu == 3) { // FX Menu (4 bytes payload)
-  63:main.cpp      ****                 tx_buffer[idx++] = 0b10001010; // Select=1, Type=10
-  64:main.cpp      ****                 tx_buffer[idx++] = 50;  tx_buffer[idx++] = 100; tx_buffer[idx++] = 150;
-  65:main.cpp      ****             }
-  66:main.cpp      ****             else if(test_menu == 4) { // Envelope (4 bytes payload)
-  67:main.cpp      ****                 tx_buffer[idx++] = attack; tx_buffer[idx++] = decay; tx_buffer[idx++] = sustain; tx
- 239              		.loc 1 67 34 view .LVU68
- 240 007c 0722     		movs	r2, #7
- 241 007e C5F80330 		str	r3, [r5, #3]	@ unaligned
- 242              	.L5:
- 243              	.LBE83:
-  68:main.cpp      ****             }
-  69:main.cpp      ****             else if(test_menu == 5) { // Settings (1 byte payload)
-  70:main.cpp      ****                 tx_buffer[idx++] = 0xFF;
-  71:main.cpp      ****             }
-  72:main.cpp      **** 
-  73:main.cpp      ****             // Send via DMA
-  74:main.cpp      ****             uart.DmaTransmit(tx_buffer, idx, NULL, NULL, NULL);
- 244              		.loc 1 74 13 is_stmt 1 view .LVU69
- 245              		.loc 1 74 29 is_stmt 0 view .LVU70
- 246 0082 4FF0000A 		mov	r10, #0
- 247 0086 2549     		ldr	r1, .L18+8
- 248 0088 2848     		ldr	r0, .L18+24
- 249              	.LVL9:
- 250              		.loc 1 74 29 view .LVU71
- 251 008a 5346     		mov	r3, r10
- 252 008c CDE900AA 		strd	r10, r10, [sp]
- 253 0090 FFF7FEFF 		bl	_ZN5daisy11UartHandler11DmaTransmitEPhjPFvPvEPFvS2_NS0_6ResultEES2_
- 254              	.LVL10:
-ARM GAS  /tmp/ccx2Ljsw.s 			page 15
+ 237              	.L7:
+ 238              		.loc 1 80 34 view .LVU66
+ 239              	.LBE83:
+  81:main.cpp      ****             }
+  82:main.cpp      **** 
+  83:main.cpp      ****             // Send via DMA
+  84:main.cpp      ****             uart.DmaTransmit(tx_buffer, idx, NULL, NULL, NULL);
+ 240              		.loc 1 84 13 is_stmt 1 view .LVU67
+ 241              		.loc 1 84 29 is_stmt 0 view .LVU68
+ 242 0084 0023     		movs	r3, #0
+ 243 0086 6449     		ldr	r1, .L32+8
+ 244 0088 6748     		ldr	r0, .L32+24
+ 245              	.LVL9:
+ 246              		.loc 1 84 29 view .LVU69
+ 247 008a CDE90033 		strd	r3, r3, [sp]
+ARM GAS  /tmp/ccmowyyV.s 			page 15
 
 
-  75:main.cpp      **** 
-  76:main.cpp      ****             //Test: Menu 2
-  77:main.cpp      **** 
-  78:main.cpp      **** 
-  79:main.cpp      ****             //TEST: Menu 4
-  80:main.cpp      ****             /*
-  81:main.cpp      ****             attack = ++attack % 100;
-  82:main.cpp      ****             decay = ++decay % 100;            
-  83:main.cpp      ****             sustain = ++sustain % 100;
-  84:main.cpp      ****             release = ++release % 100;
-  85:main.cpp      ****             */
-  86:main.cpp      ****             //Cycle Through locations for testings
+ 248 008e FFF7FEFF 		bl	_ZN5daisy11UartHandler11DmaTransmitEPhjPFvPvEPFvS2_NS0_6ResultEES2_
+ 249              	.LVL10:
+  85:main.cpp      **** 
+  86:main.cpp      ****             //TEST: ALL MENUS
   87:main.cpp      ****             
-  88:main.cpp      ****             loc_temp++;
- 255              		.loc 1 88 13 is_stmt 1 view .LVU72
-  89:main.cpp      ****             sub_menu++;
-  90:main.cpp      ****             if(loc_temp > 8) {
-  91:main.cpp      ****                 loc_temp = 0;
- 256              		.loc 1 91 17 view .LVU73
-  88:main.cpp      ****             sub_menu++;
- 257              		.loc 1 88 21 is_stmt 0 view .LVU74
- 258 0094 3278     		ldrb	r2, [r6]	@ zero_extendqisi2
-  92:main.cpp      ****                 sub_menu = 1;
- 259              		.loc 1 92 26 view .LVU75
- 260 0096 0121     		movs	r1, #1
-  89:main.cpp      ****             sub_menu++;
- 261              		.loc 1 89 21 view .LVU76
- 262 0098 3B78     		ldrb	r3, [r7]	@ zero_extendqisi2
-  88:main.cpp      ****             sub_menu++;
- 263              		.loc 1 88 21 view .LVU77
- 264 009a 0A44     		add	r2, r2, r1
-  89:main.cpp      ****             sub_menu++;
- 265              		.loc 1 89 21 view .LVU78
- 266 009c 0B44     		add	r3, r3, r1
-  88:main.cpp      ****             sub_menu++;
- 267              		.loc 1 88 21 view .LVU79
- 268 009e D2B2     		uxtb	r2, r2
-  89:main.cpp      ****             sub_menu++;
- 269              		.loc 1 89 21 view .LVU80
- 270 00a0 3B70     		strb	r3, [r7]
-  90:main.cpp      ****                 loc_temp = 0;
- 271              		.loc 1 90 13 view .LVU81
- 272 00a2 082A     		cmp	r2, #8
-  88:main.cpp      ****             sub_menu++;
- 273              		.loc 1 88 21 view .LVU82
- 274 00a4 3270     		strb	r2, [r6]
-  89:main.cpp      ****             if(loc_temp > 8) {
- 275              		.loc 1 89 13 is_stmt 1 view .LVU83
-  90:main.cpp      ****                 loc_temp = 0;
- 276              		.loc 1 90 13 view .LVU84
- 277 00a6 D2D9     		bls	.L4
-  93:main.cpp      ****                 preset = ++preset % 8;         
- 278              		.loc 1 93 26 is_stmt 0 view .LVU85
- 279 00a8 98F80030 		ldrb	r3, [r8]	@ zero_extendqisi2
-  91:main.cpp      ****                 sub_menu = 1;
- 280              		.loc 1 91 26 view .LVU86
- 281 00ac 86F800A0 		strb	r10, [r6]
-ARM GAS  /tmp/ccx2Ljsw.s 			page 16
+  88:main.cpp      ****             switch(test_menu) {
+ 250              		.loc 1 88 13 is_stmt 1 view .LVU70
+ 251 0092 3378     		ldrb	r3, [r6]	@ zero_extendqisi2
+ 252 0094 052B     		cmp	r3, #5
+ 253 0096 DCD8     		bhi	.L6
+ 254 0098 DFE803F0 		tbb	[pc, r3]
+ 255              	.L15:
+ 256 009c 48       		.byte	(.L20-.L15)/2
+ 257 009d 3E       		.byte	(.L19-.L15)/2
+ 258 009e 9A       		.byte	(.L18-.L15)/2
+ 259 009f 77       		.byte	(.L17-.L15)/2
+ 260 00a0 55       		.byte	(.L16-.L15)/2
+ 261 00a1 52       		.byte	(.L14-.L15)/2
+ 262              	.LVL11:
+ 263              		.p2align 1
+ 264              	.L10:
+ 265              	.LBB93:
+  74:main.cpp      ****                 tx_buffer[idx++] = decay; 
+ 266              		.loc 1 74 17 view .LVU71
+  75:main.cpp      ****                 tx_buffer[idx++] = sustain; 
+ 267              		.loc 1 75 17 view .LVU72
+  76:main.cpp      ****                 tx_buffer[idx++] = release;
+ 268              		.loc 1 76 17 view .LVU73
+  77:main.cpp      ****             }
+ 269              		.loc 1 77 17 view .LVU74
+  77:main.cpp      ****             }
+ 270              		.loc 1 77 17 is_stmt 0 view .LVU75
+ 271 00a2 98F80020 		ldrb	r2, [r8]	@ zero_extendqisi2
+ 272 00a6 0023     		movs	r3, #0
+ 273 00a8 62F30703 		bfi	r3, r2, #0, #8
+ 274 00ac 5F4A     		ldr	r2, .L32+28
+ 275 00ae 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ 276 00b0 62F30F23 		bfi	r3, r2, #8, #8
+ 277 00b4 5E4A     		ldr	r2, .L32+32
+ 278 00b6 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ 279 00b8 62F31743 		bfi	r3, r2, #16, #8
+ 280 00bc 5D4A     		ldr	r2, .L32+36
+ 281 00be 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ 282 00c0 62F31F63 		bfi	r3, r2, #24, #8
+ 283              	.L13:
+  74:main.cpp      ****                 tx_buffer[idx++] = decay; 
+ 284              		.loc 1 74 34 view .LVU76
+ 285 00c4 0722     		movs	r2, #7
+ 286 00c6 C5F80330 		str	r3, [r5, #3]	@ unaligned
+ 287 00ca DBE7     		b	.L7
+ 288              	.LVL12:
+ 289              	.L11:
+  68:main.cpp      ****                 tx_buffer[idx++] = fx_val_1;  
+ 290              		.loc 1 68 17 is_stmt 1 view .LVU77
+  69:main.cpp      ****                 tx_buffer[idx++] = fx_val_2; 
+ 291              		.loc 1 69 17 view .LVU78
+  70:main.cpp      ****                 tx_buffer[idx++] = fx_val_3;
+ARM GAS  /tmp/ccmowyyV.s 			page 16
 
 
-  92:main.cpp      ****                 preset = ++preset % 8;         
- 282              		.loc 1 92 17 is_stmt 1 view .LVU87
- 283              		.loc 1 93 26 is_stmt 0 view .LVU88
- 284 00b0 0B44     		add	r3, r3, r1
-  92:main.cpp      ****                 preset = ++preset % 8;         
- 285              		.loc 1 92 26 view .LVU89
- 286 00b2 3970     		strb	r1, [r7]
- 287              		.loc 1 93 17 is_stmt 1 view .LVU90
- 288              		.loc 1 93 35 is_stmt 0 view .LVU91
- 289 00b4 03F00703 		and	r3, r3, #7
- 290              		.loc 1 93 24 view .LVU92
- 291 00b8 88F80030 		strb	r3, [r8]
- 292 00bc C7E7     		b	.L4
- 293              	.LVL11:
- 294              	.L10:
- 295              	.LBB95:
- 296              	.LBB84:
-  56:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 100 + i; // 8 Amps
- 297              		.loc 1 56 17 is_stmt 1 view .LVU93
- 298              	.LBB85:
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 299              		.loc 1 59 57 is_stmt 0 discriminator 3 view .LVU94
- 300 00be 4FF00A33 		mov	r3, #168430090
- 301              	.LBE85:
- 302              	.LBB86:
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 303              		.loc 1 57 57 discriminator 3 view .LVU95
- 304 00c2 1C4A     		ldr	r2, .L18+32
- 305              	.LBE86:
- 306              	.LBB87:
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 307              		.loc 1 58 57 discriminator 3 view .LVU96
- 308 00c4 1C49     		ldr	r1, .L18+36
- 309              	.LBE87:
- 310              	.LBB88:
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 311              		.loc 1 57 57 discriminator 3 view .LVU97
- 312 00c6 6A60     		str	r2, [r5, #4]
- 313              	.LBE88:
-  56:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 100 + i; // 8 Amps
- 314              		.loc 1 56 34 view .LVU98
- 315 00c8 3A78     		ldrb	r2, [r7]	@ zero_extendqisi2
- 316              	.LBB89:
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 317              		.loc 1 59 57 discriminator 3 view .LVU99
- 318 00ca C5E90533 		strd	r3, r3, [r5, #20]
- 319              	.LBE89:
-  60:main.cpp      ****             }
- 320              		.loc 1 60 34 view .LVU100
- 321 00ce 98F80030 		ldrb	r3, [r8]	@ zero_extendqisi2
-  56:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 100 + i; // 8 Amps
- 322              		.loc 1 56 34 view .LVU101
- 323 00d2 EA70     		strb	r2, [r5, #3]
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 324              		.loc 1 57 17 is_stmt 1 view .LVU102
- 325              	.LVL12:
- 326              	.LBB90:
-ARM GAS  /tmp/ccx2Ljsw.s 			page 17
+ 292              		.loc 1 70 17 view .LVU79
+  71:main.cpp      ****             }
+ 293              		.loc 1 71 17 view .LVU80
+  71:main.cpp      ****             }
+ 294              		.loc 1 71 17 is_stmt 0 view .LVU81
+ 295 00cc 5A4A     		ldr	r2, .L32+40
+ 296 00ce 0023     		movs	r3, #0
+ 297 00d0 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ 298 00d2 62F30703 		bfi	r3, r2, #0, #8
+ 299 00d6 9BF80020 		ldrb	r2, [fp]	@ zero_extendqisi2
+ 300 00da 62F30F23 		bfi	r3, r2, #8, #8
+ 301 00de 9AF80020 		ldrb	r2, [r10]	@ zero_extendqisi2
+ 302 00e2 62F31743 		bfi	r3, r2, #16, #8
+ 303 00e6 99F80020 		ldrb	r2, [r9]	@ zero_extendqisi2
+ 304 00ea 62F31F63 		bfi	r3, r2, #24, #8
+ 305 00ee E9E7     		b	.L13
+ 306              	.LVL13:
+ 307              	.L12:
+ 308              	.LBB84:
+  61:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 255; // 8 Amps
+ 309              		.loc 1 61 17 is_stmt 1 view .LVU82
+ 310              	.LBB85:
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 311              		.loc 1 62 57 is_stmt 0 discriminator 3 view .LVU83
+ 312 00f0 4FF0FF33 		mov	r3, #-1
+ 313              	.LBE85:
+ 314              	.LBE84:
+ 315 00f4 1D22     		movs	r2, #29
+ 316              	.LBB92:
+ 317              	.LBB86:
+ 318 00f6 C5E90133 		strd	r3, r3, [r5, #4]
+ 319              	.LBE86:
+ 320              	.LBB87:
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 321              		.loc 1 64 57 discriminator 3 view .LVU84
+ 322 00fa 0023     		movs	r3, #0
+ 323 00fc C5E90533 		strd	r3, r3, [r5, #20]
+ 324              	.LBE87:
+  61:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 255; // 8 Amps
+ 325              		.loc 1 61 34 view .LVU85
+ 326 0100 4E4B     		ldr	r3, .L32+44
+ 327 0102 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 328 0104 EB70     		strb	r3, [r5, #3]
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 329              		.loc 1 62 17 is_stmt 1 view .LVU86
+ 330              	.LVL14:
+ 331              	.LBB88:
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 332              		.loc 1 62 31 discriminator 1 view .LVU87
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 333              		.loc 1 62 40 discriminator 3 view .LVU88
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 334              		.loc 1 62 17 discriminator 3 view .LVU89
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 335              		.loc 1 62 31 discriminator 1 view .LVU90
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 336              		.loc 1 62 40 discriminator 3 view .LVU91
+ARM GAS  /tmp/ccmowyyV.s 			page 17
 
 
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 327              		.loc 1 57 31 discriminator 1 view .LVU103
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 328              		.loc 1 57 40 discriminator 3 view .LVU104
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 329              		.loc 1 57 17 discriminator 3 view .LVU105
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 330              		.loc 1 57 31 discriminator 1 view .LVU106
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 331              		.loc 1 57 40 discriminator 3 view .LVU107
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 332              		.loc 1 57 17 discriminator 3 view .LVU108
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 333              		.loc 1 57 31 discriminator 1 view .LVU109
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 334              		.loc 1 57 40 discriminator 3 view .LVU110
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 335              		.loc 1 57 17 discriminator 3 view .LVU111
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 336              		.loc 1 57 31 discriminator 1 view .LVU112
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 337              		.loc 1 57 40 discriminator 3 view .LVU113
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 338              		.loc 1 57 17 discriminator 3 view .LVU114
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 339              		.loc 1 57 31 discriminator 1 view .LVU115
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 340              		.loc 1 57 40 discriminator 3 view .LVU116
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 341              		.loc 1 57 17 discriminator 3 view .LVU117
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 342              		.loc 1 57 31 discriminator 1 view .LVU118
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 343              		.loc 1 57 40 discriminator 3 view .LVU119
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 344              		.loc 1 57 17 discriminator 3 view .LVU120
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 345              		.loc 1 57 31 discriminator 1 view .LVU121
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 346              		.loc 1 57 40 discriminator 3 view .LVU122
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 347              		.loc 1 57 17 discriminator 3 view .LVU123
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 348              		.loc 1 57 31 discriminator 1 view .LVU124
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 349              		.loc 1 57 40 discriminator 3 view .LVU125
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 350              		.loc 1 57 17 discriminator 3 view .LVU126
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 351              		.loc 1 57 31 discriminator 1 view .LVU127
-  57:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = i % 3;       // 8 Shapes
- 352              		.loc 1 57 31 is_stmt 0 discriminator 1 view .LVU128
- 353              	.LBE90:
- 354              	.LBB91:
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 355              		.loc 1 58 31 is_stmt 1 discriminator 1 view .LVU129
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
-ARM GAS  /tmp/ccx2Ljsw.s 			page 18
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 337              		.loc 1 62 17 discriminator 3 view .LVU92
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 338              		.loc 1 62 31 discriminator 1 view .LVU93
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 339              		.loc 1 62 40 discriminator 3 view .LVU94
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 340              		.loc 1 62 17 discriminator 3 view .LVU95
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 341              		.loc 1 62 31 discriminator 1 view .LVU96
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 342              		.loc 1 62 40 discriminator 3 view .LVU97
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 343              		.loc 1 62 17 discriminator 3 view .LVU98
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 344              		.loc 1 62 31 discriminator 1 view .LVU99
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 345              		.loc 1 62 40 discriminator 3 view .LVU100
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 346              		.loc 1 62 17 discriminator 3 view .LVU101
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 347              		.loc 1 62 31 discriminator 1 view .LVU102
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 348              		.loc 1 62 40 discriminator 3 view .LVU103
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 349              		.loc 1 62 17 discriminator 3 view .LVU104
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 350              		.loc 1 62 31 discriminator 1 view .LVU105
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 351              		.loc 1 62 40 discriminator 3 view .LVU106
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 352              		.loc 1 62 17 discriminator 3 view .LVU107
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 353              		.loc 1 62 31 discriminator 1 view .LVU108
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 354              		.loc 1 62 40 discriminator 3 view .LVU109
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 355              		.loc 1 62 17 discriminator 3 view .LVU110
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 356              		.loc 1 62 31 discriminator 1 view .LVU111
+  62:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0 + i;       // 8 Shapes
+ 357              		.loc 1 62 31 is_stmt 0 discriminator 1 view .LVU112
+ 358              	.LBE88:
+ 359              	.LBB89:
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 360              		.loc 1 63 31 is_stmt 1 discriminator 1 view .LVU113
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 361              		.loc 1 63 40 discriminator 3 view .LVU114
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 362              		.loc 1 63 17 discriminator 3 view .LVU115
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 363              		.loc 1 63 31 discriminator 1 view .LVU116
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 364              		.loc 1 63 40 discriminator 3 view .LVU117
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 365              		.loc 1 63 17 discriminator 3 view .LVU118
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ARM GAS  /tmp/ccmowyyV.s 			page 18
 
 
- 356              		.loc 1 58 40 discriminator 3 view .LVU130
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 357              		.loc 1 58 17 discriminator 3 view .LVU131
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 358              		.loc 1 58 31 discriminator 1 view .LVU132
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 359              		.loc 1 58 40 discriminator 3 view .LVU133
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 360              		.loc 1 58 17 discriminator 3 view .LVU134
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 361              		.loc 1 58 31 discriminator 1 view .LVU135
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 362              		.loc 1 58 40 discriminator 3 view .LVU136
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 363              		.loc 1 58 17 discriminator 3 view .LVU137
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 364              		.loc 1 58 31 discriminator 1 view .LVU138
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 365              		.loc 1 58 40 discriminator 3 view .LVU139
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 366              		.loc 1 58 17 discriminator 3 view .LVU140
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 367              		.loc 1 58 31 discriminator 1 view .LVU141
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 368              		.loc 1 58 40 discriminator 3 view .LVU142
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 369              		.loc 1 58 17 discriminator 3 view .LVU143
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 370              		.loc 1 58 31 discriminator 1 view .LVU144
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 371              		.loc 1 58 40 discriminator 3 view .LVU145
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 372              		.loc 1 58 17 discriminator 3 view .LVU146
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 373              		.loc 1 58 31 discriminator 1 view .LVU147
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 374              		.loc 1 58 40 discriminator 3 view .LVU148
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 375              		.loc 1 58 17 discriminator 3 view .LVU149
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 376              		.loc 1 58 31 discriminator 1 view .LVU150
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 377              		.loc 1 58 40 discriminator 3 view .LVU151
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 378              		.loc 1 58 17 discriminator 3 view .LVU152
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 379              		.loc 1 58 31 discriminator 1 view .LVU153
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
- 380              		.loc 1 58 31 is_stmt 0 discriminator 1 view .LVU154
- 381              	.LBE91:
- 382              	.LBB92:
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 383              		.loc 1 59 31 is_stmt 1 discriminator 1 view .LVU155
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 384              		.loc 1 59 40 discriminator 3 view .LVU156
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 385              		.loc 1 59 17 discriminator 3 view .LVU157
-ARM GAS  /tmp/ccx2Ljsw.s 			page 19
+ 366              		.loc 1 63 31 discriminator 1 view .LVU119
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 367              		.loc 1 63 40 discriminator 3 view .LVU120
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 368              		.loc 1 63 17 discriminator 3 view .LVU121
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 369              		.loc 1 63 31 discriminator 1 view .LVU122
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 370              		.loc 1 63 40 discriminator 3 view .LVU123
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 371              		.loc 1 63 17 discriminator 3 view .LVU124
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 372              		.loc 1 63 31 discriminator 1 view .LVU125
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 373              		.loc 1 63 40 discriminator 3 view .LVU126
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 374              		.loc 1 63 17 discriminator 3 view .LVU127
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 375              		.loc 1 63 31 discriminator 1 view .LVU128
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 376              		.loc 1 63 40 discriminator 3 view .LVU129
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 377              		.loc 1 63 17 discriminator 3 view .LVU130
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 378              		.loc 1 63 31 discriminator 1 view .LVU131
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 379              		.loc 1 63 40 discriminator 3 view .LVU132
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 380              		.loc 1 63 17 discriminator 3 view .LVU133
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 381              		.loc 1 63 31 discriminator 1 view .LVU134
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 382              		.loc 1 63 40 discriminator 3 view .LVU135
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 383              		.loc 1 63 17 discriminator 3 view .LVU136
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 384              		.loc 1 63 31 discriminator 1 view .LVU137
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 385              		.loc 1 63 31 is_stmt 0 discriminator 1 view .LVU138
+ 386              	.LBE89:
+ 387              	.LBB90:
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 388              		.loc 1 64 31 is_stmt 1 discriminator 1 view .LVU139
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 389              		.loc 1 64 40 discriminator 3 view .LVU140
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 390              		.loc 1 64 17 discriminator 3 view .LVU141
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 391              		.loc 1 64 31 discriminator 1 view .LVU142
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 392              		.loc 1 64 40 discriminator 3 view .LVU143
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 393              		.loc 1 64 17 discriminator 3 view .LVU144
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 394              		.loc 1 64 31 discriminator 1 view .LVU145
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 395              		.loc 1 64 40 discriminator 3 view .LVU146
+ARM GAS  /tmp/ccmowyyV.s 			page 19
 
 
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 386              		.loc 1 59 31 discriminator 1 view .LVU158
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 387              		.loc 1 59 40 discriminator 3 view .LVU159
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 388              		.loc 1 59 17 discriminator 3 view .LVU160
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 389              		.loc 1 59 31 discriminator 1 view .LVU161
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 390              		.loc 1 59 40 discriminator 3 view .LVU162
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 391              		.loc 1 59 17 discriminator 3 view .LVU163
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 392              		.loc 1 59 31 discriminator 1 view .LVU164
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 393              		.loc 1 59 40 discriminator 3 view .LVU165
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 394              		.loc 1 59 17 discriminator 3 view .LVU166
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 395              		.loc 1 59 31 discriminator 1 view .LVU167
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 396              		.loc 1 59 40 discriminator 3 view .LVU168
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 397              		.loc 1 59 17 discriminator 3 view .LVU169
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 398              		.loc 1 59 31 discriminator 1 view .LVU170
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 399              		.loc 1 59 40 discriminator 3 view .LVU171
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 400              		.loc 1 59 17 discriminator 3 view .LVU172
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 401              		.loc 1 59 31 discriminator 1 view .LVU173
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 402              		.loc 1 59 40 discriminator 3 view .LVU174
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 403              		.loc 1 59 17 discriminator 3 view .LVU175
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 404              		.loc 1 59 31 discriminator 1 view .LVU176
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 405              		.loc 1 59 40 discriminator 3 view .LVU177
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 406              		.loc 1 59 17 discriminator 3 view .LVU178
-  59:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
- 407              		.loc 1 59 31 discriminator 1 view .LVU179
- 408              	.LBE92:
-  60:main.cpp      ****             }
- 409              		.loc 1 60 17 view .LVU180
-  60:main.cpp      ****             }
- 410              		.loc 1 60 17 is_stmt 0 view .LVU181
- 411              	.LBE84:
- 412 00d4 1D22     		movs	r2, #29
- 413              	.LBB94:
-  60:main.cpp      ****             }
- 414              		.loc 1 60 34 view .LVU182
- 415 00d6 2B77     		strb	r3, [r5, #28]
- 416              	.LBB93:
-  58:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 10;      // 8 Phases
-ARM GAS  /tmp/ccx2Ljsw.s 			page 20
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 396              		.loc 1 64 17 discriminator 3 view .LVU147
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 397              		.loc 1 64 31 discriminator 1 view .LVU148
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 398              		.loc 1 64 40 discriminator 3 view .LVU149
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 399              		.loc 1 64 17 discriminator 3 view .LVU150
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 400              		.loc 1 64 31 discriminator 1 view .LVU151
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 401              		.loc 1 64 40 discriminator 3 view .LVU152
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 402              		.loc 1 64 17 discriminator 3 view .LVU153
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 403              		.loc 1 64 31 discriminator 1 view .LVU154
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 404              		.loc 1 64 40 discriminator 3 view .LVU155
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 405              		.loc 1 64 17 discriminator 3 view .LVU156
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 406              		.loc 1 64 31 discriminator 1 view .LVU157
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 407              		.loc 1 64 40 discriminator 3 view .LVU158
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 408              		.loc 1 64 17 discriminator 3 view .LVU159
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 409              		.loc 1 64 31 discriminator 1 view .LVU160
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 410              		.loc 1 64 40 discriminator 3 view .LVU161
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 411              		.loc 1 64 17 discriminator 3 view .LVU162
+  64:main.cpp      ****                 tx_buffer[idx++] = preset;                         // 1 Preset
+ 412              		.loc 1 64 31 discriminator 1 view .LVU163
+ 413              	.LBE90:
+  65:main.cpp      ****             }
+ 414              		.loc 1 65 17 view .LVU164
+ 415              	.LBB91:
+  63:main.cpp      ****                 for(int i=0; i<8; i++) tx_buffer[idx++] = 0;      // 8 Phases
+ 416              		.loc 1 63 57 is_stmt 0 discriminator 3 view .LVU165
+ 417 0106 4E4B     		ldr	r3, .L32+48
+ 418 0108 EB60     		str	r3, [r5, #12]
+ 419 010a 03F10433 		add	r3, r3, #67372036
+ 420 010e 2B61     		str	r3, [r5, #16]
+ 421              	.LBE91:
+  65:main.cpp      ****             }
+ 422              		.loc 1 65 34 view .LVU166
+ 423 0110 4C4B     		ldr	r3, .L32+52
+ 424 0112 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 425 0114 2B77     		strb	r3, [r5, #28]
+ 426              	.LBE92:
+ 427 0116 B5E7     		b	.L7
+ 428              	.LVL15:
+ 429              	.L19:
+  65:main.cpp      ****             }
+ 430              		.loc 1 65 34 view .LVU167
+ 431              	.LBE93:
+ARM GAS  /tmp/ccmowyyV.s 			page 20
 
 
- 417              		.loc 1 58 57 discriminator 3 view .LVU183
- 418 00d8 184B     		ldr	r3, .L18+40
- 419 00da C5E90213 		strd	r1, r3, [r5, #8]
- 420 00de 184B     		ldr	r3, .L18+44
- 421 00e0 2B61     		str	r3, [r5, #16]
- 422              	.LBE93:
- 423              	.LBE94:
- 424 00e2 CEE7     		b	.L5
- 425              	.LVL13:
- 426              	.L6:
-  70:main.cpp      ****             }
- 427              		.loc 1 70 17 is_stmt 1 view .LVU184
-  70:main.cpp      ****             }
- 428              		.loc 1 70 34 is_stmt 0 view .LVU185
- 429 00e4 FF23     		movs	r3, #255
- 430 00e6 0422     		movs	r2, #4
- 431 00e8 EB70     		strb	r3, [r5, #3]
- 432 00ea CAE7     		b	.L5
- 433              	.LVL14:
- 434              	.L8:
-  67:main.cpp      ****             }
- 435              		.loc 1 67 17 is_stmt 1 view .LVU186
-  67:main.cpp      ****             }
- 436              		.loc 1 67 44 view .LVU187
-  67:main.cpp      ****             }
- 437              		.loc 1 67 70 view .LVU188
-  67:main.cpp      ****             }
- 438              		.loc 1 67 98 view .LVU189
-  67:main.cpp      ****             }
- 439              		.loc 1 67 98 is_stmt 0 view .LVU190
- 440 00ec 9BF80010 		ldrb	r1, [fp]	@ zero_extendqisi2
- 441 00f0 0023     		movs	r3, #0
- 442 00f2 144A     		ldr	r2, .L18+48
- 443 00f4 61F30703 		bfi	r3, r1, #0, #8
- 444 00f8 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
- 445 00fa 62F30F23 		bfi	r3, r2, #8, #8
- 446 00fe 124A     		ldr	r2, .L18+52
- 447 0100 1178     		ldrb	r1, [r2]	@ zero_extendqisi2
- 448 0102 124A     		ldr	r2, .L18+56
- 449 0104 61F31743 		bfi	r3, r1, #16, #8
- 450 0108 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
- 451 010a 62F31F63 		bfi	r3, r2, #24, #8
- 452 010e B5E7     		b	.L9
- 453              	.LVL15:
- 454              	.L13:
-  67:main.cpp      ****             }
- 455              		.loc 1 67 98 view .LVU191
- 456              	.LBE95:
-  47:main.cpp      **** 
- 457              		.loc 1 47 30 view .LVU192
- 458 0110 0322     		movs	r2, #3
- 459 0112 B6E7     		b	.L5
- 460              	.L19:
- 461              		.align	2
- 462              	.L18:
- 463 0114 00000000 		.word	hw
- 464 0118 00000000 		.word	.LANCHOR0
-ARM GAS  /tmp/ccx2Ljsw.s 			page 21
+  89:main.cpp      ****                 case 0:
+  90:main.cpp      ****                     loc_temp++;
+  91:main.cpp      ****                     if (loc_temp > 5) {
+  92:main.cpp      ****                         loc_temp = 0;
+  93:main.cpp      ****                         test_menu++;
+  94:main.cpp      ****                     }
+  95:main.cpp      ****                     break;
+  96:main.cpp      ****                 case 1:
+ 432              		.loc 1 96 17 is_stmt 1 view .LVU168
+  97:main.cpp      ****                     loc_temp++;
+ 433              		.loc 1 97 21 view .LVU169
+ 434              		.loc 1 97 29 is_stmt 0 view .LVU170
+ 435 0118 3B78     		ldrb	r3, [r7]	@ zero_extendqisi2
+ 436 011a 0133     		adds	r3, r3, #1
+ 437 011c DBB2     		uxtb	r3, r3
+  98:main.cpp      ****                     if (loc_temp > 4) {
+ 438              		.loc 1 98 21 is_stmt 1 view .LVU171
+ 439 011e 042B     		cmp	r3, #4
+ 440 0120 6CD9     		bls	.L21
+  99:main.cpp      ****                         loc_temp = 0;
+ 441              		.loc 1 99 25 view .LVU172
+ 442              		.loc 1 99 34 is_stmt 0 view .LVU173
+ 443 0122 0023     		movs	r3, #0
+ 444 0124 3B70     		strb	r3, [r7]
+ 100:main.cpp      ****                         test_menu++;
+ 445              		.loc 1 100 25 is_stmt 1 view .LVU174
+ 446              		.loc 1 100 34 is_stmt 0 view .LVU175
+ 447 0126 0223     		movs	r3, #2
+ 448 0128 3370     		strb	r3, [r6]
+ 449 012a 92E7     		b	.L6
+ 450              	.L20:
+  89:main.cpp      ****                     loc_temp++;
+ 451              		.loc 1 89 17 is_stmt 1 view .LVU176
+  90:main.cpp      ****                     if (loc_temp > 5) {
+ 452              		.loc 1 90 21 view .LVU177
+  90:main.cpp      ****                     if (loc_temp > 5) {
+ 453              		.loc 1 90 29 is_stmt 0 view .LVU178
+ 454 012c 3B78     		ldrb	r3, [r7]	@ zero_extendqisi2
+ 455 012e 0133     		adds	r3, r3, #1
+ 456 0130 DBB2     		uxtb	r3, r3
+  91:main.cpp      ****                         loc_temp = 0;
+ 457              		.loc 1 91 21 is_stmt 1 view .LVU179
+ 458 0132 052B     		cmp	r3, #5
+ 459 0134 62D9     		bls	.L21
+  92:main.cpp      ****                         test_menu++;
+ 460              		.loc 1 92 25 view .LVU180
+  92:main.cpp      ****                         test_menu++;
+ 461              		.loc 1 92 34 is_stmt 0 view .LVU181
+ 462 0136 0023     		movs	r3, #0
+ 463 0138 3B70     		strb	r3, [r7]
+  93:main.cpp      ****                     }
+ 464              		.loc 1 93 25 is_stmt 1 view .LVU182
+  93:main.cpp      ****                     }
+ 465              		.loc 1 93 34 is_stmt 0 view .LVU183
+ 466 013a 0123     		movs	r3, #1
+ 467 013c 3370     		strb	r3, [r6]
+ 468 013e 88E7     		b	.L6
+ARM GAS  /tmp/ccmowyyV.s 			page 21
 
 
- 465 011c 00000000 		.word	tx_buffer
- 466 0120 00000000 		.word	last_send
- 467 0124 00000000 		.word	loc_temp
- 468 0128 00000000 		.word	sub_menu
- 469 012c 00000000 		.word	uart
- 470 0130 8A326496 		.word	-1771818358
- 471 0134 64656667 		.word	1734763876
- 472 0138 68696A6B 		.word	1802135912
- 473 013c 00010200 		.word	131328
- 474 0140 01020001 		.word	16777729
- 475 0144 00000000 		.word	decay
- 476 0148 00000000 		.word	sustain
- 477 014c 00000000 		.word	release
- 478 0150 00000000 		.word	test_menu
- 479 0154 00000000 		.word	preset
- 480 0158 00000000 		.word	attack
- 481              	.LBE82:
- 482              	.LBE96:
- 483              	.LBE80:
- 484              		.cfi_endproc
- 485              	.LFE2365:
- 487              		.section	.text.startup._GLOBAL__sub_I_hw,"ax",%progbits
- 488              		.align	1
- 489              		.p2align 2,,3
- 490              		.syntax unified
- 491              		.thumb
- 492              		.thumb_func
- 494              	_GLOBAL__sub_I_hw:
- 495              	.LFB2384:
-  94:main.cpp      ****             }
-  95:main.cpp      ****         }
-  96:main.cpp      ****     }
-  97:main.cpp      **** }...
- 496              		.loc 1 97 1 is_stmt 1 view -0
- 497              		.cfi_startproc
- 498              		@ args = 0, pretend = 0, frame = 0
- 499              		@ frame_needed = 0, uses_anonymous_args = 0
- 500              	.LBB121:
- 501              	.LBI121:
- 502              		.loc 1 97 1 view .LVU194
- 503              	.LVL16:
- 504              	.LBB122:
- 505              	.LBB123:
- 506              	.LBI123:
+ 469              	.L14:
+ 101:main.cpp      ****                     }
+ 102:main.cpp      ****                     break;
+ 103:main.cpp      ****                 case 2:
+ 104:main.cpp      ****                     loc_temp++;
+ 105:main.cpp      ****                     if (loc_temp > 7) {
+ 106:main.cpp      ****                         loc_temp = 0;
+ 107:main.cpp      ****                         preset++;
+ 108:main.cpp      ****                     }
+ 109:main.cpp      ****                     if (preset > 7) {
+ 110:main.cpp      ****                         preset = 0;
+ 111:main.cpp      ****                         test_menu++;
+ 112:main.cpp      ****                     }
+ 113:main.cpp      ****                     break;
+ 114:main.cpp      ****                 case 3:
+ 115:main.cpp      ****                     fx_val_1 += 20;
+ 116:main.cpp      ****                     fx_val_2 += 20;
+ 117:main.cpp      ****                     fx_val_3 += 20;
+ 118:main.cpp      ****                     if (fx_val_1 > 99) {
+ 119:main.cpp      ****                         fx_val_1 = 0;
+ 120:main.cpp      ****                         fx_val_2 = 0;
+ 121:main.cpp      ****                         fx_val_3 = 0;
+ 122:main.cpp      ****                         fx_type++;
+ 123:main.cpp      **** 
+ 124:main.cpp      ****                         if (fx_type > 4) {
+ 125:main.cpp      ****                             fx_type++;
+ 126:main.cpp      ****                             test_menu++;
+ 127:main.cpp      ****                         }
+ 128:main.cpp      ****                     }
+ 129:main.cpp      ****                     break;
+ 130:main.cpp      ****                 case 4:
+ 131:main.cpp      ****                     attack += 10;
+ 132:main.cpp      ****                     decay += 10;            
+ 133:main.cpp      ****                     sustain += 10;
+ 134:main.cpp      ****                     release += 10;
+ 135:main.cpp      ****                     if (attack > 99) {
+ 136:main.cpp      ****                         attack = 0;
+ 137:main.cpp      ****                         decay = 0;
+ 138:main.cpp      ****                         sustain = 0;
+ 139:main.cpp      ****                         release = 0;
+ 140:main.cpp      ****                         test_menu++;
+ 141:main.cpp      ****                     }
+ 142:main.cpp      ****                     break;
+ 143:main.cpp      ****                 case 5:
+ 470              		.loc 1 143 17 is_stmt 1 view .LVU184
+ 144:main.cpp      ****                     test_menu = 0;
+ 471              		.loc 1 144 21 view .LVU185
+ 472              		.loc 1 144 31 is_stmt 0 view .LVU186
+ 473 0140 0023     		movs	r3, #0
+ 474 0142 3370     		strb	r3, [r6]
+ 145:main.cpp      ****                     break;
+ 475              		.loc 1 145 21 is_stmt 1 view .LVU187
+ 476 0144 85E7     		b	.L6
+ 477              	.L16:
+ 130:main.cpp      ****                     attack += 10;
+ 478              		.loc 1 130 17 view .LVU188
+ 131:main.cpp      ****                     decay += 10;            
+ARM GAS  /tmp/ccmowyyV.s 			page 22
+
+
+ 479              		.loc 1 131 21 view .LVU189
+ 132:main.cpp      ****                     sustain += 10;
+ 480              		.loc 1 132 27 is_stmt 0 view .LVU190
+ 481 0146 3949     		ldr	r1, .L32+28
+ 133:main.cpp      ****                     release += 10;
+ 482              		.loc 1 133 29 view .LVU191
+ 483 0148 3948     		ldr	r0, .L32+32
+ 132:main.cpp      ****                     sustain += 10;
+ 484              		.loc 1 132 27 view .LVU192
+ 485 014a 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
+ 131:main.cpp      ****                     decay += 10;            
+ 486              		.loc 1 131 28 view .LVU193
+ 487 014c 98F80030 		ldrb	r3, [r8]	@ zero_extendqisi2
+ 132:main.cpp      ****                     sustain += 10;
+ 488              		.loc 1 132 27 view .LVU194
+ 489 0150 0A32     		adds	r2, r2, #10
+ 131:main.cpp      ****                     decay += 10;            
+ 490              		.loc 1 131 28 view .LVU195
+ 491 0152 0A33     		adds	r3, r3, #10
+ 132:main.cpp      ****                     sustain += 10;
+ 492              		.loc 1 132 27 view .LVU196
+ 493 0154 0A70     		strb	r2, [r1]
+ 133:main.cpp      ****                     release += 10;
+ 494              		.loc 1 133 29 view .LVU197
+ 495 0156 0278     		ldrb	r2, [r0]	@ zero_extendqisi2
+ 131:main.cpp      ****                     decay += 10;            
+ 496              		.loc 1 131 28 view .LVU198
+ 497 0158 DBB2     		uxtb	r3, r3
+ 133:main.cpp      ****                     release += 10;
+ 498              		.loc 1 133 29 view .LVU199
+ 499 015a 0A32     		adds	r2, r2, #10
+ 135:main.cpp      ****                         attack = 0;
+ 500              		.loc 1 135 21 view .LVU200
+ 501 015c 632B     		cmp	r3, #99
+ 131:main.cpp      ****                     decay += 10;            
+ 502              		.loc 1 131 28 view .LVU201
+ 503 015e 88F80030 		strb	r3, [r8]
+ 132:main.cpp      ****                     sustain += 10;
+ 504              		.loc 1 132 21 is_stmt 1 view .LVU202
+ 133:main.cpp      ****                     release += 10;
+ 505              		.loc 1 133 21 view .LVU203
+ 133:main.cpp      ****                     release += 10;
+ 506              		.loc 1 133 29 is_stmt 0 view .LVU204
+ 507 0162 0270     		strb	r2, [r0]
+ 134:main.cpp      ****                     if (attack > 99) {
+ 508              		.loc 1 134 21 is_stmt 1 view .LVU205
+ 134:main.cpp      ****                     if (attack > 99) {
+ 509              		.loc 1 134 29 is_stmt 0 view .LVU206
+ 510 0164 334A     		ldr	r2, .L32+36
+ 511 0166 1146     		mov	r1, r2
+ 512 0168 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ 513 016a 02F10A02 		add	r2, r2, #10
+ 514 016e 0A70     		strb	r2, [r1]
+ 135:main.cpp      ****                         attack = 0;
+ 515              		.loc 1 135 21 is_stmt 1 view .LVU207
+ 516 0170 7FF66FAF 		bls	.L6
+ 136:main.cpp      ****                         decay = 0;
+ARM GAS  /tmp/ccmowyyV.s 			page 23
+
+
+ 517              		.loc 1 136 25 view .LVU208
+ 136:main.cpp      ****                         decay = 0;
+ 518              		.loc 1 136 32 is_stmt 0 view .LVU209
+ 519 0174 0023     		movs	r3, #0
+ 137:main.cpp      ****                         sustain = 0;
+ 520              		.loc 1 137 31 view .LVU210
+ 521 0176 2D49     		ldr	r1, .L32+28
+ 522 0178 0B70     		strb	r3, [r1]
+ 139:main.cpp      ****                         test_menu++;
+ 523              		.loc 1 139 33 view .LVU211
+ 524 017a 2E49     		ldr	r1, .L32+36
+ 136:main.cpp      ****                         decay = 0;
+ 525              		.loc 1 136 32 view .LVU212
+ 526 017c 88F80030 		strb	r3, [r8]
+ 137:main.cpp      ****                         sustain = 0;
+ 527              		.loc 1 137 25 is_stmt 1 view .LVU213
+ 138:main.cpp      ****                         release = 0;
+ 528              		.loc 1 138 25 view .LVU214
+ 138:main.cpp      ****                         release = 0;
+ 529              		.loc 1 138 33 is_stmt 0 view .LVU215
+ 530 0180 0370     		strb	r3, [r0]
+ 139:main.cpp      ****                         test_menu++;
+ 531              		.loc 1 139 25 is_stmt 1 view .LVU216
+ 139:main.cpp      ****                         test_menu++;
+ 532              		.loc 1 139 33 is_stmt 0 view .LVU217
+ 533 0182 0B70     		strb	r3, [r1]
+ 140:main.cpp      ****                     }
+ 534              		.loc 1 140 25 is_stmt 1 view .LVU218
+ 140:main.cpp      ****                     }
+ 535              		.loc 1 140 34 is_stmt 0 view .LVU219
+ 536 0184 0523     		movs	r3, #5
+ 537 0186 3370     		strb	r3, [r6]
+ 538 0188 63E7     		b	.L6
+ 539              	.L17:
+ 114:main.cpp      ****                     fx_val_1 += 20;
+ 540              		.loc 1 114 17 is_stmt 1 view .LVU220
+ 115:main.cpp      ****                     fx_val_2 += 20;
+ 541              		.loc 1 115 21 view .LVU221
+ 115:main.cpp      ****                     fx_val_2 += 20;
+ 542              		.loc 1 115 30 is_stmt 0 view .LVU222
+ 543 018a 9BF80030 		ldrb	r3, [fp]	@ zero_extendqisi2
+ 116:main.cpp      ****                     fx_val_3 += 20;
+ 544              		.loc 1 116 30 view .LVU223
+ 545 018e 9AF80020 		ldrb	r2, [r10]	@ zero_extendqisi2
+ 115:main.cpp      ****                     fx_val_2 += 20;
+ 546              		.loc 1 115 30 view .LVU224
+ 547 0192 1433     		adds	r3, r3, #20
+ 116:main.cpp      ****                     fx_val_3 += 20;
+ 548              		.loc 1 116 30 view .LVU225
+ 549 0194 1432     		adds	r2, r2, #20
+ 115:main.cpp      ****                     fx_val_2 += 20;
+ 550              		.loc 1 115 30 view .LVU226
+ 551 0196 DBB2     		uxtb	r3, r3
+ 116:main.cpp      ****                     fx_val_3 += 20;
+ 552              		.loc 1 116 30 view .LVU227
+ 553 0198 8AF80020 		strb	r2, [r10]
+ 117:main.cpp      ****                     if (fx_val_1 > 99) {
+ARM GAS  /tmp/ccmowyyV.s 			page 24
+
+
+ 554              		.loc 1 117 30 view .LVU228
+ 555 019c 99F80020 		ldrb	r2, [r9]	@ zero_extendqisi2
+ 118:main.cpp      ****                         fx_val_1 = 0;
+ 556              		.loc 1 118 21 view .LVU229
+ 557 01a0 632B     		cmp	r3, #99
+ 115:main.cpp      ****                     fx_val_2 += 20;
+ 558              		.loc 1 115 30 view .LVU230
+ 559 01a2 8BF80030 		strb	r3, [fp]
+ 116:main.cpp      ****                     fx_val_3 += 20;
+ 560              		.loc 1 116 21 is_stmt 1 view .LVU231
+ 117:main.cpp      ****                     if (fx_val_1 > 99) {
+ 561              		.loc 1 117 21 view .LVU232
+ 117:main.cpp      ****                     if (fx_val_1 > 99) {
+ 562              		.loc 1 117 30 is_stmt 0 view .LVU233
+ 563 01a6 02F11402 		add	r2, r2, #20
+ 564 01aa 89F80020 		strb	r2, [r9]
+ 118:main.cpp      ****                         fx_val_1 = 0;
+ 565              		.loc 1 118 21 is_stmt 1 view .LVU234
+ 566 01ae 7FF650AF 		bls	.L6
+ 119:main.cpp      ****                         fx_val_2 = 0;
+ 567              		.loc 1 119 25 view .LVU235
+ 122:main.cpp      **** 
+ 568              		.loc 1 122 32 is_stmt 0 view .LVU236
+ 569 01b2 2149     		ldr	r1, .L32+40
+ 119:main.cpp      ****                         fx_val_2 = 0;
+ 570              		.loc 1 119 34 view .LVU237
+ 571 01b4 0023     		movs	r3, #0
+ 122:main.cpp      **** 
+ 572              		.loc 1 122 32 view .LVU238
+ 573 01b6 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
+ 119:main.cpp      ****                         fx_val_2 = 0;
+ 574              		.loc 1 119 34 view .LVU239
+ 575 01b8 8BF80030 		strb	r3, [fp]
+ 120:main.cpp      ****                         fx_val_3 = 0;
+ 576              		.loc 1 120 25 is_stmt 1 view .LVU240
+ 120:main.cpp      ****                         fx_val_3 = 0;
+ 577              		.loc 1 120 34 is_stmt 0 view .LVU241
+ 578 01bc 8AF80030 		strb	r3, [r10]
+ 121:main.cpp      ****                         fx_type++;
+ 579              		.loc 1 121 25 is_stmt 1 view .LVU242
+ 121:main.cpp      ****                         fx_type++;
+ 580              		.loc 1 121 34 is_stmt 0 view .LVU243
+ 581 01c0 89F80030 		strb	r3, [r9]
+ 122:main.cpp      **** 
+ 582              		.loc 1 122 25 is_stmt 1 view .LVU244
+ 122:main.cpp      **** 
+ 583              		.loc 1 122 32 is_stmt 0 view .LVU245
+ 584 01c4 531C     		adds	r3, r2, #1
+ 585 01c6 DBB2     		uxtb	r3, r3
+ 124:main.cpp      ****                             fx_type++;
+ 586              		.loc 1 124 25 is_stmt 1 view .LVU246
+ 587 01c8 042B     		cmp	r3, #4
+ 588 01ca 19D8     		bhi	.L26
+ 122:main.cpp      **** 
+ 589              		.loc 1 122 32 is_stmt 0 view .LVU247
+ 590 01cc 0B70     		strb	r3, [r1]
+ 591 01ce 40E7     		b	.L6
+ARM GAS  /tmp/ccmowyyV.s 			page 25
+
+
+ 592              	.L18:
+ 103:main.cpp      ****                     loc_temp++;
+ 593              		.loc 1 103 17 is_stmt 1 view .LVU248
+ 104:main.cpp      ****                     if (loc_temp > 7) {
+ 594              		.loc 1 104 21 view .LVU249
+ 104:main.cpp      ****                     if (loc_temp > 7) {
+ 595              		.loc 1 104 29 is_stmt 0 view .LVU250
+ 596 01d0 3B78     		ldrb	r3, [r7]	@ zero_extendqisi2
+ 107:main.cpp      ****                     }
+ 597              		.loc 1 107 31 view .LVU251
+ 598 01d2 1C49     		ldr	r1, .L32+52
+ 104:main.cpp      ****                     if (loc_temp > 7) {
+ 599              		.loc 1 104 29 view .LVU252
+ 600 01d4 0133     		adds	r3, r3, #1
+ 107:main.cpp      ****                     }
+ 601              		.loc 1 107 31 view .LVU253
+ 602 01d6 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
+ 104:main.cpp      ****                     if (loc_temp > 7) {
+ 603              		.loc 1 104 29 view .LVU254
+ 604 01d8 DBB2     		uxtb	r3, r3
+ 105:main.cpp      ****                         loc_temp = 0;
+ 605              		.loc 1 105 21 view .LVU255
+ 606 01da 072B     		cmp	r3, #7
+ 104:main.cpp      ****                     if (loc_temp > 7) {
+ 607              		.loc 1 104 29 view .LVU256
+ 608 01dc 3B70     		strb	r3, [r7]
+ 105:main.cpp      ****                         loc_temp = 0;
+ 609              		.loc 1 105 21 is_stmt 1 view .LVU257
+ 610 01de 04D9     		bls	.L25
+ 106:main.cpp      ****                         preset++;
+ 611              		.loc 1 106 25 view .LVU258
+ 107:main.cpp      ****                     }
+ 612              		.loc 1 107 31 is_stmt 0 view .LVU259
+ 613 01e0 0132     		adds	r2, r2, #1
+ 106:main.cpp      ****                         preset++;
+ 614              		.loc 1 106 34 view .LVU260
+ 615 01e2 0023     		movs	r3, #0
+ 107:main.cpp      ****                     }
+ 616              		.loc 1 107 31 view .LVU261
+ 617 01e4 D2B2     		uxtb	r2, r2
+ 106:main.cpp      ****                         preset++;
+ 618              		.loc 1 106 34 view .LVU262
+ 619 01e6 3B70     		strb	r3, [r7]
+ 107:main.cpp      ****                     }
+ 620              		.loc 1 107 25 is_stmt 1 view .LVU263
+ 107:main.cpp      ****                     }
+ 621              		.loc 1 107 31 is_stmt 0 view .LVU264
+ 622 01e8 0A70     		strb	r2, [r1]
+ 623              	.L25:
+ 109:main.cpp      ****                         preset = 0;
+ 624              		.loc 1 109 21 is_stmt 1 view .LVU265
+ 625 01ea 072A     		cmp	r2, #7
+ 626 01ec 7FF631AF 		bls	.L6
+ 110:main.cpp      ****                         test_menu++;
+ 627              		.loc 1 110 25 view .LVU266
+ 110:main.cpp      ****                         test_menu++;
+ 628              		.loc 1 110 32 is_stmt 0 view .LVU267
+ARM GAS  /tmp/ccmowyyV.s 			page 26
+
+
+ 629 01f0 0023     		movs	r3, #0
+ 630 01f2 144A     		ldr	r2, .L32+52
+ 631 01f4 1370     		strb	r3, [r2]
+ 111:main.cpp      ****                     }
+ 632              		.loc 1 111 25 is_stmt 1 view .LVU268
+ 111:main.cpp      ****                     }
+ 633              		.loc 1 111 34 is_stmt 0 view .LVU269
+ 634 01f6 0323     		movs	r3, #3
+ 635 01f8 3370     		strb	r3, [r6]
+ 636 01fa 2AE7     		b	.L6
+ 637              	.L21:
+  90:main.cpp      ****                     if (loc_temp > 5) {
+ 638              		.loc 1 90 29 view .LVU270
+ 639 01fc 3B70     		strb	r3, [r7]
+ 640 01fe 28E7     		b	.L6
+ 641              	.L26:
+ 125:main.cpp      ****                             test_menu++;
+ 642              		.loc 1 125 29 is_stmt 1 view .LVU271
+ 125:main.cpp      ****                             test_menu++;
+ 643              		.loc 1 125 36 is_stmt 0 view .LVU272
+ 644 0200 0D4B     		ldr	r3, .L32+40
+ 645 0202 0232     		adds	r2, r2, #2
+ 646 0204 1A70     		strb	r2, [r3]
+ 126:main.cpp      ****                         }
+ 647              		.loc 1 126 29 is_stmt 1 view .LVU273
+ 126:main.cpp      ****                         }
+ 648              		.loc 1 126 38 is_stmt 0 view .LVU274
+ 649 0206 0423     		movs	r3, #4
+ 650 0208 3370     		strb	r3, [r6]
+ 651 020a 22E7     		b	.L6
+ 652              	.LVL16:
+ 653              	.L27:
+  52:main.cpp      **** 
+ 654              		.loc 1 52 30 view .LVU275
+ 655 020c 0322     		movs	r2, #3
+ 656 020e 39E7     		b	.L7
+ 657              	.L33:
+ 658              		.align	2
+ 659              	.L32:
+ 660 0210 00000000 		.word	hw
+ 661 0214 00000000 		.word	.LANCHOR0
+ 662 0218 00000000 		.word	tx_buffer
+ 663 021c 00000000 		.word	last_send
+ 664 0220 00000000 		.word	test_menu
+ 665 0224 00000000 		.word	loc_temp
+ 666 0228 00000000 		.word	uart
+ 667 022c 00000000 		.word	decay
+ 668 0230 00000000 		.word	sustain
+ 669 0234 00000000 		.word	release
+ 670 0238 00000000 		.word	fx_type
+ 671 023c 00000000 		.word	sub_menu
+ 672 0240 00010203 		.word	50462976
+ 673 0244 00000000 		.word	preset
+ 674 0248 00000000 		.word	fx_val_1
+ 675 024c 00000000 		.word	fx_val_2
+ 676 0250 00000000 		.word	fx_val_3
+ 677 0254 00000000 		.word	attack
+ARM GAS  /tmp/ccmowyyV.s 			page 27
+
+
+ 678              	.LBE82:
+ 679              	.LBE81:
+ 680              	.LBE80:
+ 681              		.cfi_endproc
+ 682              	.LFE2365:
+ 684              		.section	.text.startup._GLOBAL__sub_I_hw,"ax",%progbits
+ 685              		.align	1
+ 686              		.p2align 2,,3
+ 687              		.syntax unified
+ 688              		.thumb
+ 689              		.thumb_func
+ 691              	_GLOBAL__sub_I_hw:
+ 692              	.LFB2384:
+ 146:main.cpp      ****             }
+ 147:main.cpp      ****             
+ 148:main.cpp      **** 
+ 149:main.cpp      ****             //TEST: Menu 3
+ 150:main.cpp      **** 
+ 151:main.cpp      ****             //TEST: Menu 4
+ 152:main.cpp      ****             /*
+ 153:main.cpp      ****             attack = ++attack % 100;
+ 154:main.cpp      ****             decay = ++decay % 100;            
+ 155:main.cpp      ****             sustain = ++sustain % 100;
+ 156:main.cpp      ****             release = ++release % 100;
+ 157:main.cpp      ****             */
+ 158:main.cpp      ****             //Cycle Through locations for testings
+ 159:main.cpp      ****             //preset = ++preset % 8;         
+ 160:main.cpp      ****         }
+ 161:main.cpp      ****     }
+ 162:main.cpp      **** }...
+ 693              		.loc 1 162 1 is_stmt 1 view -0
+ 694              		.cfi_startproc
+ 695              		@ args = 0, pretend = 0, frame = 0
+ 696              		@ frame_needed = 0, uses_anonymous_args = 0
+ 697              	.LBB118:
+ 698              	.LBI118:
+ 699              		.loc 1 162 1 view .LVU277
+ 700              	.LVL17:
+ 701              	.LBB119:
+ 702              	.LBB120:
+ 703              	.LBI120:
   21:../DaisyExamples/libDaisy/src/daisy_seed.h ****     ~DaisySeed() {}
- 507              		.loc 2 21 5 view .LVU195
- 508              	.LBB124:
- 509              	.LBB125:
- 510              	.LBI125:
- 511              		.file 8 "../DaisyExamples/libDaisy/src/per/qspi.h"
+ 704              		.loc 2 21 5 view .LVU278
+ 705              	.LBB121:
+ 706              	.LBB122:
+ 707              	.LBI122:
+ 708              		.file 8 "../DaisyExamples/libDaisy/src/per/qspi.h"
    1:../DaisyExamples/libDaisy/src/per/qspi.h **** #ifndef DSY_QSPI
    2:../DaisyExamples/libDaisy/src/per/qspi.h **** #define DSY_QSPI /**< Macro */
    3:../DaisyExamples/libDaisy/src/per/qspi.h **** 
@@ -1258,12 +1615,12 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
    5:../DaisyExamples/libDaisy/src/per/qspi.h **** 
    6:../DaisyExamples/libDaisy/src/per/qspi.h **** #include <cstdint>
    7:../DaisyExamples/libDaisy/src/per/qspi.h **** #include "daisy_core.h" // Added for dsy_gpio_pin typedef
-ARM GAS  /tmp/ccx2Ljsw.s 			page 22
-
-
    8:../DaisyExamples/libDaisy/src/per/qspi.h **** 
    9:../DaisyExamples/libDaisy/src/per/qspi.h **** #define DSY_QSPI_TEXT       \
   10:../DaisyExamples/libDaisy/src/per/qspi.h ****     __attribute__((section( \
+ARM GAS  /tmp/ccmowyyV.s 			page 28
+
+
   11:../DaisyExamples/libDaisy/src/per/qspi.h ****         ".qspiflash_text"))) /**< used for reading memory in memory_mapped mode. */
   12:../DaisyExamples/libDaisy/src/per/qspi.h **** #define DSY_QSPI_DATA       \
   13:../DaisyExamples/libDaisy/src/per/qspi.h ****     __attribute__((section( \
@@ -1318,12 +1675,12 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   62:../DaisyExamples/libDaisy/src/per/qspi.h ****             IS25LP080D,  /**< & */
   63:../DaisyExamples/libDaisy/src/per/qspi.h ****             IS25LP064A,  /**< & */
   64:../DaisyExamples/libDaisy/src/per/qspi.h ****             DEVICE_LAST, /**< & */
-ARM GAS  /tmp/ccx2Ljsw.s 			page 23
-
-
   65:../DaisyExamples/libDaisy/src/per/qspi.h ****         };
   66:../DaisyExamples/libDaisy/src/per/qspi.h **** 
   67:../DaisyExamples/libDaisy/src/per/qspi.h ****         /** 
+ARM GAS  /tmp/ccmowyyV.s 			page 29
+
+
   68:../DaisyExamples/libDaisy/src/per/qspi.h ****         Modes of operation.
   69:../DaisyExamples/libDaisy/src/per/qspi.h ****         Memory Mapped mode: QSPI configured so that the QSPI can be
   70:../DaisyExamples/libDaisy/src/per/qspi.h ****         read from starting address 0x90000000. Writing is not
@@ -1378,12 +1735,12 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
  119:../DaisyExamples/libDaisy/src/per/qspi.h ****         \param size Buffer size
  120:../DaisyExamples/libDaisy/src/per/qspi.h ****         \param buffer Buffer to write
  121:../DaisyExamples/libDaisy/src/per/qspi.h ****         \return Result::OK or Result::ERR
-ARM GAS  /tmp/ccx2Ljsw.s 			page 24
-
-
  122:../DaisyExamples/libDaisy/src/per/qspi.h ****         */
  123:../DaisyExamples/libDaisy/src/per/qspi.h ****     Result WritePage(uint32_t address, uint32_t size, uint8_t* buffer);
  124:../DaisyExamples/libDaisy/src/per/qspi.h **** 
+ARM GAS  /tmp/ccmowyyV.s 			page 30
+
+
  125:../DaisyExamples/libDaisy/src/per/qspi.h ****     /** 
  126:../DaisyExamples/libDaisy/src/per/qspi.h ****         Writes data in buffer to to the QSPI. Starting at address to address+size 
  127:../DaisyExamples/libDaisy/src/per/qspi.h ****         \param address Address to write to
@@ -1426,84 +1783,84 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
  164:../DaisyExamples/libDaisy/src/per/qspi.h ****     void* GetData(uint32_t offset = 0);
  165:../DaisyExamples/libDaisy/src/per/qspi.h **** 
  166:../DaisyExamples/libDaisy/src/per/qspi.h ****     QSPIHandle() : pimpl_(nullptr) {}
- 512              		.loc 8 166 5 view .LVU196
- 513              	.LBE125:
- 514              	.LBE124:
- 515              	.LBE123:
- 516              	.LBE122:
- 517              	.LBE121:
- 518              		.loc 1 97 1 is_stmt 0 view .LVU197
- 519 0000 10B5     		push	{r4, lr}
- 520              		.cfi_def_cfa_offset 8
- 521              		.cfi_offset 4, -8
- 522              		.cfi_offset 14, -4
- 523              	.LBB152:
-ARM GAS  /tmp/ccx2Ljsw.s 			page 25
+ 709              		.loc 8 166 5 view .LVU279
+ 710              	.LBE122:
+ 711              	.LBE121:
+ 712              	.LBE120:
+ 713              	.LBE119:
+ 714              	.LBE118:
+ 715              		.loc 1 162 1 is_stmt 0 view .LVU280
+ 716 0000 10B5     		push	{r4, lr}
+ 717              		.cfi_def_cfa_offset 8
+ 718              		.cfi_offset 4, -8
+ 719              		.cfi_offset 14, -4
+ 720              	.LBB149:
+ 721              	.LBB148:
+   5:main.cpp      **** UartHandler  uart;
+ 722              		.loc 1 5 14 discriminator 1 view .LVU281
+ARM GAS  /tmp/ccmowyyV.s 			page 31
 
 
- 524              	.LBB151:
-   5:main.cpp      **** DaisySeed    hw;
- 525              		.loc 1 5 14 discriminator 1 view .LVU198
- 526 0002 0648     		ldr	r0, .L22
- 527              	.LBB146:
- 528              	.LBB144:
- 529              	.LBB130:
- 530              	.LBB126:
- 531              	.LBB127:
- 532              		.loc 8 166 20 view .LVU199
- 533 0004 0024     		movs	r4, #0
- 534              	.LBE127:
- 535              	.LBE126:
- 536              	.LBE130:
- 537              	.LBE144:
- 538              	.LBE146:
-   5:main.cpp      **** DaisySeed    hw;
- 539              		.loc 1 5 14 discriminator 1 view .LVU200
- 540 0006 064A     		ldr	r2, .L22+4
- 541 0008 0649     		ldr	r1, .L22+8
- 542              	.LBB147:
- 543              	.LBB145:
- 544              	.LBB131:
- 545              	.LBB129:
- 546              	.LBB128:
- 547              		.loc 8 166 20 view .LVU201
- 548 000a 0460     		str	r4, [r0]
- 549              	.LVL17:
- 550              		.loc 8 166 20 view .LVU202
- 551              	.LBE128:
- 552              	.LBE129:
- 553              	.LBE131:
- 554              	.LBB132:
- 555              	.LBI132:
+ 723 0002 0648     		ldr	r0, .L36
+ 724              	.LBB143:
+ 725              	.LBB141:
+ 726              	.LBB127:
+ 727              	.LBB123:
+ 728              	.LBB124:
+ 729              		.loc 8 166 20 view .LVU282
+ 730 0004 0024     		movs	r4, #0
+ 731              	.LBE124:
+ 732              	.LBE123:
+ 733              	.LBE127:
+ 734              	.LBE141:
+ 735              	.LBE143:
+   5:main.cpp      **** UartHandler  uart;
+ 736              		.loc 1 5 14 discriminator 1 view .LVU283
+ 737 0006 064A     		ldr	r2, .L36+4
+ 738 0008 0649     		ldr	r1, .L36+8
+ 739              	.LBB144:
+ 740              	.LBB142:
+ 741              	.LBB128:
+ 742              	.LBB126:
+ 743              	.LBB125:
+ 744              		.loc 8 166 20 view .LVU284
+ 745 000a 0460     		str	r4, [r0]
+ 746              	.LVL18:
+ 747              		.loc 8 166 20 view .LVU285
+ 748              	.LBE125:
+ 749              	.LBE126:
+ 750              	.LBE128:
+ 751              	.LBB129:
+ 752              	.LBI129:
   95:../DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
- 556              		.loc 6 95 5 is_stmt 1 view .LVU203
- 557              	.LBB133:
- 558              	.LBB134:
+ 753              		.loc 6 95 5 is_stmt 1 view .LVU286
+ 754              	.LBB130:
+ 755              	.LBB131:
   95:../DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
- 559              		.loc 6 95 21 is_stmt 0 view .LVU204
- 560 000c 4461     		str	r4, [r0, #20]
- 561              	.LVL18:
+ 756              		.loc 6 95 21 is_stmt 0 view .LVU287
+ 757 000c 4461     		str	r4, [r0, #20]
+ 758              	.LVL19:
   95:../DaisyExamples/libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
- 562              		.loc 6 95 21 view .LVU205
- 563              	.LBE134:
- 564              	.LBE133:
- 565              	.LBE132:
- 566              	.LBB135:
- 567              	.LBI135:
+ 759              		.loc 6 95 21 view .LVU288
+ 760              	.LBE131:
+ 761              	.LBE130:
+ 762              	.LBE129:
+ 763              	.LBB132:
+ 764              	.LBI132:
  109:../DaisyExamples/libDaisy/src/per/adc.h ****     ~AdcHandle() {}
- 568              		.loc 5 109 5 is_stmt 1 view .LVU206
+ 765              		.loc 5 109 5 is_stmt 1 view .LVU289
  109:../DaisyExamples/libDaisy/src/per/adc.h ****     ~AdcHandle() {}
- 569              		.loc 5 109 5 is_stmt 0 view .LVU207
- 570              	.LBE135:
- 571              	.LBB136:
- 572              	.LBI136:
- 573              		.file 9 "../DaisyExamples/libDaisy/src/per/dac.h"
-ARM GAS  /tmp/ccx2Ljsw.s 			page 26
-
-
+ 766              		.loc 5 109 5 is_stmt 0 view .LVU290
+ 767              	.LBE132:
+ 768              	.LBB133:
+ 769              	.LBI133:
+ 770              		.file 9 "../DaisyExamples/libDaisy/src/per/dac.h"
    1:../DaisyExamples/libDaisy/src/per/dac.h **** #pragma once
    2:../DaisyExamples/libDaisy/src/per/dac.h **** #ifndef DSY_DAC_H
    3:../DaisyExamples/libDaisy/src/per/dac.h **** #define DSY_DAC_H
+ARM GAS  /tmp/ccmowyyV.s 			page 32
+
+
    4:../DaisyExamples/libDaisy/src/per/dac.h **** 
    5:../DaisyExamples/libDaisy/src/per/dac.h **** #include "daisy_core.h"
    6:../DaisyExamples/libDaisy/src/per/dac.h **** 
@@ -1558,12 +1915,12 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   55:../DaisyExamples/libDaisy/src/per/dac.h ****      ***/
   56:../DaisyExamples/libDaisy/src/per/dac.h ****     enum class BitDepth
   57:../DaisyExamples/libDaisy/src/per/dac.h ****     {
-ARM GAS  /tmp/ccx2Ljsw.s 			page 27
-
-
   58:../DaisyExamples/libDaisy/src/per/dac.h ****         BITS_8,
   59:../DaisyExamples/libDaisy/src/per/dac.h ****         BITS_12
   60:../DaisyExamples/libDaisy/src/per/dac.h ****     };
+ARM GAS  /tmp/ccmowyyV.s 			page 33
+
+
   61:../DaisyExamples/libDaisy/src/per/dac.h **** 
   62:../DaisyExamples/libDaisy/src/per/dac.h ****     /** Sets whether the DAC output is buffered for higher drive ability. */
   63:../DaisyExamples/libDaisy/src/per/dac.h ****     enum class BufferState
@@ -1588,42 +1945,42 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   82:../DaisyExamples/libDaisy/src/per/dac.h ****     };
   83:../DaisyExamples/libDaisy/src/per/dac.h **** 
   84:../DaisyExamples/libDaisy/src/per/dac.h ****     DacHandle() : pimpl_(nullptr) {}
- 574              		.loc 9 84 5 is_stmt 1 view .LVU208
- 575              	.LBB137:
- 576              	.LBB138:
- 577              		.loc 9 84 19 is_stmt 0 view .LVU209
- 578 000e 0462     		str	r4, [r0, #32]
- 579              	.LVL19:
- 580              		.loc 9 84 19 view .LVU210
- 581              	.LBE138:
- 582              	.LBE137:
- 583              	.LBE136:
- 584              	.LBB139:
- 585              	.LBI139:
+ 771              		.loc 9 84 5 is_stmt 1 view .LVU291
+ 772              	.LBB134:
+ 773              	.LBB135:
+ 774              		.loc 9 84 19 is_stmt 0 view .LVU292
+ 775 000e 0462     		str	r4, [r0, #32]
+ 776              	.LVL20:
+ 777              		.loc 9 84 19 view .LVU293
+ 778              	.LBE135:
+ 779              	.LBE134:
+ 780              	.LBE133:
+ 781              	.LBB136:
+ 782              	.LBI136:
   40:../DaisyExamples/libDaisy/src/hid/usb.h **** 
- 586              		.loc 4 40 5 is_stmt 1 view .LVU211
+ 783              		.loc 4 40 5 is_stmt 1 view .LVU294
   40:../DaisyExamples/libDaisy/src/hid/usb.h **** 
- 587              		.loc 4 40 5 is_stmt 0 view .LVU212
- 588              	.LBE139:
- 589              	.LBB140:
- 590              	.LBI140:
+ 784              		.loc 4 40 5 is_stmt 0 view .LVU295
+ 785              	.LBE136:
+ 786              	.LBB137:
+ 787              	.LBI137:
   96:../DaisyExamples/libDaisy/src/sys/system.h ****     ~System() {}
- 591              		.loc 3 96 5 is_stmt 1 view .LVU213
+ 788              		.loc 3 96 5 is_stmt 1 view .LVU296
   96:../DaisyExamples/libDaisy/src/sys/system.h ****     ~System() {}
- 592              		.loc 3 96 5 is_stmt 0 view .LVU214
- 593              	.LBE140:
- 594              	.LBB141:
- 595              	.LBI141:
- 596              		.file 10 "../DaisyExamples/libDaisy/src/per/sai.h"
+ 789              		.loc 3 96 5 is_stmt 0 view .LVU297
+ 790              	.LBE137:
+ 791              	.LBB138:
+ 792              	.LBI138:
+ 793              		.file 10 "../DaisyExamples/libDaisy/src/per/sai.h"
    1:../DaisyExamples/libDaisy/src/per/sai.h **** #pragma once
    2:../DaisyExamples/libDaisy/src/per/sai.h **** #ifndef DSY_SAI_H
    3:../DaisyExamples/libDaisy/src/per/sai.h **** #define DSY_SAI_H
-ARM GAS  /tmp/ccx2Ljsw.s 			page 28
-
-
    4:../DaisyExamples/libDaisy/src/per/sai.h **** 
    5:../DaisyExamples/libDaisy/src/per/sai.h **** #include "daisy_core.h"
    6:../DaisyExamples/libDaisy/src/per/sai.h **** 
+ARM GAS  /tmp/ccmowyyV.s 			page 34
+
+
    7:../DaisyExamples/libDaisy/src/per/sai.h **** namespace daisy
    8:../DaisyExamples/libDaisy/src/per/sai.h **** {
    9:../DaisyExamples/libDaisy/src/per/sai.h **** /** 
@@ -1678,12 +2035,12 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   58:../DaisyExamples/libDaisy/src/per/sai.h ****             SAI_8KHZ,
   59:../DaisyExamples/libDaisy/src/per/sai.h ****             SAI_16KHZ,
   60:../DaisyExamples/libDaisy/src/per/sai.h ****             SAI_32KHZ,
-ARM GAS  /tmp/ccx2Ljsw.s 			page 29
-
-
   61:../DaisyExamples/libDaisy/src/per/sai.h ****             SAI_48KHZ,
   62:../DaisyExamples/libDaisy/src/per/sai.h ****             SAI_96KHZ,
   63:../DaisyExamples/libDaisy/src/per/sai.h ****         };
+ARM GAS  /tmp/ccmowyyV.s 			page 35
+
+
   64:../DaisyExamples/libDaisy/src/per/sai.h **** 
   65:../DaisyExamples/libDaisy/src/per/sai.h ****         /** Bit Depth that the hardware expects to be transferred to/from the device. */
   66:../DaisyExamples/libDaisy/src/per/sai.h ****         enum class BitDepth
@@ -1729,27 +2086,27 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
  106:../DaisyExamples/libDaisy/src/per/sai.h ****     };
  107:../DaisyExamples/libDaisy/src/per/sai.h **** 
  108:../DaisyExamples/libDaisy/src/per/sai.h ****     SaiHandle() : pimpl_(nullptr) {}
- 597              		.loc 10 108 5 is_stmt 1 view .LVU215
- 598              	.LBB142:
- 599              	.LBB143:
- 600              		.loc 10 108 19 is_stmt 0 view .LVU216
- 601 0010 C463     		str	r4, [r0, #60]
- 602              	.LVL20:
- 603              		.loc 10 108 19 view .LVU217
- 604              	.LBE143:
- 605              	.LBE142:
-ARM GAS  /tmp/ccx2Ljsw.s 			page 30
+ 794              		.loc 10 108 5 is_stmt 1 view .LVU298
+ 795              	.LBB139:
+ 796              	.LBB140:
+ 797              		.loc 10 108 19 is_stmt 0 view .LVU299
+ 798 0010 C463     		str	r4, [r0, #60]
+ 799              	.LVL21:
+ 800              		.loc 10 108 19 view .LVU300
+ 801              	.LBE140:
+ 802              	.LBE139:
+ 803              	.LBE138:
+ 804              	.LBE142:
+ 805              	.LBE144:
+ARM GAS  /tmp/ccmowyyV.s 			page 36
 
 
- 606              	.LBE141:
- 607              	.LBE145:
- 608              	.LBE147:
-   5:main.cpp      **** DaisySeed    hw;
- 609              		.loc 1 5 14 discriminator 1 view .LVU218
- 610 0012 FFF7FEFF 		bl	__aeabi_atexit
- 611              	.LVL21:
- 612              	.LBB148:
- 613              	.LBI148:
+   5:main.cpp      **** UartHandler  uart;
+ 806              		.loc 1 5 14 discriminator 1 view .LVU301
+ 807 0012 FFF7FEFF 		bl	__aeabi_atexit
+ 808              	.LVL22:
+ 809              	.LBB145:
+ 810              	.LBI145:
   82:../DaisyExamples/libDaisy/src/per/uart.h ****             baudrate   = 31250;
   83:../DaisyExamples/libDaisy/src/per/uart.h ****         }
   84:../DaisyExamples/libDaisy/src/per/uart.h **** 
@@ -1763,184 +2120,212 @@ ARM GAS  /tmp/ccx2Ljsw.s 			page 1
   92:../DaisyExamples/libDaisy/src/per/uart.h **** 
   93:../DaisyExamples/libDaisy/src/per/uart.h **** 
   94:../DaisyExamples/libDaisy/src/per/uart.h ****     UartHandler() : pimpl_(nullptr) {}
- 614              		.loc 7 94 5 is_stmt 1 view .LVU219
- 615              	.LBB149:
- 616              	.LBB150:
- 617              		.loc 7 94 21 is_stmt 0 view .LVU220
- 618 0016 044B     		ldr	r3, .L22+12
- 619 0018 1C60     		str	r4, [r3]
- 620              	.LVL22:
- 621              		.loc 7 94 21 view .LVU221
- 622              	.LBE150:
- 623              	.LBE149:
- 624              	.LBE148:
- 625              	.LBE151:
- 626              	.LBE152:
- 627              		.loc 1 97 1 view .LVU222
- 628 001a 10BD     		pop	{r4, pc}
- 629              	.L23:
- 630              		.align	2
- 631              	.L22:
- 632 001c 00000000 		.word	hw
- 633 0020 00000000 		.word	__dso_handle
- 634 0024 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
- 635 0028 00000000 		.word	uart
- 636              		.cfi_endproc
- 637              	.LFE2384:
- 639              		.section	.init_array,"aw",%init_array
- 640              		.align	2
- 641 0000 00000000 		.word	_GLOBAL__sub_I_hw(target1)
- 642              		.global	sub_menu
- 643              		.section	.data.sub_menu,"aw"
- 646              	sub_menu:
- 647 0000 01       		.byte	1
- 648              		.global	preset
- 649              		.section	.bss.preset,"aw",%nobits
- 652              	preset:
- 653 0000 00       		.space	1
-ARM GAS  /tmp/ccx2Ljsw.s 			page 31
+ 811              		.loc 7 94 5 is_stmt 1 view .LVU302
+ 812              	.LBB146:
+ 813              	.LBB147:
+ 814              		.loc 7 94 21 is_stmt 0 view .LVU303
+ 815 0016 044B     		ldr	r3, .L36+12
+ 816 0018 1C60     		str	r4, [r3]
+ 817              	.LVL23:
+ 818              		.loc 7 94 21 view .LVU304
+ 819              	.LBE147:
+ 820              	.LBE146:
+ 821              	.LBE145:
+ 822              	.LBE148:
+ 823              	.LBE149:
+ 824              		.loc 1 162 1 view .LVU305
+ 825 001a 10BD     		pop	{r4, pc}
+ 826              	.L37:
+ 827              		.align	2
+ 828              	.L36:
+ 829 001c 00000000 		.word	hw
+ 830 0020 00000000 		.word	__dso_handle
+ 831 0024 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
+ 832 0028 00000000 		.word	uart
+ 833              		.cfi_endproc
+ 834              	.LFE2384:
+ 836              		.section	.init_array,"aw",%init_array
+ 837              		.align	2
+ 838 0000 00000000 		.word	_GLOBAL__sub_I_hw(target1)
+ 839              		.global	fx_val_3
+ 840              		.section	.bss.fx_val_3,"aw",%nobits
+ 843              	fx_val_3:
+ 844 0000 00       		.space	1
+ 845              		.global	fx_val_2
+ 846              		.section	.bss.fx_val_2,"aw",%nobits
+ 849              	fx_val_2:
+ 850 0000 00       		.space	1
+ 851              		.global	fx_val_1
+ 852              		.section	.bss.fx_val_1,"aw",%nobits
+ 855              	fx_val_1:
+ARM GAS  /tmp/ccmowyyV.s 			page 37
 
 
- 654              		.global	release
- 655              		.section	.bss.release,"aw",%nobits
- 658              	release:
- 659 0000 00       		.space	1
- 660              		.global	sustain
- 661              		.section	.bss.sustain,"aw",%nobits
- 664              	sustain:
- 665 0000 00       		.space	1
- 666              		.global	decay
- 667              		.section	.bss.decay,"aw",%nobits
- 670              	decay:
- 671 0000 00       		.space	1
- 672              		.global	attack
- 673              		.section	.bss.attack,"aw",%nobits
- 676              	attack:
- 677 0000 00       		.space	1
- 678              		.global	loc_temp
- 679              		.section	.bss.loc_temp,"aw",%nobits
- 682              	loc_temp:
- 683 0000 00       		.space	1
- 684              		.global	last_send
- 685              		.section	.bss.last_send,"aw",%nobits
- 686              		.align	2
- 689              	last_send:
- 690 0000 00000000 		.space	4
- 691              		.global	test_menu
- 692              		.section	.data.test_menu,"aw"
- 695              	test_menu:
- 696 0000 02       		.byte	2
- 697              		.global	tx_buffer
- 698              		.section	.sram1_bss,"aw"
- 699              		.align	2
- 702              	tx_buffer:
- 703 0000 00000000 		.space	64
- 703      00000000 
- 703      00000000 
- 703      00000000 
- 703      00000000 
- 704              		.global	uart
- 705              		.section	.bss.uart,"aw",%nobits
- 706              		.align	2
- 709              	uart:
- 710 0000 00000000 		.space	4
- 711              		.global	hw
- 712              		.section	.bss.hw,"aw",%nobits
- 713              		.align	2
- 716              	hw:
- 717 0000 00000000 		.space	64
- 717      00000000 
- 717      00000000 
- 717      00000000 
- 717      00000000 
- 718              		.section	.rodata
- 719              		.align	2
- 720              		.set	.LANCHOR0,. + 0
- 721              	.LC0:
- 722 0000 01       		.byte	1
-ARM GAS  /tmp/ccx2Ljsw.s 			page 32
+ 856 0000 00       		.space	1
+ 857              		.global	fx_type
+ 858              		.section	.bss.fx_type,"aw",%nobits
+ 861              	fx_type:
+ 862 0000 00       		.space	1
+ 863              		.global	sub_menu
+ 864              		.section	.bss.sub_menu,"aw",%nobits
+ 867              	sub_menu:
+ 868 0000 00       		.space	1
+ 869              		.global	preset
+ 870              		.section	.bss.preset,"aw",%nobits
+ 873              	preset:
+ 874 0000 00       		.space	1
+ 875              		.global	release
+ 876              		.section	.bss.release,"aw",%nobits
+ 879              	release:
+ 880 0000 00       		.space	1
+ 881              		.global	sustain
+ 882              		.section	.bss.sustain,"aw",%nobits
+ 885              	sustain:
+ 886 0000 00       		.space	1
+ 887              		.global	decay
+ 888              		.section	.bss.decay,"aw",%nobits
+ 891              	decay:
+ 892 0000 00       		.space	1
+ 893              		.global	attack
+ 894              		.section	.bss.attack,"aw",%nobits
+ 897              	attack:
+ 898 0000 00       		.space	1
+ 899              		.global	loc_temp
+ 900              		.section	.bss.loc_temp,"aw",%nobits
+ 903              	loc_temp:
+ 904 0000 00       		.space	1
+ 905              		.global	last_send
+ 906              		.section	.bss.last_send,"aw",%nobits
+ 907              		.align	2
+ 910              	last_send:
+ 911 0000 00000000 		.space	4
+ 912              		.global	test_menu
+ 913              		.section	.bss.test_menu,"aw",%nobits
+ 916              	test_menu:
+ 917 0000 00       		.space	1
+ 918              		.global	tx_buffer
+ 919              		.section	.sram1_bss,"aw"
+ 920              		.align	2
+ 923              	tx_buffer:
+ 924 0000 00000000 		.space	64
+ 924      00000000 
+ 924      00000000 
+ 924      00000000 
+ 924      00000000 
+ 925              		.global	uart
+ 926              		.section	.bss.uart,"aw",%nobits
+ 927              		.align	2
+ 930              	uart:
+ 931 0000 00000000 		.space	4
+ 932              		.global	hw
+ARM GAS  /tmp/ccmowyyV.s 			page 38
 
 
- 723 0001 06       		.byte	6
- 724 0002 0000     		.space	2
- 725              	.LC1:
- 726 0004 01       		.byte	1
- 727 0005 07       		.byte	7
- 728              		.text
- 729              	.Letext0:
- 730              		.file 11 "/usr/arm-none-eabi/include/machine/_default_types.h"
- 731              		.file 12 "/usr/arm-none-eabi/include/sys/_stdint.h"
- 732              		.file 13 "/usr/arm-none-eabi/include/stdint.h"
- 733              		.file 14 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stddef.h"
- 734              		.file 15 "/usr/arm-none-eabi/include/c++/14.2.0/cmath"
- 735              		.file 16 "/usr/arm-none-eabi/include/c++/14.2.0/bits/std_abs.h"
- 736              		.file 17 "/usr/arm-none-eabi/include/c++/14.2.0/cstdlib"
- 737              		.file 18 "/usr/arm-none-eabi/include/c++/14.2.0/cstdint"
- 738              		.file 19 "/usr/arm-none-eabi/include/c++/14.2.0/type_traits"
- 739              		.file 20 "/usr/arm-none-eabi/include/c++/14.2.0/debug/debug.h"
- 740              		.file 21 "/usr/arm-none-eabi/include/c++/14.2.0/cstdarg"
- 741              		.file 22 "/usr/arm-none-eabi/include/c++/14.2.0/cstdio"
- 742              		.file 23 "/usr/arm-none-eabi/include/c++/14.2.0/cstring"
- 743              		.file 24 "/usr/arm-none-eabi/include/c++/14.2.0/bits/predefined_ops.h"
- 744              		.file 25 "/usr/arm-none-eabi/include/sys/_types.h"
- 745              		.file 26 "/usr/arm-none-eabi/include/sys/reent.h"
- 746              		.file 27 "/usr/arm-none-eabi/include/sys/lock.h"
- 747              		.file 28 "/usr/arm-none-eabi/include/c++/14.2.0/bits/stl_pair.h"
- 748              		.file 29 "/usr/arm-none-eabi/include/math.h"
- 749              		.file 30 "/usr/arm-none-eabi/include/stdlib.h"
- 750              		.file 31 "/usr/arm-none-eabi/include/c++/14.2.0/math.h"
- 751              		.file 32 "/usr/arm-none-eabi/include/c++/14.2.0/stdlib.h"
- 752              		.file 33 "../DaisyExamples/libDaisy/src/daisy_core.h"
- 753              		.file 34 "/usr/arm-none-eabi/include/c++/14.2.0/arm-none-eabi/thumb/v7e-m+dp/hard/bits/c++config.h
- 754              		.file 35 "../DaisyExamples/libDaisy/src/util/wav_format.h"
- 755              		.file 36 "../DaisyExamples/libDaisy/src/dev/max11300.h"
- 756              		.file 37 "../DaisyExamples/libDaisy/src/per/gpio.h"
- 757              		.file 38 "../DaisyExamples/libDaisy/src/dev/sdram.h"
- 758              		.file 39 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stdarg.h"
- 759              		.file 40 "/usr/arm-none-eabi/include/stdio.h"
- 760              		.file 41 "/usr/arm-none-eabi/include/string.h"
- 761              		.file 42 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
- 762              		.file 43 "<built-in>"
-ARM GAS  /tmp/ccx2Ljsw.s 			page 33
+ 933              		.section	.bss.hw,"aw",%nobits
+ 934              		.align	2
+ 937              	hw:
+ 938 0000 00000000 		.space	64
+ 938      00000000 
+ 938      00000000 
+ 938      00000000 
+ 938      00000000 
+ 939              		.section	.rodata
+ 940              		.align	2
+ 941              		.set	.LANCHOR0,. + 0
+ 942              	.LC0:
+ 943 0000 01       		.byte	1
+ 944 0001 06       		.byte	6
+ 945 0002 0000     		.space	2
+ 946              	.LC1:
+ 947 0004 01       		.byte	1
+ 948 0005 07       		.byte	7
+ 949              		.text
+ 950              	.Letext0:
+ 951              		.file 11 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 952              		.file 12 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 953              		.file 13 "/usr/arm-none-eabi/include/stdint.h"
+ 954              		.file 14 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stddef.h"
+ 955              		.file 15 "/usr/arm-none-eabi/include/c++/14.2.0/cmath"
+ 956              		.file 16 "/usr/arm-none-eabi/include/c++/14.2.0/bits/std_abs.h"
+ 957              		.file 17 "/usr/arm-none-eabi/include/c++/14.2.0/cstdlib"
+ 958              		.file 18 "/usr/arm-none-eabi/include/c++/14.2.0/cstdint"
+ 959              		.file 19 "/usr/arm-none-eabi/include/c++/14.2.0/type_traits"
+ 960              		.file 20 "/usr/arm-none-eabi/include/c++/14.2.0/debug/debug.h"
+ 961              		.file 21 "/usr/arm-none-eabi/include/c++/14.2.0/cstdarg"
+ 962              		.file 22 "/usr/arm-none-eabi/include/c++/14.2.0/cstdio"
+ 963              		.file 23 "/usr/arm-none-eabi/include/c++/14.2.0/cstring"
+ 964              		.file 24 "/usr/arm-none-eabi/include/c++/14.2.0/bits/predefined_ops.h"
+ 965              		.file 25 "/usr/arm-none-eabi/include/sys/_types.h"
+ 966              		.file 26 "/usr/arm-none-eabi/include/sys/reent.h"
+ 967              		.file 27 "/usr/arm-none-eabi/include/sys/lock.h"
+ 968              		.file 28 "/usr/arm-none-eabi/include/c++/14.2.0/bits/stl_pair.h"
+ 969              		.file 29 "/usr/arm-none-eabi/include/math.h"
+ 970              		.file 30 "/usr/arm-none-eabi/include/stdlib.h"
+ 971              		.file 31 "/usr/arm-none-eabi/include/c++/14.2.0/math.h"
+ 972              		.file 32 "/usr/arm-none-eabi/include/c++/14.2.0/stdlib.h"
+ 973              		.file 33 "../DaisyExamples/libDaisy/src/daisy_core.h"
+ 974              		.file 34 "/usr/arm-none-eabi/include/c++/14.2.0/arm-none-eabi/thumb/v7e-m+dp/hard/bits/c++config.h
+ 975              		.file 35 "../DaisyExamples/libDaisy/src/util/wav_format.h"
+ 976              		.file 36 "../DaisyExamples/libDaisy/src/dev/max11300.h"
+ 977              		.file 37 "../DaisyExamples/libDaisy/src/per/gpio.h"
+ 978              		.file 38 "../DaisyExamples/libDaisy/src/dev/sdram.h"
+ 979              		.file 39 "/usr/lib/gcc/arm-none-eabi/14.2.0/include/stdarg.h"
+ 980              		.file 40 "/usr/arm-none-eabi/include/stdio.h"
+ 981              		.file 41 "/usr/arm-none-eabi/include/string.h"
+ 982              		.file 42 "../DaisyExamples/libDaisy/src/dev/sr_595.h"
+ 983              		.file 43 "<built-in>"
+ARM GAS  /tmp/ccmowyyV.s 			page 39
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.cpp
-     /tmp/ccx2Ljsw.s:20     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
-     /tmp/ccx2Ljsw.s:27     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
-     /tmp/ccx2Ljsw.s:27     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
-     /tmp/ccx2Ljsw.s:70     .text.startup.main:00000000 $t
-     /tmp/ccx2Ljsw.s:77     .text.startup.main:00000000 main
-     /tmp/ccx2Ljsw.s:228    .text.startup.main:00000076 $d
-     /tmp/ccx2Ljsw.s:232    .text.startup.main:0000007a $t
-     /tmp/ccx2Ljsw.s:463    .text.startup.main:00000114 $d
-     /tmp/ccx2Ljsw.s:716    .bss.hw:00000000 hw
-     /tmp/ccx2Ljsw.s:702    .sram1_bss:00000000 tx_buffer
-     /tmp/ccx2Ljsw.s:689    .bss.last_send:00000000 last_send
-     /tmp/ccx2Ljsw.s:682    .bss.loc_temp:00000000 loc_temp
-     /tmp/ccx2Ljsw.s:646    .data.sub_menu:00000000 sub_menu
-     /tmp/ccx2Ljsw.s:709    .bss.uart:00000000 uart
-     /tmp/ccx2Ljsw.s:670    .bss.decay:00000000 decay
-     /tmp/ccx2Ljsw.s:664    .bss.sustain:00000000 sustain
-     /tmp/ccx2Ljsw.s:658    .bss.release:00000000 release
-     /tmp/ccx2Ljsw.s:695    .data.test_menu:00000000 test_menu
-     /tmp/ccx2Ljsw.s:652    .bss.preset:00000000 preset
-     /tmp/ccx2Ljsw.s:676    .bss.attack:00000000 attack
-     /tmp/ccx2Ljsw.s:488    .text.startup._GLOBAL__sub_I_hw:00000000 $t
-     /tmp/ccx2Ljsw.s:494    .text.startup._GLOBAL__sub_I_hw:00000000 _GLOBAL__sub_I_hw
-     /tmp/ccx2Ljsw.s:632    .text.startup._GLOBAL__sub_I_hw:0000001c $d
-     /tmp/ccx2Ljsw.s:640    .init_array:00000000 $d
-     /tmp/ccx2Ljsw.s:653    .bss.preset:00000000 $d
-     /tmp/ccx2Ljsw.s:659    .bss.release:00000000 $d
-     /tmp/ccx2Ljsw.s:665    .bss.sustain:00000000 $d
-     /tmp/ccx2Ljsw.s:671    .bss.decay:00000000 $d
-     /tmp/ccx2Ljsw.s:677    .bss.attack:00000000 $d
-     /tmp/ccx2Ljsw.s:683    .bss.loc_temp:00000000 $d
-     /tmp/ccx2Ljsw.s:686    .bss.last_send:00000000 $d
-     /tmp/ccx2Ljsw.s:699    .sram1_bss:00000000 $d
-     /tmp/ccx2Ljsw.s:706    .bss.uart:00000000 $d
-     /tmp/ccx2Ljsw.s:713    .bss.hw:00000000 $d
-     /tmp/ccx2Ljsw.s:719    .rodata:00000000 $d
+     /tmp/ccmowyyV.s:20     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
+     /tmp/ccmowyyV.s:27     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
+     /tmp/ccmowyyV.s:27     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
+     /tmp/ccmowyyV.s:70     .text.startup.main:00000000 $t
+     /tmp/ccmowyyV.s:77     .text.startup.main:00000000 main
+     /tmp/ccmowyyV.s:223    .text.startup.main:0000007a $d
+     /tmp/ccmowyyV.s:227    .text.startup.main:0000007e $t
+     /tmp/ccmowyyV.s:256    .text.startup.main:0000009c $d
+     /tmp/ccmowyyV.s:263    .text.startup.main:000000a2 $t
+     /tmp/ccmowyyV.s:660    .text.startup.main:00000210 $d
+     /tmp/ccmowyyV.s:937    .bss.hw:00000000 hw
+     /tmp/ccmowyyV.s:923    .sram1_bss:00000000 tx_buffer
+     /tmp/ccmowyyV.s:910    .bss.last_send:00000000 last_send
+     /tmp/ccmowyyV.s:916    .bss.test_menu:00000000 test_menu
+     /tmp/ccmowyyV.s:903    .bss.loc_temp:00000000 loc_temp
+     /tmp/ccmowyyV.s:930    .bss.uart:00000000 uart
+     /tmp/ccmowyyV.s:891    .bss.decay:00000000 decay
+     /tmp/ccmowyyV.s:885    .bss.sustain:00000000 sustain
+     /tmp/ccmowyyV.s:879    .bss.release:00000000 release
+     /tmp/ccmowyyV.s:861    .bss.fx_type:00000000 fx_type
+     /tmp/ccmowyyV.s:867    .bss.sub_menu:00000000 sub_menu
+     /tmp/ccmowyyV.s:873    .bss.preset:00000000 preset
+     /tmp/ccmowyyV.s:855    .bss.fx_val_1:00000000 fx_val_1
+     /tmp/ccmowyyV.s:849    .bss.fx_val_2:00000000 fx_val_2
+     /tmp/ccmowyyV.s:843    .bss.fx_val_3:00000000 fx_val_3
+     /tmp/ccmowyyV.s:897    .bss.attack:00000000 attack
+     /tmp/ccmowyyV.s:685    .text.startup._GLOBAL__sub_I_hw:00000000 $t
+     /tmp/ccmowyyV.s:691    .text.startup._GLOBAL__sub_I_hw:00000000 _GLOBAL__sub_I_hw
+     /tmp/ccmowyyV.s:829    .text.startup._GLOBAL__sub_I_hw:0000001c $d
+     /tmp/ccmowyyV.s:837    .init_array:00000000 $d
+     /tmp/ccmowyyV.s:844    .bss.fx_val_3:00000000 $d
+     /tmp/ccmowyyV.s:850    .bss.fx_val_2:00000000 $d
+     /tmp/ccmowyyV.s:856    .bss.fx_val_1:00000000 $d
+     /tmp/ccmowyyV.s:862    .bss.fx_type:00000000 $d
+     /tmp/ccmowyyV.s:868    .bss.sub_menu:00000000 $d
+     /tmp/ccmowyyV.s:874    .bss.preset:00000000 $d
+     /tmp/ccmowyyV.s:880    .bss.release:00000000 $d
+     /tmp/ccmowyyV.s:886    .bss.sustain:00000000 $d
+     /tmp/ccmowyyV.s:892    .bss.decay:00000000 $d
+     /tmp/ccmowyyV.s:898    .bss.attack:00000000 $d
+     /tmp/ccmowyyV.s:904    .bss.loc_temp:00000000 $d
+     /tmp/ccmowyyV.s:907    .bss.last_send:00000000 $d
+     /tmp/ccmowyyV.s:917    .bss.test_menu:00000000 $d
+     /tmp/ccmowyyV.s:920    .sram1_bss:00000000 $d
+     /tmp/ccmowyyV.s:927    .bss.uart:00000000 $d
+     /tmp/ccmowyyV.s:934    .bss.hw:00000000 $d
+     /tmp/ccmowyyV.s:940    .rodata:00000000 $d
                            .group:00000000 _ZN5daisy9DaisySeedD5Ev
 
 UNDEFINED SYMBOLS
@@ -1949,4 +2334,7 @@ _ZN5daisy11UartHandler4InitERKNS0_6ConfigE
 _ZN5daisy6System6GetNowEv
 _ZN5daisy11UartHandler11DmaTransmitEPhjPFvPvEPFvS2_NS0_6ResultEES2_
 __aeabi_atexit
+ARM GAS  /tmp/ccmowyyV.s 			page 40
+
+
 __dso_handle
