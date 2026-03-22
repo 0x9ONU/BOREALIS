@@ -10,13 +10,16 @@ using namespace daisy::seed;
 
 constexpr float PI = 3.14159265358979323846f;
 
-//Intalizations
 static DaisySeed hw;
 Wavetable wt;
 MidiUartHandler midi;
 
-/** FIFO to hold messages as we're ready to print them */
-FIFO<MidiEvent, 128> event_log;
+volatile float volume = 0.0f;       // Volume knob/pot
+volatile float wt_index = 0.0f;     // wavetable index knob/pot
+
+uint32_t now, log_time = System::GetNow(); // for periodic debug outputs
+
+FIFO<MidiEvent, 128> event_log; // Midi message FIFO for printing
 
 std::array<float, 8> oscillators_out;
 float mix;
@@ -42,27 +45,25 @@ void AudioCallback(AudioHandle::InputBuffer  in,
                    size_t                    size)
 {
     for(size_t i = 0; i < size; i++){   // Process each sample
-        mix = 0;                  // variable for sum of all signals
+        mix = 0;
         oscillators_out = wt.Process();
         
-        for(int j = 0; j < 8; j++){     // Process each oscillator
-            mix = mix + (oscillators_out[j] * 0.125);
-        }
+        for(int j = 0; j < 8; j++){ mix = mix + (oscillators_out[j] * 0.125); } // Process each oscillator
         
-        out[0][i] = out[1][i] = mix;
+        out[0][i] = out[1][i] = volume * mix ; // CHANGE THIS LATER, need to scale volume to 0-1 range.
     }    
 }
 
 int main(void){
-    // Begin Initialization
+    /** Begin Initialization */ 
     hw.Configure();
     hw.Init();
     hw.SetAudioBlockSize(64);
     hw.StartLog(true);
     float sample_rate = hw.AudioSampleRate();
     
-    hw.PrintLine("Start wavetable creation");
-    // create the wavetable here, currently 3 waves, sine, triangle, square
+    // 1. Initialize Wavetables
+    // make wavetables  
     int num_waves = 4;
     std::array<std::array<float, 2048>, 8> waves;
     for(int i = 0; i < 2048; i++){
@@ -81,43 +82,44 @@ int main(void){
 
         waves[2][i] = (phase < 0.5f) ? 1.0f : -1.0f;
     }
-
-    // Initialize the WT
     wt.Init(sample_rate, waves, num_waves);
     for(int i = 0; i < 8; i++){
         wt.SetIndex(i, 1.5);
     }
-    hw.PrintLine("Wavetable initialized");
 
-    // Initalize Midi and Start receiving
-    hw.PrintLine("Start Midi Initalization...");
+    // 2. Initalize Midi and Start receiving
     MidiUartHandler::Config midi_config;
     midi.Init(midi_config);
-    hw.PrintLine("Midi Initalization! Start Receiving.");
     midi.StartReceive();
 
-    //Temp
-    uint32_t now      = System::GetNow();
-    uint32_t log_time = System::GetNow();
+    // 3. ADC Config (Pins 15, 16, 17, 18)
+    // adc_config[0]: volume knob temp
+    // adc_config[1]: wavetable index knob temp
+    // adc_config[2]: 
+    // adc_config[3]: 
+    // adc_config[4]: 
+
+    AdcChannelConfig adc_config[4];
+    adc_config[0].InitSingle(hw.GetPin(15));
+    adc_config[1].InitSingle(hw.GetPin(16));
+    adc_config[2].InitSingle(hw.GetPin(17));
+    adc_config[3].InitSingle(hw.GetPin(18));
+    hw.adc.Init(adc_config, 4);
+    hw.adc.Start();
 
     hw.StartAudio(AudioCallback);
-    hw.PrintLine("Audio Callback Started, begin main loop");
 
     wt.AddNote(69); // testing
-
 
     // Main Loop
     while(1) {
         System::Delay(1);
         now = System::GetNow();
-
         // Look for new MIDI events
         midi.Listen();
-
         /** Loop through any MIDI Events */
         while(midi.HasEvents()){
             MidiEvent msg = midi.PopEvent();
-
             // Handle messages as they come in 
             switch(msg.type){
                 case NoteOn:
@@ -140,14 +142,23 @@ int main(void){
                 }  
                 default: break;
             }
-
             /** Regardless of message, let's add the message data to our queue to output */
             event_log.PushBack(msg);
         }
-
-        /** Now separately, every 5ms we'll print the top message in our queue if there is one */
+        
+        /** 200Hz or 5ms code block */
         if(now - log_time > 5){
+            
+            /** Read potentiometers */
+            volume = hw.adc.GetFloat(0); // read the volume knob (0-??)
+            wt_index = hw.adc.GetFloat(1); // read the wavetable index (0-??)
+            for(int i = 0; i < 8; i++){ wt.SetIndex(i, 1.5); }
+
             log_time = now;
+
+            char outstr[128];
+            sprintf(outstr, "Volume: %d\tWT Index: %d\n", (int)volume, (int)wt_index);
+            hw.PrintLine(outstr);
             if(!event_log.IsEmpty()){
                 auto msg = event_log.PopFront();
                 char outstr[128];
