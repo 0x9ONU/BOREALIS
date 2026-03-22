@@ -19,7 +19,7 @@ static const float midi_to_freq[128] = {
     8372.02, 8869.84, 9397.27, 9956.06, 10548.08, 11175.30, 11839.82, 12543.85
 };
 
-const int samples_per_wave = 256;
+const int samples_per_wave = 1024;
 
 /** Class for containing the data on a wavetable
 */

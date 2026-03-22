@@ -22,7 +22,7 @@ std::array<float, 8> oscillators_out;
 float mix;
 
 int num_waves = 4;
-const int table_size = 256;
+const int table_size = 1024;
 std::array<std::array<float, table_size>, 8> DSY_SDRAM_BSS waves;
 
 //Testing variables
@@ -100,7 +100,7 @@ int main(void){
     hw.Configure();
     hw.Init();
     hw.SetAudioBlockSize(64);
-    hw.StartLog(true);
+    hw.StartLog(false);
     float sample_rate = hw.AudioSampleRate();
     
     hw.PrintLine("Start wavetable creation");
@@ -110,7 +110,7 @@ int main(void){
     // Initialize the WT
     wt.Init(sample_rate, waves, num_waves);
     for(int i = 0; i < 8; i++){
-        wt.SetIndex(i, 1.5);
+        wt.SetIndex(i, 2);
     }
     hw.PrintLine("Wavetable initialized");
 
@@ -129,14 +129,10 @@ int main(void){
     hw.PrintLine("Audio Callback Started, begin main loop");
     
     // max load for now
-    wt.AddNote(71); // testing
-    wt.AddNote(69); // testing
-    wt.AddNote(66); // testing
-    wt.AddNote(62); // testing
-    wt.AddNote(59); // testing
-    wt.AddNote(56); // testing
-    wt.AddNote(53); // testing
-    wt.AddNote(49); // testing
+    wt.AddNote(60); // testing
+    wt.AddNote(36); // testing
+    wt.AddNote(24); // testing
+    wt.AddNote(12); // testing
     
     // Main Loop
     while(1) {
