@@ -18,8 +18,7 @@ const float midi_to_freq[128] = {
 };
 
 
-/** Class for containing the data on a wavetable
-*/
+/** Class for containing the data on a wavetable */
 class Wavetable
 {
   public:    
@@ -31,13 +30,13 @@ class Wavetable
     void SetFreq(int osc, float freq);
     void SetIndex(int osc, float index);
 
-    void AddNote(uint8_t note);
-    void RemoveNote(uint8_t note);
+    int AddNote(uint8_t note);
+    int RemoveNote(uint8_t note);
 
-    std::array<uint8_t, 8> ReadNotes(); // debugging
-    std::array<float, 8> ReadFreqs(); // debugging
-    std::array<float, 8> ReadPhases(); // debugging
-    std::array<float, 8> ReadIndicies(); // debugging
+    std::array<uint8_t, 8> ReadNotes();   // returns notes of each osc
+    std::array<float, 8> ReadFreqs();     // returns frequency of each osc 
+    std::array<float, 8> ReadPhases();    // returns phase of each osc
+    std::array<float, 8> ReadIndicies();  // returns wt index of each osc
 
 
   private:
