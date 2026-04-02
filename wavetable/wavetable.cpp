@@ -77,7 +77,7 @@ void Wavetable::SetIndex(int osc, float index){
     indicies[osc] = index;
 }
 
-void Wavetable::AddNote(uint8_t note){
+int Wavetable::AddNote(uint8_t note){
     /* Find a target oscillator */
     uint8_t target = 0;                             // keep track of the oldest oscillator
     for(int i = 0; i < 8; i++){                     // search through all oscillators
@@ -96,26 +96,26 @@ void Wavetable::AddNote(uint8_t note){
         if(notes[j] != 255){ ages[j]++; }
     }
     ages[target] = 1;                               // oldest is now youngest
-    return;
+    phases[target] = 0;                             // reset phase
+    return target;
 }
 
-void Wavetable::RemoveNote(uint8_t note){
+int Wavetable::RemoveNote(uint8_t note){
     /* Start by finding the oscillator to turn off */
     for(int i = 0; i < 8; i++){                     // search through all oscillators
         if(notes[i] == note){                       // if oscillator is target
             notes[i] = 255;                         // turn it off
-            phases[i] = 0;                          // reset phase
-            frequencies[i] = 0;                     // update the oscillator's frequency (could probably merge with the above line)
+
             for(int j = 0; j < 8; j++){             // decrement every active oscillator's age older than the removed
                 if(ages[j] > ages[i]){ ages[j]--; }
             }
             ages[i] = 0;                            // clear the target oscillator's age
-            return;
+            return i;
         }
     }
 
     /* Note to turn off is not currently being played */
-    return;
+    return 9;
 }
 
 std::array<uint8_t, 8> Wavetable::ReadNotes(){
