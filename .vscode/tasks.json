@@ -21,7 +21,8 @@
                 "pot_screen_test",
                 "packet_test",
                 "state_machine",
-                "test_plan"
+                "test_plan",
+                "combined"
             ]
         }
     ],
