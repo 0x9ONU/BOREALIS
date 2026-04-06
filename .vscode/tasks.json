@@ -19,7 +19,8 @@
                 "wavetable",
                 "screen_test",
                 "pot_screen_test",
-                "packet_test"
+                "packet_test",
+                "state_machine"
             ]
         }
     ],

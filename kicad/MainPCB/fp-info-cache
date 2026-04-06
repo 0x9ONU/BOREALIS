@@ -1,4 +1,32 @@
-27253817544132560
+27368321971714746
+5_Way_Capstone
+KC15A9.501NPF_EWI
+
+KC15A9.501NPF 
+0
+6
+6
+5_Way_Capstone
+borealis
+
+
+0
+0
+0
+5_Way_Capstone
+hassan
+
+
+0
+0
+0
+5_Way_Capstone
+miku
+
+
+0
+0
+0
 5501M1BLKX
 Untitled
 
@@ -6,6 +34,27 @@ Untitled
 0
 6
 5
+Amplifier_Capstone
+R_8_ADI
+
+AD8226BRZ-RL 
+0
+8
+8
+Amplifier_Capstone
+R_8_ADI-L
+
+AD8226BRZ-RL 
+0
+8
+8
+Amplifier_Capstone
+R_8_ADI-M
+
+AD8226BRZ-RL 
+0
+8
+8
 Audio Jack
 Audio_Jack
 
@@ -6761,6 +6810,13 @@ capacitor tantalum
 0
 2
 2
+Capstone_Top
+Top Plate
+
+
+0
+0
+0
 Connector
 BJB_Pico_46.110.1001_Receptacle_Horizontal
 BJB Pico, single terminal block/receptacle, uninsulated, SMD, 6.9x2.3x2.7mm, https://www.bjb.com/media/7a/b3/df/1740905546/DM-6265102-v6_BJB_Datasheet_46.110.1001-0_SMD_Terminal_block_without_housing_Update_03_2022.PDF
@@ -95072,6 +95128,13 @@ Small Pot
 
 0
 5
+3
+Power_Capstone
+CONN3_54-00166_TEN
+
+54-00166 
+0
+3
 3
 RF
 Skyworks_SKY13575_639LF

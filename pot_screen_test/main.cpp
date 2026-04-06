@@ -72,10 +72,10 @@ int main(void) {
 
     // 3. ADC Config (Pins 15, 16, 17, 18)
     AdcChannelConfig adc_config[4];
-    adc_config[0].InitSingle(hw.GetPin(15));
-    adc_config[1].InitSingle(hw.GetPin(16));
-    adc_config[2].InitSingle(hw.GetPin(17));
-    adc_config[3].InitSingle(hw.GetPin(18));
+    adc_config[0].InitSingle(hw.GetPin(17));
+    adc_config[1].InitSingle(hw.GetPin(18));
+    adc_config[2].InitSingle(hw.GetPin(19));
+    adc_config[3].InitSingle(hw.GetPin(20));
     hw.adc.Init(adc_config, 4);
     hw.adc.Start();
 
