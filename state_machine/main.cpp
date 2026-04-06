@@ -31,10 +31,10 @@ volatile float pot_values[6] = {0.0f};
 //uint32_t last_send = 0;
 uint8_t menu = 0; 
 uint8_t loc = 0;
-uint8_t attack = 0;
-uint8_t decay = 0;
-uint8_t sustain = 0;
-uint8_t release = 0;
+uint8_t menu_atk = 0;
+uint8_t menu_dec = 0;
+uint8_t menu_sus = 0;
+uint8_t menu_rel = 0;
 uint8_t preset = 0;
 uint8_t sub_menu = 0;
 uint8_t fx_type = 0;
@@ -233,10 +233,10 @@ int main(void) {
                     resetValues();
                 }
 
-                attack = pot_values[2];
-                decay = pot_values[3];
-                sustain = pot_values[4];
-                release = pot_values[5];
+                menu_atk = pot_values[2];
+                menu_dec = pot_values[3];
+                menu_sus = pot_values[4];
+                menu_rel = pot_values[5];
                 break;
             }
             case 5: { //Settings
@@ -285,10 +285,10 @@ void packetSend() {
             }
             break;
         case 3: // Envelope (4 bytes payload)
-            tx_buffer[idx++] = attack; 
-            tx_buffer[idx++] = decay; 
-            tx_buffer[idx++] = sustain; 
-            tx_buffer[idx++] = release;
+            tx_buffer[idx++] = menu_atk; 
+            tx_buffer[idx++] = menu_dec; 
+            tx_buffer[idx++] = menu_sus; 
+            tx_buffer[idx++] = menu_rel;
             break;
         case 4:
             tx_buffer[idx++] = 0xFF;
